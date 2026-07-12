@@ -1,29 +1,41 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 7.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
-    --radius: 0.75rem;
+    --background: 240 6% 7%;
+    --foreground: 240 4% 96%;
+    --card: 240 4% 10%;
+    --card-foreground: 240 4% 96%;
+    --popover: 240 6% 7%;
+    --popover-foreground: 240 4% 96%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 240 4% 98%;
+    --secondary: 240 3% 14%;
+    --secondary-foreground: 240 4% 96%;
+    --muted: 240 3% 14%;
+    --muted-foreground: 240 2% 55%;
+    --accent: 240 3% 14%;
+    --accent-foreground: 240 4% 96%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 240 4% 96%;
+    --border: 240 3% 16%;
+    --input: 240 3% 16%;
+    --ring: 217 91% 60%;
+    --radius: 0.5rem;
+    /* Provider brand colors */
+    --provider-openai: 24 90% 55%;
+    --provider-anthropic: 30 90% 55%;
+    --provider-google: 210 80% 55%;
+    --provider-meta: 220 80% 55%;
+    --provider-alibaba: 0 70% 50%;
+    --provider-deepseek: 260 70% 55%;
+    --provider-blackforest: 280 70% 55%;
+    --provider-stability: 150 60% 45%;
+    --provider-mistral: 200 80% 55%;
+    --provider-kuaishou: 30 90% 55%;
+    --provider-zhipu: 270 70% 55%;
   }
 }
 
@@ -32,45 +44,70 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-/* Custom scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted));
-  border-radius: 4px;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
 }
 
-/* Glow effects */
-.glow-blue {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
-}
-.glow-purple {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3), 0 0 60px rgba(139, 92, 246, 0.1);
-}
-.glow-green {
-  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3), 0 0 60px rgba(34, 197, 94, 0.1);
+/* Provider color classes */
+.provider-openai { color: hsl(var(--provider-openai)); }
+.provider-anthropic { color: hsl(var(--provider-anthropic)); }
+.provider-google { color: hsl(var(--provider-google)); }
+.provider-meta { color: hsl(var(--provider-meta)); }
+.provider-alibaba { color: hsl(var(--provider-alibaba)); }
+.provider-deepseek { color: hsl(var(--provider-deepseek)); }
+.provider-blackforest { color: hsl(var(--provider-blackforest)); }
+.provider-stability { color: hsl(var(--provider-stability)); }
+.provider-mistral { color: hsl(var(--provider-mistral)); }
+.provider-kuaishou { color: hsl(var(--provider-kuaishou)); }
+.provider-zhipu { color: hsl(var(--provider-zhipu)); }
+
+/* Provider left border accent */
+.provider-accent-openai { border-inline-start-color: hsl(var(--provider-openai)); }
+.provider-accent-anthropic { border-inline-start-color: hsl(var(--provider-anthropic)); }
+.provider-accent-google { border-inline-start-color: hsl(var(--provider-google)); }
+.provider-accent-meta { border-inline-start-color: hsl(var(--provider-meta)); }
+.provider-accent-alibaba { border-inline-start-color: hsl(var(--provider-alibaba)); }
+.provider-accent-deepseek { border-inline-start-color: hsl(var(--provider-deepseek)); }
+.provider-accent-blackforest { border-inline-start-color: hsl(var(--provider-blackforest)); }
+.provider-accent-stability { border-inline-start-color: hsl(var(--provider-stability)); }
+.provider-accent-mistral { border-inline-start-color: hsl(var(--provider-mistral)); }
+.provider-accent-kuaishou { border-inline-start-color: hsl(var(--provider-kuaishou)); }
+.provider-accent-zhipu { border-inline-start-color: hsl(var(--provider-zhipu)); }
+
+/* Price color utilities */
+.price-low { color: hsl(142 60% 42%); }
+.price-mid { color: hsl(45 90% 50%); }
+.price-high { color: hsl(0 70% 55%); }
+
+/* Smooth transitions */
+@layer components {
+  .transition-fast {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .transition-normal {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-/* Gradient text */
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400;
-}
-.gradient-text-gold {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-orange-400 to-red-400;
-}
-.gradient-text-cyan {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500;
+::selection {
+  background: hsl(var(--primary) / 0.3);
 }

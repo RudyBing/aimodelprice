@@ -1,146 +1,163 @@
-import { ParticleBackground, FloatingOrbs, GradientBackground, Spotlight } from "@/components/aceternity/particle-background";
-import { GlowText } from "@/components/aceternity/glow-text";
-import { TypingEffect } from "@/components/aceternity/typing-effect";
-import { PriceComparisonCard } from "@/components/aceternity/price-comparison-card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { modelCategories, models } from "@/data/models";
+import Link from 'next/link';
+import { models, modelCategories, type AIModel } from '@/data/models';
+import { PriceComparisonCard } from '@/components/aceternity/price-comparison-card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import {
   Zap, TrendingDown, Sparkles, Globe, BarChart3, Shield,
-  ArrowRight, Cpu, Palette, Video, Mic, Code2,
-} from "lucide-react";
+  ArrowRight, Cpu, Palette, Video, Mic, Code2, Search,
+} from 'lucide-react';
+
+function getPriceNum(model: AIModel) {
+  const raw = Array.isArray(model.pricing)
+    ? (model.pricing[0]?.input || '')
+    : model.pricing.input;
+  const match = String(raw).match(/[\d.]+/);
+  return match ? parseFloat(match[0]) : Infinity;
+}
+
+function getPriceInput(model: AIModel) {
+  if (Array.isArray(model.pricing)) return model.pricing[0]?.input || '';
+  return model.pricing.input;
+}
 
 export default function Home() {
-  const stats = [
-    { label: "收录模型", value: models.length.toString(), icon: Cpu },
-    { label: "模型提供商", value: new Set(models.map((m) => m.provider)).size.toString(), icon: Globe },
-    { label: "分类覆盖", value: modelCategories.length.toString(), icon: BarChart3 },
-    { label: "价格更新", value: "每日", icon: TrendingDown },
-  ];
-
   const featuredModels = models.slice(0, 6);
 
-  const categoryIcons: Record<string, React.ReactNode> = {
-    text: <Zap className="h-5 w-5" />,
-    image: <Palette className="h-5 w-5" />,
-    video: <Video className="h-5 w-5" />,
-    audio: <Mic className="h-5 w-5" />,
-    code: <Code2 className="h-5 w-5" />,
-    multimodal: <Sparkles className="h-5 w-5" />,
-    "open-source": <Globe className="h-5 w-5" />,
+  const categoryIcons = {
+    text: <Zap className="h-4 w-4" />,
+    image: <Palette className="h-4 w-4" />,
+    video: <Video className="h-4 w-4" />,
+    audio: <Mic className="h-4 w-4" />,
+    code: <Code2 className="h-4 w-4" />,
+    multimodal: <Sparkles className="h-4 w-4" />,
+    'open-source': <Globe className="h-4 w-4" />,
   };
 
-  return (
-    <GradientBackground>
-      <Spotlight />
-      <ParticleBackground particleCount={60} speed={0.3} />
-      <FloatingOrbs />
+  const cheapestModel = models.reduce((prev, curr) =>
+    getPriceNum(curr) < getPriceNum(prev) ? curr : prev
+  );
 
-      {/* Hero Section */}
-      <section className="relative z-10 pt-32 pb-20 px-4">
+  const strongestModel = models.reduce((prev, curr) =>
+    (curr.benchmarkScore || 0) > (prev.benchmarkScore || 0) ? curr : prev
+  );
+
+  const longestContext = models.reduce((prev, curr) => {
+    const parseCtx = (m: AIModel) => {
+      const match = m.contextWindow.match(/(\d+)/);
+      return match ? parseInt(match[0]) : 0;
+    };
+    return parseCtx(curr) > parseCtx(prev) ? curr : prev;
+  });
+
+  return (
+    <div className="relative min-h-screen">
+      {/* Hero */}
+      <section className="relative pt-28 pb-16 px-4">
         <div className="mx-auto max-w-7xl text-center">
-          <Badge variant="premium" className="mb-6 px-4 py-1.5 text-sm">
-            <Sparkles className="w-4 h-4 mr-1" />
-            2025 年 AI 模型价格数据库
+          <Badge variant="premium" className="mb-6 px-3 py-1 text-xs">
+            <Sparkles className="w-3 h-3 mr-1" />
+            2026 年 AI 模型价格数据库
           </Badge>
 
-          <GlowText
-            text="AI 模型价格"
-            variant="rainbow"
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
-          />
-          <GlowText
-            text="对比站"
-            variant="gold"
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8"
-          />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
+            <span className="text-foreground">AI 模型价格</span>{' '}
+            <span className="text-blue-400">对比平台</span>
+          </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
             一站式对比主流 AI 模型的价格、性能、上下文窗口
           </p>
 
-          <TypingEffect
-            phrases={[
-              "OpenAI o3 Pro — $25/1M tokens",
-              "Claude Sonnet 4 — $3/1M tokens",
-              "Gemini 2.5 Flash — $0.15/1M tokens",
-              "DeepSeek Coder V3 — $0.10/1M tokens",
-            ]}
-            typingSpeed={60}
-            deletingSpeed={30}
-            pauseDuration={1500}
-            className="text-sm md:text-base text-blue-300 mb-10 font-mono"
-          />
+          <div className="max-w-md mx-auto mb-10">
+            <form action="/search" method="GET" className="relative">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input
+                name="q"
+                placeholder="搜索模型、厂商..."
+                className="pl-10 h-11 bg-secondary border-border/50 rounded-lg text-sm"
+              />
+            </form>
+          </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-16">
-            <Button size="lg" className="gap-2 glow-blue">
-              浏览所有模型
-              <ArrowRight className="h-4 w-4" />
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
+            <Button asChild size="lg" className="gap-2 h-11 px-6">
+              <Link href="/models">
+                浏览所有模型
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
-              <BarChart3 className="h-4 w-4" />
-              价格对比
+            <Button asChild size="lg" variant="outline" className="gap-2 h-11 px-6">
+              <Link href="/compare">
+                <BarChart3 className="h-4 w-4" />
+                价格对比
+              </Link>
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-            {stats.map((stat) => {
-              const Icon = stat.icon;
+          {/* Stats bar */}
+          <div className="max-w-2xl mx-auto">
+            <div className="inline-flex items-center gap-6 px-6 py-3 rounded-full bg-secondary/60 border border-border/40 text-xs text-muted-foreground">
+              <span className="flex items-center gap-1.5">
+                <Cpu className="h-3.5 w-3.5 text-blue-400" />
+                {models.length} 个模型
+              </span>
+              <span className="w-px h-3 bg-border" />
+              <span className="flex items-center gap-1.5">
+                <Globe className="h-3.5 w-3.5 text-blue-400" />
+                {new Set(models.map((m) => m.provider)).size} 家厂商
+              </span>
+              <span className="w-px h-3 bg-border" />
+              <span className="flex items-center gap-1.5">
+                <TrendingDown className="h-3.5 w-3.5 text-blue-400" />
+                每日更新
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="py-12 px-4">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-lg font-semibold mb-5 text-center">
+            按分类浏览
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-7 gap-2">
+            {modelCategories.map((cat) => {
+              const count = models.filter((m) => m.category === cat.id).length;
               return (
-                <Card key={stat.label} className="border-border/30 bg-card/30 backdrop-blur-sm">
-                  <CardContent className="p-4 text-center">
-                    <Icon className="h-5 w-5 text-blue-400 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground">{stat.label}</div>
-                  </CardContent>
-                </Card>
+                <Link
+                  key={cat.id}
+                  href="/models"
+                  className="flex flex-col items-center gap-1.5 p-3 rounded-lg border border-border/30 bg-card/40 hover:bg-secondary/60 hover:border-border/60 transition-normal cursor-pointer group"
+                >
+                  <div className="text-muted-foreground group-hover:text-foreground transition-fast">
+                    {categoryIcons[cat.id]}
+                  </div>
+                  <span className="text-xs font-medium">{cat.label}</span>
+                  <span className="text-[10px] text-muted-foreground">{count} 个</span>
+                </Link>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="relative z-10 py-16 px-4">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            按<span className="gradient-text">分类</span>浏览
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
-            {modelCategories.map((cat) => (
-              <Card
-                key={cat.id}
-                className="border-border/30 bg-card/30 backdrop-blur-sm hover:border-primary/30 hover:bg-card/50 transition-all cursor-pointer group"
-              >
-                <CardContent className="p-4 text-center">
-                  <div className="text-blue-400 mb-2 group-hover:scale-110 transition-transform">
-                    {categoryIcons[cat.id]}
-                  </div>
-                  <div className="text-sm font-medium">{cat.label}</div>
-                  <div className="text-xs text-muted-foreground mt-1">
-                    {models.filter((m) => m.category === cat.id).length} 个模型
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Featured Models */}
-      <section className="relative z-10 py-16 px-4">
+      <section className="py-12 px-4">
         <div className="mx-auto max-w-7xl">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold">
-              热门<span className="gradient-text">模型</span>
-            </h2>
-            <Button variant="ghost" className="gap-1 text-sm">
-              查看全部 <ArrowRight className="h-4 w-4" />
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-lg font-semibold">热门模型</h2>
+            <Button variant="ghost" size="sm" className="gap-1 text-sm h-8" asChild>
+              <Link href="/models">
+                查看全部
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
             </Button>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {featuredModels.map((model, i) => (
               <PriceComparisonCard key={model.id} model={model} index={i} />
             ))}
@@ -148,29 +165,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="relative z-10 py-20 px-4">
+      {/* Insights */}
+      <section className="py-12 px-4">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-2xl font-bold text-center mb-12">
-            为什么选择<span className="gradient-text">我们</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-lg font-semibold mb-6 text-center">价格洞察</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto">
+            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+              <TrendingDown className="h-5 w-5 text-green-400 mx-auto mb-2" />
+              <div className="text-xs text-muted-foreground mb-1">最便宜输入价格</div>
+              <div className="text-lg font-bold">{cheapestModel.name}</div>
+              <div className="text-xs font-mono text-green-400 mt-1">
+                {getPriceInput(cheapestModel)}
+              </div>
+            </div>
+            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+              <Shield className="h-5 w-5 text-blue-400 mx-auto mb-2" />
+              <div className="text-xs text-muted-foreground mb-1">最高性能评分</div>
+              <div className="text-lg font-bold">{strongestModel.name}</div>
+              <div className="text-xs font-mono text-blue-400 mt-1">
+                评分 {strongestModel.benchmarkScore}/100
+              </div>
+            </div>
+            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+              <Sparkles className="h-5 w-5 text-purple-400 mx-auto mb-2" />
+              <div className="text-xs text-muted-foreground mb-1">最长上下文</div>
+              <div className="text-lg font-bold">{longestContext.name}</div>
+              <div className="text-xs font-mono text-purple-400 mt-1">
+                {longestContext.contextWindow}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why us */}
+      <section className="py-16 px-4">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-lg font-semibold mb-8 text-center">为什么选择我们</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { icon: Shield, title: "数据准确", desc: "每日更新价格数据，确保信息准确可靠" },
-              { icon: TrendingDown, title: "全面对比", desc: "多维度对比价格、性能、上下文窗口" },
-              { icon: Sparkles, title: "发现好模型", desc: "帮助你找到最适合且最具性价比的模型" },
+              { icon: Shield, title: '数据准确', desc: '每日更新价格数据，确保信息准确可靠' },
+              { icon: TrendingDown, title: '全面对比', desc: '多维度对比价格、性能、上下文窗口' },
+              { icon: Sparkles, title: '发现好模型', desc: '帮助你找到最合适且最具性价比的模型' },
             ].map((feature) => (
-              <Card key={feature.title} className="border-border/30 bg-card/30 backdrop-blur-sm text-center">
-                <CardContent className="pt-8">
-                  <feature.icon className="h-10 w-10 text-blue-400 mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.desc}</p>
-                </CardContent>
-              </Card>
+              <div key={feature.title} className="rounded-lg border border-border/30 bg-card/30 p-6 text-center">
+                <feature.icon className="h-8 w-8 text-blue-400 mx-auto mb-3" />
+                <h3 className="text-sm font-semibold mb-1.5">{feature.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{feature.desc}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
-    </GradientBackground>
+    </div>
   );
 }

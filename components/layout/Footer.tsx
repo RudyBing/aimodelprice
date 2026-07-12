@@ -1,64 +1,63 @@
-import Link from "next/link";
-import { Zap, Github, Twitter } from "lucide-react";
+﻿import Link from 'next/link';
+import { Zap } from 'lucide-react';
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="border-t border-border/30 bg-background/50 backdrop-blur-sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
-                <Zap className="h-4 w-4 text-white" />
+    <footer className="border-t border-border/30 bg-background/40 backdrop-blur-sm">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div className="col-span-2 md:col-span-1">
+            <Link href="/" className="flex items-center gap-2 mb-3">
+              <div className="flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br from-blue-500 to-purple-600">
+                <Zap className="h-3.5 w-3.5 text-white" />
               </div>
-              <span className="text-base font-bold">
+              <span className="text-sm font-bold">
                 AI<span className="text-blue-400">Model</span>Prices
               </span>
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs text-muted-foreground leading-relaxed">
               一站式 AI 模型价格对比平台，帮你找到最具性价比的 AI 模型。
             </p>
           </div>
 
+          {/* Navigation */}
           <div>
-            <h4 className="text-sm font-semibold mb-4">浏览</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/models" className="hover:text-foreground transition-colors">模型列表</Link></li>
-              <li><Link href="/compare" className="hover:text-foreground transition-colors">价格对比</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">按分类</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">最近更新</Link></li>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">浏览</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">模型列表</Link></li>
+              <li><Link href="/compare" className="text-muted-foreground hover:text-foreground transition-fast">价格对比</Link></li>
+              <li><Link href="/search" className="text-muted-foreground hover:text-foreground transition-fast">搜索</Link></li>
             </ul>
           </div>
 
+          {/* Providers */}
           <div>
-            <h4 className="text-sm font-semibold mb-4">提供商</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground transition-colors">OpenAI</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">Anthropic</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">Google</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">Meta</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">DeepSeek</Link></li>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">提供商</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">OpenAI</Link></li>
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">Anthropic</Link></li>
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">Google</Link></li>
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">Meta</Link></li>
+              <li><Link href="/models" className="text-muted-foreground hover:text-foreground transition-fast">DeepSeek</Link></li>
             </ul>
           </div>
 
+          {/* About */}
           <div>
-            <h4 className="text-sm font-semibold mb-4">关于</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-foreground transition-colors">关于我们</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">数据更新</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">提交模型</Link></li>
-              <li>
-                <div className="flex gap-3 mt-3">
-                  <Github className="h-5 w-5 cursor-pointer hover:text-foreground transition-colors" />
-                  <Twitter className="h-5 w-5 cursor-pointer hover:text-foreground transition-colors" />
-                </div>
-              </li>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">关于</h4>
+            <ul className="space-y-2 text-sm">
+              <li><span className="text-muted-foreground">数据每日更新</span></li>
+              <li><span className="text-muted-foreground">覆盖 30+ AI 模型</span></li>
+              <li><span className="text-muted-foreground">11 家主要厂商</span></li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border/30 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} AIModelPrices. 数据仅供参考，实际价格以官方为准。</p>
+        <div className="mt-8 pt-6 border-t border-border/20 text-center text-xs text-muted-foreground">
+          <p>© {currentYear} AIModelPrices. 数据仅供参考，实际价格以官方为准。</p>
         </div>
       </div>
     </footer>

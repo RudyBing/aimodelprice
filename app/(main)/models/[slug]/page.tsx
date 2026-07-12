@@ -1,31 +1,54 @@
-"use client";
+﻿'use client';
 
-import { useParams, notFound } from "next/navigation";
-import Link from "next/link";
-import { models, getModelBySlug } from "@/data/models";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+import { models, getModelBySlug } from '@/data/models';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import {
   ArrowLeft, ExternalLink, Sparkles, Zap, Clock,
   Layers, CheckCircle2, AlertCircle, BarChart3, Globe,
-} from "lucide-react";
+} from 'lucide-react';
 
 function getPricingInput(pricing: any): string {
-  if (Array.isArray(pricing)) return pricing[0]?.input || "";
+  if (Array.isArray(pricing)) return pricing[0]?.input || '';
   return pricing.input;
 }
 
 function getPricingOutput(pricing: any): string {
-  if (Array.isArray(pricing)) return pricing[0]?.output || "";
+  if (Array.isArray(pricing)) return pricing[0]?.output || '';
   return pricing.output;
 }
 
-function getPricingUnit(pricing: any): string {
-  if (Array.isArray(pricing)) return pricing[0]?.unit || "";
-  return pricing.unit || "";
-}
+const providerAccentClass: Record<string, string> = {
+  'OpenAI': 'provider-accent-openai',
+  'Anthropic': 'provider-accent-anthropic',
+  'Google': 'provider-accent-google',
+  'Meta': 'provider-accent-meta',
+  'Alibaba': 'provider-accent-alibaba',
+  'DeepSeek': 'provider-accent-deepseek',
+  'Black Forest Labs': 'provider-accent-blackforest',
+  'Stability': 'provider-accent-stability',
+  'Mistral': 'provider-accent-mistral',
+  'Kuaishou': 'provider-accent-kuaishou',
+  'Zhipu': 'provider-accent-zhipu',
+};
+
+const providerDotClass: Record<string, string> = {
+  'OpenAI': 'bg-[hsl(var(--provider-openai))]',
+  'Anthropic': 'bg-[hsl(var(--provider-anthropic))]',
+  'Google': 'bg-[hsl(var(--provider-google))]',
+  'Meta': 'bg-[hsl(var(--provider-meta))]',
+  'Alibaba': 'bg-[hsl(var(--provider-alibaba))]',
+  'DeepSeek': 'bg-[hsl(var(--provider-deepseek))]',
+  'Black Forest Labs': 'bg-[hsl(var(--provider-blackforest))]',
+  'Stability': 'bg-[hsl(var(--provider-stability))]',
+  'Mistral': 'bg-[hsl(var(--provider-mistral))]',
+  'Kuaishou': 'bg-[hsl(var(--provider-kuaishou))]',
+  'Zhipu': 'bg-[hsl(var(--provider-zhipu))]',
+};
 
 export default function ModelDetailPage() {
   const params = useParams();
@@ -33,144 +56,131 @@ export default function ModelDetailPage() {
   const model = getModelBySlug(slug);
 
   if (!model) {
-    notFound();
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-2">模型未找到</h1>
+          <p className="text-muted-foreground mb-6">该模型不存在或已被移除</p>
+          <Button asChild>
+            <Link href="/models">返回模型列表</Link>
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   const relatedModels = models
     .filter((m) => m.category === model.category && m.id !== model.id)
     .slice(0, 4);
 
-  const providerColors: Record<string, string> = {
-    OpenAI: "from-orange-500 to-red-500",
-    Anthropic: "from-orange-400 to-amber-500",
-    Google: "from-blue-500 to-green-500",
-    Meta: "from-blue-600 to-blue-800",
-    Alibaba: "from-orange-600 to-red-600",
-    DeepSeek: "from-indigo-500 to-purple-600",
-    "Black Forest Labs": "from-purple-500 to-pink-500",
-    Stability: "from-green-500 to-teal-500",
-    Mistral: "from-blue-400 to-cyan-500",
-    Kuaishou: "from-orange-500 to-yellow-500",
-    Zhipu: "from-violet-500 to-purple-600",
-  };
-
-  const color = providerColors[model.provider] || "from-gray-500 to-gray-600";
+  const accentClass = providerAccentClass[model.provider] || '';
+  const dotClass = providerDotClass[model.provider] || 'bg-gray-500';
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 py-12 px-4">
+    <div className="relative min-h-screen py-12 px-4">
       <div className="mx-auto max-w-5xl">
-        <Link href="/models">
-          <Button variant="ghost" size="sm" className="gap-2 mb-8 text-muted-foreground">
-            <ArrowLeft className="h-4 w-4" />
+        {/* Back button */}
+        <Link href="/models" className="inline-block mb-8">
+          <Button variant="ghost" size="sm" className="gap-1.5 text-muted-foreground h-8">
+            <ArrowLeft className="h-3.5 w-3.5" />
             返回模型列表
           </Button>
         </Link>
 
+        {/* Model header */}
         <div className="mb-8">
-          <div className="flex flex-wrap items-center gap-3 mb-3">
-            <Badge variant="outline" className="bg-background/30 backdrop-blur-sm">
-              <span className={cn("inline-block w-2 h-2 rounded-full mr-1 bg-gradient-to-r", color)} />
-              {model.provider}
-            </Badge>
-            <Badge variant="secondary" className="bg-background/30 backdrop-blur-sm">
-              {model.released && `发布于 ${model.released}`}
-            </Badge>
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <div className={cn('flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary/60 border border-border/30 text-xs')}>
+              <span className={cn('inline-block w-2 h-2 rounded-full', dotClass)} />
+              <span className="font-medium">{model.provider}</span>
+            </div>
+            {model.released && (
+              <Badge variant="secondary" className="text-xs h-5">
+                发布于 {model.released}
+              </Badge>
+            )}
             {model.updatedAt && (
-              <Badge variant="outline" className="text-xs bg-background/20">
+              <Badge variant="outline" className="text-xs h-5 bg-secondary/30">
                 更新于 {model.updatedAt}
               </Badge>
             )}
           </div>
 
-          <h1 className="text-4xl font-bold mb-3">{model.name}</h1>
-          <p className="text-lg text-muted-foreground">{model.description}</p>
+          <h1 className="text-3xl font-bold tracking-tight mb-2">{model.name}</h1>
+          <p className="text-sm text-muted-foreground leading-relaxed">{model.description}</p>
         </div>
 
+        {/* Main content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
-          <div className="lg:col-span-2 space-y-6">
-            <Card className="border-border/30 bg-card/30 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-yellow-400" />
+          {/* Left column */}
+          <div className="lg:col-span-2 space-y-5">
+            {/* Pricing */}
+            <Card className="border-border/40 bg-card/60">
+              <CardContent className="p-5">
+                <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
+                  <Zap className="h-4 w-4 text-yellow-400" />
                   价格信息
                 </h2>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between p-3 rounded-lg bg-background/30">
-                    <span className="text-muted-foreground">输入价格</span>
-                    <span className="font-mono font-bold text-foreground">{getPricingInput(model.pricing)}</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                    <div className="text-xs text-muted-foreground mb-1">输入价格</div>
+                    <div className="font-mono font-bold text-sm">{getPricingInput(model.pricing)}</div>
                   </div>
                   {getPricingOutput(model.pricing) && (
-                    <div className="flex items-center justify-between p-3 rounded-lg bg-background/30">
-                      <span className="text-muted-foreground">输出价格</span>
-                      <span className="font-mono font-bold text-foreground">{getPricingOutput(model.pricing)}</span>
-                    </div>
-                  )}
-                  {getPricingUnit(model.pricing) && (
-                    <div className="flex items-center justify-between p-3 rounded-lg bg-background/30">
-                      <span className="text-muted-foreground">计费单位</span>
-                      <span className="text-foreground">{getPricingUnit(model.pricing)}</span>
+                    <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                      <div className="text-xs text-muted-foreground mb-1">输出价格</div>
+                      <div className="font-mono font-bold text-sm">{getPricingOutput(model.pricing)}</div>
                     </div>
                   )}
                 </div>
+                {getPricingOutput(model.pricing) && (
+                  <div className="mt-3 p-2 rounded-md bg-background/30 border border-border/20 text-xs text-muted-foreground">
+                    {getPricingUnit(model.pricing)}
+                  </div>
+                )}
               </CardContent>
             </Card>
 
-            <Card className="border-border/30 bg-card/30 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <Layers className="h-5 w-5 text-blue-400" />
-                  核心优势
+            {/* Specs */}
+            <Card className="border-border/40 bg-card/60">
+              <CardContent className="p-5">
+                <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
+                  <Layers className="h-4 w-4 text-blue-400" />
+                  技术规格
                 </h2>
-                <div className="flex flex-wrap gap-2">
-                  {model.strengths.map((s) => (
-                    <Badge key={s} variant="outline" className="bg-background/20">
-                      <CheckCircle2 className="h-3 w-3 mr-1 text-green-400" />
-                      {s}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border/30 bg-card/30 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <BarChart3 className="h-5 w-5 text-purple-400" />
-                  模型规格
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-3 rounded-lg bg-background/30">
-                    <div className="text-sm text-muted-foreground mb-1">上下文窗口</div>
-                    <div className="font-semibold flex items-center gap-2">
-                      <Clock className="h-4 w-4 text-blue-400" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                    <div className="text-xs text-muted-foreground mb-1">上下文窗口</div>
+                    <div className="font-semibold text-sm flex items-center gap-1.5">
+                      <Clock className="h-3.5 w-3.5 text-blue-400" />
                       {model.contextWindow}
                     </div>
                   </div>
-                  <div className="p-3 rounded-lg bg-background/30">
-                    <div className="text-sm text-muted-foreground mb-1">多模态</div>
-                    <div className="font-semibold flex items-center gap-2">
+                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                    <div className="text-xs text-muted-foreground mb-1">多模态</div>
+                    <div className="font-semibold text-sm flex items-center gap-1.5">
                       {model.multimodal ? (
-                        <CheckCircle2 className="h-4 w-4 text-green-400" />
+                        <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />
                       ) : (
-                        <AlertCircle className="h-4 w-4 text-muted-foreground" />
+                        <AlertCircle className="h-3.5 w-3.5 text-muted-foreground" />
                       )}
-                      {model.multimodal ? "支持" : "不支持"}
+                      {model.multimodal ? '支持' : '不支持'}
                     </div>
                   </div>
                   {model.benchmarkScore && (
-                    <div className="p-3 rounded-lg bg-background/30">
-                      <div className="text-sm text-muted-foreground mb-1">基准评分</div>
-                      <div className="font-semibold flex items-center gap-2">
-                        <BarChart3 className="h-4 w-4 text-purple-400" />
+                    <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                      <div className="text-xs text-muted-foreground mb-1">基准评分</div>
+                      <div className="font-semibold text-sm flex items-center gap-1.5">
+                        <BarChart3 className="h-3.5 w-3.5 text-purple-400" />
                         {model.benchmarkScore}/100
                       </div>
                     </div>
                   )}
-                  {model.freeTier && model.freeTier !== "无" && (
-                    <div className="p-3 rounded-lg bg-background/30">
-                      <div className="text-sm text-muted-foreground mb-1">免费额度</div>
-                      <div className="font-semibold flex items-center gap-2">
-                        <Sparkles className="h-4 w-4 text-yellow-400" />
+                  {model.freeTier && model.freeTier !== '无' && (
+                    <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                      <div className="text-xs text-muted-foreground mb-1">免费额度</div>
+                      <div className="font-semibold text-sm flex items-center gap-1.5">
+                        <Sparkles className="h-3.5 w-3.5 text-yellow-400" />
                         {model.freeTier}
                       </div>
                     </div>
@@ -178,32 +188,48 @@ export default function ModelDetailPage() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Strengths */}
+            <Card className="border-border/40 bg-card/60">
+              <CardContent className="p-5">
+                <h2 className="text-base font-semibold mb-3">擅长领域</h2>
+                <div className="flex flex-wrap gap-2">
+                  {model.strengths.map((s) => (
+                    <Badge key={s} variant="secondary" className="text-xs px-2.5 py-1">
+                      {s}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="space-y-6">
-            <Card className="border-border/30 bg-card/30 backdrop-blur-sm sticky top-24">
-              <CardContent className="p-6 space-y-4">
+          {/* Right sidebar */}
+          <div className="space-y-5">
+            <Card className="border-border/40 bg-card/60 sticky top-20">
+              <CardContent className="p-5 space-y-4">
                 <div>
-                  <div className="text-sm text-muted-foreground mb-1">提供商</div>
-                  <div className="font-semibold">{model.provider}</div>
+                  <div className="text-xs text-muted-foreground mb-1">提供商</div>
+                  <div className="font-semibold text-sm flex items-center gap-1.5">
+                    <span className={cn('inline-block w-2 h-2 rounded-full', dotClass)} />
+                    {model.provider}
+                  </div>
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground mb-1">类别</div>
-                  <Badge variant="outline" className="bg-background/20">{model.category}</Badge>
+                  <div className="text-xs text-muted-foreground mb-1">类别</div>
+                  <Badge variant="outline" className="bg-secondary/40 text-xs">
+                    {model.category}
+                  </Badge>
                 </div>
-                <div>
-                  <div className="text-sm text-muted-foreground mb-1">官网</div>
-                  <Button className="w-full gap-2" asChild>
+                <div className="pt-2 space-y-2">
+                  <Button className="w-full gap-2 h-9" asChild>
                     <a href={model.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4" />访问官网
+                      <ExternalLink className="h-3.5 w-3.5" />访问官网
                     </a>
                   </Button>
-                </div>
-                <div>
-                  <div className="text-sm text-muted-foreground mb-1">API 文档</div>
-                  <Button variant="outline" className="w-full gap-2" asChild>
+                  <Button variant="outline" className="w-full gap-2 h-9" asChild>
                     <a href={model.url} target="_blank" rel="noopener noreferrer">
-                      <Globe className="h-4 w-4" />查看文档
+                      <Globe className="h-3.5 w-3.5" />查看文档
                     </a>
                   </Button>
                 </div>
@@ -212,20 +238,21 @@ export default function ModelDetailPage() {
           </div>
         </div>
 
+        {/* Related models */}
         {relatedModels.length > 0 && (
           <div>
-            <h2 className="text-xl font-semibold mb-4">相关模型</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <h2 className="text-lg font-semibold mb-4">相关模型</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {relatedModels.map((m) => (
-                <Link key={m.id} href={`/models/${m.slug}`}>
-                  <Card className="border-border/30 bg-card/30 backdrop-blur-sm hover:border-primary/30 transition-all h-full">
+                                 <Link key={m.id} href={`/models/${m.slug}`}>
+                  <Card className="border-border/30 bg-card/40 hover:bg-secondary/40 hover:border-border/50 transition-normal h-full">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
                         <span className="font-semibold text-sm">{m.name}</span>
-                        <Badge variant="secondary" className="text-xs">{m.provider}</Badge>
+                        <Badge variant="secondary" className="text-[10px] h-4 px-1.5">{m.provider}</Badge>
                       </div>
-                      <p className="text-xs text-muted-foreground line-clamp-2">{m.description}</p>
-                      <div className="mt-2 text-xs font-mono text-blue-400">{getPricingInput(m.pricing)}</div>
+                      <p className="text-xs text-muted-foreground line-clamp-2 mb-2">{m.description}</p>
+                      <div className="text-xs font-mono text-blue-400">{getPricingInput(m.pricing)}</div>
                     </CardContent>
                   </Card>
                 </Link>
@@ -236,4 +263,9 @@ export default function ModelDetailPage() {
       </div>
     </div>
   );
+}
+
+function getPricingUnit(pricing: any): string {
+  if (Array.isArray(pricing)) return pricing[0]?.unit || '';
+  return pricing.unit || '';
 }
