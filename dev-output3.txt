@@ -1,0 +1,13 @@
+﻿▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3003
+- Network:       http://192.168.0.101:3003
+✓ Ready in 1730ms
+node.exe : ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopac
+k. Builds or page loads may be slower as a result.
+At D:\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠ Turbopack's f...er as a result.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

@@ -1,0 +1,7 @@
+﻿node.exe : error: unknown option '--webpack'
+At D:\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: unknown option '--webpack':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

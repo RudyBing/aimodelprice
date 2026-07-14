@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useState, useMemo } from 'react';
 import { models, modelCategories, type ModelCategory, type AIModel } from '@/data/models';
@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
-import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X } from 'lucide-react';
+import { cn } from '@/lib/utils';import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X, Filter } from 'lucide-react';
 
 const categoryIcons: Record<ModelCategory, React.ReactNode> = {
   text: <Zap className="h-3.5 w-3.5" />,
@@ -19,10 +19,21 @@ const categoryIcons: Record<ModelCategory, React.ReactNode> = {
   'open-source': <Globe className="h-3.5 w-3.5" />,
 };
 
+const categoryLabels: Record<ModelCategory, string> = {
+  text: '文本模型',
+  image: '图像生成',
+  video: '视频生成',
+  audio: '音频处理',
+  code: '代码助手',
+  multimodal: '多模态',
+  'open-source': '开源模型',
+};
+
 export default function ModelsPage() {
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState<ModelCategory | 'all'>('all');
   const [filterProvider, setFilterProvider] = useState<string>('all');
+  const [showFilters, setShowFilters] = useState(false);
 
   const providers = useMemo(() => [...new Set(models.map((m) => m.provider))].sort(), []);
 
@@ -31,7 +42,8 @@ export default function ModelsPage() {
       const matchSearch = !search ||
         m.name.toLowerCase().includes(search.toLowerCase()) ||
         m.provider.toLowerCase().includes(search.toLowerCase()) ||
-        m.description.toLowerCase().includes(search.toLowerCase());
+        m.description.toLowerCase().includes(search.toLowerCase()) ||
+        m.strengths.some((s) => s.toLowerCase().includes(search.toLowerCase()));
       const matchCategory = filterCategory === 'all' || m.category === filterCategory;
       const matchProvider = filterProvider === 'all' || m.provider === filterProvider;
       return matchSearch && matchCategory && matchProvider;
@@ -70,23 +82,36 @@ export default function ModelsPage() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="pl-9 h-10 bg-secondary/50 border-border/40 rounded-lg text-sm"
+                aria-label="搜索模型"
               />
             </div>
-            <select
-              value={filterProvider}
-              onChange={(e) => setFilterProvider(e.target.value)}
-              className="h-10 rounded-lg border border-border/40 bg-secondary/50 px-3 text-sm text-muted-foreground appearance-none cursor-pointer"
-              style={{ backgroundImage: 'none' }}
-            >
-              <option value="all">所有提供商</option>
-              {providers.map((p) => (
-                <option key={p} value={p}>{p}</option>
-              ))}
-            </select>
+            <div className="flex gap-2">
+              <select
+                value={filterProvider}
+                onChange={(e) => setFilterProvider(e.target.value)}
+                className="h-10 rounded-lg border border-border/40 bg-secondary/50 px-3 text-sm text-muted-foreground appearance-none cursor-pointer min-w-[140px]"
+                aria-label="按提供商筛选"
+                style={{ backgroundImage: 'none' }}
+              >
+                <option value="all">所有提供商</option>
+                {providers.map((p) => (
+                  <option key={p} value={p}>{p}</option>
+                ))}
+              </select>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-10 px-2.5 md:hidden"
+                onClick={() => setShowFilters(!showFilters)}
+                aria-label="切换筛选器"
+              >
+                <Filter className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
 
           {/* Category tabs */}
-          <div className="flex gap-1.5 flex-wrap">
+          <div className={cn('flex gap-1.5 flex-wrap', showFilters ? 'block' : 'hidden md:block')}>
             <Button
               variant={filterCategory === 'all' ? 'default' : 'ghost'}
               size="sm"
@@ -113,7 +138,7 @@ export default function ModelsPage() {
           {hasFilters && (
             <div className="flex items-center justify-between text-xs">
               <span className="text-muted-foreground">
-                找到 <span className="text-foreground font-medium">{filteredModels.length}</span> 个模型
+                找到 <span className="text-foreground font-medium" aria-live="polite">{filteredModels.length}</span> 个模型
               </span>
               <Button variant="ghost" size="sm" onClick={clearFilters} className="h-6 px-2 text-xs gap-1">
                 <X className="h-3 w-3" />清除筛选
@@ -128,7 +153,8 @@ export default function ModelsPage() {
         {filteredModels.length === 0 ? (
           <div className="text-center py-20">
             <Search className="h-12 w-12 text-muted-foreground/30 mx-auto mb-4" />
-            <p className="text-muted-foreground mb-4">没有找到匹配的模型</p>
+            <h3 className="text-lg font-semibold mb-2">没有找到匹配的模型</h3>
+            <p className="text-muted-foreground mb-4 text-sm">试试其他关键词或清除筛选条件</p>
             <Button variant="link" onClick={clearFilters}>清除筛选条件</Button>
           </div>
         ) : (
@@ -143,4 +169,3 @@ export default function ModelsPage() {
   );
 }
 
-import { cn } from '@/lib/utils';

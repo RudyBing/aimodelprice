@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -79,6 +79,15 @@ export default function ModelDetailPage() {
   return (
     <div className="relative min-h-screen py-12 px-4">
       <div className="mx-auto max-w-5xl">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-6">
+          <Link href="/" className="hover:text-foreground transition-fast">首页</Link>
+          <span>/</span>
+          <Link href="/models" className="hover:text-foreground transition-fast">模型列表</Link>
+          <span>/</span>
+          <span className="text-foreground font-medium">{model.name}</span>
+        </div>
+
         {/* Back button */}
         <Link href="/models" className="inline-block mb-8">
           <Button variant="ghost" size="sm" className="gap-1.5 text-muted-foreground h-8">
@@ -107,7 +116,7 @@ export default function ModelDetailPage() {
           </div>
 
           <h1 className="text-3xl font-bold tracking-tight mb-2">{model.name}</h1>
-          <p className="text-sm text-muted-foreground leading-relaxed">{model.description}</p>
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">{model.description}</p>
         </div>
 
         {/* Main content */}
@@ -115,47 +124,37 @@ export default function ModelDetailPage() {
           {/* Left column */}
           <div className="lg:col-span-2 space-y-5">
             {/* Pricing */}
-            <Card className="border-border/40 bg-card/60">
+            <Card className={cn('border-border/40 bg-card/60', accentClass, '[border-inline-start-width:3px]')}>
               <CardContent className="p-5">
                 <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
                   <Zap className="h-4 w-4 text-yellow-400" />
                   价格信息
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
                     <div className="text-xs text-muted-foreground mb-1">输入价格</div>
-                    <div className="font-mono font-bold text-sm">{getPricingInput(model.pricing)}</div>
+                    <div className="font-mono text-sm font-semibold">{getPricingInput(model.pricing)}</div>
                   </div>
-                  {getPricingOutput(model.pricing) && (
-                    <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
-                      <div className="text-xs text-muted-foreground mb-1">输出价格</div>
-                      <div className="font-mono font-bold text-sm">{getPricingOutput(model.pricing)}</div>
-                    </div>
-                  )}
+                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                    <div className="text-xs text-muted-foreground mb-1">输出价格</div>
+                    <div className="font-mono text-sm font-semibold">{getPricingOutput(model.pricing)}</div>
+                  </div>
+                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
+                    <div className="text-xs text-muted-foreground mb-1">上下文窗口</div>
+                    <div className="font-mono text-sm font-semibold">{model.contextWindow}</div>
+                  </div>
                 </div>
-                {getPricingOutput(model.pricing) && (
-                  <div className="mt-3 p-2 rounded-md bg-background/30 border border-border/20 text-xs text-muted-foreground">
-                    {getPricingUnit(model.pricing)}
-                  </div>
-                )}
               </CardContent>
             </Card>
 
-            {/* Specs */}
+            {/* Capabilities */}
             <Card className="border-border/40 bg-card/60">
               <CardContent className="p-5">
                 <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
                   <Layers className="h-4 w-4 text-blue-400" />
-                  技术规格
+                  能力概览
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
-                    <div className="text-xs text-muted-foreground mb-1">上下文窗口</div>
-                    <div className="font-semibold text-sm flex items-center gap-1.5">
-                      <Clock className="h-3.5 w-3.5 text-blue-400" />
-                      {model.contextWindow}
-                    </div>
-                  </div>
                   <div className="p-3 rounded-md bg-secondary/50 border border-border/30">
                     <div className="text-xs text-muted-foreground mb-1">多模态</div>
                     <div className="font-semibold text-sm flex items-center gap-1.5">
@@ -206,7 +205,7 @@ export default function ModelDetailPage() {
 
           {/* Right sidebar */}
           <div className="space-y-5">
-            <Card className="border-border/40 bg-card/60 sticky top-20">
+            <Card className={cn('border-border/40 bg-card/60 sticky top-20', accentClass, '[border-inline-start-width:3px]')}>
               <CardContent className="p-5 space-y-4">
                 <div>
                   <div className="text-xs text-muted-foreground mb-1">提供商</div>
@@ -223,12 +222,12 @@ export default function ModelDetailPage() {
                 </div>
                 <div className="pt-2 space-y-2">
                   <Button className="w-full gap-2 h-9" asChild>
-                    <a href={model.url} target="_blank" rel="noopener noreferrer">
+                    <a href={model.url} target="_blank" rel="noopener noreferrer" aria-label={'访问 ' + model.name + ' 官网'}>
                       <ExternalLink className="h-3.5 w-3.5" />访问官网
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full gap-2 h-9" asChild>
-                    <a href={model.url} target="_blank" rel="noopener noreferrer">
+                    <a href={model.url} target="_blank" rel="noopener noreferrer" aria-label={'查看 ' + model.name + ' 文档'}>
                       <Globe className="h-3.5 w-3.5" />查看文档
                     </a>
                   </Button>
@@ -244,8 +243,8 @@ export default function ModelDetailPage() {
             <h2 className="text-lg font-semibold mb-4">相关模型</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {relatedModels.map((m) => (
-                                 <Link key={m.id} href={`/models/${m.slug}`}>
-                  <Card className="border-border/30 bg-card/40 hover:bg-secondary/40 hover:border-border/50 transition-normal h-full">
+                <Link key={m.id} href={`/models/${m.slug}`}>
+                  <Card className="border-border/30 bg-card/40 hover:bg-secondary/40 hover:border-border/50 transition-normal h-full focus-within:ring-2 focus-within:ring-primary rounded-lg">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
                         <span className="font-semibold text-sm">{m.name}</span>

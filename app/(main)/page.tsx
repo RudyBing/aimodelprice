@@ -25,7 +25,7 @@ function getPriceInput(model: AIModel) {
 export default function Home() {
   const featuredModels = models.slice(0, 6);
 
-  const categoryIcons = {
+  const categoryIcons: Record<string, React.ReactNode> = {
     text: <Zap className="h-4 w-4" />,
     image: <Palette className="h-4 w-4" />,
     video: <Video className="h-4 w-4" />,
@@ -51,38 +51,44 @@ export default function Home() {
     return parseCtx(curr) > parseCtx(prev) ? curr : prev;
   });
 
+  const providerCount = new Set(models.map((m) => m.provider)).size;
+
   return (
     <div className="relative min-h-screen">
-      {/* Hero */}
-      <section className="relative pt-28 pb-16 px-4">
-        <div className="mx-auto max-w-7xl text-center">
-          <Badge variant="premium" className="mb-6 px-3 py-1 text-xs">
+      {/* Hero Section */}
+      <section className="relative pt-28 pb-16 px-4 overflow-hidden">
+        {/* Subtle background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent pointer-events-none" />
+
+        <div className="mx-auto max-w-7xl text-center relative">
+          <Badge variant="premium" className="mb-6 px-3 py-1 text-xs animate-fade-in-up">
             <Sparkles className="w-3 h-3 mr-1" />
             2026 年 AI 模型价格数据库
           </Badge>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }} id="hero-heading">
             <span className="text-foreground">AI 模型价格</span>{' '}
-            <span className="text-blue-400">对比平台</span>
+            <span className="gradient-text-hero">对比平台</span>
           </h1>
 
-          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             一站式对比主流 AI 模型的价格、性能、上下文窗口
           </p>
 
-          <div className="max-w-md mx-auto mb-10">
+          <div className="max-w-md mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <form action="/search" method="GET" className="relative">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 name="q"
                 placeholder="搜索模型、厂商..."
                 className="pl-10 h-11 bg-secondary border-border/50 rounded-lg text-sm"
+                aria-label="搜索模型"
               />
             </form>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
-            <Button asChild size="lg" className="gap-2 h-11 px-6">
+          <div className="flex flex-wrap justify-center gap-3 mb-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <Button asChild size="lg" className="gap-2 h-11 px-6 glow-primary">
               <Link href="/models">
                 浏览所有模型
                 <ArrowRight className="h-4 w-4" />
@@ -97,7 +103,7 @@ export default function Home() {
           </div>
 
           {/* Stats bar */}
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             <div className="inline-flex items-center gap-6 px-6 py-3 rounded-full bg-secondary/60 border border-border/40 text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5">
                 <Cpu className="h-3.5 w-3.5 text-blue-400" />
@@ -106,7 +112,7 @@ export default function Home() {
               <span className="w-px h-3 bg-border" />
               <span className="flex items-center gap-1.5">
                 <Globe className="h-3.5 w-3.5 text-blue-400" />
-                {new Set(models.map((m) => m.provider)).size} 家厂商
+                {providerCount} 家厂商
               </span>
               <span className="w-px h-3 bg-border" />
               <span className="flex items-center gap-1.5">
@@ -119,9 +125,9 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" aria-labelledby="categories-heading">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-lg font-semibold mb-5 text-center">
+          <h2 id="categories-heading" className="text-lg font-semibold mb-5 text-center">
             按分类浏览
           </h2>
           <div className="grid grid-cols-3 md:grid-cols-7 gap-2">
@@ -131,7 +137,8 @@ export default function Home() {
                 <Link
                   key={cat.id}
                   href="/models"
-                  className="flex flex-col items-center gap-1.5 p-3 rounded-lg border border-border/30 bg-card/40 hover:bg-secondary/60 hover:border-border/60 transition-normal cursor-pointer group"
+                  className="flex flex-col items-center gap-1.5 p-3 rounded-lg border border-border/30 bg-card/40 hover:bg-secondary/60 hover:border-border/60 transition-normal cursor-pointer group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  aria-label={`浏览  -  个模型`}
                 >
                   <div className="text-muted-foreground group-hover:text-foreground transition-fast">
                     {categoryIcons[cat.id]}
@@ -146,10 +153,10 @@ export default function Home() {
       </section>
 
       {/* Featured Models */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" aria-labelledby="featured-heading">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg font-semibold">热门模型</h2>
+            <h2 id="featured-heading" className="text-lg font-semibold">热门模型</h2>
             <Button variant="ghost" size="sm" className="gap-1 text-sm h-8" asChild>
               <Link href="/models">
                 查看全部
@@ -166,9 +173,9 @@ export default function Home() {
       </section>
 
       {/* Insights */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" aria-labelledby="insights-heading">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-lg font-semibold mb-6 text-center">价格洞察</h2>
+          <h2 id="insights-heading" className="text-lg font-semibold mb-6 text-center">价格洞察</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto">
             <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
               <TrendingDown className="h-5 w-5 text-green-400 mx-auto mb-2" />
@@ -199,9 +206,9 @@ export default function Home() {
       </section>
 
       {/* Why us */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" aria-labelledby="why-heading">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-lg font-semibold mb-8 text-center">为什么选择我们</h2>
+          <h2 id="why-heading" className="text-lg font-semibold mb-8 text-center">为什么选择我们</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { icon: Shield, title: '数据准确', desc: '每日更新价格数据，确保信息准确可靠' },
