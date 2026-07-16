@@ -17,7 +17,8 @@ import {
 } from 'lucide-react';
 import { useState, useRef, useEffect, useCallback } from 'react';
 
-const navItems = [
+// Module-level constant
+const NAV_ITEMS = [
   { href: '/', label: '首页', icon: Zap },
   { href: '/models', label: '模型列表', icon: Grid3X3 },
   { href: '/compare', label: '价格对比', icon: Layout },
@@ -103,7 +104,7 @@ export function Header() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center gap-1" role="navigation" aria-label="主导航">
-              {navItems.map((item) => {
+              {NAV_ITEMS.map((item) => {
                 const Icon = item.icon;
                 const active = isActive(item.href);
                 return (
@@ -221,7 +222,7 @@ export function Header() {
             aria-label="移动导航菜单"
           >
             <nav className="p-4 space-y-1">
-              {navItems.map((item) => {
+              {NAV_ITEMS.map((item) => {
                 const active = isActive(item.href);
                 return (
                   <Link

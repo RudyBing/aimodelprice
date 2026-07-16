@@ -29,8 +29,6 @@ const config: Config = {
         mono: ["JetBrains Mono", "Fira Code", "ui-monospace", "monospace"],
       },
       boxShadow: {
-        "glow-primary": "0 0 20px hsl(var(--primary) / 0.15), 0 0 60px hsl(var(--primary) / 0.06)",
-        "glow-accent": "0 0 20px hsl(var(--accent) / 0.15), 0 0 60px hsl(var(--accent) / 0.06)",
         "glow-xs": "0 0 8px hsl(var(--primary) / 0.1)",
       },
       keyframes: {

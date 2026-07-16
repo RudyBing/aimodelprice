@@ -4,7 +4,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AIModelPrices - AI Model Price Comparison",
   description: "One-stop AI model price comparison platform",
-  keywords: ["AI models", "price comparison", "OpenAI", "Claude", "Gemini"],
+  keywords: ["AI models", "price comparison", "OpenAI", "Claude", "Gemini", "GPT", "Llama"],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   authors: [{ name: "AIModelPrices" }],
   openGraph: {
     title: "AIModelPrices",

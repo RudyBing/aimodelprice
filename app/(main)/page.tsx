@@ -1,42 +1,23 @@
 import Link from 'next/link';
 import { models, modelCategories, type AIModel } from '@/data/models';
+import { categoryIcons, categoryLabels } from '@/lib/categories';
+import { getPricingInput, getPriceInputNum } from '@/lib/pricing';
 import { PriceComparisonCard } from '@/components/aceternity/price-comparison-card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
-  Zap, TrendingDown, Sparkles, Globe, BarChart3, Shield,
-  ArrowRight, Cpu, Palette, Video, Mic, Code2, Search,
+  TrendingDown, BarChart3, Shield, ArrowRight, Cpu, Search, Sparkles, Globe,
 } from 'lucide-react';
 
-function getPriceNum(model: AIModel) {
-  const raw = Array.isArray(model.pricing)
-    ? (model.pricing[0]?.input || '')
-    : model.pricing.input;
-  const match = String(raw).match(/[\d.]+/);
-  return match ? parseFloat(match[0]) : Infinity;
-}
 
-function getPriceInput(model: AIModel) {
-  if (Array.isArray(model.pricing)) return model.pricing[0]?.input || '';
-  return model.pricing.input;
-}
 
 export default function Home() {
   const featuredModels = models.slice(0, 6);
 
-  const categoryIcons: Record<string, React.ReactNode> = {
-    text: <Zap className="h-4 w-4" />,
-    image: <Palette className="h-4 w-4" />,
-    video: <Video className="h-4 w-4" />,
-    audio: <Mic className="h-4 w-4" />,
-    code: <Code2 className="h-4 w-4" />,
-    multimodal: <Sparkles className="h-4 w-4" />,
-    'open-source': <Globe className="h-4 w-4" />,
-  };
 
   const cheapestModel = models.reduce((prev, curr) =>
-    getPriceNum(curr) < getPriceNum(prev) ? curr : prev
+    getPriceInputNum(curr.pricing) < getPriceInputNum(prev.pricing) ? curr : prev
   );
 
   const strongestModel = models.reduce((prev, curr) =>
@@ -182,7 +163,7 @@ export default function Home() {
               <div className="text-xs text-muted-foreground mb-1">最便宜输入价格</div>
               <div className="text-lg font-bold">{cheapestModel.name}</div>
               <div className="text-xs font-mono text-green-400 mt-1">
-                {getPriceInput(cheapestModel)}
+                {getPricingInput(cheapestModel.pricing)}
               </div>
             </div>
             <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
