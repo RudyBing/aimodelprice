@@ -1,8 +1,8 @@
 ﻿{
-  \"builds\": [
+  "builds": [
     {
-      \"src\": \"aimodelprice/package.json\",
-      \"use\": \"@vercel/next\"
+      "src": "aimodelprice/package.json",
+      "use": "@vercel/next"
     }
   ]
 }
