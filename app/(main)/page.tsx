@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
-  TrendingDown, BarChart3, Shield, ArrowRight, Cpu, Search, Sparkles, Globe,
+  TrendingDown, BarChart3, Shield, ArrowRight, Cpu, Sparkles, Globe,
 } from 'lucide-react';
 
 
@@ -56,17 +56,6 @@ export default function Home() {
             一站式对比主流 AI 模型的价格、性能、上下文窗口
           </p>
 
-          <div className="max-w-md mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <form action="/search" method="GET" className="relative">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                name="q"
-                placeholder="搜索模型、厂商..."
-                className="pl-10 h-11 bg-secondary border-border/50 rounded-lg text-sm"
-                aria-label="搜索模型"
-              />
-            </form>
-          </div>
 
           <div className="flex flex-wrap justify-center gap-3 mb-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <Button asChild size="lg" className="gap-2 h-11 px-6 glow-primary">

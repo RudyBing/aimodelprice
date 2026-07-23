@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from '@/components/ui/table';
-import { Search, Sparkles, Zap, BarChart3, Trophy } from 'lucide-react';
+import { Search, TrendingDown, Sparkles, Zap, BarChart3, Trophy } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -35,6 +35,25 @@ function getFreeTierTag(text: string): { tag: string; full: string } {
   const parts = text.split(/[；;]/);
   const short = parts[0].trim();
   return { tag: short, full: text };
+}
+
+// Map provider name to background color class for bar charts
+const providerBgMap: Record<string, string> = {
+  'OpenAI': 'bg-provider-openai',
+  'Anthropic': 'bg-provider-anthropic',
+  'Google': 'bg-provider-google',
+  'Meta': 'bg-provider-meta',
+  'Alibaba': 'bg-provider-alibaba',
+  'DeepSeek': 'bg-provider-deepseek',
+  'Black Forest Labs': 'bg-provider-blackforest',
+  'Stability AI': 'bg-provider-stability',
+  'Mistral': 'bg-provider-mistral',
+  'Kuaishou': 'bg-provider-kuaishou',
+  'Zhipu AI': 'bg-provider-zhipu',
+};
+
+function getProviderBgClass(provider: string): string {
+  return providerBgMap[provider] || 'bg-provider-default';
 }
 
 export default function ComparePage() {
@@ -127,16 +146,6 @@ export default function ComparePage() {
               />
             </div>
 
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as 'price' | 'benchmark' | 'context')}
-              className="h-10 rounded-lg border border-border/40 bg-secondary/50 px-3 text-sm text-muted-foreground appearance-none cursor-pointer"
-              aria-label="排序方式"
-            >
-              <option value="price">按价格排序</option>
-              <option value="benchmark">按性能排序</option>
-              <option value="context">按上下文排序</option>
-            </select>
 
             <select
               value={filterCategory}
@@ -149,6 +158,35 @@ export default function ComparePage() {
                 <option key={opt.id} value={opt.id}>{opt.label}</option>
               ))}
             </select>
+          </div>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <Button
+              variant={sortBy === 'price' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => setSortBy('price')}
+              className={`h-9 text-xs gap-1.5 ${sortBy === 'price' ? 'bg-primary text-primary-foreground shadow-sm' : 'border-border/40 hover:bg-secondary/60'}`}
+            >
+              <TrendingDown className="h-3.5 w-3.5" />
+              按价格排序
+            </Button>
+            <Button
+              variant={sortBy === 'benchmark' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => setSortBy('benchmark')}
+              className={`h-9 text-xs gap-1.5 ${sortBy === 'benchmark' ? 'bg-primary text-primary-foreground shadow-sm' : 'border-border/40 hover:bg-secondary/60'}`}
+            >
+              <BarChart3 className="h-3.5 w-3.5" />
+              按性能排序
+            </Button>
+            <Button
+              variant={sortBy === 'context' ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => setSortBy('context')}
+              className={`h-9 text-xs gap-1.5 ${sortBy === 'context' ? 'bg-primary text-primary-foreground shadow-sm' : 'border-border/40 hover:bg-secondary/60'}`}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              按上下文排序
+            </Button>
           </div>
         </div>
 
@@ -164,7 +202,7 @@ export default function ComparePage() {
                 {sortedModels.slice(0, 10).map((model) => {
                   const price = getPriceInputNum(model.pricing);
                   const percentage = (price / maxPrice) * 100;
-                  const isCheapest = model.id === cheapest.id;
+                  const providerColor = getProviderBgClass(model.provider);
                   return (
                     <div key={model.id} className="flex items-center gap-2 group">
                       <span className="text-xs font-medium w-24 truncate text-muted-foreground group-hover:text-foreground transition-fast">
@@ -174,7 +212,7 @@ export default function ComparePage() {
                         <div
                           className={cn(
                             'h-full rounded-sm transition-normal',
-                            isCheapest ? 'bg-green-500/60' : 'bg-blue-500/40'
+                            providerColor
                           )}
                           style={{ width: `${Math.max(percentage, 2)}%` }}
                         />
