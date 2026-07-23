@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -101,6 +101,20 @@
 .provider-mistral { color: hsl(var(--provider-mistral)); }
 .provider-kuaishou { color: hsl(var(--provider-kuaishou)); }
 .provider-zhipu { color: hsl(var(--provider-zhipu)); }
+
+/* Provider background colors for bar charts */
+.bg-provider-openai { background-color: hsl(var(--provider-openai) / 0.6); }
+.bg-provider-anthropic { background-color: hsl(var(--provider-anthropic) / 0.6); }
+.bg-provider-google { background-color: hsl(var(--provider-google) / 0.6); }
+.bg-provider-meta { background-color: hsl(var(--provider-meta) / 0.6); }
+.bg-provider-alibaba { background-color: hsl(var(--provider-alibaba) / 0.6); }
+.bg-provider-deepseek { background-color: hsl(var(--provider-deepseek) / 0.6); }
+.bg-provider-blackforest { background-color: hsl(var(--provider-blackforest) / 0.6); }
+.bg-provider-stability { background-color: hsl(var(--provider-stability) / 0.6); }
+.bg-provider-mistral { background-color: hsl(var(--provider-mistral) / 0.6); }
+.bg-provider-kuaishou { background-color: hsl(var(--provider-kuaishou) / 0.6); }
+.bg-provider-zhipu { background-color: hsl(var(--provider-zhipu) / 0.6); }
+.bg-provider-default { background-color: hsl(var(--provider-openai) / 0.6); }
 
 .provider-accent-openai { border-inline-start-color: hsl(var(--provider-openai)); }
 .provider-accent-anthropic { border-inline-start-color: hsl(var(--provider-anthropic)); }
