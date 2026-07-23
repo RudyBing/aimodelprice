@@ -69,7 +69,7 @@ function SearchPageInner() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (query.trim()) router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+    if (query.trim()) router.push(`/search?q=${encodeURIComponent(query)}`);
   };
 
   const clearSearch = () => {
@@ -93,13 +93,14 @@ function SearchPageInner() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="pl-12 pr-12 h-14 text-base bg-secondary/60 border-border/40 focus:border-primary/50 rounded-xl"
-              autoFocus
+              aria-label="搜索模型"
             />
             {query && (
               <button
                 type="button"
-                onClick={() => setQuery('')}
+                onClick={() => { setQuery(''); }}
                 className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-muted/50 transition-fast"
+                aria-label="清空搜索"
               >
                 <X className="h-4 w-4 text-muted-foreground" />
               </button>
@@ -112,7 +113,7 @@ function SearchPageInner() {
             {/* Results count */}
             <div className="mb-4 flex items-center justify-between">
               <p className="text-sm text-muted-foreground">
-                搜索 <span className="text-foreground font-medium">&ldquo;{query}&rdquo;</span> 的结果：<span className="text-foreground font-bold">{results.length}</span> 个模型
+                搜索 <span className="text-foreground font-medium">"{query}"</span> 的结果：<span className="text-foreground font-bold">{results.length}</span> 个模型
               </p>
               {(activeCategory !== 'all' || activeProvider !== 'all') && (
                 <Button variant="ghost" size="sm" onClick={() => { setActiveCategory('all'); setActiveProvider('all'); }} className="text-xs h-7 gap-1">
@@ -128,7 +129,8 @@ function SearchPageInner() {
                 <select
                   value={activeCategory}
                   onChange={(e) => setActiveCategory(e.target.value)}
-                  className="h-7 rounded-md border border-border/40 bg-secondary/50 px-2.5 text-xs appearance-none cursor-pointer"
+                  className="h-7 rounded-md border border-border/40 bg-secondary/50 px-2.5 text-xs appearance-none cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  aria-label="按分类筛选"
                 >
                   <option value="all">全部分类</option>
                   {Object.entries(categoryLabels).map(([key, label]) => (
@@ -138,7 +140,8 @@ function SearchPageInner() {
                 <select
                   value={activeProvider}
                   onChange={(e) => setActiveProvider(e.target.value)}
-                  className="h-7 rounded-md border border-border/40 bg-secondary/50 px-2.5 text-xs appearance-none cursor-pointer"
+                  className="h-7 rounded-md border border-border/40 bg-secondary/50 px-2.5 text-xs appearance-none cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  aria-label="按提供商筛选"
                 >
                   <option value="all">所有提供商</option>
                   {providers.map((p) => (<option key={p} value={p}>{p}</option>))}
@@ -151,7 +154,7 @@ function SearchPageInner() {
               <div className="text-center py-20">
                 <Search className="h-16 w-16 text-muted-foreground/20 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">未找到匹配结果</h3>
-                <p className="text-muted-foreground mb-6 text-sm">试试其他关键词，比如 &ldquo;GPT&rdquo;、&ldquo;Claude&rdquo;、&ldquo;图像生成&rdquo;</p>
+                <p className="text-muted-foreground mb-6 text-sm">试试其他关键词，比如 "GPT"、"Claude"、"图像生成"</p>
                 <Button onClick={clearSearch} variant="outline" size="sm">清除搜索</Button>
               </div>
             ) : (
@@ -179,7 +182,7 @@ function SearchPageInner() {
                       key={term}
                       variant="outline"
                       size="sm"
-                      onClick={() => { setQuery(term); router.push(`/search?q=${encodeURIComponent(query.trim())}`); }}
+                      onClick={() => { setQuery(term); router.push(`/search?q=${encodeURIComponent(query)}`); }}
                       className="h-8 text-xs gap-1"
                     >
                       <Search className="h-3 w-3" />{term}
@@ -202,7 +205,8 @@ function SearchPageInner() {
                       key={key}
                       variant="outline"
                       className="h-auto py-4 flex-col gap-2 justify-start hover:bg-primary/5 hover:border-primary/20 transition-normal"
-                      onClick={() => router.push(`/models`) }
+                      onClick={() => router.push(`/models/${key}`)}
+                      aria-label={`浏览 ${categoryLabels[key]}`}
                     >
                       <span className="text-blue-400">{icon}</span>
                       <span className="text-xs font-medium">{categoryLabels[key]}</span>
