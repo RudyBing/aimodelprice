@@ -1,5 +1,0 @@
-﻿▲ Next.js 16.2.10 (webpack)
-- Local:         http://localhost:3003
-- Network:       http://192.168.0.101:3003
-✓ Ready in 1789ms
-
