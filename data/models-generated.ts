@@ -281,9 +281,9 @@ export const models: AIModel[] = [
     "description": "OpenAI 图像生成模型，高质量文生图",
     "category": "image",
     "pricing": {
-      "input": "$8.00 / image",
+      "input": "$0.12 / image",
       "output": "",
-      "unit": "per image"
+      "unit": "1024×1024"
     },
     "contextWindow": "-",
     "multimodal": false,
@@ -407,12 +407,12 @@ export const models: AIModel[] = [
     "slug": "sora",
     "provider": "OpenAI",
     "logo": "",
-    "description": "OpenAI 视频生成模型，高质量长视频",
+    "description": "OpenAI 视频生成模型，高质量长视频（尚未公开发布）",
     "category": "video",
     "pricing": {
-      "input": "$0.05 / sec (1080p)",
-      "output": "$0.10 / sec (1080p)",
-      "unit": "per second"
+      "input": "尚未发布",
+      "output": "",
+      "unit": "预计：$0.05-$0.20 / sec"
     },
     "contextWindow": "-",
     "multimodal": false,
@@ -433,12 +433,12 @@ export const models: AIModel[] = [
     "slug": "veo-3",
     "provider": "Google",
     "logo": "",
-    "description": "Google 视频生成模型，电影级质量",
+    "description": "Google 视频生成模型，电影级质量（等待列表）",
     "category": "video",
     "pricing": {
-      "input": "$0.04 / sec",
+      "input": "等待列表",
       "output": "",
-      "unit": "per second"
+      "unit": "预计：$0.04 / sec"
     },
     "contextWindow": "-",
     "multimodal": false,
