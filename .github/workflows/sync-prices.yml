@@ -1,4 +1,4 @@
-# LiteLLM 价格自动同步
+# LiteLLM 价格自动同步 + AI 模型导入
 # 每天 UTC 00:00 (北京时间 8:00) 运行
 # 参考：.github/workflows/README.md
 
@@ -17,6 +17,11 @@ on:
         required: false
         default: 'false'
         type: string
+      run_ai_generate:
+        description: 'Run AI generation for new models'
+        required: false
+        default: 'false'
+        type: string
 
 # 限制并发运行
 concurrency:
@@ -26,9 +31,6 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
-    # 只在 main 分支运行
-    if: github.ref == 'refs/heads/main'
     
     steps:
       - name: Checkout repository
@@ -48,9 +50,6 @@ jobs:
       
       - name: Sync prices and build data
         run: npm run sync
-        # env:
-        #   # 如果需要调用其他 API，可在此添加环境变量
-        #   # NODE_OPTIONS: '--max-old-space-size=4096'
       
       - name: Configure git
         if: inputs.skip_commit != 'true'
@@ -89,4 +88,71 @@ jobs:
           fi
           if [ "${{ inputs.skip_commit }}" == "true" ]; then
             echo "- 模式：Dry run (未提交)" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  ai-import:
+    needs: sync
+    runs-on: ubuntu-latest
+    if: github.event.inputs.run_ai_generate == 'true' || github.event_name == 'schedule'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate candidates
+        run: npm run generate:candidates
+      
+      - name: AI generate descriptions
+        run: npm run ai:generate
+        env:
+          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+      
+      - name: Import candidates
+        run: npm run import:candidates
+      
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Check for changes
+        id: ai-git-check
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push AI generated models
+        if: steps.ai-git-check.outputs.has_changes == 'true'
+        run: |
+          git add data/models-metadata.json data/models-generated.ts
+          git commit -m "feat(models): auto-import AI generated models $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        run: |
+          echo "## AI 模型导入完成" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 生成时间：$(date -u)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.ai-git-check.outputs.has_changes }}" == "true" ]; then
+            echo "- 新增模型：已提交并推送" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- 新增模型：无新模型" >> $GITHUB_STEP_SUMMARY
           fi
