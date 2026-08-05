@@ -407,12 +407,12 @@ export const models: AIModel[] = [
     "slug": "sora",
     "provider": "OpenAI",
     "logo": "",
-    "description": "OpenAI 视频生成模型，高质量长视频（尚未公开发布）",
+    "description": "OpenAI 视频生成模型（已关停），2026 年 3 月停止服务",
     "category": "video",
     "pricing": {
-      "input": "尚未发布",
+      "input": "已关停",
       "output": "",
-      "unit": "预计：$0.05-$0.20 / sec"
+      "unit": "2026 年 3 月停止服务"
     },
     "contextWindow": "-",
     "multimodal": false,
@@ -424,7 +424,7 @@ export const models: AIModel[] = [
     ],
     "released": "2025-04",
     "url": "https://platform.openai.com",
-    "freeTier": "无",
+    "freeTier": "服务已停止",
     "updatedAt": "2026-08-05"
   },
   {
@@ -433,12 +433,12 @@ export const models: AIModel[] = [
     "slug": "veo-3",
     "provider": "Google",
     "logo": "",
-    "description": "Google 视频生成模型，电影级质量（等待列表）",
+    "description": "Google 视频生成模型，已纳入 Vertex AI 企业平台",
     "category": "video",
     "pricing": {
-      "input": "等待列表",
+      "input": "$0.04 / sec",
       "output": "",
-      "unit": "预计：$0.04 / sec"
+      "unit": "4K 视频"
     },
     "contextWindow": "-",
     "multimodal": false,
@@ -446,11 +446,12 @@ export const models: AIModel[] = [
       "电影级画质",
       "60 秒视频",
       "音频同步",
-      "多镜头"
+      "多镜头",
+      "4K 输出"
     ],
-    "released": "2025-06",
-    "url": "https://deepmind.com/veo",
-    "freeTier": "YouTube Creators 免费试用",
+    "released": "2025-05",
+    "url": "https://cloud.google.com/vertex-ai",
+    "freeTier": "Vertex AI 免费试用",
     "updatedAt": "2026-08-05"
   },
   {

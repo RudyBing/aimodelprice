@@ -149,8 +149,7 @@
       "freeTier": "无",
       "litellmModelId": null,
       "pricing": { "input": "$0.12 / image", "output": "", "unit": "1024×1024" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "flux-3",
@@ -166,8 +165,7 @@
       "freeTier": "开源可自部署",
       "litellmModelId": null,
       "pricing": { "input": "$0.05 / image", "output": "", "unit": "per image (API)" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "midjourney-v6-5",
@@ -183,8 +181,7 @@
       "freeTier": "无免费层",
       "litellmModelId": null,
       "pricing": { "input": "$8-$60 / month", "output": "", "unit": "subscription" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "dall-e-3",
@@ -215,42 +212,40 @@
       "freeTier": "开源可自部署",
       "litellmModelId": null,
       "pricing": { "input": "$0.02 / image (API)", "output": "", "unit": "self-host: free" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "sora",
       "name": "Sora",
       "slug": "sora",
       "provider": "OpenAI",
-      "description": "OpenAI 视频生成模型，高质量长视频（尚未公开发布）",
+      "description": "OpenAI 视频生成模型（已关停），2026 年 3 月停止服务",
       "category": "video",
       "logo": "",
       "strengths": ["高质量视频", "长片段", "物理模拟", "镜头控制"],
       "released": "2025-04",
+      "discontinued": "2026-03",
       "url": "https://platform.openai.com",
-      "freeTier": "无",
+      "freeTier": "服务已停止",
       "litellmModelId": null,
-      "pricing": { "input": "尚未发布", "output": "", "unit": "预计：$0.05-$0.20 / sec" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "pricing": { "input": "已关停", "output": "", "unit": "2026 年 3 月停止服务" },
+      "contextWindow": "-"
     },
     {
       "id": "veo-3",
       "name": "Veo 3",
       "slug": "veo-3",
       "provider": "Google",
-      "description": "Google 视频生成模型，电影级质量（等待列表）",
+      "description": "Google 视频生成模型，已纳入 Vertex AI 企业平台",
       "category": "video",
       "logo": "",
-      "strengths": ["电影级画质", "60 秒视频", "音频同步", "多镜头"],
-      "released": "2025-06",
-      "url": "https://deepmind.com/veo",
-      "freeTier": "YouTube Creators 免费试用",
+      "strengths": ["电影级画质", "60 秒视频", "音频同步", "多镜头", "4K 输出"],
+      "released": "2025-05",
+      "url": "https://cloud.google.com/vertex-ai",
+      "freeTier": "Vertex AI 免费试用",
       "litellmModelId": null,
-      "pricing": { "input": "等待列表", "output": "", "unit": "预计：$0.04 / sec" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "pricing": { "input": "$0.04 / sec", "output": "", "unit": "4K 视频" },
+      "contextWindow": "-"
     },
     {
       "id": "kling-v1.5",
@@ -266,8 +261,7 @@
       "freeTier": "每日免费额度",
       "litellmModelId": null,
       "pricing": { "input": "¥0.8 / sec", "output": "", "unit": "per second" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "whisper-3",
@@ -298,8 +292,7 @@
       "freeTier": "开源免费",
       "litellmModelId": null,
       "pricing": { "input": "免费 (开源)", "output": "", "unit": "self-host: free" },
-      "contextWindow": "-",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "-"
     },
     {
       "id": "codex-2",
@@ -374,8 +367,7 @@
       "released": "2025-04",
       "url": "https://tongyi.aliyun.com",
       "freeTier": "开源 + API 免费额度",
-      "litellmModelId": "qwen-max",
-      "updatedAt": "2026-08-05"
+      "litellmModelId": "qwen-max"
     },
     {
       "id": "glm-5",
@@ -392,8 +384,7 @@
       "freeTier": "开源 + API 免费",
       "litellmModelId": null,
       "pricing": { "input": "免费 (自部署)", "output": "", "unit": "API: $0.05 / 1M tokens" },
-      "contextWindow": "128K tokens",
-      "updatedAt": "2026-08-05"
+      "contextWindow": "128K tokens"
     }
   ]
 }
