@@ -140,7 +140,7 @@ export const models: AIModel[] = [
     "benchmarkScore": 94,
     "released": "2025-05",
     "url": "https://www.anthropic.com",
-    "freeTier": "免费层: 4K 消息/天",
+    "freeTier": "免费层：4K 消息/天",
     "updatedAt": "2026-08-05"
   },
   {
@@ -192,7 +192,7 @@ export const models: AIModel[] = [
     "benchmarkScore": 80,
     "released": "2025-05",
     "url": "https://www.anthropic.com",
-    "freeTier": "免费层: 1K 消息/天",
+    "freeTier": "免费层：1K 消息/天",
     "updatedAt": "2026-08-05"
   },
   {
@@ -296,7 +296,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "flux-3",
@@ -322,7 +322,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.blackforestlabs.ai",
     "freeTier": "开源可自部署",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "midjourney-v6-5",
@@ -348,7 +348,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://www.midjourney.com",
     "freeTier": "无免费层",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "dall-e-3",
@@ -399,7 +399,7 @@ export const models: AIModel[] = [
     "released": "2024-11",
     "url": "https://stability.ai",
     "freeTier": "开源可自部署",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "sora",
@@ -425,7 +425,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "veo-3",
@@ -444,14 +444,14 @@ export const models: AIModel[] = [
     "multimodal": false,
     "strengths": [
       "电影级画质",
-      "60秒视频",
+      "60 秒视频",
       "音频同步",
       "多镜头"
     ],
     "released": "2025-06",
     "url": "https://deepmind.com/veo",
     "freeTier": "YouTube Creators 免费试用",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "kling-v1.5",
@@ -477,7 +477,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://klingai.com",
     "freeTier": "每日免费额度",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "whisper-3",
@@ -529,7 +529,7 @@ export const models: AIModel[] = [
     "released": "2024-10",
     "url": "https://github.com/ChatTTS",
     "freeTier": "开源免费",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "codex-2",
@@ -547,7 +547,7 @@ export const models: AIModel[] = [
     "multimodal": true,
     "strengths": [
       "代码生成",
-      "Bug修复",
+      "Bug 修复",
       "重构",
       "单元测试"
     ],
@@ -659,7 +659,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://tongyi.aliyun.com",
     "freeTier": "开源 + API 免费额度",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   },
   {
     "id": "glm-5",
@@ -679,14 +679,14 @@ export const models: AIModel[] = [
     "strengths": [
       "中文理解",
       "开源",
-      "极低API价",
-      "ChatGLM生态"
+      "极低 API 价",
+      "ChatGLM 生态"
     ],
     "benchmarkScore": 82,
     "released": "2025-05",
     "url": "https://bigmodel.cn",
     "freeTier": "开源 + API 免费",
-    "updatedAt": "2026-07-01"
+    "updatedAt": "2026-08-05"
   }
 ];
 

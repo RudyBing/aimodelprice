@@ -31,6 +31,7 @@ interface MetadataModel {
   litellmModelId: string | null;
   pricing?: ModelPrice;
   contextWindow?: string;
+  updatedAt?: string;  // 可选：手动指定的更新日期
 }
 
 interface MetadataFile {
@@ -134,8 +135,15 @@ function metadataToAIModel(
 ): AIModel {
   const today = new Date().toISOString().split('T')[0];
   
-  // 保留旧的 updatedAt（如果没有变化）
-  const preserveUpdatedAt = () => oldModel?.updatedAt || today;
+  // 决定 updatedAt 的逻辑
+  const getUpdatedAt = () => {
+    // 1. 如果 metadata 中指定了 updatedAt，优先使用（手动更新）
+    if (meta.updatedAt) return meta.updatedAt;
+    // 2. 从 LiteLLM 同步的模型，更新为今天
+    if (priceEntry && priceEntry.source === 'litellm') return today;
+    // 3. Fallback 模型，保留旧的 updatedAt
+    return oldModel?.updatedAt || today;
+  };
   
   if (priceEntry && priceEntry.source === 'litellm') {
     const pricing: ModelPrice = {
@@ -171,11 +179,11 @@ function metadataToAIModel(
       released: meta.released,
       url: meta.url,
       freeTier: meta.freeTier,
-      updatedAt: today,  // LiteLLM 同步，更新为今天
+      updatedAt: getUpdatedAt(),
     };
   }
 
-  // Fallback：保留旧的 updatedAt
+  // Fallback：使用 metadata 中的价格或 fallback
   return {
     id: meta.id,
     name: meta.name,
@@ -192,7 +200,7 @@ function metadataToAIModel(
     released: meta.released,
     url: meta.url,
     freeTier: meta.freeTier,
-    updatedAt: preserveUpdatedAt(),  // 保留旧值
+    updatedAt: getUpdatedAt(),
   };
 }
 

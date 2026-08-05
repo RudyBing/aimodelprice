@@ -8,12 +8,7 @@
       "description": "OpenAI 最强推理模型，数学、科学、编程全能",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "复杂推理",
-        "数学",
-        "科学",
-        "编程"
-      ],
+      "strengths": ["复杂推理", "数学", "科学", "编程"],
       "benchmarkScore": 97,
       "released": "2025-03",
       "url": "https://platform.openai.com",
@@ -28,12 +23,7 @@
       "description": "OpenAI 高效推理模型，性价比高",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "快速推理",
-        "编程",
-        "数学",
-        "高性价比"
-      ],
+      "strengths": ["快速推理", "编程", "数学", "高性价比"],
       "benchmarkScore": 92,
       "released": "2025-04",
       "url": "https://platform.openai.com",
@@ -48,12 +38,7 @@
       "description": "OpenAI 通用语言模型，平衡性能与成本",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "通用对话",
-        "长文本",
-        "多语言",
-        "多模态"
-      ],
+      "strengths": ["通用对话", "长文本", "多语言", "多模态"],
       "benchmarkScore": 90,
       "released": "2025-04",
       "url": "https://platform.openai.com",
@@ -68,16 +53,11 @@
       "description": "Anthropic 旗舰推理模型，擅长长文档分析",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "长文档分析",
-        "代码",
-        "推理",
-        "安全对齐"
-      ],
+      "strengths": ["长文档分析", "代码", "推理", "安全对齐"],
       "benchmarkScore": 94,
       "released": "2025-05",
       "url": "https://www.anthropic.com",
-      "freeTier": "免费层: 4K 消息/天",
+      "freeTier": "免费层：4K 消息/天",
       "litellmModelId": "claude-sonnet-4-20250514"
     },
     {
@@ -88,12 +68,7 @@
       "description": "Anthropic 最强模型，顶级推理能力",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "顶级推理",
-        "复杂任务",
-        "学术研究",
-        "代码审查"
-      ],
+      "strengths": ["顶级推理", "复杂任务", "学术研究", "代码审查"],
       "benchmarkScore": 96,
       "released": "2025-05",
       "url": "https://www.anthropic.com",
@@ -108,17 +83,12 @@
       "description": "Anthropic 高速低成本模型",
       "category": "text",
       "logo": "",
-      "strengths": [
-        "快速响应",
-        "低成本",
-        "批量处理",
-        "日常对话"
-      ],
+      "strengths": ["快速响应", "低成本", "批量处理", "日常对话"],
       "benchmarkScore": 80,
       "released": "2025-05",
       "url": "https://www.anthropic.com",
-      "freeTier": "免费层: 1K 消息/天",
-      "litellmModelId": "anthropic.claude-3-5-haiku-20241022-v1:0"
+      "freeTier": "免费层：1K 消息/天",
+      "litellmModelId": "claude-haiku-4-20250514"
     },
     {
       "id": "gemini-2.5-pro",
@@ -128,12 +98,7 @@
       "description": "Google 最强多模态模型，1M 上下文窗口",
       "category": "multimodal",
       "logo": "",
-      "strengths": [
-        "超长上下文",
-        "多模态",
-        "Google 生态",
-        "搜索整合"
-      ],
+      "strengths": ["超长上下文", "多模态", "Google 生态", "搜索整合"],
       "benchmarkScore": 95,
       "released": "2025-06",
       "url": "https://ai.google.dev",
@@ -148,12 +113,7 @@
       "description": "Google 快速高效多模态模型",
       "category": "multimodal",
       "logo": "",
-      "strengths": [
-        "极速响应",
-        "超低成本",
-        "多模态",
-        "批量处理"
-      ],
+      "strengths": ["极速响应", "超低成本", "多模态", "批量处理"],
       "benchmarkScore": 86,
       "released": "2025-06",
       "url": "https://ai.google.dev",
@@ -168,11 +128,7 @@
       "description": "Google 轻量级多模态模型",
       "category": "multimodal",
       "logo": "",
-      "strengths": [
-        "最低成本",
-        "快速响应",
-        "简单任务"
-      ],
+      "strengths": ["最低成本", "快速响应", "简单任务"],
       "benchmarkScore": 76,
       "released": "2025-01",
       "url": "https://ai.google.dev",
@@ -187,22 +143,14 @@
       "description": "OpenAI 图像生成模型，高质量文生图",
       "category": "image",
       "logo": "",
-      "strengths": [
-        "高质量图像",
-        "文本渲染",
-        "风格多样",
-        "编辑能力强"
-      ],
+      "strengths": ["高质量图像", "文本渲染", "风格多样", "编辑能力强"],
       "released": "2025-04",
       "url": "https://platform.openai.com",
       "freeTier": "无",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$8.00 / image",
-        "output": "",
-        "unit": "per image"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$8.00 / image", "output": "", "unit": "per image" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "flux-3",
@@ -212,22 +160,14 @@
       "description": "新一代高质量文生图模型",
       "category": "image",
       "logo": "",
-      "strengths": [
-        "高质量",
-        "开源权重",
-        "风格多样",
-        "社区支持"
-      ],
+      "strengths": ["高质量", "开源权重", "风格多样", "社区支持"],
       "released": "2025-05",
       "url": "https://www.blackforestlabs.ai",
       "freeTier": "开源可自部署",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$0.05 / image",
-        "output": "",
-        "unit": "per image (API)"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$0.05 / image", "output": "", "unit": "per image (API)" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "midjourney-v6-5",
@@ -237,22 +177,14 @@
       "description": "艺术级 AI 图像生成",
       "category": "image",
       "logo": "",
-      "strengths": [
-        "艺术品质",
-        "创意风格",
-        "社区活跃",
-        "迭代快"
-      ],
+      "strengths": ["艺术品质", "创意风格", "社区活跃", "迭代快"],
       "released": "2025-03",
       "url": "https://www.midjourney.com",
       "freeTier": "无免费层",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$8-$60 / month",
-        "output": "",
-        "unit": "subscription"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$8-$60 / month", "output": "", "unit": "subscription" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "dall-e-3",
@@ -262,16 +194,11 @@
       "description": "OpenAI 文生图模型，支持自然语言指令",
       "category": "image",
       "logo": "",
-      "strengths": [
-        "自然语言理解",
-        "创意生成",
-        "安全过滤",
-        "集成 ChatGPT"
-      ],
+      "strengths": ["自然语言理解", "创意生成", "安全过滤", "集成 ChatGPT"],
       "released": "2023-11",
       "url": "https://platform.openai.com",
       "freeTier": "ChatGPT Plus 赠送",
-      "litellmModelId": "dall-e-3",
+      "litellmModelId": "1024-x-1024/dall-e-3",
       "contextWindow": "-"
     },
     {
@@ -282,22 +209,14 @@
       "description": "开源图像生成模型，可自部署",
       "category": "open-source",
       "logo": "",
-      "strengths": [
-        "开源免费",
-        "自部署",
-        "ControlNet",
-        "LoRA 生态"
-      ],
+      "strengths": ["开源免费", "自部署", "ControlNet", "LoRA 生态"],
       "released": "2024-11",
       "url": "https://stability.ai",
       "freeTier": "开源可自部署",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$0.02 / image (API)",
-        "output": "",
-        "unit": "self-host: free"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$0.02 / image (API)", "output": "", "unit": "self-host: free" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "sora",
@@ -307,22 +226,14 @@
       "description": "OpenAI 视频生成模型，高质量长视频",
       "category": "video",
       "logo": "",
-      "strengths": [
-        "高质量视频",
-        "长片段",
-        "物理模拟",
-        "镜头控制"
-      ],
+      "strengths": ["高质量视频", "长片段", "物理模拟", "镜头控制"],
       "released": "2025-04",
       "url": "https://platform.openai.com",
       "freeTier": "无",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$0.05 / sec (1080p)",
-        "output": "$0.10 / sec (1080p)",
-        "unit": "per second"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$0.05 / sec (1080p)", "output": "$0.10 / sec (1080p)", "unit": "per second" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "veo-3",
@@ -332,22 +243,14 @@
       "description": "Google 视频生成模型，电影级质量",
       "category": "video",
       "logo": "",
-      "strengths": [
-        "电影级画质",
-        "60秒视频",
-        "音频同步",
-        "多镜头"
-      ],
+      "strengths": ["电影级画质", "60 秒视频", "音频同步", "多镜头"],
       "released": "2025-06",
       "url": "https://deepmind.com/veo",
       "freeTier": "YouTube Creators 免费试用",
       "litellmModelId": null,
-      "pricing": {
-        "input": "$0.04 / sec",
-        "output": "",
-        "unit": "per second"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "$0.04 / sec", "output": "", "unit": "per second" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "kling-v1.5",
@@ -357,22 +260,14 @@
       "description": "快手视频生成模型，支持长视频",
       "category": "video",
       "logo": "",
-      "strengths": [
-        "长视频生成",
-        "中文理解",
-        "性价比高",
-        "动作自然"
-      ],
+      "strengths": ["长视频生成", "中文理解", "性价比高", "动作自然"],
       "released": "2025-03",
       "url": "https://klingai.com",
       "freeTier": "每日免费额度",
       "litellmModelId": null,
-      "pricing": {
-        "input": "¥0.8 / sec",
-        "output": "",
-        "unit": "per second"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "¥0.8 / sec", "output": "", "unit": "per second" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "whisper-3",
@@ -382,17 +277,12 @@
       "description": "OpenAI 语音识别模型",
       "category": "audio",
       "logo": "",
-      "strengths": [
-        "高精度转录",
-        "多语言",
-        "实时处理",
-        "开源"
-      ],
+      "strengths": ["高精度转录", "多语言", "实时处理", "开源"],
       "benchmarkScore": 94,
       "released": "2023-11",
       "url": "https://platform.openai.com",
       "freeTier": "开源可自部署",
-      "litellmModelId": "whisper-1"
+      "litellmModelId": "whisper-3"
     },
     {
       "id": "tts-1",
@@ -402,22 +292,14 @@
       "description": "高质量中文语音合成",
       "category": "audio",
       "logo": "",
-      "strengths": [
-        "中文优化",
-        "情感控制",
-        "开源免费",
-        "实时合成"
-      ],
+      "strengths": ["中文优化", "情感控制", "开源免费", "实时合成"],
       "released": "2024-10",
       "url": "https://github.com/ChatTTS",
       "freeTier": "开源免费",
       "litellmModelId": null,
-      "pricing": {
-        "input": "免费 (开源)",
-        "output": "",
-        "unit": "self-host: free"
-      },
-      "contextWindow": "-"
+      "pricing": { "input": "免费 (开源)", "output": "", "unit": "self-host: free" },
+      "contextWindow": "-",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "codex-2",
@@ -427,12 +309,7 @@
       "description": "OpenAI 代码专用模型",
       "category": "code",
       "logo": "",
-      "strengths": [
-        "代码生成",
-        "Bug修复",
-        "重构",
-        "单元测试"
-      ],
+      "strengths": ["代码生成", "Bug 修复", "重构", "单元测试"],
       "benchmarkScore": 89,
       "released": "2025-03",
       "url": "https://platform.openai.com",
@@ -447,17 +324,12 @@
       "description": "Mistral 代码生成模型，支持 80+ 语言",
       "category": "code",
       "logo": "",
-      "strengths": [
-        "多语言",
-        "超长上下文",
-        "开源权重",
-        "API 便宜"
-      ],
+      "strengths": ["多语言", "超长上下文", "开源权重", "API 便宜"],
       "benchmarkScore": 87,
       "released": "2024-06",
       "url": "https://mistral.ai",
       "freeTier": "Mistral API 免费层",
-      "litellmModelId": "codestral/codestral-latest"
+      "litellmModelId": "codestral-latest"
     },
     {
       "id": "deepseek-coder-v3",
@@ -467,17 +339,12 @@
       "description": "DeepSeek 代码专用模型，性价比极高",
       "category": "code",
       "logo": "",
-      "strengths": [
-        "超低价",
-        "代码生成",
-        "开源",
-        "中文优化"
-      ],
+      "strengths": ["超低价", "代码生成", "开源", "中文优化"],
       "benchmarkScore": 84,
       "released": "2024-09",
       "url": "https://www.deepseek.com",
       "freeTier": "API 免费额度",
-      "litellmModelId": "deepseek/deepseek-v3"
+      "litellmModelId": "deepseek-coder"
     },
     {
       "id": "llama-4-scout",
@@ -487,17 +354,12 @@
       "description": "Meta 开源大模型，社区生态最丰富",
       "category": "open-source",
       "logo": "",
-      "strengths": [
-        "完全开源",
-        "社区生态",
-        "自部署免费",
-        "多语言"
-      ],
+      "strengths": ["完全开源", "社区生态", "自部署免费", "多语言"],
       "benchmarkScore": 88,
       "released": "2025-04",
       "url": "https://llama.meta.com",
       "freeTier": "完全开源免费",
-      "litellmModelId": "cloudflare/@cf/meta/llama-4-scout-17b-16e-instruct"
+      "litellmModelId": "llama-4-scout"
     },
     {
       "id": "qwen3",
@@ -507,17 +369,13 @@
       "description": "阿里通义千问，中文能力顶尖",
       "category": "open-source",
       "logo": "",
-      "strengths": [
-        "中文最强",
-        "开源",
-        "成本低",
-        "多模态"
-      ],
+      "strengths": ["中文最强", "开源", "成本低", "多模态"],
       "benchmarkScore": 85,
       "released": "2025-04",
       "url": "https://tongyi.aliyun.com",
       "freeTier": "开源 + API 免费额度",
-      "litellmModelId": null
+      "litellmModelId": "qwen-max",
+      "updatedAt": "2026-08-05"
     },
     {
       "id": "glm-5",
@@ -527,23 +385,15 @@
       "description": "智谱 AI 开源模型，中文理解优秀",
       "category": "open-source",
       "logo": "",
-      "strengths": [
-        "中文理解",
-        "开源",
-        "极低API价",
-        "ChatGLM生态"
-      ],
+      "strengths": ["中文理解", "开源", "极低 API 价", "ChatGLM 生态"],
       "benchmarkScore": 82,
       "released": "2025-05",
       "url": "https://bigmodel.cn",
       "freeTier": "开源 + API 免费",
       "litellmModelId": null,
-      "pricing": {
-        "input": "免费 (自部署)",
-        "output": "",
-        "unit": "API: $0.05 / 1M tokens"
-      },
-      "contextWindow": "128K tokens"
+      "pricing": { "input": "免费 (自部署)", "output": "", "unit": "API: $0.05 / 1M tokens" },
+      "contextWindow": "128K tokens",
+      "updatedAt": "2026-08-05"
     }
   ]
 }
