@@ -178,10 +178,10 @@ export const models: AIModel[] = [
     "description": "Anthropic 高速低成本模型",
     "category": "text",
     "pricing": {
-      "input": "$0.8000 / 1M tokens",
-      "output": "$4.00 / 1M tokens"
+      "input": "",
+      "output": ""
     },
-    "contextWindow": "200K tokens",
+    "contextWindow": "-",
     "multimodal": false,
     "strengths": [
       "快速响应",
@@ -567,10 +567,10 @@ export const models: AIModel[] = [
     "description": "Mistral 代码生成模型，支持 80+ 语言",
     "category": "code",
     "pricing": {
-      "input": "$0.0000 / 1M tokens",
-      "output": "$0.0000 / 1M tokens"
+      "input": "",
+      "output": ""
     },
-    "contextWindow": "32K tokens",
+    "contextWindow": "-",
     "multimodal": false,
     "strengths": [
       "多语言",
@@ -593,10 +593,10 @@ export const models: AIModel[] = [
     "description": "DeepSeek 代码专用模型，性价比极高",
     "category": "code",
     "pricing": {
-      "input": "$0.2700 / 1M tokens",
-      "output": "$1.10 / 1M tokens"
+      "input": "",
+      "output": ""
     },
-    "contextWindow": "65.5K tokens",
+    "contextWindow": "-",
     "multimodal": false,
     "strengths": [
       "超低价",
@@ -619,10 +619,10 @@ export const models: AIModel[] = [
     "description": "Meta 开源大模型，社区生态最丰富",
     "category": "open-source",
     "pricing": {
-      "input": "$0.2700 / 1M tokens",
-      "output": "$0.8500 / 1M tokens"
+      "input": "",
+      "output": ""
     },
-    "contextWindow": "131K tokens",
+    "contextWindow": "-",
     "multimodal": false,
     "strengths": [
       "完全开源",

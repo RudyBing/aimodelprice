@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-05T03:36:36.786Z",
+  "syncedAt": "2026-08-05T12:04:17.168Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -60,11 +60,7 @@
     {
       "id": "claude-haiku-4-20250514",
       "prices": {
-        "source": "litellm",
-        "inputCostPerToken": 8e-7,
-        "outputCostPerToken": 0.000004,
-        "maxInputTokens": 200000,
-        "maxOutputTokens": 8192
+        "source": "fallback"
       }
     },
     {
@@ -121,7 +117,7 @@
     {
       "id": "dall-e-3",
       "prices": {
-        "source": "litellm"
+        "source": "fallback"
       }
     },
     {
@@ -151,7 +147,7 @@
     {
       "id": "whisper-3",
       "prices": {
-        "source": "litellm"
+        "source": "fallback"
       }
     },
     {
@@ -174,31 +170,19 @@
     {
       "id": "codestral",
       "prices": {
-        "source": "litellm",
-        "inputCostPerToken": 0,
-        "outputCostPerToken": 0,
-        "maxInputTokens": 32000,
-        "maxOutputTokens": 8191
+        "source": "fallback"
       }
     },
     {
       "id": "deepseek-coder-v3",
       "prices": {
-        "source": "litellm",
-        "inputCostPerToken": 2.7e-7,
-        "outputCostPerToken": 0.0000011,
-        "maxInputTokens": 65536,
-        "maxOutputTokens": 8192
+        "source": "fallback"
       }
     },
     {
       "id": "llama-4-scout",
       "prices": {
-        "source": "litellm",
-        "inputCostPerToken": 2.7e-7,
-        "outputCostPerToken": 8.5e-7,
-        "maxInputTokens": 131000,
-        "maxOutputTokens": 131000
+        "source": "fallback"
       }
     },
     {
