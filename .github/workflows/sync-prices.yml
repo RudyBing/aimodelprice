@@ -48,9 +48,9 @@ jobs:
       
       - name: Sync prices and build data
         run: npm run sync
-        env:
-          # 如果需要调用其他 API，可在此添加环境变量
-          # NODE_OPTIONS: '--max-old-space-size=4096'
+        # env:
+        #   # 如果需要调用其他 API，可在此添加环境变量
+        #   # NODE_OPTIONS: '--max-old-space-size=4096'
       
       - name: Configure git
         if: inputs.skip_commit != 'true'
@@ -59,7 +59,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
       
       - name: Check for changes
-        if: inputs.skip_commit != 'true' && github.event_name != 'pull_request'
+        if: inputs.skip_commit != 'true'
         id: git-check
         run: |
           if git diff --quiet; then
@@ -69,7 +69,7 @@ jobs:
           fi
       
       - name: Commit and push changes
-        if: steps.git-check.outputs.has_changes == 'true' && inputs.skip_commit != 'true' && github.event_name != 'pull_request'
+        if: steps.git-check.outputs.has_changes == 'true' && inputs.skip_commit != 'true'
         run: |
           git add data/models-prices.json data/models-generated.ts
           git commit -m "chore(data): auto-sync LiteLLM prices $(date -u '+%Y-%m-%d %H:%M UTC')"
