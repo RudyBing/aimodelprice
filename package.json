@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:prices": "tsx scripts/litellm-sync.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "sync": "tsx scripts/litellm-sync.ts && tsx scripts/build-data.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
@@ -48,6 +51,7 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
+    "tsx": "^4.7.0",
     "typescript": "^5.7.0"
   }
 }

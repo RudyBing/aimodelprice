@@ -1,0 +1,92 @@
+# LiteLLM 价格自动同步
+# 每天 UTC 00:00 (北京时间 8:00) 运行
+# 参考：.github/workflows/README.md
+
+name: Sync LiteLLM Prices
+
+on:
+  # 定时触发：每天 UTC 00:00 (北京时间 8:00)
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      skip_commit:
+        description: 'Skip commit and push (dry run)'
+        required: false
+        default: 'false'
+        type: string
+
+# 限制并发运行
+concurrency:
+  group: sync-prices
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    # 只在 main 分支运行
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Sync prices and build data
+        run: npm run sync
+        env:
+          # 如果需要调用其他 API，可在此添加环境变量
+          # NODE_OPTIONS: '--max-old-space-size=4096'
+      
+      - name: Configure git
+        if: inputs.skip_commit != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Check for changes
+        if: inputs.skip_commit != 'true'
+        id: git-check
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.has_changes == 'true' && inputs.skip_commit != 'true'
+        run: |
+          git add data/models-prices.json data/models-generated.ts
+          git commit -m "chore(data): auto-sync LiteLLM prices $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        run: |
+          echo "## 同步完成" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 同步时间：$(date -u)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.git-check.outputs.has_changes }}" == "true" ]; then
+            echo "- 数据变更：已提交并推送" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- 数据变更：无变化" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ inputs.skip_commit }}" == "true" ]; then
+            echo "- 模式：Dry run (未提交)" >> $GITHUB_STEP_SUMMARY
+          fi

@@ -1,0 +1,217 @@
+{
+  "syncedAt": "2026-08-05T02:57:09.647Z",
+  "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
+  "models": [
+    {
+      "id": "o3-pro",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00002,
+        "outputCostPerToken": 0.00008,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 100000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "o4-mini",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000011,
+        "outputCostPerToken": 0.0000044,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 100000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gpt-4.1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000008,
+        "maxInputTokens": 1047576,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "claude-sonnet-4-20250514",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 1000000,
+        "maxOutputTokens": 64000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "claude-opus-4-20250514",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000015,
+        "outputCostPerToken": 0.000075,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 32000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "claude-haiku-4-20250514",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.000004,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-2.0-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gpt-image-1",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "flux-3",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "midjourney-v6-5",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "dall-e-3",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "stable-diffusion-3.5",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "sora",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "veo-3",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "kling-v1.5",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "whisper-3",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "tts-1",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "codex-2",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.000006,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 100000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "codestral",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "deepseek-coder-v3",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.7e-7,
+        "outputCostPerToken": 0.0000011,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "llama-4-scout",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.7e-7,
+        "outputCostPerToken": 8.5e-7,
+        "maxInputTokens": 131000,
+        "maxOutputTokens": 131000
+      }
+    },
+    {
+      "id": "qwen3",
+      "prices": {
+        "source": "fallback"
+      }
+    },
+    {
+      "id": "glm-5",
+      "prices": {
+        "source": "fallback"
+      }
+    }
+  ]
+}
