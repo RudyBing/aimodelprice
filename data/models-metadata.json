@@ -2988,6 +2988,502 @@
       ],
       "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
       "released": "2026-08-05"
+    },
+    {
+      "id": "anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "name": "Claude 3",
+      "slug": "anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的Claude 3，是一款支持多模态的文本生成模型，具备强大的文本理解和生成能力，适用于各类文本生成任务。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "1.0M tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持，融合多种输入数据",
+        "高性价比，价格亲民",
+        "强大的上下文理解能力",
+        "广泛的适用场景",
+        "持续优化，性能稳定"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "name": "Claude 3",
+      "slug": "anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的Claude 3，多模态文本处理能力卓越，支持1M token上下文，适用于各类文本生成场景。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "1.0M tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态文本处理",
+        "大容量上下文支持",
+        "经济实惠的价格",
+        "高效文本生成",
+        "适用于广泛场景"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-3-7-sonnet-20240620-v1:0",
+      "name": "Claude 3",
+      "slug": "anthropic-claude-3-7-sonnet-20240620-v1:0",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的Claude 3，是一款支持多模态的文本生成模型，具备强大的上下文理解和生成能力，适用于各类文本创作和交互场景。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-3-7-sonnet-20240620-v1:0",
+      "pricing": {
+        "input": "$3.60 / 1M tokens",
+        "output": "$18.00 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持，融合视觉和文本信息",
+        "高性价比，按token计费",
+        "强大的上下文理解能力",
+        "适用于多种文本创作任务",
+        " Anthropic的可靠技术支持"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-3-haiku-20240307-v1:0",
+      "name": "Claude 3",
+      "slug": "anthropic-claude-3-haiku-20240307-v1:0",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic开发的Claude 3，支持多模态输入，上下文窗口达200K tokens，适用于复杂文本生成及分析。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-3-haiku-20240307-v1:0",
+      "pricing": {
+        "input": "$0.25 / 1M tokens",
+        "output": "$1.25 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持",
+        "大上下文窗口",
+        "高效文本生成",
+        "精准分析能力",
+        "经济实惠"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-instant-v1",
+      "name": "Claude instant",
+      "slug": "anthropic-claude-instant-v1",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的即时文本生成模型，以高性价比和长上下文窗口支持，适用于大规模文本生成任务。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-instant-v1",
+      "pricing": {
+        "input": "$0.80 / 1M tokens",
+        "output": "$2.40 / 1M tokens"
+      },
+      "contextWindow": "100K tokens",
+      "multimodal": false,
+      "strengths": [
+        "性价比高",
+        "长上下文窗口",
+        "支持大规模文本生成",
+        "多语言支持",
+        "持续优化"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-v1",
+      "name": "Claude v1",
+      "slug": "anthropic-claude-v1",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的文本生成模型，专注于高质量文本生成，适用于内容创作和对话系统。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-v1",
+      "pricing": {
+        "input": "$8.00 / 1M tokens",
+        "output": "$24.00 / 1M tokens"
+      },
+      "contextWindow": "100K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高质文本生成",
+        "经济实惠的价格",
+        "强大的上下文理解",
+        "快速响应速度"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "anthropic-claude-v2:1",
+      "name": "Claude v2:1",
+      "slug": "anthropic-claude-v2:1",
+      "provider": "Anthropic",
+      "logo": "",
+      "description": "Anthropic推出的文本处理模型，提供高质量文本生成，适用于各种文本生成任务，价格合理。",
+      "category": "text",
+      "litellmModelId": "anthropic.claude-v2:1",
+      "pricing": {
+        "input": "$8.00 / 1M tokens",
+        "output": "$24.00 / 1M tokens"
+      },
+      "contextWindow": "100K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高性价比",
+        "高质量的文本生成",
+        "灵活的应用场景",
+        "支持大文本处理",
+        "合理的价格"
+      ],
+      "url": "https://docs.anthropic.com/claude/docs/models-overview",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "mistral-mistral-7b-instruct-v0:2",
+      "name": "Mistral 7b",
+      "slug": "mistral-mistral-7b-instruct-v0:2",
+      "provider": "Mistral",
+      "logo": "",
+      "description": "Mistral 7b 是 Mistral 公司推出的高效文本处理模型，适用于大规模文本处理任务，具备32K大上下文窗口，支持快速文本分析。",
+      "category": "text",
+      "litellmModelId": "mistral.mistral-7b-instruct-v0:2",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.20 / 1M tokens"
+      },
+      "contextWindow": "32K tokens",
+      "multimodal": false,
+      "strengths": [
+        "32K大上下文窗口",
+        "低廉的价格",
+        "高效的文本处理能力",
+        "适用于大规模文本任务",
+        "稳定的性能"
+      ],
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "mistral-mistral-large-2402-v1:0",
+      "name": "Mistral large",
+      "slug": "mistral-mistral-large-2402-v1:0",
+      "provider": "Mistral",
+      "logo": "",
+      "description": "Mistral 大型文本模型，专注于高效文本处理，适用于大规模文本分析和生成任务。",
+      "category": "text",
+      "litellmModelId": "mistral.mistral-large-2402-v1:0",
+      "pricing": {
+        "input": "$8.00 / 1M tokens",
+        "output": "$24.00 / 1M tokens"
+      },
+      "contextWindow": "32K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效文本处理能力",
+        "经济实惠的价格",
+        "强大的上下文理解",
+        "适用于大规模文本任务"
+      ],
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "mistral-mistral-large-2407-v1:0",
+      "name": "Mistral large",
+      "slug": "mistral-mistral-large-2407-v1:0",
+      "provider": "Mistral",
+      "logo": "",
+      "description": "Mistral的Mistral large是一款高效的文本处理模型，适用于大规模文本输入输出任务，具有强大的上下文理解能力。",
+      "category": "text",
+      "litellmModelId": "mistral.mistral-large-2407-v1:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$9.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效处理大规模文本数据",
+        "强大的上下文理解能力",
+        "价格实惠，性价比高",
+        "快速响应，支持高吞吐量任务",
+        "简单易用，集成方便"
+      ],
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "mistral-mixtral-8x7b-instruct-v0:1",
+      "name": "Mixtral 8x7b",
+      "slug": "mistral-mixtral-8x7b-instruct-v0:1",
+      "provider": "Mistral",
+      "logo": "",
+      "description": "Mistral公司Mixtral 8x7b文本模型，专注于文本处理，价格实惠，上下文窗口大，适用于大规模文本任务。",
+      "category": "text",
+      "litellmModelId": "mistral.mixtral-8x7b-instruct-v0:1",
+      "pricing": {
+        "input": "$0.45 / 1M tokens",
+        "output": "$0.70 / 1M tokens"
+      },
+      "contextWindow": "32K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格实惠",
+        "上下文窗口大",
+        "多模态支持",
+        "适用于大规模文本任务"
+      ],
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "cohere-command-light-text-v14",
+      "name": "Command light",
+      "slug": "cohere-command-light-text-v14",
+      "provider": "Cohere",
+      "logo": "",
+      "description": "Cohere推出的轻量级文本模型，专注于高效文本处理任务，具备出色的指令遵循能力和成本控制优势，适用于日常对话、内容生成及企业级文本应用。",
+      "category": "text",
+      "litellmModelId": "cohere.command-light-text-v14",
+      "pricing": {
+        "input": "$0.30 / 1M tokens",
+        "output": "$0.60 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "成本效益显著，输入输出价格极具竞争力",
+        "指令遵循能力出色，精准理解用户意图",
+        "轻量级架构，响应速度快，适合高频调用场景"
+      ],
+      "url": "https://docs.cohere.com/docs/models",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "cohere-command-r-plus-v1:0",
+      "name": "Command r",
+      "slug": "cohere-command-r-plus-v1:0",
+      "provider": "Cohere",
+      "logo": "",
+      "description": "Cohere推出的Command r模型，专注于文本生成，提供高性价比的1M tokens服务，适用于大规模文本生成场景。",
+      "category": "text",
+      "litellmModelId": "cohere.command-r-plus-v1:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低成本高效能",
+        "128K tokens大上下文窗口",
+        "快速响应生成输出",
+        "价格透明",
+        "多语言支持"
+      ],
+      "url": "https://docs.cohere.com/docs/models",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "cohere-command-r-v1:0",
+      "name": "Command r",
+      "slug": "cohere-command-r-v1:0",
+      "provider": "Cohere",
+      "logo": "",
+      "description": "Cohere 提供的 Command r 模型，专注于文本生成，价格实惠，支持大规模上下文处理，适合高效文本生成任务。",
+      "category": "text",
+      "litellmModelId": "cohere.command-r-v1:0",
+      "pricing": {
+        "input": "$0.50 / 1M tokens",
+        "output": "$1.50 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉的价格",
+        "高效的文本生成",
+        "大容量上下文窗口",
+        "简单易用"
+      ],
+      "url": "https://docs.cohere.com/docs/models",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "cohere-command-text-v14",
+      "name": "Command text",
+      "slug": "cohere-command-text-v14",
+      "provider": "Cohere",
+      "logo": "",
+      "description": "Cohere的Command text模型，专注于文本生成，提供高性价比的输入输出服务，适用于快速生成文本内容。",
+      "category": "text",
+      "litellmModelId": "cohere.command-text-v14",
+      "pricing": {
+        "input": "$1.50 / 1M tokens",
+        "output": "$2.00 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉的价格",
+        "高效的文本生成能力",
+        "快速响应的上下文窗口",
+        "简洁的文本处理",
+        "适用于多种文本生成场景"
+      ],
+      "url": "https://docs.cohere.com/docs/models",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "stability-sd3-5-large-v1:0",
+      "name": "Sd3 5",
+      "slug": "stability-sd3-5-large-v1:0",
+      "provider": "Stability",
+      "logo": "",
+      "description": "Stability公司免费开源的图像处理模型，专注于图像生成与编辑，支持大容量上下文输入。",
+      "category": "image",
+      "litellmModelId": "stability.sd3-5-large-v1:0",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "77 tokens",
+      "multimodal": false,
+      "strengths": [
+        "免费使用，无输出费用",
+        "大容量上下文窗口，处理复杂图像任务",
+        "免费开源，易于集成与扩展",
+        "专注于图像处理，效果稳定可靠",
+        "社区支持，资源丰富"
+      ],
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "freeTier": "有",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "stability-sd3-large-v1:0",
+      "name": "Sd3 large",
+      "slug": "stability-sd3-large-v1:0",
+      "provider": "Stability",
+      "logo": "",
+      "description": "Stability推出的免费开源图像模型，具备强大的图像处理能力，适用于各种图像生成和编辑场景。",
+      "category": "image",
+      "litellmModelId": "stability.sd3-large-v1:0",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "77 tokens",
+      "multimodal": false,
+      "strengths": [
+        "免费开源",
+        "强大的图像处理能力",
+        "广泛适用性",
+        "支持多种图像编辑任务",
+        "社区支持"
+      ],
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "freeTier": "有",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "stability-stable-image-core-v1:0",
+      "name": "Stable image",
+      "slug": "stability-stable-image-core-v1:0",
+      "provider": "Stability",
+      "logo": "",
+      "description": "Stability 推出的免费图像生成模型，支持文本到图像的高质量创作，适用于艺术创作、设计素材生成等场景，无需成本即可使用。",
+      "category": "image",
+      "litellmModelId": "stability.stable-image-core-v1:0",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "77 tokens",
+      "multimodal": false,
+      "strengths": [
+        "完全免费使用，无输入输出费用",
+        "Stability 品牌背书，图像质量稳定可靠",
+        "77 tokens 上下文窗口，快速响应文本提示",
+        "专为图像生成优化，专注度高"
+      ],
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "freeTier": "有",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "stability-stable-image-core-v1:1",
+      "name": "Stable image",
+      "slug": "stability-stable-image-core-v1:1",
+      "provider": "Stability",
+      "logo": "",
+      "description": "Stability 推出的免费图像生成模型，支持文本到图像的高质量创作，适用于艺术创作、设计素材生成等场景，无需成本即可使用。",
+      "category": "image",
+      "litellmModelId": "stability.stable-image-core-v1:1",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "77 tokens",
+      "multimodal": false,
+      "strengths": [
+        "完全免费使用，无输入输出费用",
+        "Stability 品牌背书，图像质量稳定可靠",
+        "77 tokens 上下文窗口，快速响应文本提示",
+        "专为图像生成优化，专注度高"
+      ],
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "freeTier": "有",
+      "released": "2026-08-06"
+    },
+    {
+      "id": "stability-stable-image-ultra-v1:0",
+      "name": "Stable image",
+      "slug": "stability-stable-image-ultra-v1:0",
+      "provider": "Stability",
+      "logo": "",
+      "description": "Stability 推出的免费图像生成模型，支持文本到图像的高质量创作，适用于艺术创作、设计素材生成等场景，无需成本即可使用。",
+      "category": "image",
+      "litellmModelId": "stability.stable-image-ultra-v1:0",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "77 tokens",
+      "multimodal": false,
+      "strengths": [
+        "完全免费使用，无输入输出费用",
+        "Stability 品牌背书，图像质量稳定可靠",
+        "77 tokens 上下文窗口，快速响应文本提示",
+        "专为图像生成优化，专注度高"
+      ],
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "freeTier": "有",
+      "released": "2026-08-06"
     }
   ]
 }
