@@ -137,6 +137,10 @@ jobs:
         run: |
           git add data/models-metadata.json data/models-generated.ts
           git commit -m "feat(models): auto-import AI generated models $(date -u '+%Y-%m-%d %H:%M UTC')"
+          
+          # 先拉取远程变更，避免推送失败
+          git pull --rebase origin main || true
+          
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
