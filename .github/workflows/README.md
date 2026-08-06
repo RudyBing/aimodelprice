@@ -1,42 +1,50 @@
 # AI Model Prices - GitHub Actions 配置
 
-## 自动同步价格 + AI 模型导入
+## 🚀 完全自动化同步
 
-本项目使用 GitHub Actions 实现：
-1. **每日自动同步 LiteLLM 价格数据**
-2. **每日自动 AI 生成新模型描述并导入**（需配置 API Keys）
+本项目使用 GitHub Actions 实现**完全自动化**的数据更新流程：
+
+1. ✅ **每日自动同步 LiteLLM 价格数据**（UTC 00:00 / 北京时间 8:00）
+2. ✅ **每日自动 AI 生成新模型描述并导入**（无需手动触发）
+3. ✅ **自动提交并 push 到 main 分支**
+4. ✅ **触发 Vercel 自动重新部署**
 
 ---
 
 ## 📋 工作流程
 
-### 工作流 1：价格同步（每天运行）
+### 完整自动化流程（每天运行）
 
 ```
 每天 UTC 00:00（北京时间 8:00）自动触发
   ↓
-运行 npm run sync 同步价格并生成数据
+Job 1: 价格同步
+  - npm run sync:prices（拉取 LiteLLM 价格）
+  - npm run build:data（合并数据）
+  - 检查变更 → 自动 commit & push
   ↓
-自动提交并 push 到 main 分支
+Job 2: AI 模型导入
+  - npm run generate:candidates（生成候选列表）
+  - npm run ai:generate（AI 生成描述）
+  - npm run import:candidates（导入到项目）
+  - 检查变更 → 自动 commit & push
   ↓
-触发 Vercel 自动重新部署
+触发 Vercel 自动部署
 ```
 
-### 工作流 2：AI 模型导入（可选，需配置 API Keys）
+### 两个 Job 说明
 
-```
-价格同步完成后触发
-  ↓
-运行 npm run generate:candidates 生成候选列表
-  ↓
-运行 npm run ai:generate 调用 AI API 生成描述
-  ↓
-运行 npm run import:candidates 导入到项目
-  ↓
-自动提交并 push 到 main 分支
-  ↓
-触发 Vercel 自动重新部署
-```
+**Job 1: sync（价格同步）**
+- 从 LiteLLM GitHub 拉取最新价格
+- 与本地元数据合并
+- 更新 `models-prices.json` 和 `models-generated.ts`
+- 如果价格有变化，自动 commit
+
+**Job 2: ai-import（AI 模型导入）**
+- 扫描 LiteLLM 新增模型（候选列表）
+- 调用 AI API 生成 description 和 strengths
+- 批量导入到 `models-metadata.json`
+- 如果有新模型，自动 commit
 
 ---
 
@@ -59,9 +67,9 @@
 
 ---
 
-### 步骤 3：配置 AI API Keys（仅 AI 模型导入需要）
+### 步骤 3：配置 AI API Keys（必须）
 
-如果启用 AI 自动生成模型描述，需要配置 GitHub Secrets：
+**⚠️ 重要**：由于完全自动化流程每天会运行 AI 生成，必须配置 API Keys。
 
 #### 3.1 获取 API Keys
 
@@ -104,7 +112,7 @@ bash scripts/test-github-actions.sh
 
 **测试脚本会执行**：
 1. ✅ 清理环境（删除 node_modules）
-2. ✅ 安装依赖（`npm ci`）
+2. ✅ 安装依赖（`npm install`）
 3. ✅ 同步价格（`npm run sync`）
 4. ✅ 检查数据变更
 5. ✅ 生成候选列表（`npm run generate:candidates`）
@@ -114,21 +122,25 @@ bash scripts/test-github-actions.sh
 
 ### 步骤 5：验证配置
 
-#### 5.1 测试价格同步
+#### 5.1 手动触发测试
 
 1. 进入 **Actions** 标签页
 2. 点击 **Sync LiteLLM Prices**
 3. 点击 **Run workflow**
 4. 查看运行日志，确认成功
 
-#### 5.2 测试 AI 模型导入
+**预期运行时间**：约 3-5 分钟
+- Job 1 (sync): ~2 分钟
+- Job 2 (ai-import): ~2-3 分钟
 
-1. 进入 **Actions** 标签页
-2. 点击 **Sync LiteLLM Prices**
-3. 点击 **Run workflow**
-4. 勾选 **Run AI generation for new models**
-5. 点击 **Run workflow**
-6. 查看运行日志，确认成功
+#### 5.2 验证 AI 生成
+
+检查日志中是否包含：
+```
+✅ Generate candidates
+✅ AI generate descriptions
+✅ Import candidates
+```
 
 ---
 
@@ -136,8 +148,8 @@ bash scripts/test-github-actions.sh
 
 ### 默认配置
 
-- **价格同步**：每天 UTC 00:00（北京时间 8:00）
-- **AI 模型导入**：价格同步完成后自动运行（如果配置了 API Keys）
+- **运行时间**：每天 UTC 00:00（北京时间 8:00）
+- **自动执行**：价格同步 + AI 模型导入
 
 ### 修改频率
 
@@ -159,18 +171,18 @@ schedule:
 
 ## 🚀 手动触发
 
-### 仅同步价格
+### 仅同步价格（Dry Run）
 
 1. 进入 **Actions** → **Sync LiteLLM Prices**
 2. 点击 **Run workflow**
-3. 选择分支（默认 main）
+3. 勾选 **Skip commit and push (dry run)**
 4. 点击 **Run workflow**
 
-### 同步价格 + AI 导入
+### 完整流程测试
 
 1. 进入 **Actions** → **Sync LiteLLM Prices**
 2. 点击 **Run workflow**
-3. 勾选 **Run AI generation for new models**
+3. 不勾选任何选项
 4. 点击 **Run workflow**
 
 ---
@@ -183,33 +195,42 @@ schedule:
 - 查看所有 workflow 运行历史
 - 点击具体运行查看日志
 
-### 常见问题
+### 预期输出
 
-#### Workflow 失败
+**Job 1: sync**
+```
+✅ Checkout repository
+✅ Setup Node.js
+✅ Install dependencies
+✅ Sync prices and build data
+✅ Configure git
+✅ Check for changes
+✅ Commit and push changes
+✅ Summary
+```
 
-**检查项**：
-- Actions 日志中的错误信息
-- 网络连接是否正常
-- LiteLLM URL 是否变更
-- API Key 是否有效（AI 导入失败时）
-
-#### 没有自动 commit
-
-**检查项**：
-- Workflow permissions 是否为 Read and write
-- git 用户配置是否正确
-- 数据是否有实际变化
-
-#### Vercel 没有自动部署
-
-**检查项**：
-- Vercel 是否连接到 GitHub
-- 确认 main 分支 push 触发部署
-- 检查 Vercel 部署设置
+**Job 2: ai-import**
+```
+✅ Checkout repository
+✅ Setup Node.js
+✅ Install dependencies
+✅ Generate candidates
+✅ AI generate descriptions
+✅ Import candidates
+✅ Configure git
+✅ Check for changes
+✅ Commit and push AI generated models
+✅ Summary
+```
 
 ---
 
 ## 💰 成本估算
+
+### GitHub Actions
+- **免费额度**: 2000 分钟/月
+- **预计使用**: ~5 分钟/天 × 30 = 150 分钟/月
+- **状态**: ✅ 在免费额度内
 
 ### AI 模型导入成本
 
@@ -217,6 +238,7 @@ schedule:
 |------|------|------------------|---------|
 | Agnes 2.5 Flash | ¥0.001/1K | ¥0.10 | ¥3.00 |
 | GLM-4.7 Flash | ¥0.001/1K | ¥0.10 | ¥3.00 |
+| **合计** | - | **¥0.20/天** | **¥6.00/月** |
 
 **注意**：
 - 成本基于实际调用量，以上为估算值
@@ -233,6 +255,7 @@ schedule:
 2. **只使用** GitHub Secrets 存储敏感信息
 3. **定期轮换** API Key（建议每 3 个月）
 4. **限制权限**：API Key 只授予必要权限
+5. **监控用量**：定期检查 API 使用量和余额
 
 ### 代码审查
 
@@ -242,16 +265,33 @@ schedule:
 
 ---
 
-## ✅ 检查清单
+## ⚠️ 注意事项
 
-在启用自动同步前，请确认：
+### 1. API Key 余额
 
-- [ ] GitHub Actions 已启用
-- [ ] Workflow permissions 设置为 Read and write
-- [ ] **本地测试成功**（运行 `bash scripts/test-github-actions.sh`）
-- [ ] 测试运行成功（手动触发）
-- [ ] Vercel 已连接并配置自动部署
-- [ ] （可选）AI API Keys 已配置到 Secrets
+由于完全自动化每天会运行 AI 生成，请确保：
+- API Key 有足够余额
+- 设置余额提醒
+- 定期检查用量
+
+### 2. Workflow Permissions
+
+确保 GitHub Actions 有写入权限：
+- Settings → Actions → General → Workflow permissions
+- 选择 **Read and write permissions**
+
+### 3. Vercel 自动部署
+
+确保 Vercel 已连接并配置：
+- 连接 GitHub 仓库
+- 监听 main 分支
+- 自动部署开启
+
+### 4. 网络问题
+
+GitHub Actions 使用 Ubuntu 环境：
+- 确保 LiteLLM URL 可访问
+- 如遇网络问题，添加重试机制
 
 ---
 
@@ -264,6 +304,7 @@ A:
 2. 检查网络连接（GitHub Actions 使用 Ubuntu 环境）
 3. 确认 npm 依赖安装成功
 4. 检查 LiteLLM URL 是否可访问
+5. 检查 API Keys 是否有效（AI 生成失败时）
 
 ### Q: AI 生成失败但价格同步成功？
 
@@ -273,11 +314,41 @@ A:
 3. 检查 API 地址是否正确
 4. 查看 AI 服务状态（是否宕机）
 
-### Q: 如何禁用 AI 模型导入？
+### Q: 如何临时禁用 AI 模型导入？
 
 A:
-1. 删除 GitHub Secrets 中的 `AGNES_API_KEY` 和 `GLM_API_KEY`
-2. 或修改 workflow 文件，移除 `ai-import` job
+1. 暂时删除 GitHub Secrets 中的 `AGNES_API_KEY` 和 `GLM_API_KEY`
+2. 或注释掉 workflow 文件中的 `ai-import` job
+3. 或修改 cron 频率减少运行次数
+
+### Q: 如何查看 AI 生成的模型？
+
+A:
+- 查看 git commit 历史，搜索 "auto-import AI generated models"
+- 检查 `data/models-metadata.json` 的变更
+- 访问网站查看新增模型
+
+### Q: API 用量超标怎么办？
+
+A:
+1. 立即删除 GitHub Secrets 中的 API Keys
+2. 修改 workflow 文件，注释掉 AI 生成步骤
+3. 联系 API 提供商确认账单
+4. 调整运行频率（如改为每周运行）
+
+---
+
+## ✅ 检查清单
+
+在启用自动同步前，请确认：
+
+- [ ] GitHub Actions 已启用
+- [ ] Workflow permissions 设置为 Read and write
+- [ ] **本地测试成功**（运行 `bash scripts/test-github-actions.sh`）
+- [ ] **AI API Keys 已配置到 Secrets**（必须）
+- [ ] API Key 有足够余额
+- [ ] 测试运行成功（手动触发）
+- [ ] Vercel 已连接并配置自动部署
 
 ---
 
@@ -287,8 +358,11 @@ A:
 - [快速开始 - Agnes + GLM](../../docs/QUICKSTART-AGNES-GLM.md)
 - [LiteLLM 同步说明](./sync-prices.yml)
 - [自动更新测试报告](../../docs/AUTO-UPDATE-TEST.md)
+- [配置完成报告](../../docs/GITHUB-ACTIONS-COMPLETE.md)
+- [验证指南](../../docs/GITHUB-ACTIONS-VERIFY.md)
 
 ---
 
 **最后更新**: 2026-08-05  
-**维护者**: 项目团队
+**维护者**: 项目团队  
+**自动化级别**: 完全自动化（每日运行）

@@ -1,5 +1,6 @@
 # LiteLLM 价格自动同步 + AI 模型导入
-# 每天 UTC 00:00 (北京时间 8:00) 运行
+# 每天 UTC 00:00 (北京时间 8:00) 自动运行
+# 包含：价格同步 + AI 生成新模型 + 自动提交
 # 参考：.github/workflows/README.md
 
 name: Sync LiteLLM Prices
@@ -14,11 +15,6 @@ on:
     inputs:
       skip_commit:
         description: 'Skip commit and push (dry run)'
-        required: false
-        default: 'false'
-        type: string
-      run_ai_generate:
-        description: 'Run AI generation for new models'
         required: false
         default: 'false'
         type: string
@@ -93,7 +89,6 @@ jobs:
   ai-import:
     needs: sync
     runs-on: ubuntu-latest
-    if: github.event.inputs.run_ai_generate == 'true' || github.event_name == 'schedule'
     
     steps:
       - name: Checkout repository
