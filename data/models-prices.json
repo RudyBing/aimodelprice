@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-06T02:30:48.944Z",
+  "syncedAt": "2026-08-05T11:59:36.849Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -195,6 +195,1101 @@
       "id": "glm-5",
       "prices": {
         "source": "fallback"
+      }
+    },
+    {
+      "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.000004,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "anthropic-claude-3-opus-20240229-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000015,
+        "outputCostPerToken": 0.000075,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-001",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 32768,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-pro-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000012,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-1-flash-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-pro",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-1-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-5-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-5-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.000009,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-6-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.0000075,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-exp-1114",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-exp-1206",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 2097152,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-gemma-2-27b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3.5e-7,
+        "outputCostPerToken": 0.00000105,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-gemma-2-9b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3.5e-7,
+        "outputCostPerToken": 0.00000105,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemma-3-27b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-imagen-3-0-fast-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-3-0-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-fast-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-ultra-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-veo-2-0-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-veo-3-1-fast-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-veo-3-1-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-exp-image-generation",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 32768,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-lite-001",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 2e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2402",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000012,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4.5e-7,
+        "outputCostPerToken": 7e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2407",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000009,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-mistral-small-2402-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000003,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-codestral-2405",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000003,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-codestral-2508",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 9e-7,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 256000
+      }
+    },
+    {
+      "id": "mistral-devstral-medium-2507",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-devstral-small-2505",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-devstral-small-2507",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-labs-devstral-small-2512",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 256000
+      }
+    },
+    {
+      "id": "mistral-devstral-2512",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 256000
+      }
+    },
+    {
+      "id": "mistral-magistral-medium-2506",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000005,
+        "maxInputTokens": 40000,
+        "maxOutputTokens": 40000
+      }
+    },
+    {
+      "id": "mistral-magistral-medium-2509",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000005,
+        "maxInputTokens": 40000,
+        "maxOutputTokens": 40000
+      }
+    },
+    {
+      "id": "mistral-magistral-medium-1-2-2509",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000005,
+        "maxInputTokens": 40000,
+        "maxOutputTokens": 40000
+      }
+    },
+    {
+      "id": "mistral-magistral-small-2506",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 40000,
+        "maxOutputTokens": 40000
+      }
+    },
+    {
+      "id": "mistral-magistral-small-1-2-2509",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 40000,
+        "maxOutputTokens": 40000
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2411",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000006,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-mistral-large-3",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 262144,
+        "maxOutputTokens": 262144,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2512",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 262144,
+        "maxOutputTokens": 262144,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-mistral-medium",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000027,
+        "outputCostPerToken": 0.0000081,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-medium-2312",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000027,
+        "outputCostPerToken": 0.0000081,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-medium-2505",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-medium-2508",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 131072,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-mistral-medium-2604",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.0000075,
+        "maxInputTokens": 262144,
+        "maxOutputTokens": 262144,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-mistral-medium-3-1-2508",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 131072,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-mistral-small",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-small-3-2-2506",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 6e-8,
+        "outputCostPerToken": 1.8e-7,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 131072,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "mistral-ministral-3-3b-2512",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 1e-7,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 131072,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.000004,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "bedrock-us-gov-east-1-anthropic-claude-3-5-sonnet-",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000036,
+        "outputCostPerToken": 0.000018,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-us-gov-west-1-anthropic-claude-3-7-sonnet-",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000036,
+        "outputCostPerToken": 0.000018,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-us-gov-east-1-anthropic-claude-3-haiku-202",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-opus-20240229-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000015,
+        "outputCostPerToken": 0.000075,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-ap-northeast-1-anthropic-claude-instant-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000223,
+        "outputCostPerToken": 0.00000755,
+        "maxInputTokens": 100000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "bedrock-ap-northeast-1-anthropic-claude-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.000024,
+        "maxInputTokens": 100000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "bedrock-us-gov-east-1-anthropic-claude-sonnet-4-5-",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000036,
+        "outputCostPerToken": 0.000018,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-us-gov-east-1-anthropic-claude-haiku-4-5-2",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000012,
+        "outputCostPerToken": 0.000006,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 64000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "vertex_ai-google-gemma-4-26b-a4b-it-maas",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 6e-7,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 128000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-001",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 32768,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-pro-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000012,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-1-flash-image",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-5-pro",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-1-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-5-flash-lite",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 0.0000025,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-5-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.000009,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65535,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-3-6-flash",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.0000075,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 65536,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-exp-1114",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-exp-1206",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 2097152,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-gemma-2-27b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3.5e-7,
+        "outputCostPerToken": 0.00000105,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-gemma-2-9b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3.5e-7,
+        "outputCostPerToken": 0.00000105,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemma-3-27b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 131072,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-imagen-3-0-fast-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-3-0-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-fast-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-imagen-4-0-ultra-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "gemini-veo-2-0-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-veo-3-1-fast-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-veo-3-1-generate-001",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 1024
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-exp-image-generation",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0,
+        "outputCostPerToken": 0,
+        "maxInputTokens": 32768,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "gemini-gemini-2-0-flash-lite-001",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 7.5e-8,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 2e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2402",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000004,
+        "outputCostPerToken": 0.000012,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4.5e-7,
+        "outputCostPerToken": 7e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2407",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000009,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-mistral-small-2402-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000003,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-codestral-2405",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000003,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-codestral-2508",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 9e-7,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 256000
+      }
+    },
+    {
+      "id": "mistral-devstral-medium-2507",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4e-7,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-devstral-small-2505",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-devstral-small-2507",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
+      }
+    },
+    {
+      "id": "mistral-labs-devstral-small-2512",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1e-7,
+        "outputCostPerToken": 3e-7,
+        "maxInputTokens": 256000,
+        "maxOutputTokens": 256000
       }
     }
   ]

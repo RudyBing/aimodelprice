@@ -688,6 +688,2446 @@ export const models: AIModel[] = [
     "url": "https://bigmodel.cn",
     "freeTier": "开源 + API 免费",
     "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+    "name": "Claude-3-5-haiku",
+    "slug": "claude-3-5-haiku",
+    "provider": "Anthropic",
+    "description": "高性能 Anthropic 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.8000 / 1M tokens",
+      "output": "$4.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://anthropic.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-opus-20240229-v1:0",
+    "name": "Claude-3-opus",
+    "slug": "claude-3-opus",
+    "provider": "Anthropic",
+    "description": "高性能 Anthropic 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$15.00 / 1M tokens",
+      "output": "$75.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://anthropic.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+    "name": "Claude-3-sonnet",
+    "slug": "claude-3-sonnet",
+    "provider": "Anthropic",
+    "description": "高性能 Anthropic 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$15.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://anthropic.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash",
+    "name": "Gemini-2.0-flash",
+    "slug": "gemini-2-0-flash",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-001",
+    "name": "Gemini-2.0-flash-001",
+    "slug": "gemini-2-0-flash-001",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-lite",
+    "name": "Gemini-2.0-flash-lite",
+    "slug": "gemini-2-0-flash-lite",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0750 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash",
+    "name": "Gemini-2.5-flash",
+    "slug": "gemini-2-5-flash",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash-image",
+    "name": "Gemini-2.5-flash-image",
+    "slug": "gemini-2-5-flash-image",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "32.8K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-pro-image",
+    "name": "Gemini-3-pro-image",
+    "slug": "gemini-3-pro-image",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$12.00 / 1M tokens"
+    },
+    "contextWindow": "65.5K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-1-flash-image",
+    "name": "Gemini-3.1-flash-image",
+    "slug": "gemini-3-1-flash-image",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.2500 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "65.5K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash-lite",
+    "name": "Gemini-2.5-flash-lite",
+    "slug": "gemini-2-5-flash-lite",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-pro",
+    "name": "Gemini-2.5-pro",
+    "slug": "gemini-2-5-pro",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.25 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-1-flash-lite",
+    "name": "Gemini-3.1-flash-lite",
+    "slug": "gemini-3-1-flash-lite",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.2500 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-5-flash-lite",
+    "name": "Gemini-3.5-flash-lite",
+    "slug": "gemini-3-5-flash-lite",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-5-flash",
+    "name": "Gemini-3.5-flash",
+    "slug": "gemini-3-5-flash",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.50 / 1M tokens",
+      "output": "$9.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-6-flash",
+    "name": "Gemini-3.6-flash",
+    "slug": "gemini-3-6-flash",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.50 / 1M tokens",
+      "output": "$7.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-exp-1114",
+    "name": "Gemini-exp-1114",
+    "slug": "gemini-exp-1114",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-exp-1206",
+    "name": "Gemini-exp-1206",
+    "slug": "gemini-exp-1206",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "2.1M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-gemma-2-27b-it",
+    "name": "Gemini-gemma-2-27b-it",
+    "slug": "gemini-gemma-2-27b-it",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3500 / 1M tokens",
+      "output": "$1.05 / 1M tokens"
+    },
+    "contextWindow": "未知",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-gemma-2-9b-it",
+    "name": "Gemini-gemma-2-9b-it",
+    "slug": "gemini-gemma-2-9b-it",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3500 / 1M tokens",
+      "output": "$1.05 / 1M tokens"
+    },
+    "contextWindow": "未知",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemma-3-27b-it",
+    "name": "Gemma 3 27b",
+    "slug": "gemma-3-27b",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-3-0-fast-generate-001",
+    "name": "Imagen 3.0 fast",
+    "slug": "imagen-3-0-fast",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-3-0-generate-001",
+    "name": "Imagen 3.0 generate",
+    "slug": "imagen-3-0-generate",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-fast-generate-001",
+    "name": "Imagen 4.0 fast",
+    "slug": "imagen-4-0-fast",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-generate-001",
+    "name": "Imagen 4.0 generate",
+    "slug": "imagen-4-0-generate",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-ultra-generate-001",
+    "name": "Imagen 4.0 ultra",
+    "slug": "imagen-4-0-ultra",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-2-0-generate-001",
+    "name": "Veo 2.0 generate",
+    "slug": "veo-2-0-generate",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$21.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-3-1-fast-generate-001",
+    "name": "Veo 3.1 fast",
+    "slug": "veo-3-1-fast",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$9.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-3-1-generate-001",
+    "name": "Veo 3.1 generate",
+    "slug": "veo-3-1-generate",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$24.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-exp-image-generation",
+    "name": "Gemini-2.0-flash-exp-image-generation",
+    "slug": "gemini-2-0-flash-exp-image-generation",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "32.8K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-lite-001",
+    "name": "Gemini-2.0-flash-lite-001",
+    "slug": "gemini-2-0-flash-lite-001",
+    "provider": "Gemini",
+    "description": "高性能 Gemini 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0750 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://gemini.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+    "name": "Mistral 7b instruct",
+    "slug": "mistral-7b-instruct",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1500 / 1M tokens",
+      "output": "$0.2000 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2402",
+    "name": "Mistral large 2402",
+    "slug": "mistral-large-2402",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$4.00 / 1M tokens",
+      "output": "$12.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+    "name": "Mixtral 8x7b instruct",
+    "slug": "mixtral-8x7b-instruct",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4500 / 1M tokens",
+      "output": "$0.7000 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2407",
+    "name": "Mistral large 2407",
+    "slug": "mistral-large-2407",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$9.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-small-2402-v1:0",
+    "name": "Mistral small 2402",
+    "slug": "mistral-small-2402",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.00 / 1M tokens",
+      "output": "$3.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-codestral-2405",
+    "name": "Codestral 2405",
+    "slug": "codestral-2405",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.00 / 1M tokens",
+      "output": "$3.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-codestral-2508",
+    "name": "Codestral 2508",
+    "slug": "codestral-2508",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$0.9000 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-medium-2507",
+    "name": "Devstral medium 2507",
+    "slug": "devstral-medium-2507",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-small-2505",
+    "name": "Devstral small 2505",
+    "slug": "devstral-small-2505",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-small-2507",
+    "name": "Devstral small 2507",
+    "slug": "devstral-small-2507",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-labs-devstral-small-2512",
+    "name": "Labs devstral small",
+    "slug": "labs-devstral-small",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-2512",
+    "name": "Devstral 2512",
+    "slug": "devstral-2512",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-magistral-medium-2506",
+    "name": "Magistral medium 2506",
+    "slug": "magistral-medium-2506",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$5.00 / 1M tokens"
+    },
+    "contextWindow": "40K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-magistral-medium-2509",
+    "name": "Magistral medium 2509",
+    "slug": "magistral-medium-2509",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$5.00 / 1M tokens"
+    },
+    "contextWindow": "40K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-magistral-medium-1-2-2509",
+    "name": "Magistral medium 1",
+    "slug": "magistral-medium-1",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$5.00 / 1M tokens"
+    },
+    "contextWindow": "40K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-magistral-small-2506",
+    "name": "Magistral small 2506",
+    "slug": "magistral-small-2506",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.5000 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "40K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-magistral-small-1-2-2509",
+    "name": "Magistral small 1",
+    "slug": "magistral-small-1",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.5000 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "40K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2411",
+    "name": "Mistral large 2411",
+    "slug": "mistral-large-2411",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$6.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-3",
+    "name": "Mistral large 3",
+    "slug": "mistral-large-3",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.5000 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "262.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2512",
+    "name": "Mistral large 2512",
+    "slug": "mistral-large-2512",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.5000 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "262.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium",
+    "name": "Mistral medium",
+    "slug": "mistral-medium",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.70 / 1M tokens",
+      "output": "$8.10 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium-2312",
+    "name": "Mistral medium 2312",
+    "slug": "mistral-medium-2312",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.70 / 1M tokens",
+      "output": "$8.10 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium-2505",
+    "name": "Mistral medium 2505",
+    "slug": "mistral-medium-2505",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium-2508",
+    "name": "Mistral medium 2508",
+    "slug": "mistral-medium-2508",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium-2604",
+    "name": "Mistral medium 2604",
+    "slug": "mistral-medium-2604",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.50 / 1M tokens",
+      "output": "$7.50 / 1M tokens"
+    },
+    "contextWindow": "262.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-medium-3-1-2508",
+    "name": "Mistral medium 3",
+    "slug": "mistral-medium-3",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-small",
+    "name": "Mistral small",
+    "slug": "mistral-small",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-small-3-2-2506",
+    "name": "Mistral small 3",
+    "slug": "mistral-small-3",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0600 / 1M tokens",
+      "output": "$0.1800 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-ministral-3-3b-2512",
+    "name": "Ministral 3 3b",
+    "slug": "ministral-3-3b",
+    "provider": "Mistral",
+    "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.1000 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高性价比",
+      "快速响应"
+    ],
+    "url": "https://mistral.com",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+    "name": "Claude-3-5-haiku",
+    "slug": "anthropic-claude-3-5-haiku-20241022-v1:0",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic开发的文本生成模型，擅长创作短篇诗歌，提供高质量、低成本的诗句生成服务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.8000 / 1M tokens",
+      "output": "$4.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": false,
+    "strengths": [
+      "诗歌创作能力突出",
+      "低成本高效输出",
+      "适用于日常创作与文学活动",
+      "上下文窗口宽广，理解能力全面",
+      "支持个性化诗歌定制"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-gov-east-1-anthropic-claude-3-5-sonnet-",
+    "name": "Claude-3-5-sonnet",
+    "slug": "bedrock-us-gov-east-1-anthropic-claude-3-5-sonnet-",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic开发的文本生成模型，擅长诗歌创作，支持多模态输入，适用于创意写作和文学创作。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.60 / 1M tokens",
+      "output": "$18.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "诗歌创作专长",
+      "多模态输入支持",
+      "适用于创意写作",
+      "价格合理",
+      "上下文窗口大"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-gov-west-1-anthropic-claude-3-7-sonnet-",
+    "name": "Claude-3-7-sonnet",
+    "slug": "bedrock-us-gov-west-1-anthropic-claude-3-7-sonnet-",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的文本生成模型，擅长撰写诗歌，具备200K token的上下文窗口和多种模态支持，价格亲民。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.60 / 1M tokens",
+      "output": "$18.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "诗歌生成能力强",
+      "支持多模态内容生成",
+      "高性价比",
+      "大容量上下文处理",
+      "适用于创意写作"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-gov-east-1-anthropic-claude-3-haiku-202",
+    "name": "Claude-3-haiku",
+    "slug": "bedrock-us-gov-east-1-anthropic-claude-3-haiku-202",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic的Claude-3-haiku，专注于文本生成，价格亲民，支持多模态，适用于创意写作和对话系统。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "价格实惠",
+      "支持多模态输入",
+      "适用于创意写作",
+      "对话系统优化",
+      "上下文理解能力强"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-opus-20240229-v1:0",
+    "name": "Claude-3-opus",
+    "slug": "anthropic-claude-3-opus-20240229-v1:0",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的Claude-3-opus，是一款支持多模态的文本生成模型，适用于各种文本生成任务，提供高效且经济的文本生成服务。",
+    "category": "text",
+    "pricing": {
+      "input": "$15.00 / 1M tokens",
+      "output": "$75.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "多模态支持，适应性强",
+      "上下文窗口大，处理能力强",
+      "价格经济，性价比高",
+      "模型输出质量高，文本流畅自然",
+      "由Anthropic研发，技术成熟可靠"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+    "name": "Claude-3-sonnet",
+    "slug": "anthropic-claude-3-sonnet-20240229-v1:0",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的多模态文本生成模型，擅长创作诗歌，支持200K tokens的上下文窗口，价格亲民。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$15.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "诗歌创作能力强",
+      "支持多模态输入",
+      "价格实惠",
+      "上下文理解深入",
+      "易于使用"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-ap-northeast-1-anthropic-claude-instant-v1",
+    "name": "Claude-instant",
+    "slug": "bedrock-ap-northeast-1-anthropic-claude-instant-v1",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的高效文本生成模型，专注于文本生成任务，价格实惠，支持大规模文本处理。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.23 / 1M tokens",
+      "output": "$7.55 / 1M tokens"
+    },
+    "contextWindow": "100K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格实惠",
+      "高效文本生成",
+      "大规模文本处理支持",
+      "上下文窗口大",
+      "多模态功能待开发"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-ap-northeast-1-anthropic-claude-v1",
+    "name": "Claude",
+    "slug": "bedrock-ap-northeast-1-anthropic-claude-v1",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的Claude，专注于文本生成，性价比高，适合处理大量文本任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$8.00 / 1M tokens",
+      "output": "$24.00 / 1M tokens"
+    },
+    "contextWindow": "100K tokens",
+    "multimodal": false,
+    "strengths": [
+      "性价比高",
+      "高效处理大量文本",
+      "适用于多种文本生成任务",
+      "支持长上下文窗口",
+      "易于接入"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-gov-east-1-anthropic-claude-sonnet-4-5-",
+    "name": "Claude-sonnet-4-5",
+    "slug": "bedrock-us-gov-east-1-anthropic-claude-sonnet-4-5-",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的文本生成模型，擅长创作诗歌，具备多模态支持，适用于文学创作和创意写作。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.60 / 1M tokens",
+      "output": "$18.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "诗歌创作能力强",
+      "多模态支持丰富",
+      "价格合理",
+      "上下文窗口大",
+      "适用于创意写作"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-gov-east-1-anthropic-claude-haiku-4-5-2",
+    "name": "Claude-haiku-4-5",
+    "slug": "bedrock-us-gov-east-1-anthropic-claude-haiku-4-5-2",
+    "provider": "Anthropic",
+    "logo": "",
+    "description": "Anthropic推出的多模态文本模型，擅长创作和生成诗歌，适用于文学创作和创意写作。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.20 / 1M tokens",
+      "output": "$6.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": true,
+    "strengths": [
+      "诗歌创作能力强",
+      "支持多模态输入输出",
+      "上下文窗口大，理解力强",
+      "价格亲民",
+      "跨平台应用广泛"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.anthropic.com/claude/docs/models-overview",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "vertex_ai-google-gemma-4-26b-a4b-it-maas",
+    "name": "Gemma 4 26b",
+    "slug": "vertex_ai-google-gemma-4-26b-a4b-it-maas",
+    "provider": "Google",
+    "logo": "",
+    "description": "Google推出的260亿参数开源多模态语言模型，具备256K超长上下文窗口，支持文本与图像理解，适用于代码生成、文档分析和复杂推理任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1500 / 1M tokens",
+      "output": "$0.6000 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": true,
+    "strengths": [
+      "256K超长上下文窗口，支持超长文档处理",
+      "开源可商用，成本优势显著",
+      "多模态支持文本与图像理解",
+      "Google原生架构，推理与代码能力出色"
+    ],
+    "released": "2026-08-05",
+    "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash",
+    "name": "Gemini-2.0-flash",
+    "slug": "gemini-gemini-2-0-flash",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.0-flash，Gemini推出的新一代文本多模态模型，具备强大文本理解和生成能力，适用于多种自然语言处理任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "价格亲民，高性价比",
+      "支持多模态数据，丰富应用场景",
+      "上下文窗口大，处理长文本能力强",
+      "适应性强，可扩展性强"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-001",
+    "name": "Gemini-2.0-flash-001",
+    "slug": "gemini-gemini-2-0-flash-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.0-flash-001 是 Gemini 公司推出的文本处理模型，具备高效的多模态处理能力，适用于需要快速响应和高质量输出的场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "低廉的价格",
+      "强大的多模态处理能力",
+      "广泛的上下文窗口支持",
+      "快速响应速度",
+      "高质量输出"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-lite",
+    "name": "Gemini-2.0-flash-lite",
+    "slug": "gemini-gemini-2-0-flash-lite",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.0-flash-lite，Gemini公司推出的轻量级文本处理模型，支持多模态输入，价格亲民，适用于快速文本分析和多模态内容处理。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0750 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "轻量级高效处理",
+      "多模态输入支持",
+      "价格实惠",
+      "快速文本分析",
+      "适用于多种场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash",
+    "name": "Gemini-2.5-flash",
+    "slug": "gemini-gemini-2-5-flash",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.5-flash 是 Gemini 公司推出的文本处理模型，具备多模态支持，适用于处理大规模文本数据，价格实惠。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "多模态处理能力",
+      "高性价比",
+      "大容量上下文窗口",
+      "快速响应速度",
+      "灵活的定价策略"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash-image",
+    "name": "Gemini-2.5-flash-image",
+    "slug": "gemini-gemini-2-5-flash-image",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.5-flash-image 是 Gemini 公司推出的图像处理模型，具备强大的多模态处理能力，适用于图像分析和生成任务。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "32.8K tokens",
+    "multimodal": true,
+    "strengths": [
+      "多模态处理能力强",
+      "低廉的价格",
+      "大容量上下文窗口",
+      "高效的处理速度",
+      "广泛的应用场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-pro-image",
+    "name": "Gemini-3-pro-image",
+    "slug": "gemini-gemini-3-pro-image",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini公司推出的一款免费图像处理模型，支持多模态输入输出，适用于快速图像分析和生成。",
+    "category": "image",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$12.00 / 1M tokens"
+    },
+    "contextWindow": "65.5K tokens",
+    "multimodal": true,
+    "strengths": [
+      "免费使用",
+      "多模态处理",
+      "高效图像分析",
+      "快速输出生成",
+      "适应广泛场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-1-flash-image",
+    "name": "Gemini-3.1-flash-image",
+    "slug": "gemini-gemini-3-1-flash-image",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-3.1-flash-image 是 Gemini 公司推出的图像处理模型，具备高效的多模态处理能力，适用于快速图像分析和生成。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.2500 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "65.5K tokens",
+    "multimodal": true,
+    "strengths": [
+      "高效的多模态处理",
+      "快速图像分析能力",
+      "低廉的计费标准",
+      "大容量上下文窗口",
+      "支持多种图像任务"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-flash-lite",
+    "name": "Gemini-2.5-flash-lite",
+    "slug": "gemini-gemini-2-5-flash-lite",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.5-flash-lite是Gemini公司推出的文本模型，具备轻量级和低成本的特性，支持多模态输入，适用于快速生成文本内容。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.4000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "轻量级设计，成本低廉",
+      "支持多模态输入，增强文本生成效果",
+      "上下文窗口大，保证生成文本的连贯性",
+      "快速响应，满足实时需求",
+      "价格透明，易于预算控制"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-5-pro",
+    "name": "Gemini-2.5-pro",
+    "slug": "gemini-gemini-2-5-pro",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.5-pro是Gemini公司推出的多模态文本模型，具备高效文本生成能力，适用于各场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.25 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "多模态融合",
+      "低成本高效输出",
+      "1.0M token的大上下文窗口",
+      "灵活的文本处理",
+      "价格实惠"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-1-flash-lite",
+    "name": "Gemini-3.1-flash-lite",
+    "slug": "gemini-gemini-3-1-flash-lite",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-3.1-flash-lite 是Gemini公司推出的轻量级文本模型，具备多模态处理能力，适用于快速生成高质量文本。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.2500 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "价格低廉",
+      "轻量级设计，响应迅速",
+      "支持多模态输入输出",
+      "上下文窗口灵活，适应性强",
+      "应用场景广泛"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-5-flash-lite",
+    "name": "Gemini-3.5-flash-lite",
+    "slug": "gemini-gemini-3-5-flash-lite",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-3.5-flash-lite 是 Gemini 公司推出的轻量级文本模型，支持多模态输入，适用于快速生成文本和图像。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "轻量级设计，高效生成文本和图像",
+      "支持多模态输入，拓展应用场景",
+      "价格实惠，性价比高",
+      "上下文窗口大，处理复杂文本",
+      "易于集成，降低开发成本"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-5-flash",
+    "name": "Gemini-3.5-flash",
+    "slug": "gemini-gemini-3-5-flash",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-3.5-flash 是 Gemini 公司推出的多模态文本模型，具备强大的文本理解和生成能力，适用于需要高精度文本处理的场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.50 / 1M tokens",
+      "output": "$9.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "支持多模态输入输出",
+      "低廉的按量计费模式",
+      "上下文窗口灵活配置",
+      "高效的文本生成能力",
+      "快速响应的上下文理解"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-3-6-flash",
+    "name": "Gemini-3.6-flash",
+    "slug": "gemini-gemini-3-6-flash",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-3.6-flash 是 Gemini 公司推出的一款支持多模态的文本模型，专注于提供高性价比的文本处理和生成服务，适用于各类文本任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.50 / 1M tokens",
+      "output": "$7.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "价格优势显著",
+      "上下文窗口宽泛，支持大规模文本处理",
+      "多模态功能拓展应用场景",
+      "输出质量高，性能稳定",
+      "广泛适用各类文本任务"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-exp-1114",
+    "name": "Gemini-exp-1114",
+    "slug": "gemini-gemini-exp-1114",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini 实验版多模态大模型，支持百万级上下文窗口，具备文本理解与多模态处理能力，适用于长文档分析、复杂任务处理等场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "百万级上下文窗口，支持超长文档处理",
+      "多模态能力，支持文本与图像等多种输入",
+      "实验版本免费使用，零成本体验前沿能力",
+      "适用于长文本分析、代码处理、复杂推理等场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-exp-1206",
+    "name": "Gemini-exp-1206",
+    "slug": "gemini-gemini-exp-1206",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Google Gemini 系列实验模型，支持 210 万 token 超长上下文与多模态输入，适用于长文档分析、复杂代码库理解和多模态内容处理等场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "2.1M tokens",
+    "multimodal": true,
+    "strengths": [
+      "超大 210 万 token 上下文窗口，支持超长文档与代码库处理",
+      "原生多模态支持，可理解文本、图像等多种输入类型",
+      "实验版本免费使用，便于快速验证与原型开发",
+      "Google 原生架构，在多语言理解与推理任务上表现优异"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-gemma-2-27b-it",
+    "name": "Gemini-gemma-2-27b-it",
+    "slug": "gemini-gemini-gemma-2-27b-it",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini公司推出的文本处理模型，具备多模态处理能力，适用于复杂文本分析和生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3500 / 1M tokens",
+      "output": "$1.05 / 1M tokens"
+    },
+    "contextWindow": "未知",
+    "multimodal": true,
+    "strengths": [
+      "多模态处理能力",
+      "高效文本分析",
+      "低成本输出",
+      "适用于多种文本任务",
+      "价格亲民"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-gemma-2-9b-it",
+    "name": "Gemini-gemma-2-9b-it",
+    "slug": "gemini-gemini-gemma-2-9b-it",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-gemma-2-9b-it 是 Gemini 公司推出的多模态文本模型，具备强大的文本处理能力，适用于各种文本生成和交互场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3500 / 1M tokens",
+      "output": "$1.05 / 1M tokens"
+    },
+    "contextWindow": "未知",
+    "multimodal": true,
+    "strengths": [
+      "支持多模态输入输出",
+      "低廉的定价策略",
+      "适用于广泛的文本处理任务",
+      "高效的处理速度",
+      "丰富的应用场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemma-3-27b-it",
+    "name": "Gemma 3 27b",
+    "slug": "gemini-gemma-3-27b-it",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini公司Gemma 3 27b文本模型，免费输入，按输出计费，支持多模态，具备强大的文本理解和生成能力，适用于内容创作和数据分析。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "131.1K tokens",
+    "multimodal": true,
+    "strengths": [
+      "免费输入，低廉输出费用",
+      "强大的文本处理能力",
+      "支持多模态数据融合",
+      "适用于内容创作与数据分析",
+      "上下文窗口广阔，处理复杂任务"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-3-0-fast-generate-001",
+    "name": "Imagen 3.0 fast",
+    "slug": "gemini-imagen-3-0-fast-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Google 推出的高效图像生成模型，基于 Imagen 3 架构优化，支持快速生成高质量图像。适用于创意设计、营销素材、内容创作等场景，提供免费调用服务。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "生成速度显著提升，适合实时或批量图像生成需求",
+      "完全免费使用，降低创作门槛",
+      "基于 Imagen 3 高质量图像生成能力，细节表现优异",
+      "Google 技术背书，稳定性和可靠性有保障"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-3-0-generate-001",
+    "name": "Imagen 3.0 generate",
+    "slug": "gemini-imagen-3-0-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Imagen 3.0 是 Google 最新一代图像生成模型，支持高质量文本渲染与复杂场景理解，适用于创意设计、广告素材和视觉内容生成等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "卓越的文本渲染能力，可生成包含准确文字的图像",
+      "高保真度的图像质量，细节丰富且逼真",
+      "支持复杂场景理解与多对象构图",
+      "完全免费使用，降低创作门槛"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-fast-generate-001",
+    "name": "Imagen 4.0 fast",
+    "slug": "gemini-imagen-4-0-fast-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Imagen 4.0 fast 是 Gemini 推出的高效图像生成模型，专注于快速生成高质量图像内容。适用于需要大批量、低延迟图像生成的场景，如内容创作、设计原型和视觉素材生产。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "快速生成，优化推理速度",
+      "免费使用，零成本门槛",
+      "高质量图像输出，细节表现优秀",
+      "适合批量图像生成场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-generate-001",
+    "name": "Imagen 4.0 generate",
+    "slug": "gemini-imagen-4-0-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini公司推出的免费图像生成模型，专注于图像创作，适用于创意设计、艺术创作等领域。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "免费使用，降低成本",
+      "专注图像生成，效果精准",
+      "适用广泛，创意无限",
+      "操作简便，易上手",
+      "模型稳定，输出质量高"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-imagen-4-0-ultra-generate-001",
+    "name": "Imagen 4.0 ultra",
+    "slug": "gemini-imagen-4-0-ultra-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini公司推出的免费图像生成模型，适用于创意设计和内容创作，无需付费即可输入和输出。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "免费使用，无成本门槛",
+      "适用于创意设计，提升创作效率",
+      "操作简便，易上手",
+      "无需上下文窗口，快速响应",
+      "不支持多模态，专注于图像生成"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-2-0-generate-001",
+    "name": "Veo 2.0 generate",
+    "slug": "gemini-veo-2-0-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Veo 2.0 是由 Gemini 团队开发的专业视频生成模型，支持从文本或图像生成高质量视频内容。适用于创意制作、广告营销及短视频生成等场景，输出按分钟计费。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$21.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高质量视频生成能力，支持复杂场景与动态效果",
+      "Gemini 团队背书，技术实力雄厚",
+      "输入免费，降低创作门槛",
+      "专为视频生成优化，输出质量稳定"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-3-1-fast-generate-001",
+    "name": "Veo 3.1 fast",
+    "slug": "gemini-veo-3-1-fast-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini出品的Veo 3.1 fast是一款免费输入、输出付费的视频处理模型，专注于视频领域，支持长上下文窗口处理。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$9.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "免费输入降低使用成本",
+      "长上下文窗口处理复杂视频数据",
+      "专注视频领域，处理效率高",
+      "输出收费模式保障模型质量",
+      "简单易用的价格策略"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-veo-3-1-generate-001",
+    "name": "Veo 3.1 generate",
+    "slug": "gemini-veo-3-1-generate-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Veo 3.1 是 Google DeepMind 推出的视频生成模型，支持高质量视频内容创作。输入免费，输出按分钟计费，适合影视制作、广告创意及短视频生成等场景。",
+    "category": "video",
+    "pricing": {
+      "input": "免费",
+      "output": "$24.0000 / min"
+    },
+    "contextWindow": "1.0K tokens",
+    "multimodal": false,
+    "strengths": [
+      "输入完全免费，降低创作门槛",
+      "高质量视频生成能力",
+      "由 Google DeepMind 研发，技术实力可靠",
+      "灵活的按需计费模式"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "freeTier": "有",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-exp-image-generation",
+    "name": "Gemini-2.0-flash-exp-image-generation",
+    "slug": "gemini-gemini-2-0-flash-exp-image-generation",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Google Gemini 2.0 Flash 实验版图像生成模型，支持多模态理解与图像生成，适用于快速图像创作、视觉内容生成等场景，上下文窗口达 33K tokens。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.0000 / 1M tokens",
+      "output": "$0.0000 / 1M tokens"
+    },
+    "contextWindow": "32.8K tokens",
+    "multimodal": true,
+    "strengths": [
+      "免费使用，零成本接入",
+      "多模态支持，图文理解能力强",
+      "Flash 版本推理速度快",
+      "33K tokens 长上下文窗口",
+      "实验版持续迭代优化"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "gemini-gemini-2-0-flash-lite-001",
+    "name": "Gemini-2.0-flash-lite-001",
+    "slug": "gemini-gemini-2-0-flash-lite-001",
+    "provider": "Gemini",
+    "logo": "",
+    "description": "Gemini-2.0-flash-lite-001是Gemini公司推出的轻量级文本模型，具备多模态处理能力，适用于快速文本生成和交互式应用。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.0750 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": [
+      "低廉的定价",
+      "支持多模态数据",
+      "高效的文本生成速度",
+      "广泛的上下文窗口处理",
+      "适用于即时交互场景"
+    ],
+    "released": "2026-08-05",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+    "name": "Mistral 7b instruct",
+    "slug": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral 7b instruct 是 Mistral 公司推出的文本处理模型，专注于高效生成和优化文本内容，适用于各种文本生成场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1500 / 1M tokens",
+      "output": "$0.2000 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高效生成文本内容",
+      "低成本计算",
+      "大容量上下文窗口",
+      "快速响应",
+      "多语言支持"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2402",
+    "name": "Mistral large 2402",
+    "slug": "mistral-mistral-large-2402",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral Large 2402 是 Mistral AI 推出的旗舰文本模型，在代码生成、数学推理和多语言任务上表现卓越，支持32K上下文窗口，适用于复杂逻辑推理和专业领域应用。",
+    "category": "text",
+    "pricing": {
+      "input": "$4.00 / 1M tokens",
+      "output": "$12.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "代码生成与理解能力出色",
+      "多语言支持全面",
+      "32K长上下文窗口",
+      "性价比高，输入价格仅$4/1M tokens"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+    "name": "Mixtral 8x7b instruct",
+    "slug": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral Mixtral 8x7b instruct 模型，专注于文本处理，性价比高，适用于大规模文本生成和文本摘要。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4500 / 1M tokens",
+      "output": "$0.7000 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比",
+      "强大的文本生成能力",
+      "高效文本摘要功能",
+      "支持大规模文本处理",
+      "快速上下文理解"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-large-2407",
+    "name": "Mistral large 2407",
+    "slug": "mistral-mistral-large-2407",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral大型文本模型，专注于文本处理，价格实惠，支持大规模文本处理，适用于日常对话和文本生成。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$9.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格低廉",
+      "高性价比",
+      "大规模文本处理能力",
+      "日常对话与文本生成适用",
+      "上下文窗口宽泛"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-mistral-small-2402-v1:0",
+    "name": "Mistral small 2402",
+    "slug": "mistral-mistral-small-2402-v1:0",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral 小型文本模型，高效处理大规模文本数据，支持高吞吐量文本分析。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.00 / 1M tokens",
+      "output": "$3.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比”，“高效处理大规模文本”，“快速响应”，“上下文理解能力强”，“简单易用"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-codestral-2405",
+    "name": "Codestral 2405",
+    "slug": "mistral-codestral-2405",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral 推出的专业代码生成模型，专注于编程任务，支持多语言代码编写、调试与补全，适用于开发者工具、代码助手及自动化编程场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.00 / 1M tokens",
+      "output": "$3.00 / 1M tokens"
+    },
+    "contextWindow": "32K tokens",
+    "multimodal": false,
+    "strengths": [
+      "专注于代码生成与理解，编程能力突出",
+      "性价比高，输入价格仅 $1.00/1M tokens",
+      "支持 32K 上下文窗口，可处理较长代码文件",
+      "Mistral 品牌背书，推理速度稳定高效"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-codestral-2508",
+    "name": "Codestral 2508",
+    "slug": "mistral-codestral-2508",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral 推出的专业代码生成模型，专注于编程任务，支持 256K 超长上下文窗口，适用于代码补全、重构、调试及多文件理解等场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.3000 / 1M tokens",
+      "output": "$0.9000 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "256K 超长上下文，支持大型代码库理解",
+      "专注于编程任务，代码生成与理解能力出色",
+      "性价比高，输入价格仅为 $0.30/1M tokens",
+      "支持多语言编程，覆盖主流开发语言"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-medium-2507",
+    "name": "Devstral medium 2507",
+    "slug": "mistral-devstral-medium-2507",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral 推出的文本处理模型，以高效处理大规模文本数据为核心，适用于快速生成和分析文本。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.4000 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高效处理大规模文本数据",
+      "低成本计算",
+      "强大的文本理解与分析能力",
+      "灵活的上下文窗口管理",
+      "经济实惠的价格"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-small-2505",
+    "name": "Devstral small 2505",
+    "slug": "mistral-devstral-small-2505",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral公司推出的Devstral small 2505，专注于文本处理，以低廉价格提供高效输入输出服务，适用于大规模文本处理场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格低廉",
+      "高效处理大量文本",
+      "大容量上下文窗口",
+      "快速输出响应",
+      "稳定可靠"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-devstral-small-2507",
+    "name": "Devstral small 2507",
+    "slug": "mistral-devstral-small-2507",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral公司推出的Devstral small 2507，专注于文本处理，价格实惠，适用于大规模文本处理任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格低廉",
+      "高效处理大规模文本",
+      "上下文窗口大，支持长文本处理",
+      "多模态功能待开发"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
+  },
+  {
+    "id": "mistral-labs-devstral-small-2512",
+    "name": "Labs devstral small",
+    "slug": "mistral-labs-devstral-small-2512",
+    "provider": "Mistral",
+    "logo": "",
+    "description": "Mistral Labs 推出的轻量级文本模型，兼顾高效推理与成本优势，适用于大规模文本处理、代码生成及日常对话场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.1000 / 1M tokens",
+      "output": "$0.3000 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "256K 超长上下文窗口，支持长篇文档处理",
+      "极具竞争力的定价，输入仅 $0.10/1M tokens",
+      "轻量高效，推理速度快，适合高并发场景",
+      "Mistral 核心语言技术，文本理解能力强"
+    ],
+    "released": "2026-08-05",
+    "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+    "updatedAt": "2026-08-05"
   }
 ];
 

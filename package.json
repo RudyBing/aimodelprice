@@ -9,7 +9,13 @@
     "lint": "next lint",
     "sync:prices": "tsx scripts/litellm-sync.ts",
     "build:data": "tsx scripts/build-data.ts",
-    "sync": "tsx scripts/litellm-sync.ts && tsx scripts/build-data.ts"
+    "sync": "tsx scripts/litellm-sync.ts && tsx scripts/build-data.ts",
+    "generate:candidates": "tsx scripts/generate-candidates.ts",
+    "ai:generate": "tsx scripts/ai-generate-descriptions.ts",
+    "import:candidates": "tsx scripts/import-candidates.ts",
+    "check:config": "tsx scripts/check-config.ts",
+    "test:agnes": "tsx scripts/test-agnes-api.ts",
+    "select:import": "tsx scripts/select-and-import.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",

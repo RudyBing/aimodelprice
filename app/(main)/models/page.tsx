@@ -1,13 +1,14 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { models, modelCategories, type ModelCategory, type AIModel } from '@/data/models';
 import { PriceComparisonCard } from '@/components/aceternity/price-comparison-card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
-import { cn } from '@/lib/utils';import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X, Filter } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X, Filter, ChevronDown, ChevronUp } from 'lucide-react';
 
 const categoryIcons: Record<ModelCategory, React.ReactNode> = {
   text: <Zap className="h-3.5 w-3.5" />,
@@ -29,11 +30,19 @@ const categoryLabels: Record<ModelCategory, string> = {
   'open-source': '开源模型',
 };
 
+const ITEMS_PER_PAGE_OPTIONS = [20, 50, 100];
+const DEFAULT_ITEMS_PER_PAGE = 20;
+
 export default function ModelsPage() {
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState<ModelCategory | 'all'>('all');
   const [filterProvider, setFilterProvider] = useState<string>('all');
   const [showFilters, setShowFilters] = useState(false);
+  
+  // 分页状态
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
+  const [hasLoadedMore, setHasLoadedMore] = useState(false);
 
   const providers = useMemo(() => [...new Set(models.map((m) => m.provider))].sort(), []);
 
@@ -50,6 +59,26 @@ export default function ModelsPage() {
     });
   }, [search, filterCategory, filterProvider]);
 
+  // 筛选条件变化时重置分页
+  useEffect(() => {
+    setCurrentPage(1);
+    setHasLoadedMore(false);
+  }, [search, filterCategory, filterProvider]);
+
+  // 计算当前页应该显示的模型
+  const totalPages = Math.ceil(filteredModels.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = Math.min(startIndex + itemsPerPage, filteredModels.length);
+  const currentModels = filteredModels.slice(startIndex, endIndex);
+
+  // 加载更多
+  const loadMore = useCallback(() => {
+    if (currentPage < totalPages) {
+      setCurrentPage(prev => prev + 1);
+      setHasLoadedMore(true);
+    }
+  }, [currentPage, totalPages]);
+
   const hasFilters = search || filterCategory !== 'all' || filterProvider !== 'all';
 
   const clearFilters = () => {
@@ -57,6 +86,9 @@ export default function ModelsPage() {
     setFilterCategory('all');
     setFilterProvider('all');
   };
+
+  const displayedCount = hasLoadedMore ? endIndex : Math.min(itemsPerPage, filteredModels.length);
+  const showLoadMore = currentPage < totalPages;
 
   return (
     <div className="relative min-h-screen py-12 px-4">
@@ -134,15 +166,45 @@ export default function ModelsPage() {
             ))}
           </div>
 
-          {/* Active filters indicator */}
-          {hasFilters && (
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">
-                找到 <span className="text-foreground font-medium" aria-live="polite">{filteredModels.length}</span> 个模型
-              </span>
-              <Button variant="ghost" size="sm" onClick={clearFilters} className="h-6 px-2 text-xs gap-1">
-                <X className="h-3 w-3" />清除筛选
-              </Button>
+          {/* Active filters indicator + 每页数量选择 */}
+          {(hasFilters || filteredModels.length > itemsPerPage) && (
+            <div className="flex items-center justify-between text-xs flex-wrap gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-muted-foreground">
+                  找到 <span className="text-foreground font-medium" aria-live="polite">{filteredModels.length}</span> 个模型
+                  {filteredModels.length > itemsPerPage && (
+                    <span className="ml-1">（显示 {displayedCount} 个）</span>
+                  )}
+                </span>
+                {hasFilters && (
+                  <Button variant="ghost" size="sm" onClick={clearFilters} className="h-6 px-2 text-xs gap-1">
+                    <X className="h-3 w-3" />清除筛选
+                  </Button>
+                )}
+              </div>
+              
+              {/* 每页数量选择器 */}
+              {filteredModels.length > itemsPerPage && (
+                <div className="flex items-center gap-2">
+                  <span className="text-muted-foreground">每页显示</span>
+                  <select
+                    value={itemsPerPage}
+                    onChange={(e) => {
+                      setItemsPerPage(Number(e.target.value));
+                      setCurrentPage(1);
+                      setHasLoadedMore(false);
+                    }}
+                    className="h-6 rounded border border-border/40 bg-secondary/50 px-2 text-xs text-muted-foreground appearance-none cursor-pointer"
+                    aria-label="每页显示数量"
+                    style={{ backgroundImage: 'none' }}
+                  >
+                    {ITEMS_PER_PAGE_OPTIONS.map(option => (
+                      <option key={option} value={option}>{option}</option>
+                    ))}
+                  </select>
+                  <span className="text-muted-foreground">个</span>
+                </div>
+              )}
             </div>
           )}
 
@@ -158,14 +220,42 @@ export default function ModelsPage() {
             <Button variant="link" onClick={clearFilters}>清除筛选条件</Button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {filteredModels.map((model, i) => (
-              <PriceComparisonCard key={model.id} model={model} index={i} />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {currentModels.map((model, i) => (
+                <PriceComparisonCard key={model.id} model={model} index={startIndex + i} />
+              ))}
+            </div>
+
+            {/* 加载更多按钮 */}
+            {showLoadMore && (
+              <div className="flex justify-center mt-8">
+                <Button
+                  onClick={loadMore}
+                  variant="outline"
+                  size="lg"
+                  className="gap-2 px-8 h-11"
+                >
+                  加载更多
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </div>
+            )}
+
+            {/* 分页信息 */}
+            {totalPages > 1 && (
+              <div className="text-center mt-4 text-xs text-muted-foreground">
+                第 {currentPage} 页 / 共 {totalPages} 页
+                {hasLoadedMore && (
+                  <span className="ml-2">
+                    （已加载 {Math.round((endIndex / filteredModels.length) * 100)}%）
+                  </span>
+                )}
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>
   );
 }
-

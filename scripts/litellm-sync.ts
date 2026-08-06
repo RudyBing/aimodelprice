@@ -68,7 +68,7 @@ async function main() {
   const litellmData = await fetchLiteLLMData();
 
   // 3. 匹配
-  const synced: Array<{ id: string; prices: Record<string, unknown> }> = [];
+  const synced = [];
   for (const model of metadata.models) {
     const litellmModelId = model.litellmModelId;
     if (!litellmModelId) {
@@ -86,7 +86,7 @@ async function main() {
       continue;
     }
 
-    const prices: Record<string, unknown> = { source: 'litellm' };
+    const prices: any = { source: 'litellm' as const };
     if (entry.input_cost_per_token != null) prices.inputCostPerToken = Number(entry.input_cost_per_token);
     if (entry.output_cost_per_token != null) prices.outputCostPerToken = Number(entry.output_cost_per_token);
     if (entry.max_input_tokens != null) prices.maxInputTokens = Number(entry.max_input_tokens);
