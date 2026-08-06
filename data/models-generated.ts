@@ -63,7 +63,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "o4-mini",
@@ -89,7 +89,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "gpt-4.1",
@@ -115,7 +115,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "claude-sonnet-4-20250514",
@@ -141,7 +141,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.anthropic.com",
     "freeTier": "免费层：4K 消息/天",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "claude-opus-4-20250514",
@@ -167,7 +167,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.anthropic.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "claude-haiku-4-20250514",
@@ -219,7 +219,7 @@ export const models: AIModel[] = [
     "released": "2025-06",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 15 RPM 免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "gemini-2.5-flash",
@@ -245,7 +245,7 @@ export const models: AIModel[] = [
     "released": "2025-06",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 15 RPM 免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "gemini-2.0-flash-lite",
@@ -270,7 +270,7 @@ export const models: AIModel[] = [
     "released": "2025-01",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "gpt-image-1",
@@ -556,7 +556,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-06"
   },
   {
     "id": "codestral",
