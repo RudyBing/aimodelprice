@@ -71,11 +71,15 @@ async function importCandidates() {
     fs.readFileSync(CANDIDATES_FILE, 'utf-8')
   );
 
-  // 过滤掉没有 description 的（AI 生成失败的）
-  const validCandidates = candidates.filter(c => c.description && c.description.length > 0);
+  // 不过滤，全部导入（没有 AI 描述的会使用默认模板）
+  const validCandidates = candidates.map(c => ({
+    ...c,
+    description: c.description || `${c.name} 是 ${c.provider} 推出的${c.category}模型，具体特点待补充。`,
+    strengths: c.strengths && c.strengths.length > 0 ? c.strengths : [`由${c.provider}开发`, `适用于${c.category}场景`]
+  }));
   
   console.log(`📦 候选模型：${candidates.length} 个`);
-  console.log(`✅ 有效模型：${validCandidates.length} 个（有 AI 生成的描述）\n`);
+  console.log(`✅ 有效模型：${validCandidates.length} 个\n`);
 
   if (validCandidates.length === 0) {
     console.error('❌ 没有可导入的模型');
