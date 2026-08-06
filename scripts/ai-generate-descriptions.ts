@@ -9,12 +9,10 @@
  * 运行：tsx scripts/ai-generate-descriptions.ts
  * 
  * 支持的 AI 服务：
- * - Agnes 2.5 Flash (优先，快速便宜)
- * - GLM-4.7 Flash (备选，当 Agnes 失败时)
- * - DeepSeek (备用)
- * - 智谱 AI (备用)
- * - OpenAI (备用)
- * - Ollama (本地免费)
+ * - DeepSeek (推荐，便宜)
+ * - 智谱 AI (国产，便宜)
+ * - OpenAI (贵但质量好)
+ * - Ollama (本地部署，免费)
  */
 
 import * as fs from 'fs';
@@ -45,10 +43,10 @@ interface CandidateModel {
 const AI_SERVICES = {
   agnes: {
     name: 'Agnes 2.5 Flash',
-    baseUrl: 'https://apihub.agnes-ai.cn/v1', // 请根据实际情况修改
+    baseUrl: 'https://apihub.agnes-ai.cn/v1',
     model: 'agnes-2.5-flash',
     apiKeyEnv: 'AGNES_API_KEY',
-    pricePer1K: 0, // 假设价格，请根据实际情况修改
+    pricePer1K: 0,
     isPrimary: true,
   },
   glm: {
@@ -56,50 +54,20 @@ const AI_SERVICES = {
     baseUrl: 'https://open.bigmodel.cn/api/paas/v4',
     model: 'glm-4-flash',
     apiKeyEnv: 'GLM_API_KEY',
-    pricePer1K: 0, // 假设价格，请根据实际情况修改
-    isFallback: true,
-  },
-  deepseek: {
-    name: 'DeepSeek',
-    baseUrl: 'https://api.deepseek.com',
-    model: 'deepseek-chat',
-    apiKeyEnv: 'DEEPSEEK_API_KEY',
-    pricePer1K: 0.002,
-  },
-  zhipu: {
-    name: '智谱 AI',
-    baseUrl: 'https://open.bigmodel.cn/api/paas/v4',
-    model: 'glm-4',
-    apiKeyEnv: 'ZHIPU_API_KEY',
-    pricePer1K: 0.005,
-  },
-  openai: {
-    name: 'OpenAI',
-    baseUrl: 'https://api.openai.com/v1',
-    model: 'gpt-4o-mini',
-    apiKeyEnv: 'OPENAI_API_KEY',
-    pricePer1K: 0.00015,
-  },
-  ollama: {
-    name: 'Ollama (本地)',
-    baseUrl: 'http://localhost:11434',
-    model: 'qwen2.5:7b',
-    apiKeyEnv: '',
     pricePer1K: 0,
+    isPrimary: false,
   },
-};
 
-// 选择 AI 服务（优先 Agnes，失败时切换到 GLM）
-let SELECTED_SERVICE = AI_SERVICES.agnes;
-let USE_FALLBACK = false;
+// 选择 AI 服务
+const SELECTED_SERVICE = AI_SERVICES.deepseek; // 默认 DeepSeek
 
-function getApiKey(service: typeof AI_SERVICES[keyof typeof AI_SERVICES]): string {
-  if (!service.apiKeyEnv) return '';
-  const apiKey = process.env[service.apiKeyEnv];
+function getApiKey(): string {
+  if (!SELECTED_SERVICE.apiKeyEnv) return '';
+  const apiKey = process.env[SELECTED_SERVICE.apiKeyEnv];
   if (!apiKey) {
     throw new Error(
-      `缺少 API Key: 请设置环境变量 ${service.apiKeyEnv}\n` +
-      `例如：export ${service.apiKeyEnv}=your_api_key`
+      `缺少 API Key: 请设置环境变量 ${SELECTED_SERVICE.apiKeyEnv}\n` +
+      `例如：export ${SELECTED_SERVICE.apiKeyEnv}=your_api_key`
     );
   }
   return apiKey;
@@ -133,9 +101,9 @@ function generatePrompt(model: CandidateModel): string {
 }`;
 }
 
-async function callAI(prompt: string, service: typeof AI_SERVICES[keyof typeof AI_SERVICES]): Promise<{ description: string; strengths: string[] }> {
-  const apiKey = getApiKey(service);
-  const url = `${service.baseUrl}/chat/completions`;
+async function callAI(prompt: string): Promise<{ description: string; strengths: string[] }> {
+  const apiKey = getApiKey();
+  const url = `${SELECTED_SERVICE.baseUrl}/chat/completions`;
 
   const response = await fetch(url, {
     method: 'POST',
@@ -144,7 +112,7 @@ async function callAI(prompt: string, service: typeof AI_SERVICES[keyof typeof A
       ...(apiKey && { 'Authorization': `Bearer ${apiKey}` }),
     },
     body: JSON.stringify({
-      model: service.model,
+      model: SELECTED_SERVICE.model,
       messages: [
         {
           role: 'system',
@@ -186,10 +154,7 @@ async function callAI(prompt: string, service: typeof AI_SERVICES[keyof typeof A
 }
 
 async function generateDescriptions() {
-  console.log('🤖 AI 服务配置：');
-  console.log(`   主要服务：${AI_SERVICES.agnes.name}`);
-  console.log(`   备选服务：${AI_SERVICES.glm.name}`);
-  console.log('');
+  console.log(`🤖 使用 AI 服务：${SELECTED_SERVICE.name}\n`);
 
   // 读取候选列表
   if (!fs.existsSync(CANDIDATES_FILE)) {
@@ -210,42 +175,15 @@ async function generateDescriptions() {
 
   const results: CandidateModel[] = [];
   let totalCost = 0;
-  const estimatedTokensPerModel = 200;
-  
-  let agnesSuccessCount = 0;
-  let glmSuccessCount = 0;
-  let failedCount = 0;
+  const estimatedTokensPerModel = 200; // 估算每个模型消耗的 tokens
 
   for (let i = 0; i < toProcess.length; i++) {
     const model = toProcess[i];
     console.log(`[${i + 1}/${toProcess.length}] 生成：${model.name} (${model.provider})`);
 
     try {
-      // 优先使用 Agnes
-      let aiResult;
-      let usedService = AI_SERVICES.agnes;
-
-      try {
-        const prompt = generatePrompt(model);
-        aiResult = await callAI(prompt, AI_SERVICES.agnes);
-        agnesSuccessCount++;
-        console.log(`   ✅ Agnes 生成成功`);
-      } catch (agnesError) {
-        // Agnes 失败，切换到 GLM
-        console.log(`   ⚠️  Agnes 失败，切换到 GLM...`);
-        try {
-          const prompt = generatePrompt(model);
-          aiResult = await callAI(prompt, AI_SERVICES.glm);
-          glmSuccessCount++;
-          usedService = AI_SERVICES.glm;
-          console.log(`   ✅ GLM 生成成功`);
-        } catch (glmError) {
-          failedCount++;
-          console.log(`   ❌ GLM 也失败：${(glmError as Error).message.slice(0, 60)}...`);
-          results.push(model); // 保留原模型，description 留空
-          continue;
-        }
-      }
+      const prompt = generatePrompt(model);
+      const aiResult = await callAI(prompt);
 
       results.push({
         ...model,
@@ -253,14 +191,14 @@ async function generateDescriptions() {
         strengths: aiResult.strengths,
       });
 
-      const cost = (estimatedTokensPerModel / 1000) * usedService.pricePer1K;
+      const cost = (estimatedTokensPerModel / 1000) * SELECTED_SERVICE.pricePer1K;
       totalCost += cost;
 
-      console.log(`   📝 描述：${aiResult.description.slice(0, 60)}...`);
-      console.log(`   💪 优势：${aiResult.strengths.length} 条`);
+      console.log(`   ✅ 描述：${aiResult.description.slice(0, 60)}...`);
+      console.log(`   ✅ 优势：${aiResult.strengths.length} 条`);
     } catch (error) {
       console.error(`   ❌ 失败：${error}`);
-      failedCount++;
+      // 保留原模型，description 留空
       results.push(model);
     }
 
@@ -275,13 +213,8 @@ async function generateDescriptions() {
   
   console.log('\n' + '='.repeat(60));
   console.log('✅ AI 生成完成！');
-  console.log(`📊 生成统计：`);
-  console.log(`   Agnes 成功：${agnesSuccessCount} 个`);
-  console.log(`   GLM 成功：${glmSuccessCount} 个`);
-  console.log(`   失败：${failedCount} 个`);
-  console.log(`   成功率：${((agnesSuccessCount + glmSuccessCount) / toProcess.length * 100).toFixed(1)}%`);
   console.log(`📝 成功生成：${results.filter(r => r.description).length}/${results.length} 个`);
-  console.log(`💰 预估成本：¥${totalCost.toFixed(4)} (混合使用 Agnes 和 GLM)`);
+  console.log(`💰 预估成本：¥${totalCost.toFixed(4)} (按 ${SELECTED_SERVICE.pricePer1K} 元/1K tokens)`);
   console.log(`💾 结果已保存 → ${OUTPUT_FILE}`);
   console.log('\n下一步：');
   console.log('  1. 查看 candidates-with-ai.json 审核结果');
