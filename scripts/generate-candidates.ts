@@ -12,7 +12,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
-const LITELLM_FULL_FILE = path.join(DATA_DIR, 'litellm-full.json');
 const METADATA_FILE = path.join(DATA_DIR, 'models-metadata.json');
 const CANDIDATES_FILE = path.join(DATA_DIR, 'candidates-to-import.json');
 
@@ -44,8 +43,8 @@ interface CandidateModel {
   };
   contextWindow: string;
   multimodal: boolean;
-  description?: string; // AI 生成
-  strengths?: string[]; // AI 生成
+  description?: string;
+  strengths?: string[];
   benchmarkScore?: number;
   freeTier?: string;
   released?: string;
@@ -54,7 +53,6 @@ interface CandidateModel {
 }
 
 function parseModelId(modelId: string): { name: string; provider: string } {
-  // 移除前缀（如 anthropic., openai/, bedrock/ 等）
   const cleanId = modelId
     .replace(/^[a-z]+\./i, '')
     .replace(/^[a-z]+\//i, '')
@@ -62,14 +60,13 @@ function parseModelId(modelId: string): { name: string; provider: string } {
     .replace(/^azure\//i, '')
     .replace(/^vertex_ai\//i, '');
   
-  // 提取名称（移除版本号和日期）
   const name = cleanId
-    .replace(/-\d{8}/g, '') // 移除日期后缀
-    .replace(/-v\d+(:\d+)?/g, '') // 移除版本号
-    .replace(/@20\d{6}/g, '') // 移除 @ 日期
-    .split('/')[0] // 取第一部分
+    .replace(/-\d{8}/g, '')
+    .replace(/-v\d+(:\d+)?/g, '')
+    .replace(/@20\d{6}/g, '')
+    .split('/')[0]
     .split('-')[0] === 'gpt' || cleanId.startsWith('gpt') 
-      ? cleanId.split('-').slice(0, 3).join('-') // 保留 gpt-4.x 格式
+      ? cleanId.split('-').slice(0, 3).join('-')
       : cleanId.split('-').slice(0, 2).join(' ');
   
   return {
@@ -123,12 +120,23 @@ function formatContextWindow(maxTokens?: number): string {
 async function generateCandidates() {
   console.log('🔍 开始生成候选模型列表...\n');
 
-  // 读取 LiteLLM 数据
-  if (!fs.existsSync(LITELLM_FULL_FILE)) {
-    console.error('❌ 找不到 litellm-full.json，请先运行 npm run sync:prices');
+  // 直接从 GitHub 拉取 LiteLLM 数据
+  console.log('📥 从 GitHub 拉取 LiteLLM 数据...');
+  const litellmUrl = 'https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json';
+  
+  let litellmData: Record<string, any>;
+  try {
+    const response = await fetch(litellmUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    litellmData = await response.json();
+    console.log(`✅ 拉取成功，共 ${Object.keys(litellmData).length} 个模型\n`);
+  } catch (error) {
+    console.error('❌ 拉取 LiteLLM 数据失败:', error);
+    console.error('   请检查网络连接');
     process.exit(1);
   }
-  const litellmData = JSON.parse(fs.readFileSync(LITELLM_FULL_FILE, 'utf-8'));
 
   // 读取本地已导入模型
   if (!fs.existsSync(METADATA_FILE)) {
