@@ -21,6 +21,10 @@ interface LiteLLMModel {
   mode: string;
   input_cost_per_token?: number;
   output_cost_per_token?: number;
+  input_cost_per_image?: number;
+  cost_per_image?: number;
+  input_cost_per_second?: number;
+  output_cost_per_second?: number;
   max_input_tokens?: number;
   max_output_tokens?: number;
   supports_vision?: boolean;
@@ -119,18 +123,12 @@ function formatContextWindow(maxTokens?: number): string {
 async function generateCandidates() {
   console.log('🔍 开始生成候选模型列表...\n');
 
-  // 读取 LiteLLM 价格数据
-  if (!fs.existsSync(LITELLM_PRICES_FILE)) {
-    console.error('❌ 找不到 models-prices.json，请先运行 npm run sync:prices');
+  // 读取 LiteLLM 数据
+  if (!fs.existsSync(LITELLM_FULL_FILE)) {
+    console.error('❌ 找不到 litellm-full.json，请先运行 npm run sync:prices');
     process.exit(1);
   }
-  const pricesData = JSON.parse(fs.readFileSync(LITELLM_PRICES_FILE, 'utf-8'));
-  const litellmData: Record<string, any> = {};
-  pricesData.models.forEach((m: any) => {
-    if (m.litellmId) {
-      litellmData[m.litellmId] = m;
-    }
-  });
+  const litellmData = JSON.parse(fs.readFileSync(LITELLM_FULL_FILE, 'utf-8'));
 
   // 读取本地已导入模型
   if (!fs.existsSync(METADATA_FILE)) {
