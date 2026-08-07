@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-06T09:50:09.809Z",
+  "syncedAt": "2026-08-07T02:38:10.604Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -1290,6 +1290,195 @@
         "outputCostPerToken": 3e-7,
         "maxInputTokens": 256000,
         "maxOutputTokens": 256000
+      }
+    },
+    {
+      "id": "anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 1000000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 1000000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-7-sonnet-20240620-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000036,
+        "outputCostPerToken": 0.000018,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-3-haiku-20240307-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 0.00000125,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anthropic-claude-instant-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.0000024,
+        "maxInputTokens": 100000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "anthropic-claude-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.000024,
+        "maxInputTokens": 100000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "anthropic-claude-v2:1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.000024,
+        "maxInputTokens": 100000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-7b-instruct-v0:2",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 2e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2402-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000008,
+        "outputCostPerToken": 0.000024,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mistral-large-2407-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000009,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "mistral-mixtral-8x7b-instruct-v0:1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 4.5e-7,
+        "outputCostPerToken": 7e-7,
+        "maxInputTokens": 32000,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "cohere-command-light-text-v14",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 6e-7,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "cohere-command-r-plus-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "cohere-command-r-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "cohere-command-text-v14",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "stability-sd3-5-large-v1:0",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 77
+      }
+    },
+    {
+      "id": "stability-sd3-large-v1:0",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 77
+      }
+    },
+    {
+      "id": "stability-stable-image-core-v1:0",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 77
+      }
+    },
+    {
+      "id": "stability-stable-image-core-v1:1",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 77
+      }
+    },
+    {
+      "id": "stability-stable-image-ultra-v1:0",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 77
       }
     }
   ]
