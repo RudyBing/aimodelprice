@@ -139,7 +139,12 @@ jobs:
           git commit -m "feat(models): auto-import AI generated models $(date -u '+%Y-%m-%d %H:%M UTC')"
           
           # 先拉取远程变更，避免推送失败
-          git pull --rebase origin main || true
+          # 如果 rebase 冲突，则放弃本次提交，等待下次运行
+          if ! git pull --rebase origin main; then
+            echo "⚠️ 检测到冲突，放弃本次提交以避免数据丢失"
+            git rebase --abort || true
+            exit 0
+          fi
           
           git push
         env:
