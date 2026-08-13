@@ -14,6 +14,7 @@ import {
   X,
   Grid3X3,
   Layout,
+  Newspaper,
 } from 'lucide-react';
 import { useState, useRef, useEffect, useCallback } from 'react';
 
@@ -21,6 +22,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 const NAV_ITEMS = [
   { href: '/', label: '首页', icon: Zap },
   { href: '/models', label: '模型列表', icon: Grid3X3 },
+  { href: '/news', label: '新闻', icon: Newspaper },
   { href: '/compare', label: '价格对比', icon: Layout },
 ];
 

@@ -1,0 +1,56 @@
+name: Sync AI News
+
+on:
+  schedule:
+    # 每天 UTC 2:00（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_translate:
+        description: 'Skip translation (use English directly)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  sync-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Fetch news
+        run: npm run fetch:news
+      
+      - name: Process and translate news
+        env:
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+          YOUDAO_APP_ID: ${{ secrets.YOUDAO_APP_ID }}
+          YOUDAO_APP_SECRET: ${{ secrets.YOUDAO_APP_SECRET }}
+        run: npm run process:news
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet data/news-processed.json || echo "has_changes=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/news-processed.json
+          git commit -m "chore(news): auto sync news $(date -u '+%Y-%m-%d %H:%M UTC')" || exit 0
+          git push

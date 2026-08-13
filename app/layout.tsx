@@ -2,9 +2,34 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AIModelPrices - AI Model Price Comparison",
-  description: "One-stop AI model price comparison platform",
-  keywords: ["AI models", "price comparison", "OpenAI", "Claude", "Gemini", "GPT", "Llama"],
+  title: {
+    default: "AI Model Prices - AI 模型价格对比平台 | 2026 年最新定价",
+    template: "%s | AI Model Prices",
+  },
+  description: "一站式 AI 模型价格对比平台，收录 OpenAI GPT-4/5、Claude 4、Gemini 2.5、Llama 等主流 AI 模型的 API 定价、性能评分、上下文窗口等数据，帮助你找到最具性价比的 AI 模型",
+  keywords: [
+    "AI 模型价格",
+    "AI 模型对比",
+    "GPT-4 价格",
+    "GPT-5 价格",
+    "Claude 4 价格",
+    "Gemini 2.5 价格",
+    "Llama 4 价格",
+    "OpenAI API 定价",
+    "Anthropic API 价格",
+    "Google AI 定价",
+    "Token 价格对比",
+    "AI API 成本",
+    "大模型价格",
+    "AI 模型性能对比",
+  ],
+  authors: [{ name: "AI Model Prices Team" }],
+  creator: "AI Model Prices",
+  publisher: "AI Model Prices",
+  metadataBase: new URL("https://aimodelprice.com"),
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
@@ -12,13 +37,36 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
-  authors: [{ name: "AIModelPrices" }],
   openGraph: {
-    title: "AIModelPrices",
-    description: "One-stop AI model price comparison platform",
     type: "website",
+    locale: "zh_CN",
+    url: "https://aimodelprice.com",
+    title: "AI Model Prices - AI 模型价格对比平台",
+    description: "一站式 AI 模型价格对比平台，收录 OpenAI GPT-4/5、Claude 4、Gemini 2.5、Llama 等主流 AI 模型的 API 定价、性能评分、上下文窗口等数据",
+    siteName: "AI Model Prices",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Model Prices - AI 模型价格对比平台",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Model Prices - AI 模型价格对比平台",
+    description: "一站式 AI 模型价格对比平台，帮助你找到最具性价比的 AI 模型",
+    images: ["/og-image.png"],
+    creator: "@aimodelprices",
+  },
+  verification: {
+    google: "your-google-verification-code", // 在 Google Search Console 验证后替换
+    // yandex: "your-yandex-verification-code",
   },
 };
 

@@ -177,12 +177,12 @@ export default function ComparePage() {
                 输入价格分布
               </h3>
               <div className="space-y-1.5">
-                {sortedModels.slice(0, 10).map((model) => {
+                {sortedModels.slice(0, 10).map((model, index) => {
                   const price = getPriceInputNum(model.pricing);
                   const percentage = (price / maxPrice) * 100;
                   const providerColor = getProviderBgClass(model.provider);
                   return (
-                    <div key={model.id} className="flex items-center gap-2 group">
+                    <div key={`${model.id}-${index}`} className="flex items-center gap-2 group">
                       <span className="text-xs font-medium w-24 truncate text-muted-foreground group-hover:text-foreground transition-fast">
                         {model.name}
                       </span>
@@ -223,12 +223,12 @@ export default function ComparePage() {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {sortedModels.map((model) => {
+                  {sortedModels.map((model, index) => {
                     const { tag: freeTag } = getFreeTierTag(model.freeTier || '');
                     const priceNum = getPriceInputNum(model.pricing);
                     const isCheap = priceNum <= maxPrice * 0.3;
                     return (
-                      <TableRow key={model.id} className="border-border/20 hover:bg-secondary/30">
+                      <TableRow key={`${model.id}-${index}`} className="border-border/20 hover:bg-secondary/30">
                         <TableCell className="font-medium">
                           <div className="flex items-center gap-2">
                             <Link href={`/models/${model.slug}`}>

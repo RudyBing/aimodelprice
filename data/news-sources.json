@@ -1,0 +1,122 @@
+{
+  "rssSources": [
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "category": "科技媒体",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/ai/robotics/rss/index.xml",
+      "category": "科技媒体",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "category": "学术媒体",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss",
+      "category": "官方博客",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "Anthropic Blog",
+      "url": "https://www.anthropic.com/index/rss",
+      "category": "官方博客",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://ai.google/static/atom.xml",
+      "category": "官方博客",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/rss/",
+      "category": "官方博客",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "Microsoft AI",
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "category": "官方博客",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "category": "科技媒体",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "Wired AI",
+      "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+      "category": "科技媒体",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/rss",
+      "category": "中文媒体",
+      "language": "zh",
+      "enabled": true
+    },
+    {
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "category": "中文媒体",
+      "language": "zh",
+      "enabled": true
+    },
+    {
+      "name": "新智元",
+      "url": "https://www.ai-era.com/rss",
+      "category": "中文媒体",
+      "language": "zh",
+      "enabled": true
+    }
+  ],
+  "apiSources": {
+    "newsapi": {
+      "enabled": true,
+      "keywords": [
+        "AI model",
+        "LLM",
+        "GPT",
+        "Claude",
+        "Gemini",
+        "Large Language Model",
+        "AI pricing",
+        "OpenAI",
+        "Anthropic",
+        "Google AI",
+        "Meta AI"
+      ],
+      "languages": ["en", "zh"],
+      "sortBy": "popularity",
+      "pageSize": 20
+    }
+  },
+  "settings": {
+    "maxNewsPerRun": 50,
+    "minHotness": 30,
+    "deduplicationThreshold": 0.85,
+    "cacheExpiryHours": 6
+  }
+}

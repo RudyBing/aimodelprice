@@ -15,7 +15,12 @@
     "import:candidates": "tsx scripts/import-candidates.ts",
     "check:config": "tsx scripts/check-config.ts",
     "test:agnes": "tsx scripts/test-agnes-api.ts",
-    "select:import": "tsx scripts/select-and-import.ts"
+    "select:import": "tsx scripts/select-and-import.ts",
+    "fetch:news": "tsx scripts/fetch-news.ts",
+    "fetch:news:content": "tsx scripts/fetch-news-content.ts",
+    "process:news": "tsx scripts/process-news.ts",
+    "sync:news": "tsx scripts/fetch-news.ts && tsx scripts/process-news.ts",
+    "check:translate": "tsx scripts/check-translate-config.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
@@ -45,18 +50,25 @@
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.460.0",
     "next": "^15.5.0",
+    "node-fetch": "^3.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "rss-parser": "^3.13.0",
+    "string-similarity": "^4.0.4",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "@types/jsdom": "^30.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.0",
+    "jsdom": "^29.1.1",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
+    "tencentcloud-sdk-nodejs": "^4.1.289",
     "tsx": "^4.7.0",
     "typescript": "^5.7.0"
   }

@@ -9,8 +9,27 @@ import { Input } from '@/components/ui/input';
 import {
   TrendingDown, BarChart3, Shield, ArrowRight, Cpu, Sparkles, Globe,
 } from 'lucide-react';
+import type { Metadata } from 'next';
 
-
+export const metadata: Metadata = {
+  title: '首页 - AI 模型价格对比平台 | GPT-5/Claude 4/Gemini 2.5 最新定价',
+  description: '2026 年最新 AI 模型价格对比：GPT-5、Claude 4、Gemini 2.5、Llama 4 等主流模型的 API 定价、性能评分、上下文窗口一站式对比，帮助你找到最具性价比的 AI 模型',
+  keywords: [
+    'AI 模型价格',
+    'GPT-5 价格',
+    'Claude 4 价格',
+    'Gemini 2.5 价格',
+    'Llama 4 价格',
+    'AI 模型对比',
+    'Token 价格',
+    'API 定价',
+  ],
+  openGraph: {
+    title: 'AI 模型价格对比平台 - 首页',
+    description: '2026 年最新 AI 模型价格对比：GPT-5、Claude 4、Gemini 2.5、Llama 4 等主流模型',
+    url: 'https://aimodelprice.com',
+  },
+};
 
 export default function Home() {
   const featuredModels = models.slice(0, 6);
