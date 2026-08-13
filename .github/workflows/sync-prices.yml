@@ -135,18 +135,36 @@ jobs:
       - name: Commit and push AI generated models
         if: steps.ai-git-check.outputs.has_changes == 'true'
         run: |
+          # 先拉取远程变更，使用自动策略处理冲突
+          echo "🔄 拉取远程变更..."
+          git pull --rebase origin main || {
+            echo "⚠️ 检测到冲突，尝试自动解决..."
+            
+            # 对于自动生成的文件，使用远程版本（避免冲突）
+            git checkout --theirs data/models-generated.ts 2>/dev/null || true
+            git checkout --theirs data/models-metadata.json 2>/dev/null || true
+            
+            # 重新添加解决后的文件
+            git add data/models-metadata.json data/models-generated.ts 2>/dev/null || true
+            
+            # 继续 rebase
+            git rebase --continue || {
+              echo "❌ 冲突解决失败，放弃本次提交"
+              git rebase --abort
+              exit 0
+            }
+          }
+          
+          # 添加文件并创建提交
           git add data/models-metadata.json data/models-generated.ts
-          git commit -m "feat(models): auto-import AI generated models $(date -u '+%Y-%m-%d %H:%M UTC')"
-          
-          # 先拉取远程变更，避免推送失败
-          # 如果 rebase 冲突，则放弃本次提交，等待下次运行
-          if ! git pull --rebase origin main; then
-            echo "⚠️ 检测到冲突，放弃本次提交以避免数据丢失"
-            git rebase --abort || true
+          git commit -m "feat(models): auto-import AI generated models $(date -u '+%Y-%m-%d %H:%M UTC')" || {
+            echo "⚠️ 提交失败（可能无变更），跳过"
             exit 0
-          fi
+          }
           
-          git push
+          # 推送到远程
+          git push origin main
+          echo "✅ 推送成功！"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
