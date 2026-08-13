@@ -1,9 +1,10 @@
+"use client";
+
 import { NewsCard } from '@/components/news/NewsCard';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 import {
   Search,
   TrendingUp,
@@ -15,9 +16,11 @@ import {
   Cpu,
   Briefcase,
   Package,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 import Link from 'next/link';
-import type { Metadata } from 'next';
+import { useState } from 'react';
 
 // 加载新闻数据
 function loadNews(): any[] {
@@ -40,11 +43,7 @@ const categories = [
   { id: '更新迭代', name: '更新迭代', icon: Zap, count: 0 },
 ];
 
-export const metadata: Metadata = {
-  title: 'AI 模型新闻 - 追踪最新 AI 动态',
-  description: '获取最新 AI 模型相关新闻，包括产品发布、价格调整、技术突破和行业动态',
-  keywords: ['AI 新闻', 'AI 模型', '大语言模型', 'GPT', 'Claude', 'Gemini', 'AI 动态'],
-};
+const NEWS_PER_PAGE = 20;
 
 export default function NewsListPage() {
   const allNews = loadNews();
@@ -65,6 +64,45 @@ export default function NewsListPage() {
   const latestNews = [...allNews].sort((a, b) => 
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
+  
+  // 分页状态
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(latestNews.length / NEWS_PER_PAGE);
+  
+  // 当前页的新闻
+  const startIndex = (currentPage - 1) * NEWS_PER_PAGE;
+  const endIndex = startIndex + NEWS_PER_PAGE;
+  const currentNews = latestNews.slice(startIndex, endIndex);
+  
+  // 页码按钮
+  const getPageNumbers = () => {
+    const pages: (number | '...')[] = [];
+    const maxVisible = 5;
+    
+    if (totalPages <= maxVisible) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 4; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1);
+        pages.push('...');
+        for (let i = totalPages - 3; i <= totalPages; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        pages.push('...');
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      }
+    }
+    
+    return pages;
+  };
   
   return (
     <div className="relative min-h-screen py-12 px-4">
@@ -142,14 +180,14 @@ export default function NewsListPage() {
                 <Clock className="h-5 w-5" />
                 最新新闻
               </h2>
-              <Button variant="ghost" size="sm" className="text-xs">
-                加载更多
-              </Button>
+              <span className="text-sm text-muted-foreground">
+                共 {latestNews.length} 条
+              </span>
             </div>
             
             <div className="space-y-4">
-              {latestNews.length > 0 ? (
-                latestNews.map((item) => (
+              {currentNews.length > 0 ? (
+                currentNews.map((item) => (
                   <NewsCard key={item.id} news={item} variant="default" />
                 ))
               ) : (
@@ -164,6 +202,56 @@ export default function NewsListPage() {
                 </Card>
               )}
             </div>
+            
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2 mt-8">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                >
+                  <ChevronLeft className="h-4 w-4 mr-1" />
+                  上一页
+                </Button>
+                
+                <div className="flex items-center gap-1">
+                  {getPageNumbers().map((page, i) => (
+                    page === '...' ? (
+                      <span key={i} className="px-3 py-2 text-muted-foreground">...</span>
+                    ) : (
+                      <Button
+                        key={i}
+                        variant={currentPage === page ? 'default' : 'outline'}
+                        size="sm"
+                        onClick={() => setCurrentPage(page as number)}
+                        className="w-10"
+                      >
+                        {page}
+                      </Button>
+                    )
+                  ))}
+                </div>
+                
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                >
+                  下一页
+                  <ChevronRight className="h-4 w-4 ml-1" />
+                </Button>
+              </div>
+            )}
+            
+            {/* Page Info */}
+            {totalPages > 1 && (
+              <p className="text-center text-sm text-muted-foreground mt-4">
+                第 {currentPage} 页，共 {totalPages} 页（每页 {NEWS_PER_PAGE} 条）
+              </p>
+            )}
           </div>
           
           {/* Sidebar */}
@@ -200,29 +288,6 @@ export default function NewsListPage() {
                       </div>
                     </Link>
                   ))}
-                </div>
-              </CardContent>
-            </Card>
-            
-            {/* Quick Links */}
-            <Card className="border-border/40 bg-card/60">
-              <CardContent className="p-5">
-                <h3 className="text-base font-semibold mb-4">快速链接</h3>
-                <div className="space-y-2">
-                  <Link href="/models" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    → 查看 AI 模型列表
-                  </Link>
-                  <Link href="/compare" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                    → 对比 AI 模型
-                  </Link>
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    → 提交新闻源建议
-                  </a>
                 </div>
               </CardContent>
             </Card>
