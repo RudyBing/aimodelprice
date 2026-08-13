@@ -3624,6 +3624,481 @@ export const models: AIModel[] = [
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
     "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "stability-stable-image-ultra-v1:1",
+    "name": "Stable image",
+    "slug": "stability-stable-image-ultra-v1:1",
+    "provider": "Stability",
+    "logo": "",
+    "description": "Stable image 是由 Stability 推出的图像生成模型，专注于高质量文本到图像生成。支持简单直观的提示词输入，适合创意设计与内容创作场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "77 tokens",
+    "multimodal": false,
+    "strengths": [
+      "完全免费使用，无输入输出成本",
+      "基于 Stability 成熟的图像生成技术",
+      "77 tokens 提示词窗口轻量高效",
+      "免登录门槛低，开箱即用",
+      "快速生成风格多样的图像作品"
+    ],
+    "released": "2026-08-13",
+    "url": "https://platform.stability.ai/docs/api-reference",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-50-steps-bedrock-amazon-nova-canvas-v1",
+    "name": "1024 x",
+    "slug": "1024-x-1024-50-steps-bedrock-amazon-nova-canvas-v1",
+    "provider": "1024-x-1024/50-steps/bedrock/amazon",
+    "logo": "",
+    "description": "免费图像处理模型，提供高质量输出，适用于在线图像编辑和创意设计。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "3K tokens",
+    "multimodal": false,
+    "strengths": [
+      "免费使用",
+      "高品质图像输出",
+      "易于访问",
+      "简单易用",
+      "适用于在线编辑"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/50-steps/bedrock/amazon.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-50-steps-stability-stable-diffusion-xl",
+    "name": "1024 x",
+    "slug": "1024-x-1024-50-steps-stability-stable-diffusion-xl",
+    "provider": "1024-x-1024/50-steps/stability",
+    "logo": "",
+    "description": "1024-x-1024/50-steps/stability 是一款免费开源的图像生成模型，适用于图像创作与编辑，具备77个token的上下文窗口。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "77 tokens",
+    "multimodal": false,
+    "strengths": [
+      "免费使用，降低成本",
+      "开源代码，易于扩展",
+      "高效的图像生成能力",
+      "支持自定义参数，适应性强",
+      "免费输出，无需额外费用"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/50-steps/stability.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-dall-e-2",
+    "name": "1024 x",
+    "slug": "1024-x-1024-dall-e-2",
+    "provider": "1024-x-1024/dall-e-2",
+    "logo": "",
+    "description": "1024 x 是一款基于 DALL-E 2 架构的图像生成模型，支持免费使用。能够快速将文字描述转化为高质量图像，适用于创意设计和艺术创作等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "完全免费使用，无输入和输出费用",
+      "基于成熟的 DALL-E 2 架构，图像质量稳定可靠",
+      "操作简单直观，适合非专业用户快速上手",
+      "无需多模态支持即可生成高质量图像"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/dall-e-2.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-gpt-image-1-5",
+    "name": "1024 x",
+    "slug": "1024-x-1024-gpt-image-1-5",
+    "provider": "1024-x-1024/gpt-image-1",
+    "logo": "",
+    "description": "1024-x-1024/gpt-image-1 是一款多模态图像处理模型，专注于图像生成与编辑，价格实惠，支持免费输出。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "价格低廉",
+      "免费输出",
+      "多模态处理",
+      "图像生成与编辑功能强大",
+      "适用广泛"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-gpt-image-1-5-2025-12-16",
+    "name": "1024 x",
+    "slug": "1024-x-1024-gpt-image-1-5-2025-12-16",
+    "provider": "1024-x-1024/gpt-image-1",
+    "logo": "",
+    "description": "1024-x-1024/gpt-image-1模型，专注于图像处理，支持多模态输入，提供经济实惠的图像生成服务。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "低廉的生成成本",
+      "多模态数据处理能力",
+      "便捷的免费输出服务",
+      "快速响应的图像处理",
+      "广泛的适用场景"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1024-max-steps-stability-stable-diffusion-x",
+    "name": "1024 x",
+    "slug": "1024-x-1024-max-steps-stability-stable-diffusion-x",
+    "provider": "1024-x-1024/max-steps/stability",
+    "logo": "",
+    "description": "Stability AI 出品的高清图像生成模型，支持 1024×1024 高分辨率输出，适用于艺术创作、概念设计和视觉内容生成等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "77 tokens",
+    "multimodal": false,
+    "strengths": [
+      "支持 1024×1024 高分辨率图像生成，画质清晰细腻",
+      "完全免费使用，无输入输出成本",
+      "Stability AI 成熟技术栈，生成效果稳定可靠",
+      "77 tokens 文本编码，提示词响应精准"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1024/max-steps/stability.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1536-gpt-image-1-5",
+    "name": "1024 x",
+    "slug": "1024-x-1536-gpt-image-1-5",
+    "provider": "1024-x-1536/gpt-image-1",
+    "logo": "",
+    "description": "1024 x 是由 1024-x-1536 团队开发的高效图像生成模型，支持多模态交互，可处理图像理解与生成任务。以极低的成本提供高质量图像输出，适合批量图像生成、创意设计及视觉内容制作等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "成本极低：输入仅 $0.01/张，输出免费",
+      "多模态支持：兼顾图像理解与生成能力",
+      "高效稳定：专为大规模图像任务优化"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1536/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1024-x-1536-gpt-image-1-5-2025-12-16",
+    "name": "1024 x",
+    "slug": "1024-x-1536-gpt-image-1-5-2025-12-16",
+    "provider": "1024-x-1536/gpt-image-1",
+    "logo": "",
+    "description": "1024 x 是由 1024-x-1536 团队开发的高效图像生成模型，支持多模态交互，可处理图像理解与生成任务。以极低的成本提供高质量图像输出，适合批量图像生成、创意设计及视觉内容制作等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "成本极低：输入仅 $0.01/张，输出免费",
+      "多模态支持：兼顾图像理解与生成能力",
+      "高效稳定：专为大规模图像任务优化"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1024-x-1536/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1536-x-1024-gpt-image-1-5",
+    "name": "1536 x",
+    "slug": "1536-x-1024-gpt-image-1-5",
+    "provider": "1536-x-1024/gpt-image-1",
+    "logo": "",
+    "description": "由Sapiens AI开发的多模态图像生成模型，支持高分辨率图像生成与处理。灵活定价，适合批量图像处理、创意设计等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "多模态支持，可处理图像与文本交互",
+      "高性价比，输出免费降低使用成本",
+      "支持高分辨率图像生成（1536px）",
+      "灵活的定价模式，按需付费"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1536-x-1024/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "1536-x-1024-gpt-image-1-5-2025-12-16",
+    "name": "1536 x",
+    "slug": "1536-x-1024-gpt-image-1-5-2025-12-16",
+    "provider": "1536-x-1024/gpt-image-1",
+    "logo": "",
+    "description": "由Sapiens AI开发的多模态图像生成模型，支持高分辨率图像生成与处理。灵活定价，适合批量图像处理、创意设计等场景。",
+    "category": "image",
+    "pricing": {
+      "input": "$0.01 / image",
+      "output": "免费",
+      "unit": "image"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "多模态支持，可处理图像与文本交互",
+      "高性价比，输出免费降低使用成本",
+      "支持高分辨率图像生成（1536px）",
+      "灵活的定价模式，按需付费"
+    ],
+    "released": "2026-08-13",
+    "url": "https://1536-x-1024/gpt-image-1.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "256-x-256-dall-e-2",
+    "name": "256 x",
+    "slug": "256-x-256-dall-e-2",
+    "provider": "256-x-256/dall-e-2",
+    "logo": "",
+    "description": "256-x-256/dall-e-2 是一款免费使用的图像生成模型，专注于图像创作，适用于需要快速生成图像的场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "免费输入输出",
+      "高效图像生成",
+      "快速响应",
+      "适用性广",
+      "操作简便"
+    ],
+    "released": "2026-08-13",
+    "url": "https://256-x-256/dall-e-2.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "512-x-512-50-steps-stability-stable-diffusion-xl-v",
+    "name": "512 x",
+    "slug": "512-x-512-50-steps-stability-stable-diffusion-xl-v",
+    "provider": "512-x-512/50-steps/stability",
+    "logo": "",
+    "description": "512-x-512/50-steps/stability 模型，免费使用，专注于图像处理，上下文窗口宽，适用于快速图像分析。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "77 tokens",
+    "multimodal": false,
+    "strengths": [
+      "免费使用，降低成本",
+      "宽上下文窗口，提升分析精度",
+      "专注图像处理，性能高效",
+      "免费输出，便捷分享",
+      "多场景适用，灵活部署"
+    ],
+    "released": "2026-08-13",
+    "url": "https://512-x-512/50-steps/stability.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "512-x-512-dall-e-2",
+    "name": "512 x",
+    "slug": "512-x-512-dall-e-2",
+    "provider": "512-x-512/dall-e-2",
+    "logo": "",
+    "description": "免费使用的图像生成模型，基于512-x-512/dall-e-2架构，适用于快速生成创意图像。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "未知",
+    "multimodal": false,
+    "strengths": [
+      "免费输入输出",
+      "基于先进架构",
+      "快速生成创意图像",
+      "易于使用"
+    ],
+    "released": "2026-08-13",
+    "url": "https://512-x-512/dall-e-2.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "512-x-512-max-steps-stability-stable-diffusion-xl-",
+    "name": "512 x",
+    "slug": "512-x-512-max-steps-stability-stable-diffusion-xl-",
+    "provider": "512-x-512/max-steps/stability",
+    "logo": "",
+    "description": "512 x 是一款免费开源图像生成模型，支持77 token上下文窗口，专注于高质量文本到图像生成任务。适用于创意设计与艺术创作场景。",
+    "category": "image",
+    "pricing": {
+      "input": "免费",
+      "output": "免费"
+    },
+    "contextWindow": "77 tokens",
+    "multimodal": false,
+    "strengths": [
+      "完全免费使用，无输入输出成本",
+      "轻量级77 token上下文，推理效率高",
+      "适合快速原型设计与批量图像生成",
+      "基于Stability生态，兼容主流工作流"
+    ],
+    "released": "2026-08-13",
+    "url": "https://512-x-512/max-steps/stability.com",
+    "freeTier": "有",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "ai21-j2-ultra-v1",
+    "name": "Ai21.j2 ultra",
+    "slug": "ai21-j2-ultra-v1",
+    "provider": "Ai21",
+    "logo": "",
+    "description": "Ai21 J2 Ultra 是 Ai21 Labs 推出的旗舰文本生成模型，专注于高质量内容创作与复杂任务处理。该模型支持长上下文理解，适用于文档分析、代码生成、创意写作等多样化场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$18.80 / 1M tokens",
+      "output": "$18.80 / 1M tokens"
+    },
+    "contextWindow": "8K tokens",
+    "multimodal": false,
+    "strengths": [
+      "强大的文本生成能力，支持多种语言与风格",
+      "长上下文窗口，适合复杂文档处理任务",
+      "优化的推理效率，平衡性能与成本"
+    ],
+    "released": "2026-08-13",
+    "url": "https://ai21.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "ai21-jamba-1-5-large-v1:0",
+    "name": "Ai21.jamba 1",
+    "slug": "ai21-jamba-1-5-large-v1:0",
+    "provider": "Ai21",
+    "logo": "",
+    "description": "Ai21.jamba 1 是一款专注于文本处理的AI模型，具备高效生成能力，适用于大规模文本生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$8.00 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "低廉的价格",
+      "强大的文本生成能力",
+      "高效的上下文窗口处理",
+      "简洁易用"
+    ],
+    "released": "2026-08-13",
+    "url": "https://ai21.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "ai21-jamba-1-5-mini-v1:0",
+    "name": "Ai21.jamba 1",
+    "slug": "ai21-jamba-1-5-mini-v1:0",
+    "provider": "Ai21",
+    "logo": "",
+    "description": "Ai21.jamba 1 是Ai21公司推出的文本生成模型，专注于高性价比文本处理，适用于大规模文本生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.20 / 1M tokens",
+      "output": "$0.40 / 1M tokens"
+    },
+    "contextWindow": "256K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格实惠",
+      "上下文窗口大",
+      "高效处理大规模文本数据",
+      "适用于各类文本生成场景"
+    ],
+    "released": "2026-08-13",
+    "url": "https://ai21.com",
+    "updatedAt": "2026-08-13"
+  },
+  {
+    "id": "ai21-jamba-instruct-v1:0",
+    "name": "Ai21.jamba instruct",
+    "slug": "ai21-jamba-instruct-v1:0",
+    "provider": "Ai21",
+    "logo": "",
+    "description": "Ai21.jamba instruct 是一款专注于文本处理的AI模型，具备高效的文本生成能力，适用于各类文本生成场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.50 / 1M tokens",
+      "output": "$0.70 / 1M tokens"
+    },
+    "contextWindow": "70K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高效文本生成",
+      "经济实惠的价格",
+      "灵活的上下文窗口",
+      "无多模态限制"
+    ],
+    "released": "2026-08-13",
+    "url": "https://ai21.com",
+    "updatedAt": "2026-08-13"
   }
 ];
 
