@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-13T01:54:59.303Z",
+  "syncedAt": "2026-08-13T08:48:18.749Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -796,7 +796,7 @@
       }
     },
     {
-      "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+      "id": "anthropic-claude-3-5-haiku-20241022-v1:0-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 8e-7,
@@ -839,7 +839,7 @@
       }
     },
     {
-      "id": "anthropic-claude-3-opus-20240229-v1:0",
+      "id": "anthropic-claude-3-opus-20240229-v1:0-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000015,
@@ -850,7 +850,7 @@
       }
     },
     {
-      "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+      "id": "anthropic-claude-3-sonnet-20240229-v1:0-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000003,
@@ -914,7 +914,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-0-flash",
+      "id": "gemini-gemini-2-0-flash-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,
@@ -925,7 +925,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-0-flash-001",
+      "id": "gemini-gemini-2-0-flash-001-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,
@@ -936,7 +936,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-0-flash-lite",
+      "id": "gemini-gemini-2-0-flash-lite-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 7.5e-8,
@@ -947,7 +947,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-5-flash",
+      "id": "gemini-gemini-2-5-flash-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3e-7,
@@ -958,7 +958,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-5-flash-image",
+      "id": "gemini-gemini-2-5-flash-image-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3e-7,
@@ -969,7 +969,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-pro-image",
+      "id": "gemini-gemini-3-pro-image-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000002,
@@ -980,7 +980,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-1-flash-image",
+      "id": "gemini-gemini-3-1-flash-image-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 2.5e-7,
@@ -991,7 +991,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-5-flash-lite",
+      "id": "gemini-gemini-2-5-flash-lite-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,
@@ -1002,7 +1002,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-5-pro",
+      "id": "gemini-gemini-2-5-pro-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.00000125,
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-1-flash-lite",
+      "id": "gemini-gemini-3-1-flash-lite-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 2.5e-7,
@@ -1024,7 +1024,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-5-flash-lite",
+      "id": "gemini-gemini-3-5-flash-lite-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3e-7,
@@ -1035,7 +1035,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-5-flash",
+      "id": "gemini-gemini-3-5-flash-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.0000015,
@@ -1046,7 +1046,7 @@
       }
     },
     {
-      "id": "gemini-gemini-3-6-flash",
+      "id": "gemini-gemini-3-6-flash-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.0000015,
@@ -1057,7 +1057,7 @@
       }
     },
     {
-      "id": "gemini-gemini-exp-1114",
+      "id": "gemini-gemini-exp-1114-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0,
@@ -1068,7 +1068,7 @@
       }
     },
     {
-      "id": "gemini-gemini-exp-1206",
+      "id": "gemini-gemini-exp-1206-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0,
@@ -1079,7 +1079,7 @@
       }
     },
     {
-      "id": "gemini-gemini-gemma-2-27b-it",
+      "id": "gemini-gemini-gemma-2-27b-it-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3.5e-7,
@@ -1089,7 +1089,7 @@
       }
     },
     {
-      "id": "gemini-gemini-gemma-2-9b-it",
+      "id": "gemini-gemini-gemma-2-9b-it-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3.5e-7,
@@ -1099,7 +1099,7 @@
       }
     },
     {
-      "id": "gemini-gemma-3-27b-it",
+      "id": "gemini-gemma-3-27b-it-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0,
@@ -1110,58 +1110,58 @@
       }
     },
     {
-      "id": "gemini-imagen-3-0-fast-generate-001",
+      "id": "gemini-imagen-3-0-fast-generate-001-dup1",
       "prices": {
         "source": "litellm"
       }
     },
     {
-      "id": "gemini-imagen-3-0-generate-001",
+      "id": "gemini-imagen-3-0-generate-001-dup1",
       "prices": {
         "source": "litellm"
       }
     },
     {
-      "id": "gemini-imagen-4-0-fast-generate-001",
+      "id": "gemini-imagen-4-0-fast-generate-001-dup1",
       "prices": {
         "source": "litellm"
       }
     },
     {
-      "id": "gemini-imagen-4-0-generate-001",
+      "id": "gemini-imagen-4-0-generate-001-dup1",
       "prices": {
         "source": "litellm"
       }
     },
     {
-      "id": "gemini-imagen-4-0-ultra-generate-001",
+      "id": "gemini-imagen-4-0-ultra-generate-001-dup1",
       "prices": {
         "source": "litellm"
       }
     },
     {
-      "id": "gemini-veo-2-0-generate-001",
+      "id": "gemini-veo-2-0-generate-001-dup1",
       "prices": {
         "source": "litellm",
         "maxInputTokens": 1024
       }
     },
     {
-      "id": "gemini-veo-3-1-fast-generate-001",
+      "id": "gemini-veo-3-1-fast-generate-001-dup1",
       "prices": {
         "source": "litellm",
         "maxInputTokens": 1024
       }
     },
     {
-      "id": "gemini-veo-3-1-generate-001",
+      "id": "gemini-veo-3-1-generate-001-dup1",
       "prices": {
         "source": "litellm",
         "maxInputTokens": 1024
       }
     },
     {
-      "id": "gemini-gemini-2-0-flash-exp-image-generation",
+      "id": "gemini-gemini-2-0-flash-exp-image-generation-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0,
@@ -1172,7 +1172,7 @@
       }
     },
     {
-      "id": "gemini-gemini-2-0-flash-lite-001",
+      "id": "gemini-gemini-2-0-flash-lite-001-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 7.5e-8,
@@ -1183,7 +1183,7 @@
       }
     },
     {
-      "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+      "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1.5e-7,
@@ -1193,7 +1193,7 @@
       }
     },
     {
-      "id": "mistral-mistral-large-2402",
+      "id": "mistral-mistral-large-2402-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000004,
@@ -1203,7 +1203,7 @@
       }
     },
     {
-      "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+      "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 4.5e-7,
@@ -1213,7 +1213,7 @@
       }
     },
     {
-      "id": "mistral-mistral-large-2407",
+      "id": "mistral-mistral-large-2407-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000003,
@@ -1223,7 +1223,7 @@
       }
     },
     {
-      "id": "mistral-mistral-small-2402-v1:0",
+      "id": "mistral-mistral-small-2402-v1:0-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000001,
@@ -1233,7 +1233,7 @@
       }
     },
     {
-      "id": "mistral-codestral-2405",
+      "id": "mistral-codestral-2405-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 0.000001,
@@ -1243,7 +1243,7 @@
       }
     },
     {
-      "id": "mistral-codestral-2508",
+      "id": "mistral-codestral-2508-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 3e-7,
@@ -1253,7 +1253,7 @@
       }
     },
     {
-      "id": "mistral-devstral-medium-2507",
+      "id": "mistral-devstral-medium-2507-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 4e-7,
@@ -1263,7 +1263,7 @@
       }
     },
     {
-      "id": "mistral-devstral-small-2505",
+      "id": "mistral-devstral-small-2505-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,
@@ -1273,7 +1273,7 @@
       }
     },
     {
-      "id": "mistral-devstral-small-2507",
+      "id": "mistral-devstral-small-2507-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,
@@ -1283,7 +1283,7 @@
       }
     },
     {
-      "id": "mistral-labs-devstral-small-2512",
+      "id": "mistral-labs-devstral-small-2512-dup1",
       "prices": {
         "source": "litellm",
         "inputCostPerToken": 1e-7,

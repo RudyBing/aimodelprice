@@ -1890,7 +1890,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
+    "id": "anthropic-claude-3-5-haiku-20241022-v1:0-dup1",
     "name": "Claude-3-5-haiku",
     "slug": "anthropic-claude-3-5-haiku-20241022-v1:0",
     "provider": "Anthropic",
@@ -1990,7 +1990,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "anthropic-claude-3-opus-20240229-v1:0",
+    "id": "anthropic-claude-3-opus-20240229-v1:0-dup1",
     "name": "Claude-3-opus",
     "slug": "anthropic-claude-3-opus-20240229-v1:0",
     "provider": "Anthropic",
@@ -2015,7 +2015,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "anthropic-claude-3-sonnet-20240229-v1:0",
+    "id": "anthropic-claude-3-sonnet-20240229-v1:0-dup1",
     "name": "Claude-3-sonnet",
     "slug": "anthropic-claude-3-sonnet-20240229-v1:0",
     "provider": "Anthropic",
@@ -2164,7 +2164,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-0-flash",
+    "id": "gemini-gemini-2-0-flash-dup1",
     "name": "Gemini-2.0-flash",
     "slug": "gemini-gemini-2-0-flash",
     "provider": "Gemini",
@@ -2188,7 +2188,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-0-flash-001",
+    "id": "gemini-gemini-2-0-flash-001-dup1",
     "name": "Gemini-2.0-flash-001",
     "slug": "gemini-gemini-2-0-flash-001",
     "provider": "Gemini",
@@ -2213,7 +2213,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-0-flash-lite",
+    "id": "gemini-gemini-2-0-flash-lite-dup1",
     "name": "Gemini-2.0-flash-lite",
     "slug": "gemini-gemini-2-0-flash-lite",
     "provider": "Gemini",
@@ -2238,7 +2238,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-5-flash",
+    "id": "gemini-gemini-2-5-flash-dup1",
     "name": "Gemini-2.5-flash",
     "slug": "gemini-gemini-2-5-flash",
     "provider": "Gemini",
@@ -2263,7 +2263,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-5-flash-image",
+    "id": "gemini-gemini-2-5-flash-image-dup1",
     "name": "Gemini-2.5-flash-image",
     "slug": "gemini-gemini-2-5-flash-image",
     "provider": "Gemini",
@@ -2288,7 +2288,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-pro-image",
+    "id": "gemini-gemini-3-pro-image-dup1",
     "name": "Gemini-3-pro-image",
     "slug": "gemini-gemini-3-pro-image",
     "provider": "Gemini",
@@ -2313,7 +2313,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-1-flash-image",
+    "id": "gemini-gemini-3-1-flash-image-dup1",
     "name": "Gemini-3.1-flash-image",
     "slug": "gemini-gemini-3-1-flash-image",
     "provider": "Gemini",
@@ -2338,7 +2338,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-5-flash-lite",
+    "id": "gemini-gemini-2-5-flash-lite-dup1",
     "name": "Gemini-2.5-flash-lite",
     "slug": "gemini-gemini-2-5-flash-lite",
     "provider": "Gemini",
@@ -2363,7 +2363,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-5-pro",
+    "id": "gemini-gemini-2-5-pro-dup1",
     "name": "Gemini-2.5-pro",
     "slug": "gemini-gemini-2-5-pro",
     "provider": "Gemini",
@@ -2388,7 +2388,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-1-flash-lite",
+    "id": "gemini-gemini-3-1-flash-lite-dup1",
     "name": "Gemini-3.1-flash-lite",
     "slug": "gemini-gemini-3-1-flash-lite",
     "provider": "Gemini",
@@ -2413,7 +2413,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-5-flash-lite",
+    "id": "gemini-gemini-3-5-flash-lite-dup1",
     "name": "Gemini-3.5-flash-lite",
     "slug": "gemini-gemini-3-5-flash-lite",
     "provider": "Gemini",
@@ -2438,7 +2438,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-5-flash",
+    "id": "gemini-gemini-3-5-flash-dup1",
     "name": "Gemini-3.5-flash",
     "slug": "gemini-gemini-3-5-flash",
     "provider": "Gemini",
@@ -2463,7 +2463,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-3-6-flash",
+    "id": "gemini-gemini-3-6-flash-dup1",
     "name": "Gemini-3.6-flash",
     "slug": "gemini-gemini-3-6-flash",
     "provider": "Gemini",
@@ -2488,7 +2488,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-exp-1114",
+    "id": "gemini-gemini-exp-1114-dup1",
     "name": "Gemini-exp-1114",
     "slug": "gemini-gemini-exp-1114",
     "provider": "Gemini",
@@ -2512,7 +2512,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-exp-1206",
+    "id": "gemini-gemini-exp-1206-dup1",
     "name": "Gemini-exp-1206",
     "slug": "gemini-gemini-exp-1206",
     "provider": "Gemini",
@@ -2536,7 +2536,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-gemma-2-27b-it",
+    "id": "gemini-gemini-gemma-2-27b-it-dup1",
     "name": "Gemini-gemma-2-27b-it",
     "slug": "gemini-gemini-gemma-2-27b-it",
     "provider": "Gemini",
@@ -2561,7 +2561,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-gemma-2-9b-it",
+    "id": "gemini-gemini-gemma-2-9b-it-dup1",
     "name": "Gemini-gemma-2-9b-it",
     "slug": "gemini-gemini-gemma-2-9b-it",
     "provider": "Gemini",
@@ -2586,7 +2586,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemma-3-27b-it",
+    "id": "gemini-gemma-3-27b-it-dup1",
     "name": "Gemma 3 27b",
     "slug": "gemini-gemma-3-27b-it",
     "provider": "Gemini",
@@ -2611,7 +2611,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-imagen-3-0-fast-generate-001",
+    "id": "gemini-imagen-3-0-fast-generate-001-dup1",
     "name": "Imagen 3.0 fast",
     "slug": "gemini-imagen-3-0-fast-generate-001",
     "provider": "Gemini",
@@ -2636,7 +2636,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-imagen-3-0-generate-001",
+    "id": "gemini-imagen-3-0-generate-001-dup1",
     "name": "Imagen 3.0 generate",
     "slug": "gemini-imagen-3-0-generate-001",
     "provider": "Gemini",
@@ -2661,7 +2661,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-imagen-4-0-fast-generate-001",
+    "id": "gemini-imagen-4-0-fast-generate-001-dup1",
     "name": "Imagen 4.0 fast",
     "slug": "gemini-imagen-4-0-fast-generate-001",
     "provider": "Gemini",
@@ -2686,7 +2686,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-imagen-4-0-generate-001",
+    "id": "gemini-imagen-4-0-generate-001-dup1",
     "name": "Imagen 4.0 generate",
     "slug": "gemini-imagen-4-0-generate-001",
     "provider": "Gemini",
@@ -2712,7 +2712,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-imagen-4-0-ultra-generate-001",
+    "id": "gemini-imagen-4-0-ultra-generate-001-dup1",
     "name": "Imagen 4.0 ultra",
     "slug": "gemini-imagen-4-0-ultra-generate-001",
     "provider": "Gemini",
@@ -2738,7 +2738,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-veo-2-0-generate-001",
+    "id": "gemini-veo-2-0-generate-001-dup1",
     "name": "Veo 2.0 generate",
     "slug": "gemini-veo-2-0-generate-001",
     "provider": "Gemini",
@@ -2763,7 +2763,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-veo-3-1-fast-generate-001",
+    "id": "gemini-veo-3-1-fast-generate-001-dup1",
     "name": "Veo 3.1 fast",
     "slug": "gemini-veo-3-1-fast-generate-001",
     "provider": "Gemini",
@@ -2789,7 +2789,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-veo-3-1-generate-001",
+    "id": "gemini-veo-3-1-generate-001-dup1",
     "name": "Veo 3.1 generate",
     "slug": "gemini-veo-3-1-generate-001",
     "provider": "Gemini",
@@ -2814,7 +2814,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-0-flash-exp-image-generation",
+    "id": "gemini-gemini-2-0-flash-exp-image-generation-dup1",
     "name": "Gemini-2.0-flash-exp-image-generation",
     "slug": "gemini-gemini-2-0-flash-exp-image-generation",
     "provider": "Gemini",
@@ -2839,7 +2839,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "gemini-gemini-2-0-flash-lite-001",
+    "id": "gemini-gemini-2-0-flash-lite-001-dup1",
     "name": "Gemini-2.0-flash-lite-001",
     "slug": "gemini-gemini-2-0-flash-lite-001",
     "provider": "Gemini",
@@ -2864,7 +2864,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
+    "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2-dup1",
     "name": "Mistral 7b instruct",
     "slug": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
     "provider": "Mistral",
@@ -2889,7 +2889,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-mistral-large-2402",
+    "id": "mistral-mistral-large-2402-dup1",
     "name": "Mistral large 2402",
     "slug": "mistral-mistral-large-2402",
     "provider": "Mistral",
@@ -2913,7 +2913,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
+    "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0-dup1",
     "name": "Mixtral 8x7b instruct",
     "slug": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
     "provider": "Mistral",
@@ -2938,7 +2938,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-mistral-large-2407",
+    "id": "mistral-mistral-large-2407-dup1",
     "name": "Mistral large 2407",
     "slug": "mistral-mistral-large-2407",
     "provider": "Mistral",
@@ -2963,7 +2963,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-mistral-small-2402-v1:0",
+    "id": "mistral-mistral-small-2402-v1:0-dup1",
     "name": "Mistral small 2402",
     "slug": "mistral-mistral-small-2402-v1:0",
     "provider": "Mistral",
@@ -2984,7 +2984,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-codestral-2405",
+    "id": "mistral-codestral-2405-dup1",
     "name": "Codestral 2405",
     "slug": "mistral-codestral-2405",
     "provider": "Mistral",
@@ -3008,7 +3008,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-codestral-2508",
+    "id": "mistral-codestral-2508-dup1",
     "name": "Codestral 2508",
     "slug": "mistral-codestral-2508",
     "provider": "Mistral",
@@ -3032,7 +3032,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-devstral-medium-2507",
+    "id": "mistral-devstral-medium-2507-dup1",
     "name": "Devstral medium 2507",
     "slug": "mistral-devstral-medium-2507",
     "provider": "Mistral",
@@ -3057,7 +3057,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-devstral-small-2505",
+    "id": "mistral-devstral-small-2505-dup1",
     "name": "Devstral small 2505",
     "slug": "mistral-devstral-small-2505",
     "provider": "Mistral",
@@ -3082,7 +3082,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-devstral-small-2507",
+    "id": "mistral-devstral-small-2507-dup1",
     "name": "Devstral small 2507",
     "slug": "mistral-devstral-small-2507",
     "provider": "Mistral",
@@ -3106,7 +3106,7 @@ export const models: AIModel[] = [
     "updatedAt": "2026-08-13"
   },
   {
-    "id": "mistral-labs-devstral-small-2512",
+    "id": "mistral-labs-devstral-small-2512-dup1",
     "name": "Labs devstral small",
     "slug": "mistral-labs-devstral-small-2512",
     "provider": "Mistral",
