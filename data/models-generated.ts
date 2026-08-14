@@ -193,7 +193,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.anthropic.com",
     "freeTier": "免费层：1K 消息/天",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "gemini-2.5-pro",
@@ -296,7 +296,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "flux-3",
@@ -322,7 +322,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.blackforestlabs.ai",
     "freeTier": "开源可自部署",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "midjourney-v6-5",
@@ -348,7 +348,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://www.midjourney.com",
     "freeTier": "无免费层",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "dall-e-3",
@@ -373,7 +373,7 @@ export const models: AIModel[] = [
     "released": "2023-11",
     "url": "https://platform.openai.com",
     "freeTier": "ChatGPT Plus 赠送",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "stable-diffusion-3.5",
@@ -399,7 +399,7 @@ export const models: AIModel[] = [
     "released": "2024-11",
     "url": "https://stability.ai",
     "freeTier": "开源可自部署",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "sora",
@@ -425,7 +425,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "服务已停止",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "veo-3",
@@ -452,7 +452,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://cloud.google.com/vertex-ai",
     "freeTier": "Vertex AI 免费试用",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "kling-v1.5",
@@ -478,7 +478,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://klingai.com",
     "freeTier": "每日免费额度",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "whisper-3",
@@ -504,7 +504,7 @@ export const models: AIModel[] = [
     "released": "2023-11",
     "url": "https://platform.openai.com",
     "freeTier": "开源可自部署",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "tts-1",
@@ -530,7 +530,7 @@ export const models: AIModel[] = [
     "released": "2024-10",
     "url": "https://github.com/ChatTTS",
     "freeTier": "开源免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "codex-2",
@@ -582,7 +582,7 @@ export const models: AIModel[] = [
     "released": "2024-06",
     "url": "https://mistral.ai",
     "freeTier": "Mistral API 免费层",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "deepseek-coder-v3",
@@ -608,7 +608,7 @@ export const models: AIModel[] = [
     "released": "2024-09",
     "url": "https://www.deepseek.com",
     "freeTier": "API 免费额度",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "llama-4-scout",
@@ -634,7 +634,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://llama.meta.com",
     "freeTier": "完全开源免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "qwen3",
@@ -660,7 +660,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://tongyi.aliyun.com",
     "freeTier": "开源 + API 免费额度",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "glm-5",
@@ -687,7 +687,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://bigmodel.cn",
     "freeTier": "开源 + API 免费",
-    "updatedAt": "2026-08-05"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "anthropic-claude-3-5-haiku-20241022-v1:0",
@@ -4092,9 +4092,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://ai21.com",
-<<<<<<< Updated upstream
-=======
-    "updatedAt": "2026-08-13"
+    "updatedAt": "2026-08-14"
   },
   {
     "id": "ai21-j2-mid-v1",
@@ -4575,7 +4573,6 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://amazon.com",
->>>>>>> Stashed changes
     "updatedAt": "2026-08-14"
   }
 ];
