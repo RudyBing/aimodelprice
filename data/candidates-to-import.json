@@ -1,221 +1,5 @@
 [
   {
-    "litellmId": "stability.stable-image-ultra-v1:1",
-    "suggestedId": "stability-stable-image-ultra-v1:1",
-    "name": "Stable image",
-    "provider": "Stability",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "77 tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/50-steps/bedrock/amazon.nova-canvas-v1:0",
-    "suggestedId": "1024-x-1024-50-steps-bedrock-amazon-nova-canvas-v1",
-    "name": "1024 x",
-    "provider": "1024-x-1024/50-steps/bedrock/amazon",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "3K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/50-steps/stability.stable-diffusion-xl-v1",
-    "suggestedId": "1024-x-1024-50-steps-stability-stable-diffusion-xl",
-    "name": "1024 x",
-    "provider": "1024-x-1024/50-steps/stability",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "77 tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/dall-e-2",
-    "suggestedId": "1024-x-1024-dall-e-2",
-    "name": "1024 x",
-    "provider": "1024-x-1024/dall-e-2",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "未知",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/gpt-image-1.5",
-    "suggestedId": "1024-x-1024-gpt-image-1-5",
-    "name": "1024 x",
-    "provider": "1024-x-1024/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/gpt-image-1.5-2025-12-16",
-    "suggestedId": "1024-x-1024-gpt-image-1-5-2025-12-16",
-    "name": "1024 x",
-    "provider": "1024-x-1024/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1024/max-steps/stability.stable-diffusion-xl-v1",
-    "suggestedId": "1024-x-1024-max-steps-stability-stable-diffusion-x",
-    "name": "1024 x",
-    "provider": "1024-x-1024/max-steps/stability",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "77 tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1536/gpt-image-1.5",
-    "suggestedId": "1024-x-1536-gpt-image-1-5",
-    "name": "1024 x",
-    "provider": "1024-x-1536/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "1024-x-1536/gpt-image-1.5-2025-12-16",
-    "suggestedId": "1024-x-1536-gpt-image-1-5-2025-12-16",
-    "name": "1024 x",
-    "provider": "1024-x-1536/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "1536-x-1024/gpt-image-1.5",
-    "suggestedId": "1536-x-1024-gpt-image-1-5",
-    "name": "1536 x",
-    "provider": "1536-x-1024/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "1536-x-1024/gpt-image-1.5-2025-12-16",
-    "suggestedId": "1536-x-1024-gpt-image-1-5-2025-12-16",
-    "name": "1536 x",
-    "provider": "1536-x-1024/gpt-image-1",
-    "category": "image",
-    "pricing": {
-      "input": "$0.01 / image",
-      "output": "免费",
-      "unit": "image"
-    },
-    "contextWindow": "未知",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "256-x-256/dall-e-2",
-    "suggestedId": "256-x-256-dall-e-2",
-    "name": "256 x",
-    "provider": "256-x-256/dall-e-2",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "未知",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "512-x-512/50-steps/stability.stable-diffusion-xl-v0",
-    "suggestedId": "512-x-512-50-steps-stability-stable-diffusion-xl-v",
-    "name": "512 x",
-    "provider": "512-x-512/50-steps/stability",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "77 tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "512-x-512/dall-e-2",
-    "suggestedId": "512-x-512-dall-e-2",
-    "name": "512 x",
-    "provider": "512-x-512/dall-e-2",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "未知",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "512-x-512/max-steps/stability.stable-diffusion-xl-v0",
-    "suggestedId": "512-x-512-max-steps-stability-stable-diffusion-xl-",
-    "name": "512 x",
-    "provider": "512-x-512/max-steps/stability",
-    "category": "image",
-    "pricing": {
-      "input": "免费",
-      "output": "免费"
-    },
-    "contextWindow": "77 tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
     "litellmId": "ai21.j2-mid-v1",
     "suggestedId": "ai21-j2-mid-v1",
     "name": "Ai21.j2 mid",
@@ -226,62 +10,6 @@
       "output": "$12.50 / 1M tokens"
     },
     "contextWindow": "8K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "ai21.j2-ultra-v1",
-    "suggestedId": "ai21-j2-ultra-v1",
-    "name": "Ai21.j2 ultra",
-    "provider": "Ai21",
-    "category": "text",
-    "pricing": {
-      "input": "$18.80 / 1M tokens",
-      "output": "$18.80 / 1M tokens"
-    },
-    "contextWindow": "8K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "ai21.jamba-1-5-large-v1:0",
-    "suggestedId": "ai21-jamba-1-5-large-v1:0",
-    "name": "Ai21.jamba 1",
-    "provider": "Ai21",
-    "category": "text",
-    "pricing": {
-      "input": "$2.00 / 1M tokens",
-      "output": "$8.00 / 1M tokens"
-    },
-    "contextWindow": "256K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "ai21.jamba-1-5-mini-v1:0",
-    "suggestedId": "ai21-jamba-1-5-mini-v1:0",
-    "name": "Ai21.jamba 1",
-    "provider": "Ai21",
-    "category": "text",
-    "pricing": {
-      "input": "$0.20 / 1M tokens",
-      "output": "$0.40 / 1M tokens"
-    },
-    "contextWindow": "256K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "ai21.jamba-instruct-v1:0",
-    "suggestedId": "ai21-jamba-instruct-v1:0",
-    "name": "Ai21.jamba instruct",
-    "provider": "Ai21",
-    "category": "text",
-    "pricing": {
-      "input": "$0.50 / 1M tokens",
-      "output": "$0.70 / 1M tokens"
-    },
-    "contextWindow": "70K tokens",
     "multimodal": false,
     "strengths": []
   },
@@ -6056,6 +5784,90 @@
     "strengths": []
   },
   {
+    "litellmId": "dashscope/deepseek-v4-flash",
+    "suggestedId": "dashscope-deepseek-v4-flash",
+    "name": "Deepseek v4",
+    "provider": "Dashscope/deepseek-v4-flash",
+    "category": "text",
+    "pricing": {
+      "input": "$0.20 / 1M tokens",
+      "output": "$0.40 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/deepseek-v4-flash-0731",
+    "suggestedId": "dashscope-deepseek-v4-flash-0731",
+    "name": "Deepseek v4",
+    "provider": "Dashscope/deepseek-v4-flash-0731",
+    "category": "text",
+    "pricing": {
+      "input": "$0.20 / 1M tokens",
+      "output": "$0.40 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/deepseek-v4-pro",
+    "suggestedId": "dashscope-deepseek-v4-pro",
+    "name": "Deepseek v4",
+    "provider": "Dashscope/deepseek-v4-pro",
+    "category": "text",
+    "pricing": {
+      "input": "$2.40 / 1M tokens",
+      "output": "$4.80 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/glm-5.1",
+    "suggestedId": "dashscope-glm-5-1",
+    "name": "Glm 5.1",
+    "provider": "Dashscope/glm-5",
+    "category": "text",
+    "pricing": {
+      "input": "$1.40 / 1M tokens",
+      "output": "$4.40 / 1M tokens"
+    },
+    "contextWindow": "203K tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/glm-5.2",
+    "suggestedId": "dashscope-glm-5-2",
+    "name": "Glm 5.2",
+    "provider": "Dashscope/glm-5",
+    "category": "text",
+    "pricing": {
+      "input": "$1.40 / 1M tokens",
+      "output": "$4.40 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/kimi-k2.7-code",
+    "suggestedId": "dashscope-kimi-k2-7-code",
+    "name": "Kimi k2.7",
+    "provider": "Dashscope/kimi-k2",
+    "category": "text",
+    "pricing": {
+      "input": "$0.95 / 1M tokens",
+      "output": "$4.00 / 1M tokens"
+    },
+    "contextWindow": "229K tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
     "litellmId": "dashscope/qwen-coder",
     "suggestedId": "dashscope-qwen-coder",
     "name": "Qwen coder",
@@ -6302,6 +6114,20 @@
     "pricing": {
       "input": "免费",
       "output": "免费"
+    },
+    "contextWindow": "992K tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
+    "litellmId": "dashscope/qwen3.8-max",
+    "suggestedId": "dashscope-qwen3-8-max",
+    "name": "Qwen3.8 max",
+    "provider": "Dashscope/qwen3",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$6.00 / 1M tokens"
     },
     "contextWindow": "992K tokens",
     "multimodal": true,
@@ -7387,6 +7213,20 @@
     "strengths": []
   },
   {
+    "litellmId": "gemini-3.7-flash",
+    "suggestedId": "gemini-3-7-flash",
+    "name": "Gemini 3.7",
+    "provider": "Gemini-3",
+    "category": "text",
+    "pricing": {
+      "input": "$0.75 / 1M tokens",
+      "output": "$3.75 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
     "litellmId": "gemini-3-pro-image",
     "suggestedId": "gemini-3-pro-image",
     "name": "Gemini 3",
@@ -7410,6 +7250,20 @@
     "pricing": {
       "input": "$0.30 / 1M tokens",
       "output": "$2.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
+    "litellmId": "gemini/gemini-3.7-flash",
+    "suggestedId": "gemini-gemini-3-7-flash",
+    "name": "Gemini 3.7",
+    "provider": "Gemini/gemini-3",
+    "category": "text",
+    "pricing": {
+      "input": "$0.75 / 1M tokens",
+      "output": "$3.75 / 1M tokens"
     },
     "contextWindow": "1.0M tokens",
     "multimodal": true,
@@ -8811,7 +8665,7 @@
       "input": "$0.05 / 1M tokens",
       "output": "$0.08 / 1M tokens"
     },
-    "contextWindow": "128K tokens",
+    "contextWindow": "131K tokens",
     "multimodal": false,
     "strengths": []
   },
@@ -8825,7 +8679,7 @@
       "input": "$0.59 / 1M tokens",
       "output": "$0.79 / 1M tokens"
     },
-    "contextWindow": "128K tokens",
+    "contextWindow": "131K tokens",
     "multimodal": false,
     "strengths": []
   },
@@ -8868,6 +8722,34 @@
       "output": "$0.20 / 1M tokens"
     },
     "contextWindow": "8K tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "groq/meta-llama/llama-prompt-guard-2-22m",
+    "suggestedId": "groq-meta-llama-llama-prompt-guard-2-22m",
+    "name": "Meta llama/llama",
+    "provider": "Groq/meta-llama/llama-prompt-guard-2-22m",
+    "category": "text",
+    "pricing": {
+      "input": "$0.03 / 1M tokens",
+      "output": "$0.03 / 1M tokens"
+    },
+    "contextWindow": "512 tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "groq/meta-llama/llama-prompt-guard-2-86m",
+    "suggestedId": "groq-meta-llama-llama-prompt-guard-2-86m",
+    "name": "Meta llama/llama",
+    "provider": "Groq/meta-llama/llama-prompt-guard-2-86m",
+    "category": "text",
+    "pricing": {
+      "input": "$0.04 / 1M tokens",
+      "output": "$0.04 / 1M tokens"
+    },
+    "contextWindow": "512 tokens",
     "multimodal": false,
     "strengths": []
   },
@@ -8925,6 +8807,20 @@
     },
     "contextWindow": "131K tokens",
     "multimodal": false,
+    "strengths": []
+  },
+  {
+    "litellmId": "groq/qwen/qwen3.6-27b",
+    "suggestedId": "groq-qwen-qwen3-6-27b",
+    "name": "Qwen/qwen3.6 27b",
+    "provider": "Groq/qwen/qwen3",
+    "category": "text",
+    "pricing": {
+      "input": "$0.60 / 1M tokens",
+      "output": "$3.00 / 1M tokens"
+    },
+    "contextWindow": "131K tokens",
+    "multimodal": true,
     "strengths": []
   },
   {
@@ -12341,6 +12237,20 @@
     "strengths": []
   },
   {
+    "litellmId": "openrouter/nvidia/nemotron-3.5-lightning",
+    "suggestedId": "openrouter-nvidia-nemotron-3-5-lightning",
+    "name": "Nvidia/nemotron 3.5",
+    "provider": "Openrouter/nvidia/nemotron-3",
+    "category": "text",
+    "pricing": {
+      "input": "$0.05 / 1M tokens",
+      "output": "$0.20 / 1M tokens"
+    },
+    "contextWindow": "262K tokens",
+    "multimodal": false,
+    "strengths": []
+  },
+  {
     "litellmId": "openrouter/openai/gpt-3.5-turbo",
     "suggestedId": "openrouter-openai-gpt-3-5-turbo",
     "name": "Openai/gpt 3.5",
@@ -15563,6 +15473,20 @@
     "pricing": {
       "input": "$1.50 / 1M tokens",
       "output": "$7.50 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
+    "litellmId": "vertex_ai/gemini-3.7-flash",
+    "suggestedId": "vertex_ai-gemini-3-7-flash",
+    "name": "Gemini 3.7",
+    "provider": "Vertex_ai/gemini-3",
+    "category": "text",
+    "pricing": {
+      "input": "$0.75 / 1M tokens",
+      "output": "$3.75 / 1M tokens"
     },
     "contextWindow": "1.0M tokens",
     "multimodal": true,

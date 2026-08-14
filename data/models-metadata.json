@@ -3959,6 +3959,487 @@
       ],
       "url": "https://ai21.com",
       "released": "2026-08-13"
+    },
+    {
+      "id": "ai21-j2-mid-v1",
+      "name": "Ai21.j2 mid",
+      "slug": "ai21-j2-mid-v1",
+      "provider": "Ai21",
+      "logo": "",
+      "description": "Ai21.j2 mid 是 Ai21 公司推出的文本处理模型，专注于高效生成文本，适用于各类文本生成场景。",
+      "category": "text",
+      "litellmModelId": "ai21.j2-mid-v1",
+      "pricing": {
+        "input": "$12.50 / 1M tokens",
+        "output": "$12.50 / 1M tokens"
+      },
+      "contextWindow": "8K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效生成文本",
+        "经济实惠的价格",
+        "8K tokens 的上下文窗口支持长文本处理",
+        "专注于文本生成，性能稳定",
+        "多语言支持"
+      ],
+      "url": "https://ai21.com",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-dall-e-2",
+      "name": "Dall e",
+      "slug": "aiml-dall-e-2",
+      "provider": "Aiml/dall-e-2",
+      "logo": "",
+      "description": "Aiml/dall-e-2提供的免费图像生成模型，无需注册即可使用，专注于图像生成，不支持多模态输入。",
+      "category": "image",
+      "litellmModelId": "aiml/dall-e-2",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费使用",
+        "便捷快速",
+        "无需注册",
+        "专注于图像生成",
+        "简单易用"
+      ],
+      "url": "https://aiml/dall-e-2.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-dall-e-3",
+      "name": "Dall e",
+      "slug": "aiml-dall-e-3",
+      "provider": "Aiml/dall-e-3",
+      "logo": "",
+      "description": "Aiml/dall-e-3 是一款免费图像生成模型，专注于生成创意图像，适用于艺术创作和创意设计。",
+      "category": "image",
+      "litellmModelId": "aiml/dall-e-3",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费使用",
+        "生成创意图像",
+        "适用于艺术创作",
+        "简单易用"
+      ],
+      "url": "https://aiml/dall-e-3.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-pro",
+      "name": "Flux pro",
+      "slug": "aiml-flux-pro",
+      "provider": "Aiml/flux-pro",
+      "logo": "",
+      "description": "Flux Pro 是由 AI Labs 开发的高级图像生成模型，专注于高质量、写实风格的图像创作。支持精准文本渲染与复杂场景理解，适用于创意设计、广告宣传及艺术创作等场景。",
+      "category": "image",
+      "litellmModelId": "aiml/flux-pro",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "生成图像质量高，细节丰富且逼真",
+        "支持精准的文本渲染能力，可生成含文字的高质量图像",
+        "对复杂提示词理解能力强，能够还原多元素场景",
+        "生成速度快，适合高吞吐量应用场景",
+        "完全免费使用，降低创作成本"
+      ],
+      "url": "https://aiml/flux-pro.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-pro-v1-1",
+      "name": "Flux pro/v1.1",
+      "slug": "aiml-flux-pro-v1-1",
+      "provider": "Aiml/flux-pro/v1",
+      "logo": "",
+      "description": "Flux pro/v1.1 是 Aiml 公司推出的免费图像处理模型，专注于图像识别与分析，适用于快速图像识别与输出。",
+      "category": "image",
+      "litellmModelId": "aiml/flux-pro/v1.1",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费输入输出",
+        "专注于图像处理",
+        "快速识别与分析",
+        "免费使用无限制",
+        "高效图像识别"
+      ],
+      "url": "https://aiml/flux-pro/v1.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-pro-v1-1-ultra",
+      "name": "Flux pro/v1.1",
+      "slug": "aiml-flux-pro-v1-1-ultra",
+      "provider": "Aiml/flux-pro/v1",
+      "logo": "",
+      "description": "Aiml公司Flux pro/v1.1图像处理模型，免费输入输出，专注于图像识别与分析，适用于快速图像处理场景。",
+      "category": "image",
+      "litellmModelId": "aiml/flux-pro/v1.1-ultra",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费使用，降低成本",
+        "专注于图像处理，效率高",
+        "快速响应，适用于实时应用",
+        "免费输出，方便数据分享",
+        "无多模态限制，专注单一任务"
+      ],
+      "url": "https://aiml/flux-pro/v1.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-realism",
+      "name": "Flux realism",
+      "slug": "aiml-flux-realism",
+      "provider": "Aiml/flux-realism",
+      "logo": "",
+      "description": "Flux realism 提供免费图像生成服务，专注于图像创作，适用于需要快速生成高质量图像的场景。",
+      "category": "image",
+      "litellmModelId": "aiml/flux-realism",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费输入输出",
+        "高效图像生成",
+        "适用于创意设计",
+        "操作简便",
+        "快速响应"
+      ],
+      "url": "https://aiml/flux-realism.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-dev",
+      "name": "Flux/dev",
+      "slug": "aiml-flux-dev",
+      "provider": "Aiml/flux/dev",
+      "logo": "",
+      "description": "Flux/dev 是一款高性能开源文生图模型，由 Black Forest Labs 开发。支持复杂指令理解与精细细节生成，适用于创意设计、商业插图及高质量图像制作场景。",
+      "category": "image",
+      "litellmModelId": "aiml/flux/dev",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "开源可商用，灵活部署成本低",
+        "支持长文本提示词，理解复杂指令精准",
+        "生成图像细节丰富、构图专业",
+        "社区生态活跃，持续迭代优化"
+      ],
+      "url": "https://aiml/flux/dev.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-kontext-max-text-to-image",
+      "name": "Flux/kontext max/text",
+      "slug": "aiml-flux-kontext-max-text-to-image",
+      "provider": "Aiml/flux/kontext-max/text-to-image",
+      "logo": "",
+      "description": "Flux/kontext max/text 是一款免费文本到图像的生成模型，专注于将文字描述转化为高质量图像，适用于创意设计、内容创作等领域。",
+      "category": "image",
+      "litellmModelId": "aiml/flux/kontext-max/text-to-image",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费输入输出，成本效益高",
+        "专注于文本到图像转化，效果精准",
+        "适用于创意设计和内容创作场景",
+        "操作简便，易于上手",
+        "不受上下文限制，适用范围广"
+      ],
+      "url": "https://aiml/flux/kontext-max/text-to-image.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-kontext-pro-text-to-image",
+      "name": "Flux/kontext pro/text",
+      "slug": "aiml-flux-kontext-pro-text-to-image",
+      "provider": "Aiml/flux/kontext-pro/text-to-image",
+      "logo": "",
+      "description": "Flux/kontext pro/text 是一款免费开源的文本转图像模型，专注于将文本描述转换为视觉图像，适用于创意设计和艺术表达。",
+      "category": "image",
+      "litellmModelId": "aiml/flux/kontext-pro/text-to-image",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费使用，无输出费用",
+        "支持创意文本描述生成图像",
+        "开源代码，可自由定制",
+        "易于使用，操作简便",
+        "社区支持，问题解决快速"
+      ],
+      "url": "https://aiml/flux/kontext-pro/text-to-image.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-flux-schnell",
+      "name": "Flux/schnell",
+      "slug": "aiml-flux-schnell",
+      "provider": "Aiml/flux/schnell",
+      "logo": "",
+      "description": "Aiml/flux/schnell 提供免费图像处理服务，专注于图像识别与增强，适用于快速图像分析场景。",
+      "category": "image",
+      "litellmModelId": "aiml/flux/schnell",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费输入输出",
+        "专注图像处理",
+        "快速分析能力",
+        "无多模态限制",
+        "适用于图像增强与识别"
+      ],
+      "url": "https://aiml/flux/schnell.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-google-imagen-4-0-ultra-generate-001",
+      "name": "Google/imagen 4.0",
+      "slug": "aiml-google-imagen-4-0-ultra-generate-001",
+      "provider": "Aiml/google/imagen-4",
+      "logo": "",
+      "description": "Google Imagen 4.0 是新一代文本到图像生成模型，具备卓越的图像质量与细节表现力，支持高保真渲染、复杂场景理解和创意内容生成，适用于广告创意、设计辅助和艺术创作等场景。",
+      "category": "image",
+      "litellmModelId": "aiml/google/imagen-4.0-ultra-generate-001",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "卓越的图像质量与细节还原能力",
+        "支持复杂的文本到图像生成任务",
+        "Google 原生图像生成技术积累",
+        "免费开放使用，降低创作门槛"
+      ],
+      "url": "https://aiml/google/imagen-4.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-google-nano-banana-pro",
+      "name": "Google/nano banana",
+      "slug": "aiml-google-nano-banana-pro",
+      "provider": "Aiml/google/nano-banana-pro",
+      "logo": "",
+      "description": "Google/nano banana 是一款免费图像处理模型，专注于图像识别与分析，适用于快速图像处理需求。",
+      "category": "image",
+      "litellmModelId": "aiml/google/nano-banana-pro",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "免费使用，无额外成本",
+        "专注于图像处理，效率高",
+        "适用于快速图像识别与分析任务",
+        "操作简便，易于集成",
+        "模型轻量，资源占用小"
+      ],
+      "url": "https://aiml/google/nano-banana-pro.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "aiml-openai-gpt-image-2",
+      "name": "Openai/gpt image",
+      "slug": "aiml-openai-gpt-image-2",
+      "provider": "Aiml/openai/gpt-image-2",
+      "logo": "",
+      "description": "OpenAI 推出的新一代图像理解与生成模型，支持多模态输入输出，具备高质量的图像分析与创作能力，适用于视觉内容理解、图像生成及创意辅助等场景。",
+      "category": "image",
+      "litellmModelId": "aiml/openai/gpt-image-2",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": true,
+      "strengths": [
+        "免费使用，无成本门槛",
+        "原生支持多模态交互，图文理解能力出色",
+        "基于 OpenAI 先进架构，图像生成质量高",
+        "适用于多种创意与视觉任务场景"
+      ],
+      "url": "https://aiml/openai/gpt-image-2.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-nova-canvas-v1:0",
+      "name": "Nova canvas",
+      "slug": "amazon-nova-canvas-v1:0",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Nova Canvas 是由 Amazon 推出的一款图像生成模型，专注于高质量图像创作与编辑任务。支持零样本及参考图像提示，适用于品牌一致性设计和创意内容生成。",
+      "category": "image",
+      "litellmModelId": "amazon.nova-canvas-v1:0",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "3K tokens",
+      "multimodal": false,
+      "strengths": [
+        "完全免费使用，无输入输出成本",
+        "支持品牌一致性设计，可保持风格统一",
+        "提供多种创意工具，包括重绘、扩展和图像编辑",
+        "集成 Amazon 生态系统，便于企业级应用"
+      ],
+      "url": "https://amazon.com",
+      "freeTier": "有",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-titan-image-generator-v1",
+      "name": "Titan image",
+      "slug": "amazon-titan-image-generator-v1",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon 推出的图像生成模型，专注于高质量图片创作。支持文本到图像生成任务，适用于广告素材、产品设计等场景，目前提供免费调用服务。",
+      "category": "image",
+      "litellmModelId": "amazon.titan-image-generator-v1",
+      "pricing": {
+        "input": "$0.00 / image",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "完全免费的图像生成服务",
+        "Amazon 云端稳定可靠的基础设施支持",
+        "专为图像生成优化的模型架构",
+        "易于集成的 API 接口"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-titan-image-generator-v2",
+      "name": "Titan image",
+      "slug": "amazon-titan-image-generator-v2",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon 推出的图像生成模型，专注于高质量图片创作。支持文本到图像生成任务，适用于广告素材、产品设计等场景，目前提供免费调用服务。",
+      "category": "image",
+      "litellmModelId": "amazon.titan-image-generator-v2",
+      "pricing": {
+        "input": "$0.00 / image",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "完全免费的图像生成服务",
+        "Amazon 云端稳定可靠的基础设施支持",
+        "专为图像生成优化的模型架构",
+        "易于集成的 API 接口"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-titan-image-generator-v2:0",
+      "name": "Titan image",
+      "slug": "amazon-titan-image-generator-v2:0",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon 推出的图像生成模型，专注于高质量图片创作。支持文本到图像生成任务，适用于广告素材、产品设计等场景，目前提供免费调用服务。",
+      "category": "image",
+      "litellmModelId": "amazon.titan-image-generator-v2:0",
+      "pricing": {
+        "input": "$0.00 / image",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "完全免费的图像生成服务",
+        "Amazon 云端稳定可靠的基础设施支持",
+        "专为图像生成优化的模型架构",
+        "易于集成的 API 接口"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-titan-text-lite-v1",
+      "name": "Titan text",
+      "slug": "amazon-titan-text-lite-v1",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon Titan text，专注于文本处理，价格实惠，支持大文本上下文，适用于快速文本分析。",
+      "category": "text",
+      "litellmModelId": "amazon.titan-text-lite-v1",
+      "pricing": {
+        "input": "$0.30 / 1M tokens",
+        "output": "$0.40 / 1M tokens"
+      },
+      "contextWindow": "42K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格实惠",
+        "大文本上下文支持",
+        "快速文本分析",
+        "高性价比",
+        "稳定可靠"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-14"
     }
   ],
   "total": 155
