@@ -4440,6 +4440,497 @@
       ],
       "url": "https://amazon.com",
       "released": "2026-08-14"
+    },
+    {
+      "id": "amazon-titan-text-express-v1",
+      "name": "Titan text",
+      "slug": "amazon-titan-text-express-v1",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon提供的文本处理模型，高效处理大规模文本数据，适用于各类文本分析任务。",
+      "category": "text",
+      "litellmModelId": "amazon.titan-text-express-v1",
+      "pricing": {
+        "input": "$1.30 / 1M tokens",
+        "output": "$1.70 / 1M tokens"
+      },
+      "contextWindow": "42K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效处理大规模文本",
+        "价格合理",
+        "稳定的上下文窗口",
+        "专注文本处理"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "amazon-titan-text-premier-v1:0",
+      "name": "Titan text",
+      "slug": "amazon-titan-text-premier-v1:0",
+      "provider": "Amazon",
+      "logo": "",
+      "description": "Amazon 提供的文本处理模型，适用于大规模文本生成和文本分析任务，价格经济，上下文窗口宽广。",
+      "category": "text",
+      "litellmModelId": "amazon.titan-text-premier-v1:0",
+      "pricing": {
+        "input": "$0.50 / 1M tokens",
+        "output": "$1.50 / 1M tokens"
+      },
+      "contextWindow": "42K tokens",
+      "multimodal": false,
+      "strengths": [
+        "经济实惠的定价",
+        "大容量上下文窗口",
+        "广泛适用于文本处理"
+      ],
+      "url": "https://amazon.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "amazon-nova-nova-lite-v1",
+      "name": "Amazon nova/nova",
+      "slug": "amazon-nova-nova-lite-v1",
+      "provider": "Amazon-nova/nova-lite-v1",
+      "logo": "",
+      "description": "亚马逊 Amazon Nova 是多模态 AI 模型系列，支持文本与图像处理，具备长上下文理解能力。适用于文档分析、内容创作、智能客服及自动化任务，性价比高，适合企业级应用。",
+      "category": "text",
+      "litellmModelId": "amazon-nova/nova-lite-v1",
+      "pricing": {
+        "input": "$0.06 / 1M tokens",
+        "output": "$0.24 / 1M tokens"
+      },
+      "contextWindow": "300K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持（文本+图像）",
+        "300K 长上下文窗口",
+        "极具竞争力的定价策略",
+        "适合企业规模化部署"
+      ],
+      "url": "https://amazon-nova/nova-lite-v1.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "amazon-nova-nova-micro-v1",
+      "name": "Amazon nova/nova",
+      "slug": "amazon-nova-nova-micro-v1",
+      "provider": "Amazon-nova/nova-micro-v1",
+      "logo": "",
+      "description": "Amazon nova/nova 是一款经济高效的文本处理模型，适用于快速生成文本内容，具备高性价比和大规模处理能力。",
+      "category": "text",
+      "litellmModelId": "amazon-nova/nova-micro-v1",
+      "pricing": {
+        "input": "$0.04 / 1M tokens",
+        "output": "$0.14 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低成本高效能",
+        "大规模文本处理能力",
+        "快速生成文本内容",
+        "上下文窗口大，支持长文本处理",
+        "价格透明，易于预算控制"
+      ],
+      "url": "https://amazon-nova/nova-micro-v1.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "amazon-nova-nova-premier-v1",
+      "name": "Amazon nova/nova",
+      "slug": "amazon-nova-nova-premier-v1",
+      "provider": "Amazon-nova/nova-premier-v1",
+      "logo": "",
+      "description": "Amazon nova/nova 是一款多模态文本模型，由 Amazon-nova/nova-premier-v1 提供支持，适用于处理大规模文本数据，价格实惠，支持多模态输入。",
+      "category": "text",
+      "litellmModelId": "amazon-nova/nova-premier-v1",
+      "pricing": {
+        "input": "$2.50 / 1M tokens",
+        "output": "$12.50 / 1M tokens"
+      },
+      "contextWindow": "1.0M tokens",
+      "multimodal": true,
+      "strengths": [
+        "价格实惠",
+        "支持多模态输入",
+        "上下文窗口大",
+        "适用场景广泛",
+        "性能稳定"
+      ],
+      "url": "https://amazon-nova/nova-premier-v1.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "amazon-nova-nova-pro-v1",
+      "name": "Amazon nova/nova",
+      "slug": "amazon-nova-nova-pro-v1",
+      "provider": "Amazon-nova/nova-pro-v1",
+      "logo": "",
+      "description": "亚马逊推出的多模态文本模型，专注于文本处理，具备高效上下文理解和生成能力，适用于多种文本交互场景。",
+      "category": "text",
+      "litellmModelId": "amazon-nova/nova-pro-v1",
+      "pricing": {
+        "input": "$0.80 / 1M tokens",
+        "output": "$3.20 / 1M tokens"
+      },
+      "contextWindow": "300K tokens",
+      "multimodal": true,
+      "strengths": [
+        "高效上下文理解",
+        "多模态处理能力",
+        "低廉的按量计费",
+        "丰富的应用场景",
+        "亚马逊官方支持"
+      ],
+      "url": "https://amazon-nova/nova-pro-v1.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-codellama-codellama-34b-instruct-hf",
+      "name": "Codellama/CodeLlama 34b",
+      "slug": "anyscale-codellama-codellama-34b-instruct-hf",
+      "provider": "Anyscale/codellama/CodeLlama-34b-Instruct-hf",
+      "logo": "",
+      "description": "Codellama/CodeLlama 34b 是Anyscale推出的文本生成模型，专注于代码生成和编程任务，适用于自动化编程和代码补全。",
+      "category": "text",
+      "litellmModelId": "anyscale/codellama/CodeLlama-34b-Instruct-hf",
+      "pricing": {
+        "input": "$1.00 / 1M tokens",
+        "output": "$1.00 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效代码生成",
+        "适应性强，适用于多种编程语言",
+        "低成本使用，性价比高",
+        "上下文理解能力强，支持复杂代码逻辑",
+        "简洁易用，无需复杂配置"
+      ],
+      "url": "https://anyscale/codellama/codellama-34b-instruct-hf.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-codellama-codellama-70b-instruct-hf",
+      "name": "Codellama/CodeLlama 70b",
+      "slug": "anyscale-codellama-codellama-70b-instruct-hf",
+      "provider": "Anyscale/codellama/CodeLlama-70b-Instruct-hf",
+      "logo": "",
+      "description": "Meta开源的70B参数代码大模型，专注于代码生成、补全、调试与解释任务，适用于开发者工作流、代码审查及自动化编程等场景。",
+      "category": "text",
+      "litellmModelId": "anyscale/codellama/CodeLlama-70b-Instruct-hf",
+      "pricing": {
+        "input": "$1.00 / 1M tokens",
+        "output": "$1.00 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "70B大参数量带来卓越代码理解与生成能力",
+        "完全开源可商用，支持本地部署",
+        "性价比高，每百万token仅需1美元",
+        "针对代码场景深度优化，准确率高"
+      ],
+      "url": "https://anyscale/codellama/codellama-70b-instruct-hf.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-google-gemma-7b-it",
+      "name": "Google/gemma 7b",
+      "slug": "anyscale-google-gemma-7b-it",
+      "provider": "Anyscale/google/gemma-7b-it",
+      "logo": "",
+      "description": "Google/gemma 7b 是Anyscale与Google合作推出的文本处理模型，适用于大规模文本分析，提供高效、经济的文本处理服务。",
+      "category": "text",
+      "litellmModelId": "anyscale/google/gemma-7b-it",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "8K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉的价格",
+        "高效的处理速度",
+        "大容量上下文窗口",
+        "支持大规模文本分析",
+        "经济实惠"
+      ],
+      "url": "https://anyscale/google/gemma-7b-it.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-huggingfaceh4-zephyr-7b-beta",
+      "name": "HuggingFaceH4/zephyr 7b",
+      "slug": "anyscale-huggingfaceh4-zephyr-7b-beta",
+      "provider": "Anyscale/HuggingFaceH4/zephyr-7b-beta",
+      "logo": "",
+      "description": "由HuggingFace和Anyscale联合开发的7B参数开源对话模型，基于RLHF优化，在对话理解和生成方面表现出色，适合各类文本生成与交互任务。",
+      "category": "text",
+      "litellmModelId": "anyscale/HuggingFaceH4/zephyr-7b-beta",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "16K tokens",
+      "multimodal": false,
+      "strengths": [
+        "开源免费可商用，社区活跃",
+        "对话能力经过RLHF精细优化",
+        "16K长上下文窗口",
+        "成本低至$0.15/1M tokens"
+      ],
+      "url": "https://anyscale/huggingfaceh4/zephyr-7b-beta.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-13b-chat-hf",
+      "name": "Meta llama/Llama",
+      "slug": "anyscale-meta-llama-llama-2-13b-chat-hf",
+      "provider": "Anyscale/meta-llama/Llama-2-13b-chat-hf",
+      "logo": "",
+      "description": "Anyscale的Meta llama/Llama，一款高效文本处理模型，适用于快速生成和回复文本，具备低成本优势。",
+      "category": "text",
+      "litellmModelId": "anyscale/meta-llama/Llama-2-13b-chat-hf",
+      "pricing": {
+        "input": "$0.25 / 1M tokens",
+        "output": "$0.25 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉的使用成本",
+        "快速生成文本",
+        "适用于即时聊天场景",
+        "支持大规模文本处理",
+        "上下文理解能力强"
+      ],
+      "url": "https://anyscale/meta-llama/llama-2-13b-chat-hf.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-70b-chat-hf",
+      "name": "Meta llama/Llama",
+      "slug": "anyscale-meta-llama-llama-2-70b-chat-hf",
+      "provider": "Anyscale/meta-llama/Llama-2-70b-chat-hf",
+      "logo": "",
+      "description": "Anyscale的Meta llama/Llama模型，专注于文本生成，价格实惠，上下文窗口大，适用于长文本生成。",
+      "category": "text",
+      "litellmModelId": "anyscale/meta-llama/Llama-2-70b-chat-hf",
+      "pricing": {
+        "input": "$1.00 / 1M tokens",
+        "output": "$1.00 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格实惠",
+        "上下文窗口大",
+        "长文本生成能力强",
+        "多语言支持",
+        "易于部署"
+      ],
+      "url": "https://anyscale/meta-llama/llama-2-70b-chat-hf.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-7b-chat-hf",
+      "name": "Meta llama/Llama",
+      "slug": "anyscale-meta-llama-llama-2-7b-chat-hf",
+      "provider": "Anyscale/meta-llama/Llama-2-7b-chat-hf",
+      "logo": "",
+      "description": "Anyscale 推出的 Meta llama/Llama 模型，专注于文本生成，以低廉价格提供4K token上下文窗口，适用于日常对话和文本创作。",
+      "category": "text",
+      "litellmModelId": "anyscale/meta-llama/Llama-2-7b-chat-hf",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "4K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉价格",
+        "4K token上下文窗口",
+        "适用于日常对话和文本创作",
+        "高效处理能力",
+        "稳定性能"
+      ],
+      "url": "https://anyscale/meta-llama/llama-2-7b-chat-hf.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-meta-llama-meta-llama-3-70b-instruct",
+      "name": "Meta llama/Meta",
+      "slug": "anyscale-meta-llama-meta-llama-3-70b-instruct",
+      "provider": "Anyscale/meta-llama/Meta-Llama-3-70B-Instruct",
+      "logo": "",
+      "description": "Meta公司推出的开源大模型，擅长文本生成，价格亲民，适合日常对话和内容创作。",
+      "category": "text",
+      "litellmModelId": "anyscale/meta-llama/Meta-Llama-3-70B-Instruct",
+      "pricing": {
+        "input": "$1.00 / 1M tokens",
+        "output": "$1.00 / 1M tokens"
+      },
+      "contextWindow": "8K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格实惠",
+        "开源免费",
+        "文本生成能力强",
+        "适合日常对话",
+        "内容创作助手"
+      ],
+      "url": "https://anyscale/meta-llama/meta-llama-3-70b-instruct.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-meta-llama-meta-llama-3-8b-instruct",
+      "name": "Meta llama/Meta",
+      "slug": "anyscale-meta-llama-meta-llama-3-8b-instruct",
+      "provider": "Anyscale/meta-llama/Meta-Llama-3-8B-Instruct",
+      "logo": "",
+      "description": "Meta llama/Meta 是 Anyscale 开发的文本生成模型，具备高性价比和较大上下文窗口，适用于高效文本生成任务。",
+      "category": "text",
+      "litellmModelId": "anyscale/meta-llama/Meta-Llama-3-8B-Instruct",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "8K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格低廉",
+        "上下文窗口大",
+        "高效文本生成",
+        "适合大规模应用",
+        "模型性能稳定"
+      ],
+      "url": "https://anyscale/meta-llama/meta-llama-3-8b-instruct.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-mistralai-mistral-7b-instruct-v0-1",
+      "name": "Mistralai/Mistral 7B",
+      "slug": "anyscale-mistralai-mistral-7b-instruct-v0-1",
+      "provider": "Anyscale/mistralai/Mistral-7B-Instruct-v0",
+      "logo": "",
+      "description": "Mistral 7B 是 Mistral AI 推出的高效开源语言模型，支持 16K 长上下文，在多语言理解和文本生成方面表现优异，适合企业级应用和个人开发者部署。",
+      "category": "text",
+      "litellmModelId": "anyscale/mistralai/Mistral-7B-Instruct-v0.1",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "16K tokens",
+      "multimodal": false,
+      "strengths": [
+        "开源免费，可本地部署降低成本",
+        "16K 长上下文窗口，支持更复杂任务",
+        "多语言能力强，覆盖欧洲主流语言",
+        "推理速度快，性价比高"
+      ],
+      "url": "https://anyscale/mistralai/mistral-7b-instruct-v0.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-mistralai-mixtral-8x22b-instruct-v0-1",
+      "name": "Mistralai/Mixtral 8x22B",
+      "slug": "anyscale-mistralai-mixtral-8x22b-instruct-v0-1",
+      "provider": "Anyscale/mistralai/Mixtral-8x22B-Instruct-v0",
+      "logo": "",
+      "description": "Anyscale/Mistralai/Mixtral 8x22B 是一款高效的文本处理模型，适用于大规模文本生成和自然语言理解任务。",
+      "category": "text",
+      "litellmModelId": "anyscale/mistralai/Mixtral-8x22B-Instruct-v0.1",
+      "pricing": {
+        "input": "$0.90 / 1M tokens",
+        "output": "$0.90 / 1M tokens"
+      },
+      "contextWindow": "66K tokens",
+      "multimodal": false,
+      "strengths": [
+        "高效文本处理能力",
+        "低成本计算",
+        "大规模文本生成",
+        "自然语言理解强"
+      ],
+      "url": "https://anyscale/mistralai/mixtral-8x22b-instruct-v0.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "anyscale-mistralai-mixtral-8x7b-instruct-v0-1",
+      "name": "Mistralai/Mixtral 8x7B",
+      "slug": "anyscale-mistralai-mixtral-8x7b-instruct-v0-1",
+      "provider": "Anyscale/mistralai/Mixtral-8x7B-Instruct-v0",
+      "logo": "",
+      "description": "Anyscale提供的Mistralai/Mixtral 8x7B，经济高效的自然语言处理模型，适用于文本生成任务。",
+      "category": "text",
+      "litellmModelId": "anyscale/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "pricing": {
+        "input": "$0.15 / 1M tokens",
+        "output": "$0.15 / 1M tokens"
+      },
+      "contextWindow": "16K tokens",
+      "multimodal": false,
+      "strengths": [
+        "低廉的价格",
+        "高效的文本生成能力",
+        "大容量上下文窗口",
+        "支持大规模文本处理"
+      ],
+      "url": "https://anyscale/mistralai/mixtral-8x7b-instruct-v0.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "apac-anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "name": "Anthropic.claude 3",
+      "slug": "apac-anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "provider": "Apac",
+      "logo": "",
+      "description": "Apac公司推出的 Anthropic.claude 3 是一款多模态文本模型，具备强大的上下文理解和生成能力，适用于内容创作、数据分析等场景。",
+      "category": "text",
+      "litellmModelId": "apac.anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "支持多模态输入输出",
+        "高性价比的定价策略",
+        "大容量上下文窗口",
+        "灵活的定价机制",
+        "强大的文本生成能力"
+      ],
+      "url": "https://apac.com",
+      "released": "2026-08-15"
+    },
+    {
+      "id": "apac-anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "name": "Anthropic.claude 3",
+      "slug": "apac-anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "provider": "Apac",
+      "logo": "",
+      "description": "Apac公司推出的Anthropic.claude 3模型，专注于文本处理，具备多模态支持，适用于各类文本生成与处理场景。",
+      "category": "text",
+      "litellmModelId": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持，融合文本与图像信息",
+        "高性价比，低廉的计费标准",
+        "强大的上下文理解能力",
+        "广泛适用，覆盖多种文本任务",
+        "高效处理，快速响应"
+      ],
+      "url": "https://apac.com",
+      "released": "2026-08-15"
     }
   ],
   "total": 155
