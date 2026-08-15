@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-14T01:53:21.315Z",
+  "syncedAt": "2026-08-15T01:11:05.562Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -1621,6 +1621,130 @@
         "outputCostPerToken": 7e-7,
         "maxInputTokens": 70000,
         "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "ai21-j2-mid-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000125,
+        "outputCostPerToken": 0.0000125,
+        "maxInputTokens": 8191,
+        "maxOutputTokens": 8191
+      }
+    },
+    {
+      "id": "aiml-dall-e-2",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-dall-e-3",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-pro",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-pro-v1-1",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-pro-v1-1-ultra",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-realism",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-dev",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-kontext-max-text-to-image",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-kontext-pro-text-to-image",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-flux-schnell",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-google-imagen-4-0-ultra-generate-001",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-google-nano-banana-pro",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "aiml-openai-gpt-image-2",
+      "prices": {
+        "source": "litellm",
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "amazon-nova-canvas-v1:0",
+      "prices": {
+        "source": "litellm",
+        "maxInputTokens": 2600
+      }
+    },
+    {
+      "id": "amazon-titan-image-generator-v1",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "amazon-titan-image-generator-v2",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "amazon-titan-image-generator-v2:0",
+      "prices": {
+        "source": "litellm"
+      }
+    },
+    {
+      "id": "amazon-titan-text-lite-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3e-7,
+        "outputCostPerToken": 4e-7,
+        "maxInputTokens": 42000,
+        "maxOutputTokens": 4000
       }
     }
   ]
