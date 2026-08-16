@@ -1,285 +1,5 @@
 [
   {
-    "litellmId": "amazon.titan-text-express-v1",
-    "suggestedId": "amazon-titan-text-express-v1",
-    "name": "Titan text",
-    "provider": "Amazon",
-    "category": "text",
-    "pricing": {
-      "input": "$1.30 / 1M tokens",
-      "output": "$1.70 / 1M tokens"
-    },
-    "contextWindow": "42K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "amazon.titan-text-premier-v1:0",
-    "suggestedId": "amazon-titan-text-premier-v1:0",
-    "name": "Titan text",
-    "provider": "Amazon",
-    "category": "text",
-    "pricing": {
-      "input": "$0.50 / 1M tokens",
-      "output": "$1.50 / 1M tokens"
-    },
-    "contextWindow": "42K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "amazon-nova/nova-lite-v1",
-    "suggestedId": "amazon-nova-nova-lite-v1",
-    "name": "Amazon nova/nova",
-    "provider": "Amazon-nova/nova-lite-v1",
-    "category": "text",
-    "pricing": {
-      "input": "$0.06 / 1M tokens",
-      "output": "$0.24 / 1M tokens"
-    },
-    "contextWindow": "300K tokens",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "amazon-nova/nova-micro-v1",
-    "suggestedId": "amazon-nova-nova-micro-v1",
-    "name": "Amazon nova/nova",
-    "provider": "Amazon-nova/nova-micro-v1",
-    "category": "text",
-    "pricing": {
-      "input": "$0.04 / 1M tokens",
-      "output": "$0.14 / 1M tokens"
-    },
-    "contextWindow": "128K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "amazon-nova/nova-premier-v1",
-    "suggestedId": "amazon-nova-nova-premier-v1",
-    "name": "Amazon nova/nova",
-    "provider": "Amazon-nova/nova-premier-v1",
-    "category": "text",
-    "pricing": {
-      "input": "$2.50 / 1M tokens",
-      "output": "$12.50 / 1M tokens"
-    },
-    "contextWindow": "1.0M tokens",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "amazon-nova/nova-pro-v1",
-    "suggestedId": "amazon-nova-nova-pro-v1",
-    "name": "Amazon nova/nova",
-    "provider": "Amazon-nova/nova-pro-v1",
-    "category": "text",
-    "pricing": {
-      "input": "$0.80 / 1M tokens",
-      "output": "$3.20 / 1M tokens"
-    },
-    "contextWindow": "300K tokens",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/codellama/CodeLlama-34b-Instruct-hf",
-    "suggestedId": "anyscale-codellama-codellama-34b-instruct-hf",
-    "name": "Codellama/CodeLlama 34b",
-    "provider": "Anyscale/codellama/CodeLlama-34b-Instruct-hf",
-    "category": "text",
-    "pricing": {
-      "input": "$1.00 / 1M tokens",
-      "output": "$1.00 / 1M tokens"
-    },
-    "contextWindow": "4K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/codellama/CodeLlama-70b-Instruct-hf",
-    "suggestedId": "anyscale-codellama-codellama-70b-instruct-hf",
-    "name": "Codellama/CodeLlama 70b",
-    "provider": "Anyscale/codellama/CodeLlama-70b-Instruct-hf",
-    "category": "text",
-    "pricing": {
-      "input": "$1.00 / 1M tokens",
-      "output": "$1.00 / 1M tokens"
-    },
-    "contextWindow": "4K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/google/gemma-7b-it",
-    "suggestedId": "anyscale-google-gemma-7b-it",
-    "name": "Google/gemma 7b",
-    "provider": "Anyscale/google/gemma-7b-it",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "8K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/HuggingFaceH4/zephyr-7b-beta",
-    "suggestedId": "anyscale-huggingfaceh4-zephyr-7b-beta",
-    "name": "HuggingFaceH4/zephyr 7b",
-    "provider": "Anyscale/HuggingFaceH4/zephyr-7b-beta",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "16K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/meta-llama/Llama-2-13b-chat-hf",
-    "suggestedId": "anyscale-meta-llama-llama-2-13b-chat-hf",
-    "name": "Meta llama/Llama",
-    "provider": "Anyscale/meta-llama/Llama-2-13b-chat-hf",
-    "category": "text",
-    "pricing": {
-      "input": "$0.25 / 1M tokens",
-      "output": "$0.25 / 1M tokens"
-    },
-    "contextWindow": "4K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/meta-llama/Llama-2-70b-chat-hf",
-    "suggestedId": "anyscale-meta-llama-llama-2-70b-chat-hf",
-    "name": "Meta llama/Llama",
-    "provider": "Anyscale/meta-llama/Llama-2-70b-chat-hf",
-    "category": "text",
-    "pricing": {
-      "input": "$1.00 / 1M tokens",
-      "output": "$1.00 / 1M tokens"
-    },
-    "contextWindow": "4K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/meta-llama/Llama-2-7b-chat-hf",
-    "suggestedId": "anyscale-meta-llama-llama-2-7b-chat-hf",
-    "name": "Meta llama/Llama",
-    "provider": "Anyscale/meta-llama/Llama-2-7b-chat-hf",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "4K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/meta-llama/Meta-Llama-3-70B-Instruct",
-    "suggestedId": "anyscale-meta-llama-meta-llama-3-70b-instruct",
-    "name": "Meta llama/Meta",
-    "provider": "Anyscale/meta-llama/Meta-Llama-3-70B-Instruct",
-    "category": "text",
-    "pricing": {
-      "input": "$1.00 / 1M tokens",
-      "output": "$1.00 / 1M tokens"
-    },
-    "contextWindow": "8K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/meta-llama/Meta-Llama-3-8B-Instruct",
-    "suggestedId": "anyscale-meta-llama-meta-llama-3-8b-instruct",
-    "name": "Meta llama/Meta",
-    "provider": "Anyscale/meta-llama/Meta-Llama-3-8B-Instruct",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "8K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/mistralai/Mistral-7B-Instruct-v0.1",
-    "suggestedId": "anyscale-mistralai-mistral-7b-instruct-v0-1",
-    "name": "Mistralai/Mistral 7B",
-    "provider": "Anyscale/mistralai/Mistral-7B-Instruct-v0",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "16K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/mistralai/Mixtral-8x22B-Instruct-v0.1",
-    "suggestedId": "anyscale-mistralai-mixtral-8x22b-instruct-v0-1",
-    "name": "Mistralai/Mixtral 8x22B",
-    "provider": "Anyscale/mistralai/Mixtral-8x22B-Instruct-v0",
-    "category": "text",
-    "pricing": {
-      "input": "$0.90 / 1M tokens",
-      "output": "$0.90 / 1M tokens"
-    },
-    "contextWindow": "66K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "anyscale/mistralai/Mixtral-8x7B-Instruct-v0.1",
-    "suggestedId": "anyscale-mistralai-mixtral-8x7b-instruct-v0-1",
-    "name": "Mistralai/Mixtral 8x7B",
-    "provider": "Anyscale/mistralai/Mixtral-8x7B-Instruct-v0",
-    "category": "text",
-    "pricing": {
-      "input": "$0.15 / 1M tokens",
-      "output": "$0.15 / 1M tokens"
-    },
-    "contextWindow": "16K tokens",
-    "multimodal": false,
-    "strengths": []
-  },
-  {
-    "litellmId": "apac.anthropic.claude-3-5-sonnet-20240620-v1:0",
-    "suggestedId": "apac-anthropic-claude-3-5-sonnet-20240620-v1:0",
-    "name": "Anthropic.claude 3",
-    "provider": "Apac",
-    "category": "text",
-    "pricing": {
-      "input": "$3.00 / 1M tokens",
-      "output": "$15.00 / 1M tokens"
-    },
-    "contextWindow": "200K tokens",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
-    "litellmId": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
-    "suggestedId": "apac-anthropic-claude-3-5-sonnet-20241022-v2:0",
-    "name": "Anthropic.claude 3",
-    "provider": "Apac",
-    "category": "text",
-    "pricing": {
-      "input": "$3.00 / 1M tokens",
-      "output": "$15.00 / 1M tokens"
-    },
-    "contextWindow": "200K tokens",
-    "multimodal": true,
-    "strengths": []
-  },
-  {
     "litellmId": "apac.anthropic.claude-3-haiku-20240307-v1:0",
     "suggestedId": "apac-anthropic-claude-3-haiku-20240307-v1:0",
     "name": "Anthropic.claude 3",
@@ -10537,6 +10257,34 @@
     "strengths": []
   },
   {
+    "litellmId": "meta/muse-spark-1.2",
+    "suggestedId": "meta-muse-spark-1-2",
+    "name": "Muse spark",
+    "provider": "Meta/muse-spark-1",
+    "category": "text",
+    "pricing": {
+      "input": "$1.25 / 1M tokens",
+      "output": "$4.25 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
+    "litellmId": "meta/muse-spark-1.2-contributor",
+    "suggestedId": "meta-muse-spark-1-2-contributor",
+    "name": "Muse spark",
+    "provider": "Meta/muse-spark-1",
+    "category": "text",
+    "pricing": {
+      "input": "$0.10 / 1M tokens",
+      "output": "$0.20 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
     "litellmId": "minimax/MiniMax-M2.1",
     "suggestedId": "minimax-minimax-m2-1",
     "name": "MiniMax M2.1",
@@ -16578,6 +16326,20 @@
     "litellmId": "xai/grok-4.5",
     "suggestedId": "xai-grok-4-5",
     "name": "Grok 4.5",
+    "provider": "Xai/grok-4",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$6.00 / 1M tokens"
+    },
+    "contextWindow": "500K tokens",
+    "multimodal": true,
+    "strengths": []
+  },
+  {
+    "litellmId": "xai/grok-4.6",
+    "suggestedId": "xai-grok-4-6",
+    "name": "Grok 4.6",
     "provider": "Xai/grok-4",
     "category": "text",
     "pricing": {

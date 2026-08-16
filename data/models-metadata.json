@@ -4931,6 +4931,498 @@
       ],
       "url": "https://apac.com",
       "released": "2026-08-15"
+    },
+    {
+      "id": "apac-anthropic-claude-3-haiku-20240307-v1:0",
+      "name": "Anthropic.claude 3",
+      "slug": "apac-anthropic-claude-3-haiku-20240307-v1:0",
+      "provider": "Apac",
+      "logo": "",
+      "description": "Apac推出的Anthropic.claude 3，是一款具备多模态支持能力的文本处理模型，适用于复杂文本生成和推理任务。",
+      "category": "text",
+      "litellmModelId": "apac.anthropic.claude-3-haiku-20240307-v1:0",
+      "pricing": {
+        "input": "$0.25 / 1M tokens",
+        "output": "$1.25 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态融合能力",
+        "低成本高效能",
+        "大容量上下文窗口",
+        "灵活的价格策略",
+        "强大的文本生成与推理能力"
+      ],
+      "url": "https://apac.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "apac-anthropic-claude-3-sonnet-20240229-v1:0",
+      "name": "Anthropic.claude 3",
+      "slug": "apac-anthropic-claude-3-sonnet-20240229-v1:0",
+      "provider": "Apac",
+      "logo": "",
+      "description": "Apac推出的Anthropic.claude 3模型，专注于文本生成，支持多模态输入，适用于高性价比的文本创作和交互场景。",
+      "category": "text",
+      "litellmModelId": "apac.anthropic.claude-3-sonnet-20240229-v1:0",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "200K tokens",
+      "multimodal": true,
+      "strengths": [
+        "高性价比定价",
+        "支持多模态输入",
+        "强大的文本生成能力",
+        "上下文窗口灵活",
+        "广泛适用场景"
+      ],
+      "url": "https://apac.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-command-r-plus",
+      "name": "Command r",
+      "slug": "azure-command-r-plus",
+      "provider": "Azure/command-r-plus",
+      "logo": "",
+      "description": "Azure/command-r-plus的Command r模型，专注于文本处理，以经济的价格提供强大的上下文理解能力，适用于需要高性价比文本分析的场景。",
+      "category": "text",
+      "litellmModelId": "azure/command-r-plus",
+      "pricing": {
+        "input": "$3.00 / 1M tokens",
+        "output": "$15.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": false,
+      "strengths": [
+        "价格经济实惠",
+        "高效的上下文理解",
+        "适用于大规模文本分析",
+        "高性价比的输入输出比",
+        "快速响应"
+      ],
+      "url": "https://azure/command-r-plus.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-container",
+      "name": "Container",
+      "slug": "azure-container",
+      "provider": "Azure/container",
+      "logo": "",
+      "description": "Azure容器化部署的文本模型，提供免费的输入与输出服务，适用于轻量级文本处理任务及开发环境中的快速集成。",
+      "category": "text",
+      "litellmModelId": "azure/container",
+      "pricing": {
+        "input": "免费",
+        "output": "免费"
+      },
+      "contextWindow": "未知",
+      "multimodal": false,
+      "strengths": [
+        "完全免费的输入输出服务",
+        "容器化部署便于集成与扩展",
+        "轻量级架构适合快速开发场景"
+      ],
+      "url": "https://azure/container.com",
+      "freeTier": "有",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-4o-2024-08-06",
+      "name": "Eu/gpt 4o",
+      "slug": "azure-eu-gpt-4o-2024-08-06",
+      "provider": "Azure/eu/gpt-4o-2024-08-06",
+      "logo": "",
+      "description": "Azure Eu/gpt 4o 是一款支持多模态的文本模型，具备强大的上下文理解能力，适用于各种文本生成和交互场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-4o-2024-08-06",
+      "pricing": {
+        "input": "$2.75 / 1M tokens",
+        "output": "$11.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持",
+        "强大的上下文理解",
+        "高效的文本生成",
+        "灵活的适用场景",
+        "合理的价格"
+      ],
+      "url": "https://azure/eu/gpt-4o-2024-08-06.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-4o-2024-11-20",
+      "name": "Eu/gpt 4o",
+      "slug": "azure-eu-gpt-4o-2024-11-20",
+      "provider": "Azure/eu/gpt-4o-2024-11-20",
+      "logo": "",
+      "description": "Azure欧区推出的通用预训练模型，支持文本和图像输入，具备高性价比，适用于多场景对话和内容生成。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-4o-2024-11-20",
+      "pricing": {
+        "input": "$2.75 / 1M tokens",
+        "output": "$11.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": true,
+      "strengths": [
+        "支持多模态输入",
+        "性价比高",
+        "适应多种对话场景",
+        "输出质量稳定",
+        "适用于内容创作"
+      ],
+      "url": "https://azure/eu/gpt-4o-2024-11-20.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-4o-mini-2024-07-18",
+      "name": "Eu/gpt 4o",
+      "slug": "azure-eu-gpt-4o-mini-2024-07-18",
+      "provider": "Azure/eu/gpt-4o-mini-2024-07-18",
+      "logo": "",
+      "description": "Azure提供的多模态文本模型，具备128K上下文窗口，支持多种文本和图像处理，价格亲民。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-4o-mini-2024-07-18",
+      "pricing": {
+        "input": "$0.17 / 1M tokens",
+        "output": "$0.66 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": true,
+      "strengths": [
+        "价格低廉",
+        "多模态处理能力",
+        "大容量上下文窗口",
+        "支持文本与图像交互",
+        "适用于多种文本任务"
+      ],
+      "url": "https://azure/eu/gpt-4o-mini-2024-07-18.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-1",
+      "name": "Eu/gpt 5.1",
+      "slug": "azure-eu-gpt-5-1",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure/eu/gpt-5 开发的先进文本处理模型，支持多模态输入输出，适用于各种自然语言处理任务。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.1",
+      "pricing": {
+        "input": "$1.38 / 1M tokens",
+        "output": "$11.00 / 1M tokens"
+      },
+      "contextWindow": "272K tokens",
+      "multimodal": true,
+      "strengths": [
+        "支持多模态输入输出",
+        "高效的价格模型",
+        "272K token的上下文窗口处理长文本",
+        "强大的欧洲地区本地化能力",
+        "适用于广泛的自然语言任务"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-1-chat",
+      "name": "Eu/gpt 5.1",
+      "slug": "azure-eu-gpt-5-1-chat",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure 欧洲区域版 GPT-5.1，新一代多模态语言模型，支持 128K 长上下文，擅长复杂推理、代码生成和内容创作，适用于企业级 AI 应用。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.1-chat",
+      "pricing": {
+        "input": "$1.38 / 1M tokens",
+        "output": "$11.00 / 1M tokens"
+      },
+      "contextWindow": "128K tokens",
+      "multimodal": true,
+      "strengths": [
+        "128K 超长上下文窗口，支持长文档分析",
+        "多模态能力，支持图文理解与生成",
+        "欧盟合规部署，数据隐私保障",
+        "高性价比，输入/输出价格合理",
+        "强大的复杂推理与代码生成能力"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-4",
+      "name": "Eu/gpt 5.4",
+      "slug": "azure-eu-gpt-5-4",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure EU区域部署的GPT-5系列大语言模型，支持多模态交互，拥有1.1M超长上下文窗口，适用于长文档分析、企业级知识处理等复杂场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.4",
+      "pricing": {
+        "input": "$2.75 / 1M tokens",
+        "output": "$16.50 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "EU区域本地部署，符合数据合规要求",
+        "1.1M超长上下文窗口，适合长文本处理",
+        "支持多模态输入，功能更全面",
+        "高性价比的输入/输出定价策略"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-4-2026-03-05",
+      "name": "Eu/gpt 5.4",
+      "slug": "azure-eu-gpt-5-4-2026-03-05",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure EU区域部署的GPT-5系列大语言模型，支持多模态交互，拥有1.1M超长上下文窗口，适用于长文档分析、企业级知识处理等复杂场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.4-2026-03-05",
+      "pricing": {
+        "input": "$2.75 / 1M tokens",
+        "output": "$16.50 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "EU区域本地部署，符合数据合规要求",
+        "1.1M超长上下文窗口，适合长文本处理",
+        "支持多模态输入，功能更全面",
+        "高性价比的输入/输出定价策略"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-6",
+      "name": "Eu/gpt 5.6",
+      "slug": "azure-eu-gpt-5-6",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure提供的多模态文本生成模型，适用于1.1M tokens上下文窗口，支持多种语言和模态交互，价格合理。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.6",
+      "pricing": {
+        "input": "$5.50 / 1M tokens",
+        "output": "$33.00 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "价格亲民",
+        "多模态交互",
+        "大上下文窗口",
+        "多语言支持",
+        "适用多种场景"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-6-sol",
+      "name": "Eu/gpt 5.6",
+      "slug": "azure-eu-gpt-5-6-sol",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure/eu/gpt-5.6 是一款支持多模态的文本生成模型，由 Eu/gpt 5.6 构建而成，适用于处理大规模文本生成任务。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.6-sol",
+      "pricing": {
+        "input": "$5.50 / 1M tokens",
+        "output": "$33.00 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持",
+        "高效文本生成",
+        "较低成本",
+        "大容量上下文窗口",
+        "欧洲地区部署"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-6-terra",
+      "name": "Eu/gpt 5.6",
+      "slug": "azure-eu-gpt-5-6-terra",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure欧区GPT-5.6模型，专注于文本生成，具备1.1M token上下文窗口，支持多模态输入，价格实惠，适用于各种文本生成任务。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.6-terra",
+      "pricing": {
+        "input": "$2.20 / 1M tokens",
+        "output": "$13.20 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持",
+        "上下文窗口大",
+        "价格实惠",
+        "文本生成能力强",
+        "适用场景广泛"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-6-luna",
+      "name": "Eu/gpt 5.6",
+      "slug": "azure-eu-gpt-5-6-luna",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure/eu/gpt-5推出的多模态文本模型，具备高性价比和强大的上下文处理能力，适用于多场景文本生成。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.6-luna",
+      "pricing": {
+        "input": "$0.22 / 1M tokens",
+        "output": "$1.32 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "低廉的价格",
+        "强大的上下文处理",
+        "多模态支持",
+        "广泛的适用场景",
+        "高效的文本生成"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-5",
+      "name": "Eu/gpt 5.5",
+      "slug": "azure-eu-gpt-5-5",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure EU区域的新一代多模态大模型，支持超长上下文和复杂任务处理，适用于企业级应用、代码开发和内容生成等场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.5",
+      "pricing": {
+        "input": "$5.50 / 1M tokens",
+        "output": "$33.00 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "110万超长上下文窗口，适合长文档分析",
+        "多模态支持，处理文本与图像",
+        "Azure欧盟区域部署，数据合规性强",
+        "优化的成本结构，适合大规模生产"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-5-2026-04-23",
+      "name": "Eu/gpt 5.5",
+      "slug": "azure-eu-gpt-5-5-2026-04-23",
+      "provider": "Azure/eu/gpt-5",
+      "logo": "",
+      "description": "Azure EU区域的新一代多模态大模型，支持超长上下文和复杂任务处理，适用于企业级应用、代码开发和内容生成等场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5.5-2026-04-23",
+      "pricing": {
+        "input": "$5.50 / 1M tokens",
+        "output": "$33.00 / 1M tokens"
+      },
+      "contextWindow": "1.1M tokens",
+      "multimodal": true,
+      "strengths": [
+        "110万超长上下文窗口，适合长文档分析",
+        "多模态支持，处理文本与图像",
+        "Azure欧盟区域部署，数据合规性强",
+        "优化的成本结构，适合大规模生产"
+      ],
+      "url": "https://azure/eu/gpt-5.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-2025-08-07",
+      "name": "Eu/gpt 5",
+      "slug": "azure-eu-gpt-5-2025-08-07",
+      "provider": "Azure/eu/gpt-5-2025-08-07",
+      "logo": "",
+      "description": "Azure 欧洲区部署的 GPT-5 多模态模型，支持272K长上下文，适用于内容生成、多语言任务及复杂交互场景，兼具卓越理解与创作能力。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5-2025-08-07",
+      "pricing": {
+        "input": "$1.38 / 1M tokens",
+        "output": "$11.00 / 1M tokens"
+      },
+      "contextWindow": "272K tokens",
+      "multimodal": true,
+      "strengths": [
+        "272K超大上下文窗口，支持长文档深度分析",
+        "多模态能力，支持图文理解与生成",
+        "Azure欧洲区部署，满足数据合规与低延迟需求"
+      ],
+      "url": "https://azure/eu/gpt-5-2025-08-07.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-mini-2025-08-07",
+      "name": "Eu/gpt 5",
+      "slug": "azure-eu-gpt-5-mini-2025-08-07",
+      "provider": "Azure/eu/gpt-5-mini-2025-08-07",
+      "logo": "",
+      "description": "Azure EU 地区部署的 GPT-5 系列轻量级多模态模型，支持长文本与图像理解，适用于企业级本地化应用场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5-mini-2025-08-07",
+      "pricing": {
+        "input": "$0.28 / 1M tokens",
+        "output": "$2.20 / 1M tokens"
+      },
+      "contextWindow": "272K tokens",
+      "multimodal": true,
+      "strengths": [
+        "EU 地区本地部署，数据合规性高",
+        "272K 长上下文窗口，支持长篇文档处理",
+        "多模态能力，兼顾文本与图像理解",
+        "轻量化版本，成本效率优于旗舰模型"
+      ],
+      "url": "https://azure/eu/gpt-5-mini-2025-08-07.com",
+      "released": "2026-08-16"
+    },
+    {
+      "id": "azure-eu-gpt-5-nano-2025-08-07",
+      "name": "Eu/gpt 5",
+      "slug": "azure-eu-gpt-5-nano-2025-08-07",
+      "provider": "Azure/eu/gpt-5-nano-2025-08-07",
+      "logo": "",
+      "description": "Azure Eu/gpt 5 是一款多模态文本模型，具备高效生成和推理能力，适用于文本生成、翻译和问答等场景。",
+      "category": "text",
+      "litellmModelId": "azure/eu/gpt-5-nano-2025-08-07",
+      "pricing": {
+        "input": "$0.06 / 1M tokens",
+        "output": "$0.44 / 1M tokens"
+      },
+      "contextWindow": "272K tokens",
+      "multimodal": true,
+      "strengths": [
+        "多模态支持，融合文本与图像信息",
+        "低廉的价格，性价比高",
+        "强大的文本生成和推理能力",
+        "上下文窗口大，处理复杂文本任务",
+        "适用于多种文本处理场景"
+      ],
+      "url": "https://azure/eu/gpt-5-nano-2025-08-07.com",
+      "released": "2026-08-16"
     }
   ],
   "total": 155
