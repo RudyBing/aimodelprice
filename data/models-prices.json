@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-15T01:11:05.562Z",
+  "syncedAt": "2026-08-16T01:15:13.738Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -1745,6 +1745,211 @@
         "outputCostPerToken": 4e-7,
         "maxInputTokens": 42000,
         "maxOutputTokens": 4000
+      }
+    },
+    {
+      "id": "amazon-titan-text-express-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000013,
+        "outputCostPerToken": 0.0000017,
+        "maxInputTokens": 42000,
+        "maxOutputTokens": 8000
+      }
+    },
+    {
+      "id": "amazon-titan-text-premier-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 42000,
+        "maxOutputTokens": 32000
+      }
+    },
+    {
+      "id": "amazon-nova-nova-lite-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 6e-8,
+        "outputCostPerToken": 2.4e-7,
+        "maxInputTokens": 300000,
+        "maxOutputTokens": 10000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "amazon-nova-nova-micro-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 3.5e-8,
+        "outputCostPerToken": 1.4e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 10000
+      }
+    },
+    {
+      "id": "amazon-nova-nova-premier-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.0000125,
+        "maxInputTokens": 1000000,
+        "maxOutputTokens": 10000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "amazon-nova-nova-pro-v1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 8e-7,
+        "outputCostPerToken": 0.0000032,
+        "maxInputTokens": 300000,
+        "maxOutputTokens": 10000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "anyscale-codellama-codellama-34b-instruct-hf",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000001,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "anyscale-codellama-codellama-70b-instruct-hf",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000001,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "anyscale-google-gemma-7b-it",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 8192,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "anyscale-huggingfaceh4-zephyr-7b-beta",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 16384
+      }
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-13b-chat-hf",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 2.5e-7,
+        "outputCostPerToken": 2.5e-7,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-70b-chat-hf",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000001,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "anyscale-meta-llama-llama-2-7b-chat-hf",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 4096,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "anyscale-meta-llama-meta-llama-3-70b-instruct",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000001,
+        "maxInputTokens": 8192,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "anyscale-meta-llama-meta-llama-3-8b-instruct",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 8192,
+        "maxOutputTokens": 8192
+      }
+    },
+    {
+      "id": "anyscale-mistralai-mistral-7b-instruct-v0-1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 16384
+      }
+    },
+    {
+      "id": "anyscale-mistralai-mixtral-8x22b-instruct-v0-1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 9e-7,
+        "outputCostPerToken": 9e-7,
+        "maxInputTokens": 65536,
+        "maxOutputTokens": 65536
+      }
+    },
+    {
+      "id": "anyscale-mistralai-mixtral-8x7b-instruct-v0-1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 1.5e-7,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 16384
+      }
+    },
+    {
+      "id": "apac-anthropic-claude-3-5-sonnet-20240620-v1:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 4096,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "apac-anthropic-claude-3-5-sonnet-20241022-v2:0",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000015,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 8192,
+        "supportsVision": true
       }
     }
   ]
