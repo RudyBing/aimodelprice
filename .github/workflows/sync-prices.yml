@@ -139,32 +139,28 @@ jobs:
           echo "💾 暂存当前更改..."
           git stash push -m "Auto-generated models $(date -u '+%Y-%m-%d %H:%M UTC')"
           
-          # 拉取远程变更
+          # 拉取远程变更（使用 merge 而不是 rebase，避免复杂冲突）
           echo "🔄 拉取远程变更..."
-          git pull --rebase origin main || {
-            echo "⚠️ Rebase 失败，尝试恢复更改..."
+          git pull origin main --no-rebase || {
+            echo "⚠️ Pull 失败，尝试恢复更改..."
             
             # 恢复暂存的更改
             git stash pop || true
             
-            # 对于自动生成的文件，使用远程版本（避免冲突）
-            git checkout --theirs data/models-generated.ts 2>/dev/null || true
-            git checkout --theirs data/models-metadata.json 2>/dev/null || true
+            # 对于自动生成的文件，直接使用远程版本（避免冲突）
+            git checkout origin/main -- data/models-generated.ts data/models-metadata.json 2>/dev/null || true
             
-            # 重新添加解决后的文件
-            git add data/models-metadata.json data/models-generated.ts 2>/dev/null || true
+            # 重新运行构建脚本生成最新文件
+            echo "🔧 重新生成模型数据..."
+            npm run build:data
             
-            # 继续 rebase
-            git rebase --continue || {
-              echo "❌ 冲突解决失败，放弃本次提交"
-              git rebase --abort || true
-              exit 0
-            }
+            # 添加所有文件
+            git add data/models-metadata.json data/models-generated.ts
           }
           
-          # 恢复暂存的更改（如果有）
-          echo "🔄 恢复暂存的更改..."
-          git stash pop || true
+          # 恢复暂存的更改（如果有）- 但不要用 stash pop，因为可能已经处理了
+          echo "🔄 检查是否需要恢复暂存的更改..."
+          git stash list | grep -q "Auto-generated models" && git stash drop || true
           
           # 添加文件并创建提交
           git add data/models-metadata.json data/models-generated.ts

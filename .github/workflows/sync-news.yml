@@ -44,13 +44,17 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --quiet data/news-processed.json || echo "has_changes=true" >> $GITHUB_OUTPUT
+          if git diff --quiet data/news-metadata.json data/news-raw.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
       
       - name: Commit and push changes
         if: steps.git-check.outputs.has_changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/news-processed.json
+          git add data/news-metadata.json data/news-raw.json
           git commit -m "chore(news): auto sync news $(date -u '+%Y-%m-%d %H:%M UTC')" || exit 0
           git push
