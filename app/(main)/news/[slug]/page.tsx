@@ -31,8 +31,11 @@ function loadNews(): any[] {
 // 根据 slug 查找新闻
 function getNewsBySlug(slug: string): any | null {
   const allNews = loadNews();
-  // 尝试直接匹配或解码后匹配
-  return allNews.find(n => n.slug === slug || decodeURIComponent(n.slug) === slug) || null;
+  // Next.js 会自动编码 URL 中的中文字符，需要解码并规范化后匹配
+  const decodedSlug = decodeURIComponent(slug)
+    .replace(/\s+/g, '-')  // 将空格替换为连字符
+    .replace(/-+/g, '-');  // 合并多个连字符
+  return allNews.find(n => n.slug === decodedSlug) || null;
 }
 
 // 获取相关新闻
@@ -240,7 +243,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
           </Card>
           
           {/* Content */}
-          {newsItem.content && newsItem.content !== newsItem.summary && (
+          {newsItem.content && (
             <div className="prose prose-sm max-w-none mb-8">
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>{newsItem.content}</p>
