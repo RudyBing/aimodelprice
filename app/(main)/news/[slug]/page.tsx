@@ -31,7 +31,8 @@ function loadNews(): any[] {
 // 根据 slug 查找新闻
 function getNewsBySlug(slug: string): any | null {
   const allNews = loadNews();
-  return allNews.find(n => n.slug === slug) || null;
+  // 尝试直接匹配或解码后匹配
+  return allNews.find(n => n.slug === slug || decodeURIComponent(n.slug) === slug) || null;
 }
 
 // 获取相关新闻
@@ -80,23 +81,6 @@ function getCategoryColor(category: string): string {
     '更新迭代': 'bg-orange-500/10 text-orange-500 border-orange-500/20',
   };
   return colors[category] || colors['行业动态'];
-}
-
-// 解码 HTML 实体
-function decodeHtmlEntities(text: string): string {
-  if (!text) return text;
-  return text
-    .replace(/&#(\d+);/g, (match, dec) => String.fromCharCode(Number(dec)))
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&ldquo;/g, '"')
-    .replace(/&rdquo;/g, '"')
-    .replace(/&lsquo;/g, "'")
-    .replace(/&rsquo;/g, "'")
-    .replace(/&mdash;/g, '—')
-    .replace(/&hellip;/g, '…')
-    .replace(/&/g, '&')
-    .replace(/&#39;/g, "'")
-    .replace(/"/g, '"');
 }
 
 // 生成 Metadata
@@ -164,10 +148,6 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
   }
   
   const relatedNews = getRelatedNews(newsItem);
-  
-  // 解码 HTML 实体
-  const decodedSummary = decodeHtmlEntities(newsItem.summary);
-  const decodedContent = newsItem.content ? decodeHtmlEntities(newsItem.content) : null;
   
   return (
     <div className="relative min-h-screen py-12 px-4">
@@ -254,28 +234,21 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                 摘要
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                {decodedSummary}
+                {newsItem.summary}
               </p>
             </CardContent>
           </Card>
           
           {/* Content */}
-          {decodedContent && (
-            <Card className="border-border/40 bg-card/60 mb-8">
-              <CardContent className="p-6">
-                <h2 className="text-sm font-semibold mb-4 flex items-center gap-2">
-                  <Newspaper className="h-4 w-4" />
-                  新闻内容
-                </h2>
-                
-                <div className="text-muted-foreground leading-relaxed space-y-4 text-base break-words overflow-wrap-break-word">
-                  <p className="whitespace-pre-wrap">{decodedContent}</p>
-                  <p className="text-sm text-muted-foreground italic">
-                    注：以上内容摘选自原始新闻，点击「访问原文」查看完整内容。
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+          {newsItem.content && newsItem.content !== newsItem.summary && (
+            <div className="prose prose-sm max-w-none mb-8">
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>{newsItem.content}</p>
+                <p className="text-sm text-muted-foreground italic">
+                  注：以上内容摘选自原始新闻，点击「访问原文」查看完整内容。
+                </p>
+              </div>
+            </div>
           )}
           
           {/* Tags */}
@@ -340,7 +313,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
         {relatedNews.length > 0 && (
           <section>
             <h2 className="text-lg font-semibold mb-4">相关新闻</h2>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {relatedNews.map((item) => (
                 <NewsCard key={item.id} news={item} variant="compact" />
               ))}

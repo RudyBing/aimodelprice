@@ -347,6 +347,9 @@ function translateEnglishNews(news: RawNews[]): RawNews[] {
   console.log('\n🌐 开始翻译英文新闻...');
   console.log(`   待翻译：${englishNews.length} 条`);
   
+  // TODO: 实际翻译需要配置腾讯翻译君 API
+  // 目前仅标记翻译状态，内容保持原文
+  
   // 标记已翻译的新闻
   const translated = news.map(item => {
     if (item.language === 'en') {
