@@ -5557,8 +5557,6 @@ export const models: AIModel[] = [
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5-nano-2025-08-07.com",
     "updatedAt": "2026-08-17"
-<<<<<<< Updated upstream
-=======
   },
   {
     "id": "azure-eu-o1-2024-12-17",
@@ -6051,7 +6049,6 @@ export const models: AIModel[] = [
     "released": "2026-08-17",
     "url": "https://azure/gpt-4.com",
     "updatedAt": "2026-08-17"
->>>>>>> Stashed changes
   }
 ];
 
