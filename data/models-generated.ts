@@ -5557,6 +5557,501 @@ export const models: AIModel[] = [
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5-nano-2025-08-07.com",
     "updatedAt": "2026-08-17"
+<<<<<<< Updated upstream
+=======
+  },
+  {
+    "id": "azure-eu-o1-2024-12-17",
+    "name": "Eu/o1 2024",
+    "slug": "azure-eu-o1-2024-12-17",
+    "provider": "Azure/eu/o1-2024-12-17",
+    "logo": "",
+    "description": "Azure/eu/o1-2024-12-17模型，专注于文本处理，提供高效的多模态支持，适用于大规模文本分析和生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$16.50 / 1M tokens",
+      "output": "$66.00 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": false,
+    "strengths": [
+      "多模态支持",
+      "高性价比",
+      "大规模文本处理能力",
+      "快速上下文窗口处理",
+      "广泛适用场景"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/eu/o1-2024-12-17.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-eu-o1-mini-2024-09-12",
+    "name": "Eu/o1 mini",
+    "slug": "azure-eu-o1-mini-2024-09-12",
+    "provider": "Azure/eu/o1-mini-2024-09-12",
+    "logo": "",
+    "description": "Azure欧版o1 mini推理模型，专为复杂文本任务设计，支持128K长上下文，适用于逻辑推理、代码生成和内容创作场景，性价比突出。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.21 / 1M tokens",
+      "output": "$4.84 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "128K超长上下文窗口，适合处理长文档和复杂任务",
+      "定价极具竞争力，输入仅$1.21/百万token",
+      "o1系列推理能力，擅长多步逻辑推演",
+      "Azure全球节点覆盖，低延迟稳定访问"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/eu/o1-mini-2024-09-12.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-eu-o3-mini-2025-01-31",
+    "name": "Eu/o3 mini",
+    "slug": "azure-eu-o3-mini-2025-01-31",
+    "provider": "Azure/eu/o3-mini-2025-01-31",
+    "logo": "",
+    "description": "Azure Eu/o3 mini 是一款经济实惠的文本处理模型，适用于日常文本生成和编辑任务，支持大文本处理。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.21 / 1M tokens",
+      "output": "$4.84 / 1M tokens"
+    },
+    "contextWindow": "200K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格实惠",
+      "高效处理大文本",
+      "适用于日常文本任务",
+      "快速响应",
+      "易于集成"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/eu/o3-mini-2025-01-31.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-standard-gpt-4o-2024-08-06",
+    "name": "Global standard/gpt",
+    "slug": "azure-global-standard-gpt-4o-2024-08-06",
+    "provider": "Azure/global-standard/gpt-4o-2024-08-06",
+    "logo": "",
+    "description": "GPT-4o多模态模型，支持文本与图像理解，具备强大的语言理解和生成能力。适用于内容创作、代码开发、数据分析等多种场景，提供128K长上下文窗口，可在复杂任务中保持连贯性。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.50 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "多模态支持，可同时处理文本和图像输入",
+      "128K超大上下文窗口，适合长文档和复杂对话",
+      "Azure平台部署，企业级稳定性与安全性保障",
+      "具有成本效益，输入价格相对亲民"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global-standard/gpt-4o-2024-08-06.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-standard-gpt-4o-2024-11-20",
+    "name": "Global standard/gpt",
+    "slug": "azure-global-standard-gpt-4o-2024-11-20",
+    "provider": "Azure/global-standard/gpt-4o-2024-11-20",
+    "logo": "",
+    "description": "基于 GPT-4o 的大型语言模型，支持文本与多模态输入输出，适用于复杂问答、内容创作及多步骤任务处理。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.50 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "128K 长上下文窗口，支持大规模文档处理",
+      "多模态能力，支持图像理解与生成",
+      "Azure 平台部署，企业级稳定性和安全性",
+      "性价比高，输入成本仅为竞品三分之一"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global-standard/gpt-4o-2024-11-20.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-standard-gpt-4o-mini",
+    "name": "Global standard/gpt",
+    "slug": "azure-global-standard-gpt-4o-mini",
+    "provider": "Azure/global-standard/gpt-4o-mini",
+    "logo": "",
+    "description": "Azure 全球标准GPT-4o-mini模型，提供高效文本生成，支持多模态输入，适用于各种文本生成场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.15 / 1M tokens",
+      "output": "$0.60 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "低廉的价格",
+      "支持多模态输入",
+      "高效率的文本生成",
+      "广泛适用的场景",
+      "强大的上下文理解能力"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global-standard/gpt-4o-mini.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-gpt-4o-2024-08-06",
+    "name": "Global/gpt 4o",
+    "slug": "azure-global-gpt-4o-2024-08-06",
+    "provider": "Azure/global/gpt-4o-2024-08-06",
+    "logo": "",
+    "description": "Azure提供的多模态文本生成模型，具备强大的上下文理解和生成能力，适用于文本生成、多模态内容创作等场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.50 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "支持多模态内容生成",
+      "高性价比的按需付费模式",
+      "128K tokens的上下文窗口，支持复杂文本处理",
+      "快速响应的输入输出价格",
+      "先进的多模态处理技术"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global/gpt-4o-2024-08-06.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-gpt-4o-2024-11-20",
+    "name": "Global/gpt 4o",
+    "slug": "azure-global-gpt-4o-2024-11-20",
+    "provider": "Azure/global/gpt-4o-2024-11-20",
+    "logo": "",
+    "description": "Azure提供的全球通用预训练语言模型，具备强大的文本生成和解析能力，支持多模态输入，适用于各类文本处理任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.50 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "全球通用性",
+      "高效文本生成",
+      "多模态支持",
+      "低廉价格",
+      "大容量上下文窗口"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global/gpt-4o-2024-11-20.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-gpt-5-1",
+    "name": "Global/gpt 5.1",
+    "slug": "azure-global-gpt-5-1",
+    "provider": "Azure/global/gpt-5",
+    "logo": "",
+    "description": "Azure全球通用文本处理模型，具备多模态支持，适用于处理大规模文本数据，提供高效的自然语言理解和生成。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.25 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "272K tokens",
+    "multimodal": false,
+    "strengths": [
+      "全球部署，覆盖广泛语言",
+      "多模态处理，支持图像文本融合",
+      "低廉的价格，高效性能"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global/gpt-5.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-global-gpt-5-1-chat",
+    "name": "Global/gpt 5.1",
+    "slug": "azure-global-gpt-5-1-chat",
+    "provider": "Azure/global/gpt-5",
+    "logo": "",
+    "description": "Azure/gpt-5.1是全球领先的多模态文本生成模型，适用于内容创作、对话系统和复杂任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.25 / 1M tokens",
+      "output": "$10.00 / 1M tokens"
+    },
+    "contextWindow": "128K tokens",
+    "multimodal": false,
+    "strengths": [
+      "全球最先进的多模态处理",
+      "高效的文本生成能力",
+      "广泛的上下文理解",
+      "经济实惠的定价策略",
+      "灵活的应用场景"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/global/gpt-5.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-3-5-turbo",
+    "name": "Gpt-3.5-turbo",
+    "slug": "azure-gpt-3-5-turbo",
+    "provider": "Azure/gpt-3",
+    "logo": "",
+    "description": "Azure平台上的Gpt-3.5-turbo模型，专注于文本处理，高效生成内容，适用于多种对话和写作场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.50 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "4K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高性价比的按量付费模式",
+      "优秀的文本生成能力",
+      "快速响应速度",
+      "广泛适用场景",
+      "良好的用户体验"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-3.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-3-5-turbo-0125",
+    "name": "Gpt-3.5-turbo",
+    "slug": "azure-gpt-3-5-turbo-0125",
+    "provider": "Azure/gpt-3",
+    "logo": "",
+    "description": "Azure/gpt-3 提供的文本生成模型，适用于各种文本生成任务，具备高效生成能力。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.50 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "16K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高效文本生成",
+      "灵活的上下文处理",
+      "经济实惠的价格",
+      "广泛的适用场景",
+      "稳定的性能"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-3.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-35-turbo",
+    "name": "Gpt-35-turbo",
+    "slug": "azure-gpt-35-turbo",
+    "provider": "Azure/gpt-35-turbo",
+    "logo": "",
+    "description": "Azure提供的Gpt-35-turbo，专注于文本生成，价格亲民，支持大规模上下文处理，适用于快速文本生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.50 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "4K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格实惠",
+      "高效文本生成",
+      "大规模上下文处理",
+      "快速响应速度",
+      "支持大规模文本任务"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-35-turbo.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-35-turbo-0125",
+    "name": "Gpt-35-turbo",
+    "slug": "azure-gpt-35-turbo-0125",
+    "provider": "Azure/gpt-35-turbo-0125",
+    "logo": "",
+    "description": "Azure提供的Gpt-35-turbo模型，专注于文本生成，具备高效处理能力，适用于大规模文本生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$0.50 / 1M tokens",
+      "output": "$1.50 / 1M tokens"
+    },
+    "contextWindow": "16K tokens",
+    "multimodal": false,
+    "strengths": [
+      "高效文本生成",
+      "低廉价格",
+      "大容量上下文窗口",
+      "快速响应",
+      "稳定性能"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-35-turbo-0125.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-35-turbo-1106",
+    "name": "Gpt-35-turbo",
+    "slug": "azure-gpt-35-turbo-1106",
+    "provider": "Azure/gpt-35-turbo-1106",
+    "logo": "",
+    "description": "Azure提供的Gpt-35-turbo，专注于文本生成，具备高性价比，适用于大规模文本生成任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$1.00 / 1M tokens",
+      "output": "$2.00 / 1M tokens"
+    },
+    "contextWindow": "16K tokens",
+    "multimodal": false,
+    "strengths": [
+      "价格优势明显",
+      "高性价比",
+      "适用于大规模文本生成",
+      "上下文窗口大，支持长文本处理",
+      "性能稳定可靠"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-35-turbo-1106.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-35-turbo-16k",
+    "name": "Gpt-35-turbo",
+    "slug": "azure-gpt-35-turbo-16k",
+    "provider": "Azure/gpt-35-turbo-16k",
+    "logo": "",
+    "description": "OpenAI GPT-3.5 Turbo是一款高效轻量级语言模型，具备快速的文本生成与对话能力，适用于客服、内容创作、问答等多种场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$4.00 / 1M tokens"
+    },
+    "contextWindow": "16K tokens",
+    "multimodal": false,
+    "strengths": [
+      "响应速度快，延迟低",
+      "成本效益高，适合大规模部署",
+      "16K长上下文窗口，支持复杂任务",
+      "成熟的API生态，易于集成"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-35-turbo-16k.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-35-turbo-16k-0613",
+    "name": "Gpt-35-turbo",
+    "slug": "azure-gpt-35-turbo-16k-0613",
+    "provider": "Azure/gpt-35-turbo-16k-0613",
+    "logo": "",
+    "description": "GPT-3.5 Turbo 是 OpenAI 推出的高效通用文本模型，支持 16K 上下文窗口，适用于对话生成、文本理解、代码编写及各类自然语言处理任务。",
+    "category": "text",
+    "pricing": {
+      "input": "$3.00 / 1M tokens",
+      "output": "$4.00 / 1M tokens"
+    },
+    "contextWindow": "16K tokens",
+    "multimodal": false,
+    "strengths": [
+      "成本效益高，价格低于 GPT-4 系列",
+      "支持 16K 长上下文，适合文档分析与长对话场景",
+      "响应速度快，适合实时交互与批量处理",
+      "API 成熟稳定，部署于 Azure 云平台"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-35-turbo-16k-0613.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-4",
+    "name": "Gpt-4",
+    "slug": "azure-gpt-4",
+    "provider": "Azure/gpt-4",
+    "logo": "",
+    "description": "OpenAI 推出的旗舰级文本模型，具备卓越的推理、理解和生成能力，广泛应用于代码编写、复杂问答、创意写作等场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$30.00 / 1M tokens",
+      "output": "$60.00 / 1M tokens"
+    },
+    "contextWindow": "8K tokens",
+    "multimodal": false,
+    "strengths": [
+      "强大的逻辑推理与问题解决能力",
+      "精准的自然语言理解与生成",
+      "稳定的代码编写与调试支持",
+      "成熟的Azure生态集成"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-4.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-4-1",
+    "name": "Gpt-4.1",
+    "slug": "azure-gpt-4-1",
+    "provider": "Azure/gpt-4",
+    "logo": "",
+    "description": "Azure/gpt-4的Gpt-4.1模型，支持多模态输入，提供高效文本处理，适用于1M tokens的上下文窗口，价格亲民。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$8.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": [
+      "多模态输入支持",
+      "高效文本处理能力",
+      "大容量上下文窗口",
+      "价格合理",
+      "Azure平台支持"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-4.com",
+    "updatedAt": "2026-08-17"
+  },
+  {
+    "id": "azure-gpt-4-1-2025-04-14",
+    "name": "Gpt-4.1-2025",
+    "slug": "azure-gpt-4-1-2025-04-14",
+    "provider": "Azure/gpt-4",
+    "logo": "",
+    "description": "Azure/gpt-4 推出的 Gpt-4.1-2025 模型，专注于文本处理，支持多模态输入，价格亲民，适用于各类文本生成和交互场景。",
+    "category": "text",
+    "pricing": {
+      "input": "$2.00 / 1M tokens",
+      "output": "$8.00 / 1M tokens"
+    },
+    "contextWindow": "1.0M tokens",
+    "multimodal": false,
+    "strengths": [
+      "多模态支持，增强交互体验",
+      "价格优势，降低使用成本",
+      "上下文窗口大，处理复杂文本",
+      "AI 厂商背书，质量可靠",
+      "适用于多种文本生成任务"
+    ],
+    "released": "2026-08-17",
+    "url": "https://azure/gpt-4.com",
+    "updatedAt": "2026-08-17"
+>>>>>>> Stashed changes
   }
 ];
 
