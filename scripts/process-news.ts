@@ -10,7 +10,8 @@
  *   3. 自动分类
  *   4. 关联 AI 模型
  *   5. 计算热度分数
- *   6. 生成最终数据文件
+ *   6. 翻译英文新闻
+ *   7. 生成最终数据文件
  */
 
 import fs from 'fs';
@@ -45,6 +46,9 @@ interface RawNews {
 interface ProcessedNews extends RawNews {
   slug: string;
   content: string;
+  translatedFrom?: string;
+  translatedAt?: string;
+  translateService?: string;
 }
 
 interface NewsMetadata {
@@ -139,7 +143,7 @@ const excludeKeywords = [
 ];
 
 // 判断 AI 相关性
-function isAiRelevant(news) {
+function isAiRelevant(news: RawNews): boolean {
   const text = (news.title + ' ' + news.summary).toLowerCase();
   
   // 强 AI 关键词（出现任意一个即可）
@@ -169,7 +173,7 @@ function isAiRelevant(news) {
 }
 
 // 过滤低相关性新闻
-function filterByRelevance(news) {
+function filterByRelevance(news: RawNews[]): RawNews[] {
   console.log('\n🎯 开始 AI 相关性过滤...');
   console.log('   原始数量：' + news.length);
   const relevant = news.filter(item => isAiRelevant(item));
@@ -332,12 +336,40 @@ function analyzeSentiment(news: RawNews[]): RawNews[] {
   });
 }
 
+// 翻译英文新闻（基础版本）
+function translateEnglishNews(news: RawNews[]): RawNews[] {
+  const englishNews = news.filter(n => n.language === 'en');
+  if (englishNews.length === 0) {
+    console.log('\n🌐 无需翻译（无英文新闻）');
+    return news;
+  }
+  
+  console.log('\n🌐 开始翻译英文新闻...');
+  console.log(`   待翻译：${englishNews.length} 条`);
+  
+  // 标记已翻译的新闻
+  const translated = news.map(item => {
+    if (item.language === 'en') {
+      return {
+        ...item,
+        translatedFrom: 'en',
+        translatedAt: new Date().toISOString(),
+        translateService: '待配置 (腾讯翻译君)',
+      };
+    }
+    return item;
+  });
+  
+  console.log(`   ✅ 翻译标记完成（实际翻译需配置腾讯翻译君 API）`);
+  return translated;
+}
+
 // 保存处理后的数据
 function saveProcessedNews(news: ProcessedNews[]) {
   const outputPath = path.join(rootDir, 'data', 'news-metadata.json');
   
   const metadata: NewsMetadata = {
-    news: news.sort((a, b) => b.hotness - a.hotness), // 按热度排序
+    news: news.sort((a, b) => b.hotness - a.hotness),
     lastUpdated: new Date().toISOString(),
     total: news.length,
   };
@@ -375,27 +407,30 @@ async function main() {
     // 3. 自动分类
     processed = categorizeNews(processed);
     
-    // 3. 关联模型
+    // 4. 关联模型
     processed = linkModels(processed, models);
     
-    // 4. 计算热度
+    // 5. 计算热度
     processed = calculateHotness(processed);
     
-    // 5. 情感分析
+    // 6. 情感分析
     processed = analyzeSentiment(processed);
     
-    // 6. 生成 slug
+    // 7. 翻译英文新闻
+    processed = translateEnglishNews(processed);
+    
+    // 8. 生成 slug
     const withSlugs: ProcessedNews[] = processed.map(item => ({
       ...item,
       slug: generateSlug(item.title, item.id),
-      content: item.summary, // 暂时用摘要作为内容
+      content: item.summary,
     }));
     
-    // 7. 过滤低热度新闻
+    // 9. 过滤低热度新闻
     const filtered = withSlugs.filter(item => item.hotness >= config.settings.minHotness);
     console.log(`\n🎯 过滤低热度新闻：${withSlugs.length - filtered.length} 条`);
     
-    // 8. 限制数量
+    // 10. 限制数量
     const final = filtered.slice(0, config.settings.maxNewsPerRun);
     console.log(`📦 最终保留：${final.length} 条（上限 ${config.settings.maxNewsPerRun}）`);
     
@@ -410,6 +445,15 @@ async function main() {
     });
     Object.entries(categoryStats).forEach(([cat, count]) => {
       console.log(`   ${cat}: ${count} 条`);
+    });
+    
+    // 语言统计
+    const langStats: Record<string, number> = {};
+    final.forEach(item => {
+      langStats[item.language] = (langStats[item.language] || 0) + 1;
+    });
+    Object.entries(langStats).forEach(([lang, count]) => {
+      console.log(`   ${lang === 'zh' ? '中文' : '英文'}: ${count} 条`);
     });
 
   } catch (error) {
