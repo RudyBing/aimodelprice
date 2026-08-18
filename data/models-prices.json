@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-17T01:13:00.500Z",
+  "syncedAt": "2026-08-18T01:10:13.893Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -2163,6 +2163,218 @@
         "outputCostPerToken": 4.4e-7,
         "maxInputTokens": 272000,
         "maxOutputTokens": 128000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-eu-o1-2024-12-17",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000165,
+        "outputCostPerToken": 0.000066,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 100000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-eu-o1-mini-2024-09-12",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000121,
+        "outputCostPerToken": 0.00000484,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 65536,
+        "supportsVision": false
+      }
+    },
+    {
+      "id": "azure-eu-o3-mini-2025-01-31",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000121,
+        "outputCostPerToken": 0.00000484,
+        "maxInputTokens": 200000,
+        "maxOutputTokens": 100000,
+        "supportsVision": false
+      }
+    },
+    {
+      "id": "azure-global-standard-gpt-4o-2024-08-06",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 16384,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-standard-gpt-4o-2024-11-20",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 16384,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-standard-gpt-4o-mini",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 1.5e-7,
+        "outputCostPerToken": 6e-7,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 16384,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-gpt-4o-2024-08-06",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 16384,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-gpt-4o-2024-11-20",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.0000025,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 16384,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-gpt-5-1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 272000,
+        "maxOutputTokens": 128000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-global-gpt-5-1-chat",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00000125,
+        "outputCostPerToken": 0.00001,
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-gpt-3-5-turbo",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 4097,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-3-5-turbo-0125",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-35-turbo",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 4097,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-35-turbo-0125",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.0000015,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-35-turbo-1106",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000001,
+        "outputCostPerToken": 0.000002,
+        "maxInputTokens": 16384,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-35-turbo-16k",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000004,
+        "maxInputTokens": 16385,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-35-turbo-16k-0613",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000003,
+        "outputCostPerToken": 0.000004,
+        "maxInputTokens": 16385,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-4",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.00003,
+        "outputCostPerToken": 0.00006,
+        "maxInputTokens": 8192,
+        "maxOutputTokens": 4096
+      }
+    },
+    {
+      "id": "azure-gpt-4-1",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000008,
+        "maxInputTokens": 1047576,
+        "maxOutputTokens": 32768,
+        "supportsVision": true
+      }
+    },
+    {
+      "id": "azure-gpt-4-1-2025-04-14",
+      "prices": {
+        "source": "litellm",
+        "inputCostPerToken": 0.000002,
+        "outputCostPerToken": 0.000008,
+        "maxInputTokens": 1047576,
+        "maxOutputTokens": 32768,
         "supportsVision": true
       }
     }
