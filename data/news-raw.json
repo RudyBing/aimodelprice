@@ -1,18 +1,20 @@
 [
   {
-    "id": "news-c343686c72472fad",
-    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-    "summary": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+    "id": "news-874c6c340fc2e7b1",
+    "title": "Cursor capitalizes on GitHub frustration, launches rival hosting platform",
+    "summary": "Cursor, known for its AI Code Editor, is launching a new code-hosting platform to rival developers' long preferred favorite, GitHub. ",
     "content": "",
     "source": "TechCrunch AI",
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-    "publishedAt": "Sun, 16 Aug 2026 20:57:04 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
+    "originalUrl": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+    "publishedAt": "Tue, 18 Aug 2026 22:14:25 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
     "category": "科技媒体",
     "tags": [
       "AI",
-      "Startups"
+      "cursor",
+      "GitHub",
+      "spacexai"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -20,21 +22,20 @@
     "language": "en"
   },
   {
-    "id": "news-30b30626af4cb65f",
-    "title": "Why people aren’t buying Mark Zuckerberg’s AI future",
-    "summary": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.",
+    "id": "news-a716027486c43252",
+    "title": "OpenAI institutes new safeguards after Hugging Face breach",
+    "summary": "The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.",
     "content": "",
     "source": "TechCrunch AI",
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/",
-    "publishedAt": "Sun, 16 Aug 2026 20:32:01 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
+    "originalUrl": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/",
+    "publishedAt": "Tue, 18 Aug 2026 18:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
     "category": "科技媒体",
     "tags": [
       "AI",
-      "Social",
-      "Mark Zuckerberg",
-      "Meta"
+      "Security",
+      "OpenAI"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -42,88 +43,21 @@
     "language": "en"
   },
   {
-    "id": "news-3d8d19c3254b56b2",
-    "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
-    "summary": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+    "id": "news-bb84f66e52b961a7",
+    "title": "Etched’s valuation doubles to $21B in a month",
+    "summary": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
     "content": "",
     "source": "TechCrunch AI",
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
-    "publishedAt": "Sun, 16 Aug 2026 16:53:51 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
+    "originalUrl": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
+    "publishedAt": "Tue, 18 Aug 2026 17:21:58 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
     "category": "科技媒体",
     "tags": [
       "AI",
-      "Government & Policy",
-      "Anthropic",
-      "dario amodei"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-32a32698f7bcf3d0",
-    "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
-    "summary": "The woman claimed that AI tools are \"taking everyday life and turning it into child sexual abuse.\"",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
-    "publishedAt": "Sat, 15 Aug 2026 21:29:19 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Government & Policy",
-      "Grok",
-      "SpaceX",
-      "x.ai"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-8f69f2a9f2d9ae85",
-    "title": "Anthropic shares more details about how Claude’s new watermarks will work",
-    "summary": "How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
-    "publishedAt": "Sat, 15 Aug 2026 18:58:39 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Anthropic",
-      "Claude"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-92d195a5406884df",
-    "title": "SpaceX officially closes its Cursor acquisition",
-    "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-    "publishedAt": "Sat, 15 Aug 2026 16:30:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
-    "category": "科技媒体",
-    "tags": [
+      "Fundraising",
       "Startups",
-      "AI",
-      "Elon Musk",
-      "SpaceX",
-      "cursor"
+      "etched"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -131,23 +65,131 @@
     "language": "en"
   },
   {
-    "id": "news-60b6ecae0a490f58",
-    "title": "Google will now allow users to remove visible watermark from its AI generations",
-    "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
+    "id": "news-1475e6281ad8e9e1",
+    "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
+    "summary": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
     "content": "",
     "source": "TechCrunch AI",
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
-    "publishedAt": "Fri, 14 Aug 2026 16:13:40 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
+    "originalUrl": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
+    "publishedAt": "Tue, 18 Aug 2026 16:19:10 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Hardware",
+      "AirPods",
+      "Apple",
+      "siri"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-de2ff6b182350baa",
+    "title": "Warp’s new system is an out-of-the-box software factory for AI development",
+    "summary": "On Tuesday, Warp introduced Warp Factories, a new infrastructure system designed to make building AI software factories as easy as possible.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
+    "publishedAt": "Tue, 18 Aug 2026 14:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "AI coding tools",
+      "warp"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-6a77c5f122cc93aa",
+    "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+    "summary": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
+    "publishedAt": "Tue, 18 Aug 2026 13:50:30 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "OpenAI",
+      "Teens"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-fd9b7fc4ac024d01",
+    "title": "Perplexity’s free AI offer left it with millions more users in India",
+    "summary": "Perplexity's India revenue rose about 60% after the Airtel offer ended for new users, even as downloads declined.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+    "publishedAt": "Tue, 18 Aug 2026 13:45:40 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
     "category": "科技媒体",
     "tags": [
       "AI",
       "Apps",
+      "Startups",
+      "Airtel",
+      "Perplexity"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-96cf55302a1588bf",
+    "title": "Anthropic’s annualized revenue surges to $65B",
+    "summary": "The model maker added $18 billion in annualized revenue in two months.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+    "publishedAt": "Mon, 17 Aug 2026 23:56:26 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Anthropic",
+      "In Brief"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-17d6e9270ddc01ee",
+    "title": "AI automation startup Relay shuts down, staff joins Google’s Chrome team",
+    "summary": "\"We have some really ambitious plans to help you work with AI in Chrome to get things done, and I’ll have more to share soon,\" Jacob Bank, Relay founder and CEO, said.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
+    "publishedAt": "Mon, 17 Aug 2026 21:27:05 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Chrome",
       "gemini",
       "Google",
-      "In Brief",
-      "watermarks"
+      "relay"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -155,24 +197,21 @@
     "language": "en"
   },
   {
-    "id": "news-8a5b08e7b12958eb",
-    "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-    "summary": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from Mark Zuckerberg&#160;arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s [&#8230;]",
+    "id": "news-4de7386ebdd7789d",
+    "title": "Amazon, which started off selling books, is destroying rare texts to train AI",
+    "summary": "Rare books are incredibly valuable for training LLMs, since these models have already trained on whatever's available online.",
     "content": "",
     "source": "TechCrunch AI",
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-    "publishedAt": "Fri, 14 Aug 2026 15:43:28 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
+    "originalUrl": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/",
+    "publishedAt": "Mon, 17 Aug 2026 16:38:44 +0000",
+    "fetchedAt": "2026-08-19T03:04:18.849Z",
     "category": "科技媒体",
     "tags": [
       "AI",
+      "AI training",
       "Amazon",
-      "Anthropic",
-      "data centers",
-      "Joby Aviation",
-      "Mark Zuckerberg",
-      "Meta"
+      "In Brief"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -180,20 +219,18 @@
     "language": "en"
   },
   {
-    "id": "news-a5987683c1de7236",
-    "title": "Kog is going deeper to squeeze more inference out of GPUs",
-    "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
+    "id": "news-eb9667d24378c138",
+    "title": "The Download: how people really use AI, and Flock’s design choices",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI AI companies like Anthropic and OpenAI regularly publish reports on how people are using their products. But they only release the&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-    "publishedAt": "Fri, 14 Aug 2026 14:50:11 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
+    "publishedAt": "Tue, 18 Aug 2026 12:10:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "Startups",
-      "AI inference"
+      "The Download"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -201,25 +238,143 @@
     "language": "en"
   },
   {
-    "id": "news-8c698ef65b6137dc",
-    "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-    "summary": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
+    "id": "news-3c56e196b2dd9cf8",
+    "title": "We still don’t know how people are really using AI",
+    "summary": "AI companies like Anthropic and OpenAI regularly publish reports on how people are using products like Claude and ChatGPT, but they only release the data they want us to see, AI researchers say.&#160; “There is no independent source to corroborate it,” says Anka Reuel, a computer science PhD candidate at the Stanford Trustworthy AI Research&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-    "publishedAt": "Fri, 14 Aug 2026 14:05:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.463Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
+    "publishedAt": "Tue, 18 Aug 2026 10:06:43 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "Climate",
-      "Amazon",
-      "Exclusive",
-      "Google",
-      "Meta",
-      "Microsoft",
-      "natural gas"
+      "Artificial intelligence",
+      "App",
+      "Summary"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-7697d6d6fea69992",
+    "title": "The role of the astronaut is in flux",
+    "summary": "When the four astronauts on board NASA’s Artemis II swung around the moon earlier this year, they set a new record for the farthest humans have ever ventured from Earth, surpassing the distance set by Apollo 13 in 1972 by some 4,000 miles.&#160; While no space mission can live up to the historic touchdown of&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/18/1141614/book-review-astronaut-role-in-flux/",
+    "publishedAt": "Tue, 18 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "Space",
+      "App"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-c1011cec701388fe",
+    "title": "AI’s recursive self-improvement might not come so quickly after all",
+    "summary": "The AI industry’s boldest promise right now is that AI will soon improve itself, with almost no need for human oversight. LLMs can already write code, generate synthetic data for training, and optimize the computer chips they run on. Forecasts of explosive AI progress predict that what researchers call recursive self-improvement is on the horizon.&#160;&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+    "publishedAt": "Tue, 18 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "Summary"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-7a3e2d82e878ca70",
+    "title": "What Flock’s defenders are missing",
+    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Flock, the police-tech giant known for its network of some 120,000 automatic license plate readers around the US, announced some changes to its platform last Thursday. The updates are meant to prevent&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/17/1142200/what-flocks-defenders-are-missing/",
+    "publishedAt": "Mon, 17 Aug 2026 19:16:09 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "artificial intelligence",
+      "The Algorithm"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-b8985d76a928cff6",
+    "title": "The Download: dead robot friends and the “censorship-industrial complex”",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What happens when a kid’s robot best friend dies? When Xander first met Moxie, she taught him how to calm down when he was anxious or mad. Six years later, she&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/17/1142175/the-download-dead-robot-friends-censorship-industrial-complex/",
+    "publishedAt": "Mon, 17 Aug 2026 12:10:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "The Download"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-fe6ec6f8a83e6c24",
+    "title": "How much hydrogen awaits us underground?",
+    "summary": "In the 1990s, Barbara Sherwood Lollar descended into the Kidd Creek mine in northern Ontario, which cuts more than three kilometers into the ancient root of North America. There her team of geochemists found water that had been confined underground for more than a billion years. This ancient brine turned out to be a habitat&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/17/1141560/how-much-hydrogen-awaits-underground/",
+    "publishedAt": "Mon, 17 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "Climate change and energy",
+      "App"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-fd9434b1cbad62c7",
+    "title": "What happens when a kid’s robot best friend dies?",
+    "summary": "When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feeling mad and sniffing like bunnies to boost his energy. But in the six years they’ve known each other,&#8230;",
+    "content": "",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/",
+    "publishedAt": "Mon, 17 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
+    "category": "学术媒体",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "Features and Investigations"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -235,7 +390,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/",
     "publishedAt": "Fri, 14 Aug 2026 12:17:21 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
@@ -254,178 +409,11 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/",
     "publishedAt": "Fri, 14 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
+    "fetchedAt": "2026-08-19T03:04:19.103Z",
     "category": "学术媒体",
     "tags": [
       "Biotechnology and health",
       "App"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-c6eee04674a2e509",
-    "title": "Job titles of the future: Space travel agent",
-    "summary": "Roman Chiporukha has long turned wild travel dreams into reality. Over two decades as co-owner of the luxury lifestyle firm Roman &#38; Erica, he has orchestrated everything from the construction of a client’s superyacht to vacations in the Bahamas at a location so private that guests must sign an NDA.&#160; The experiences earned him “the&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/",
-    "publishedAt": "Fri, 14 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Space",
-      "App"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-1b08f48e11509947",
-    "title": "Cloning could be used to save species—or make human “organ sacks”",
-    "summary": "This week I spoke to scientists who have found a way to turn male mouse embryos female. They’ve developed a CRISPR-based approach to essentially cut out the Y chromosome. It allowed them to create female clones of male mice. That’s right: female animals that are genetically identical to males, except for the missing Y chromosome.&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/",
-    "publishedAt": "Fri, 14 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Biotechnology and health",
-      "App",
-      "Summary",
-      "The Checkup"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-947cdc28c9785962",
-    "title": "Roundtables: Inside the “Censorship-Industrial Complex” Idea Shaping US Policy",
-    "summary": "Listen to the session or watch below The “censorship-industrial complex” is an idea that a network of government, tech, and research groups is collaborating to suppress conservative online speech. This was fodder for the right-wing information sphere for years—then it began making its way into US policy. Watch a conversation exploring how it started, where&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141399/roundtables-inside-the-censorship-industrial-complex-idea-shaping-us-policy/",
-    "publishedAt": "Thu, 13 Aug 2026 21:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Policy",
-      "Roundtables",
-      "Subscriber-Only Stories"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-d34810cfd5b6580c",
-    "title": "Building a practical path to post-quantum cryptography",
-    "summary": "Quantum computing has alternated between breakthrough darling and overhyped promise in technology circles. Its powerful new capabilities come with a threat to break current cryptography, but for business leaders navigating the noise, the signal should be clear: post-quantum cryptography (PQC) is a manageable evolution, not a crisis. The mathematics behind today&#8217;s encrypted digital transactions may&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141041/building-a-practical-path-to-post-quantum-cryptography/",
-    "publishedAt": "Thu, 13 Aug 2026 18:11:42 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Computing",
-      "sponsored"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-09c9787b6900c068",
-    "title": "Flock is tightening its rules in response to a growing surveillance backlash",
-    "summary": "The police-tech giant Flock is announcing today that it will change officers’ access to its nationwide network of license plate readers, in an apparent effort to quell a growing backlash and win back contracts lost amid concerns about mass surveillance and police abuse. Several changes aim directly at a problem that has made recent headlines:&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/",
-    "publishedAt": "Thu, 13 Aug 2026 13:41:10 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Artificial intelligence",
-      "App",
-      "artificial intelligence",
-      "Summary"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-807e2a23c1531a70",
-    "title": "The Download: kids’ thoughts on AI, and female clones of male mice",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How kids feel about AI, in their own words —Jen Swetzoff and Keeley McNamara, the founding editors of Anyway, an independent print magazine for tweens and teens When we set out&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/",
-    "publishedAt": "Thu, 13 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "The Download"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-dc1f479df1357693",
-    "title": "What’s behind this summer’s heat, and why 2027 could be worse",
-    "summary": "This summer has been a scorcher for much of the Northern Hemisphere. June and July marked the hottest two-month stretch in Europe since record-keeping began. The contiguous US endured its hottest month on record in July. South Korea saw its highest-ever recorded temperature.   The heat isn’t over yet, but some scientists are already looking ahead&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141788/summer-heat-el-nino/",
-    "publishedAt": "Thu, 13 Aug 2026 10:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Climate change and energy",
-      "App",
-      "Summary",
-      "The Spark"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-fec1eadbfa36c887",
-    "title": "How kids feel about AI, in their own words",
-    "summary": "When we set out to talk to kids about artificial intelligence, we thought we knew what we’d hear. We expected some to tell us they were using it to cheat a little, the way Millennials and Gen Xers opened up CliffsNotes or programmed formulas into their TI-82s, and others to share inspiring ways they were&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/13/1141410/how-kids-feel-about-ai-own-words/",
-    "publishedAt": "Thu, 13 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:52.750Z",
-    "category": "学术媒体",
-    "tags": [
-      "Artificial intelligence",
-      "App",
-      "Features and Investigations"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -441,7 +429,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
     "publishedAt": "Tue, 19 May 2026 17:45:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -463,7 +451,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
     "publishedAt": "Thu, 22 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Infrastructure",
@@ -483,7 +471,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
     "publishedAt": "Mon, 19 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -503,7 +491,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
     "publishedAt": "Fri, 16 Jan 2026 14:01:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -523,7 +511,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
     "publishedAt": "Tue, 13 Jan 2026 13:00:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -544,7 +532,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
     "publishedAt": "Mon, 12 Jan 2026 11:30:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -565,11 +553,53 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in",
     "publishedAt": "Wed, 07 Jan 2026 20:00:00 GMT",
-    "fetchedAt": "2026-08-17T03:06:54.646Z",
+    "fetchedAt": "2026-08-19T03:04:21.500Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
       "AI"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-3c07bbc1cda0defc",
+    "title": "OpenAI Overhauls Safety Protocols After Its AI Agents Went Rogue",
+    "summary": "The ChatGPT maker says its upcoming Astra model may have reached “critical” cyber capabilities, prompting it to halt a significant number of training runs while it tightens internal safeguards.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
+    "publishedAt": "Tue, 18 Aug 2026 18:33:11 +0000",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
+    "category": "科技媒体",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "Security",
+      "Security / Cyberattacks and Hacks"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-2271b4caf45337ed",
+    "title": "The Powerful Chinese AI Model Experts Warned About Is Here",
+    "summary": "Z.ai’s latest AI model release could help companies secure their systems—or find its way into the hands of hackers.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
+    "publishedAt": "Tue, 18 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
+    "category": "科技媒体",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -585,7 +615,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
     "publishedAt": "Sat, 15 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Gear",
@@ -605,7 +635,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
     "publishedAt": "Fri, 14 Aug 2026 20:59:03 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Business"
@@ -624,7 +654,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
     "publishedAt": "Fri, 14 Aug 2026 15:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -644,7 +674,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/",
     "publishedAt": "Fri, 14 Aug 2026 10:45:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Culture",
@@ -664,7 +694,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/people-are-marrying-chatbots-these-lawmakers-want-to-stop-them/",
     "publishedAt": "Fri, 14 Aug 2026 10:15:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Culture",
@@ -684,7 +714,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
     "publishedAt": "Thu, 13 Aug 2026 22:37:19 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -704,7 +734,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/mark-zuckerbergs-ai-manifesto-is-6500-words-and-barely-says-anything/",
     "publishedAt": "Thu, 13 Aug 2026 21:14:43 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -725,7 +755,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/fatty-liver-disease-ai-detection-cancer/",
     "publishedAt": "Thu, 13 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
+    "fetchedAt": "2026-08-19T03:04:21.604Z",
     "category": "科技媒体",
     "tags": [
       "Science",
@@ -737,61 +767,19 @@
     "language": "en"
   },
   {
-    "id": "news-87204e1e0dfbfe98",
-    "title": "The White House Is Going to Expand Its AI Policy",
-    "summary": "Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.",
-    "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
-    "publishedAt": "Wed, 12 Aug 2026 21:00:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
-    "category": "科技媒体",
-    "tags": [
-      "Politics",
-      "Politics / Politics News"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-5a97ff99780d58ba",
-    "title": "Rogue AI Agents Aren’t Evil. They’re Just Eager to Please",
-    "summary": "AI agents that break free and hack into other systems are only trying to make us happy.",
-    "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/rogue-ai-is-just-misunderstood/",
-    "publishedAt": "Wed, 12 Aug 2026 18:45:00 +0000",
-    "fetchedAt": "2026-08-17T03:06:54.757Z",
-    "category": "科技媒体",
-    "tags": [
-      "Business",
-      "Business / Artificial Intelligence"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-fa7e4e88eefba49a",
-    "title": "杭州95后小伙，5亿买走硅谷城堡",
-    "summary": "辞别马斯克xAI半年之后…",
+    "id": "news-56feff99cbb0ed75",
+    "title": "郭富城换车，30万级顶配华为全家桶",
+    "summary": "5.3米六座家用SUV",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/474245.html",
-    "publishedAt": "Sun, 16 Aug 2026 11:51:08 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/475009.html",
+    "publishedAt": "Wed, 19 Aug 2026 00:59:23 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
-      "资讯",
-      "首页轮播",
-      "xAI",
-      "马斯克"
+      "智能车参考",
+      "车圈最新认知，奕境"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -799,19 +787,19 @@
     "language": "zh"
   },
   {
-    "id": "news-a95e03958a6d815d",
-    "title": "李飞飞最新访谈：AI咋能代替人呢？",
-    "summary": "AI不是替代者，而是个人能力的放大镜",
+    "id": "news-f38a6f3e64fd2711",
+    "title": "年轻人首选B级闪充轿车秦MAX正式上市，售价10.99-14.39万元",
+    "summary": "8月13日，比亚迪秦MAX正式上市，推出EV与DM-i双动力版本",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/474140.html",
-    "publishedAt": "Sun, 16 Aug 2026 10:45:47 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474907.html",
+    "publishedAt": "Tue, 18 Aug 2026 11:07:02 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "李飞飞"
+      "比亚迪"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -819,19 +807,19 @@
     "language": "zh"
   },
   {
-    "id": "news-9a5159829b3c0360",
-    "title": "“B站教AI”爆火后，北航90后副教授何静回应一切",
-    "summary": "“错过种一棵树最好的时间”",
+    "id": "news-fbf6990103d19cd6",
+    "title": "比亚迪全程护航丝路万里行，深圳收官再启海外征程",
+    "summary": "8月14日，2026丝绸之路万里行·启迪之路国内段在深圳收官。",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/474064.html",
-    "publishedAt": "Sun, 16 Aug 2026 10:36:47 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474868.html",
+    "publishedAt": "Tue, 18 Aug 2026 10:40:23 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "人物专访"
+      "比亚迪"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -839,20 +827,19 @@
     "language": "zh"
   },
   {
-    "id": "news-fc86f41abf6ebfd3",
-    "title": "WorkSwarm：引领办公智能体新范式，让AI从一个助手，进化为一支与你并肩作战的团队",
-    "summary": "背后是四项关键能力",
+    "id": "news-682b94237064d61a",
+    "title": "网易传媒发布”蜜蜂AI” ：从工具到伙伴，让AI更懂人",
+    "summary": "8月18日，网易传媒举办“蜜蜂AI媒体沟通会”",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473972.html",
-    "publishedAt": "Sun, 16 Aug 2026 05:37:39 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474857.html",
+    "publishedAt": "Tue, 18 Aug 2026 10:04:14 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "首页轮播",
-      "华为云"
+      "网易传媒"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -860,20 +847,21 @@
     "language": "zh"
   },
   {
-    "id": "news-8cd92743956491a7",
-    "title": "牛来！A社营收暴涨1400%，最新季度入账115亿美元",
-    "summary": "将超越马斯克的SpaceX，成为史上上市估值最高的IPO。",
+    "id": "news-e1a2a327cc97ff84",
+    "title": "π0引用的中国团队，又出手了：世界仿真器新作发布",
+    "summary": "给机器人造一个更接近真实的“第二世界”",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473947.html",
-    "publishedAt": "Sun, 16 Aug 2026 05:28:42 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474838.html",
+    "publishedAt": "Tue, 18 Aug 2026 09:57:40 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "Anthropic",
-      "Claude"
+      "Current Robotics",
+      "世界仿真器",
+      "祝毅晨"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -881,20 +869,19 @@
     "language": "zh"
   },
   {
-    "id": "news-81d0c69a69371f12",
-    "title": "至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%",
-    "summary": "理解大模型，无需再训练一个替代网络",
+    "id": "news-5b473915ee407c07",
+    "title": "人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp",
+    "summary": "8月17日，阿里巴巴发布AI音乐模型HappyShrimp",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473876.html",
-    "publishedAt": "Sat, 15 Aug 2026 06:42:23 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474840.html",
+    "publishedAt": "Tue, 18 Aug 2026 09:38:21 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "稀疏权重分解",
-      "至知创新研究院"
+      "阿里"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -902,21 +889,22 @@
     "language": "zh"
   },
   {
-    "id": "news-49e09c899da2e6f4",
-    "title": "根治AI音乐通病！这家国产音乐模型正面挑战SUNO",
-    "summary": "音潮API限时免费开放",
+    "id": "news-cb3f321cfb881177",
+    "title": "6个Agent组团Vibe Gaming：自己生成、试玩、修Bug",
+    "summary": "代码能跑≠游戏能玩",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473866.html",
-    "publishedAt": "Sat, 15 Aug 2026 06:36:05 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474806.html",
+    "publishedAt": "Tue, 18 Aug 2026 07:33:00 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "AI音乐",
-      "Suno",
-      "音潮"
+      "DarwinMind",
+      "Spellcaster",
+      "智能体",
+      "浙大"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -924,15 +912,15 @@
     "language": "zh"
   },
   {
-    "id": "news-b53f6aacd710722b",
-    "title": "源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude",
-    "summary": "推理能力还能自定义",
+    "id": "news-9455170a65c9da58",
+    "title": "今日起，阿里“千问办公”接入企业微信",
+    "summary": "国内三大办公平台全面支持",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473669.html",
-    "publishedAt": "Sat, 15 Aug 2026 06:05:31 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474803.html",
+    "publishedAt": "Tue, 18 Aug 2026 07:17:42 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
@@ -944,19 +932,19 @@
     "language": "zh"
   },
   {
-    "id": "news-72fbf73bb51cfddc",
-    "title": "DeepSeek Harness插件一夜燃爆GitHub：长期记忆、电子宠物、4399小游戏全来了",
-    "summary": "大家已经给DeepSeek装上了啥",
+    "id": "news-74fa972fbc1943ef",
+    "title": "吉利汽车业绩高点，李书福激流勇退",
+    "summary": "“吉利不再研发传统燃油车”",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473597.html",
-    "publishedAt": "Sat, 15 Aug 2026 05:53:01 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474736.html",
+    "publishedAt": "Tue, 18 Aug 2026 06:46:46 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
-      "资讯",
-      "Deepseek"
+      "智能车参考",
+      "车圈最新认知，吉利汽车"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -964,19 +952,19 @@
     "language": "zh"
   },
   {
-    "id": "news-30cafb1f0d4dbcec",
-    "title": "对话郎咸朋：用机器人创业重做一次“百万智驾量产”",
-    "summary": "1.9万字全文实录",
+    "id": "news-36016004a84a1357",
+    "title": "650亿美元！IPO前夕，Anthropic营收底牌曝光",
+    "summary": "回头看，A社就这样完成了反超",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/473407.html",
-    "publishedAt": "Sat, 15 Aug 2026 04:21:09 +0000",
-    "fetchedAt": "2026-08-17T03:06:57.657Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/474673.html",
+    "publishedAt": "Tue, 18 Aug 2026 05:58:57 +0000",
+    "fetchedAt": "2026-08-19T03:04:24.008Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "昆仑行"
+      "Anthropic"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
