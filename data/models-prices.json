@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-19T01:11:27.339Z",
+  "syncedAt": "2026-08-20T01:10:42.939Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -365,8 +365,8 @@
       "id": "gemini-gemini-3-6-flash",
       "prices": {
         "source": "litellm",
-        "inputCostPerToken": 0.0000015,
-        "outputCostPerToken": 0.0000075,
+        "inputCostPerToken": 7.5e-7,
+        "outputCostPerToken": 0.00000375,
         "maxInputTokens": 1048576,
         "maxOutputTokens": 65536,
         "supportsVision": true
@@ -1049,8 +1049,8 @@
       "id": "gemini-gemini-3-6-flash-dup1",
       "prices": {
         "source": "litellm",
-        "inputCostPerToken": 0.0000015,
-        "outputCostPerToken": 0.0000075,
+        "inputCostPerToken": 7.5e-7,
+        "outputCostPerToken": 0.00000375,
         "maxInputTokens": 1048576,
         "maxOutputTokens": 65536,
         "supportsVision": true
