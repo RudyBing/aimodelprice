@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-21T01:14:48.564Z",
+  "syncedAt": "2026-08-22T01:10:46.235Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -299,8 +299,8 @@
       "id": "gemini-gemini-3-1-flash-image",
       "prices": {
         "source": "litellm",
-        "inputCostPerToken": 2.5e-7,
-        "outputCostPerToken": 0.0000015,
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.000003,
         "maxInputTokens": 65536,
         "maxOutputTokens": 32768,
         "supportsVision": true
@@ -564,8 +564,8 @@
         "source": "litellm",
         "inputCostPerToken": 3e-7,
         "outputCostPerToken": 9e-7,
-        "maxInputTokens": 256000,
-        "maxOutputTokens": 256000
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
       }
     },
     {
@@ -983,8 +983,8 @@
       "id": "gemini-gemini-3-1-flash-image-dup1",
       "prices": {
         "source": "litellm",
-        "inputCostPerToken": 2.5e-7,
-        "outputCostPerToken": 0.0000015,
+        "inputCostPerToken": 5e-7,
+        "outputCostPerToken": 0.000003,
         "maxInputTokens": 65536,
         "maxOutputTokens": 32768,
         "supportsVision": true
@@ -1248,8 +1248,8 @@
         "source": "litellm",
         "inputCostPerToken": 3e-7,
         "outputCostPerToken": 9e-7,
-        "maxInputTokens": 256000,
-        "maxOutputTokens": 256000
+        "maxInputTokens": 128000,
+        "maxOutputTokens": 128000
       }
     },
     {
@@ -2073,7 +2073,7 @@
         "source": "litellm",
         "inputCostPerToken": 0.0000055,
         "outputCostPerToken": 0.000033,
-        "maxInputTokens": 1050000,
+        "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
         "supportsVision": true
       }
@@ -2084,7 +2084,7 @@
         "source": "litellm",
         "inputCostPerToken": 0.0000055,
         "outputCostPerToken": 0.000033,
-        "maxInputTokens": 1050000,
+        "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
         "supportsVision": true
       }
@@ -2095,7 +2095,7 @@
         "source": "litellm",
         "inputCostPerToken": 0.0000022,
         "outputCostPerToken": 0.0000132,
-        "maxInputTokens": 1050000,
+        "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
         "supportsVision": true
       }
@@ -2106,7 +2106,7 @@
         "source": "litellm",
         "inputCostPerToken": 2.2e-7,
         "outputCostPerToken": 0.00000132,
-        "maxInputTokens": 1050000,
+        "maxInputTokens": 922000,
         "maxOutputTokens": 128000,
         "supportsVision": true
       }
