@@ -1,5 +1,116 @@
 [
   {
+    "id": "news-3748f151226a8596",
+    "title": "Anthropic’s Opus 4.6 is a smut-machine",
+    "summary": "Anthropic forbids its Claude models from generating sexually explicit content. But a series of tests conducted by TechCrunch found that it didn't take much to get past the restriction. ",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+    "publishedAt": "Fri, 21 Aug 2026 23:07:25 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.435Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Anthropic",
+      "Claude",
+      "Exclusive"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-664473952237554b",
+    "title": "Nvidia partners with data center developer Cloverleaf",
+    "summary": "Nvidia continues to pour money into data center development — just as AI data centers bring lots of money into Nvidia. ",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+    "publishedAt": "Fri, 21 Aug 2026 22:37:38 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "data centers",
+      "In Brief",
+      "nvidia",
+      "OpenAI"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-be5ca83d1f100978",
+    "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+    "summary": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+    "publishedAt": "Fri, 21 Aug 2026 19:43:39 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Exclusive",
+      "nvidia"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-a4007ecbbaea4be3",
+    "title": "The DOJ is investigating a16z. What does this mean for venture capital?",
+    "summary": "Andreessen Horowitz has two partners sitting on the boards of companies that now&#160;compete with each other: Ben Horowitz at Databricks and Martin Casado at&#160;Fivetran. Nothing too scandalous on the surface, except&#160;the Department of&#160;Justice&#160;has&#160;reportedly&#160;been investigating the arrangement&#160;for&#160;almost&#160;a&#160;year, dusting&#160;off a 112-year-old antitrust&#160;law&#160;that&#8217;s&#160;rarely used against VCs.&#160; Board conflicts&#160;aren&#8217;t&#",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
+    "publishedAt": "Fri, 21 Aug 2026 14:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
+    "category": "科技媒体",
+    "tags": [
+      "Startups",
+      "Venture",
+      "AI"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-298c886d16fec491",
+    "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+    "summary": "There's about to be a big fight to secure access to space. ",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+    "publishedAt": "Fri, 21 Aug 2026 14:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Space",
+      "Startups",
+      "Exclusive",
+      "orbital data centers",
+      "Starcloud"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
     "id": "news-5bd04b93c9eb1d6f",
     "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
     "summary": "Surging demand for AI training data is driving rapid growth for the startup and its rivals.",
@@ -8,7 +119,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
     "publishedAt": "Fri, 21 Aug 2026 00:13:44 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -31,7 +142,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
     "publishedAt": "Thu, 20 Aug 2026 22:36:37 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -53,7 +164,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
     "publishedAt": "Thu, 20 Aug 2026 22:09:51 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -76,7 +187,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
     "publishedAt": "Thu, 20 Aug 2026 20:53:13 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -97,7 +208,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
     "publishedAt": "Thu, 20 Aug 2026 19:18:21 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
+    "fetchedAt": "2026-08-22T03:00:34.436Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -111,21 +222,18 @@
     "language": "en"
   },
   {
-    "id": "news-ef4698b189b3ccce",
-    "title": "Runlayer, Rippling drop lawsuits — but the brouhaha is still a cautionary tale for founders",
-    "summary": "Runlayer and Rippling have dropped their lawsuits. No money was paid. Rippling celebrated by releasing a competing product.",
+    "id": "news-2c4a5fe46a0cc892",
+    "title": "The Download: threats from space mirrors and credit for AI drugs",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This company’s plans to deploy space mirrors could jeopardize the night sky for many A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/",
-    "publishedAt": "Thu, 20 Aug 2026 19:15:05 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
+    "publishedAt": "Fri, 21 Aug 2026 12:10:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "Enterprise",
-      "Startups",
-      "Rippling"
+      "The Download"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -133,22 +241,20 @@
     "language": "en"
   },
   {
-    "id": "news-bb77a5507a0ec992",
-    "title": "Linkdaze’s smart calendar is built to run a household, not just track a schedule",
-    "summary": "Linkdaze's smart digital calendar stands out for not putting its features behind a paywall, including an AI meal planner tool. ",
+    "id": "news-be15a64f9864d0a3",
+    "title": "Mother tongue",
+    "summary": "“Daddy?” Theo curled against my side in bed. “Where do words go when they die?” I’d orchestrated the bedtime routine flawlessly: bath (taken), teeth (brushed), potty (tinkled), books (two), song (one, poorly sung), and snuggle (his chin on my second rib). Now was the moment when our son’s eyelids were supposed to flutter gently closed,&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/20/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/",
-    "publishedAt": "Thu, 20 Aug 2026 18:20:35 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/21/1141726/mother-tongue-fiction/",
+    "publishedAt": "Fri, 21 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "Apps",
-      "Gadgets",
-      "Hardware",
-      "smart calendar"
+      "Culture",
+      "App",
+      "fiction"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -156,20 +262,20 @@
     "language": "en"
   },
   {
-    "id": "news-6fbc0fe3ec3563ea",
-    "title": "Grok keeps sending gibberish responses to users",
-    "summary": "Affected users told TechCrunch they were using Grok Lite, and noticed the issues as early as Wednesday morning.",
+    "id": "news-5eed2338d3cb3bae",
+    "title": "When AI designs a drug, who gets the credit?",
+    "summary": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis, it enthusiastically claimed in a press release that the molecule had been “discovered by” its generative AI platform. Insilico leads a pack of companies using AI to rapidly come up with drug ideas humans might never think&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/",
-    "publishedAt": "Thu, 20 Aug 2026 17:32:16 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
+    "publishedAt": "Fri, 21 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "Grok",
-      "xAI"
+      "Biotechnology and health",
+      "App",
+      "The Checkup"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -177,43 +283,20 @@
     "language": "en"
   },
   {
-    "id": "news-0782f07cc839a089",
-    "title": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
-    "summary": "ChatGPT and other AI models are now authoring and editing much of the new web. ",
+    "id": "news-fc9d76d54bbaf2ab",
+    "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
+    "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that will extend an 18-by-18-meter mirror in orbit. The&#8230;",
     "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
-    "publishedAt": "Thu, 20 Aug 2026 17:18:58 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
-    "category": "科技媒体",
+    "source": "MIT Technology Review",
+    "sourceUrl": "https://www.technologyreview.com/feed/",
+    "originalUrl": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
+    "publishedAt": "Fri, 21 Aug 2026 09:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
+    "category": "学术媒体",
     "tags": [
-      "AI",
-      "ChatGPT",
-      "pew research"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-6dee211a26d6b085",
-    "title": "Ramp launches its own AI model router, called Router",
-    "summary": "Ramp has launched its own AI model routing service, dubbed Router, that lets users and companies use and switch between various large language models via an API.",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
-    "publishedAt": "Thu, 20 Aug 2026 16:46:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.372Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Fintech",
-      "corporate expense management",
-      "openrouter",
-      "Ramp"
+      "Space",
+      "App",
+      "Summary"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -229,7 +312,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
     "publishedAt": "Thu, 20 Aug 2026 15:42:39 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -250,7 +333,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/20/1142579/the-download-polycrisis-support-networks-underground-hydrogen-gold-rush/",
     "publishedAt": "Thu, 20 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
@@ -269,7 +352,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/20/1142512/geologic-hydrogen-hunt/",
     "publishedAt": "Thu, 20 Aug 2026 10:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
     "category": "学术媒体",
     "tags": [
       "Climate change and energy",
@@ -291,7 +374,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
     "publishedAt": "Thu, 20 Aug 2026 09:47:22 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -311,7 +394,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/20/1141686/support-networks-help-kids-polycrisis/",
     "publishedAt": "Thu, 20 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.764Z",
     "category": "学术媒体",
     "tags": [
       "Climate change and energy",
@@ -332,91 +415,10 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/",
     "publishedAt": "Wed, 19 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
+    "fetchedAt": "2026-08-22T03:00:34.765Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-c898dca075b503c8",
-    "title": "Child-monitoring apps might need a reboot",
-    "summary": "Pam Wisniewski’s digital adolescence showed her the best and the worst of the internet. At 14, she left an abusive home, where she’d been isolated in a fifth-wheel trailer at the end of a seven-­mile dirt road. She moved in with her older sister and taught herself to type on AOL Instant Messenger. Online, she&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/19/1141623/child-monitoring-apps-need-reboot/",
-    "publishedAt": "Wed, 19 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
-    "category": "学术媒体",
-    "tags": [
-      "Culture",
-      "App",
-      "Features and Investigations"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-eb9667d24378c138",
-    "title": "The Download: how people really use AI, and Flock’s design choices",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI AI companies like Anthropic and OpenAI regularly publish reports on how people are using their products. But they only release the&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
-    "publishedAt": "Tue, 18 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
-    "category": "学术媒体",
-    "tags": [
-      "The Download"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-3c56e196b2dd9cf8",
-    "title": "We still don’t know how people are really using AI",
-    "summary": "AI companies like Anthropic and OpenAI regularly publish reports on how people are using products like Claude and ChatGPT, but they only release the data they want us to see, AI researchers say.&#160; “There is no independent source to corroborate it,” says Anka Reuel, a computer science PhD candidate at the Stanford Trustworthy AI Research&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-    "publishedAt": "Tue, 18 Aug 2026 10:06:43 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
-    "category": "学术媒体",
-    "tags": [
-      "Artificial intelligence",
-      "App",
-      "Summary"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-7697d6d6fea69992",
-    "title": "The role of the astronaut is in flux",
-    "summary": "When the four astronauts on board NASA’s Artemis II swung around the moon earlier this year, they set a new record for the farthest humans have ever ventured from Earth, surpassing the distance set by Apollo 13 in 1972 by some 4,000 miles.&#160; While no space mission can live up to the historic touchdown of&#8230;",
-    "content": "",
-    "source": "MIT Technology Review",
-    "sourceUrl": "https://www.technologyreview.com/feed/",
-    "originalUrl": "https://www.technologyreview.com/2026/08/18/1141614/book-review-astronaut-role-in-flux/",
-    "publishedAt": "Tue, 18 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:02.717Z",
-    "category": "学术媒体",
-    "tags": [
-      "Space",
-      "App"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -432,7 +434,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
     "publishedAt": "Wed, 19 Aug 2026 14:18:12 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "AI"
@@ -451,7 +453,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
     "publishedAt": "Tue, 19 May 2026 17:45:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -473,7 +475,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
     "publishedAt": "Thu, 22 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "Infrastructure",
@@ -493,7 +495,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
     "publishedAt": "Mon, 19 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -513,7 +515,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
     "publishedAt": "Fri, 16 Jan 2026 14:01:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -533,7 +535,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
     "publishedAt": "Tue, 13 Jan 2026 13:00:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -554,12 +556,52 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
     "publishedAt": "Mon, 12 Jan 2026 11:30:00 GMT",
-    "fetchedAt": "2026-08-21T03:10:04.594Z",
+    "fetchedAt": "2026-08-22T03:00:36.373Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
       "AI",
       "Automation"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-38cc2844446604c1",
+    "title": "The Unlikely Place at the Center of China’s AI Boom",
+    "summary": "Cheap energy, abundant land, and proximity to Beijing have turned a city in Inner Mongolia into a crucial hub for data centers.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/",
+    "publishedAt": "Fri, 21 Aug 2026 23:25:32 +0000",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
+    "category": "科技媒体",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-74dba50a93568e7c",
+    "title": "The Single English County Saying No to Palantir",
+    "summary": "The UK government is facing calls to cancel a sprawling health care contract with Palantir. The region of Greater Manchester insists it can do a better job itself.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/the-single-english-county-saying-no-to-palantir/",
+    "publishedAt": "Fri, 21 Aug 2026 06:00:00 +0000",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
+    "category": "科技媒体",
+    "tags": [
+      "Business",
+      "Business / Big Tech"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -575,7 +617,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/silicon-valley-doesnt-get-why-you-hate-ai/",
     "publishedAt": "Thu, 20 Aug 2026 18:49:07 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -595,7 +637,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/",
     "publishedAt": "Wed, 19 Aug 2026 19:30:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -615,7 +657,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
     "publishedAt": "Wed, 19 Aug 2026 16:44:07 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -635,7 +677,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/flock-safety-os-investigate/",
     "publishedAt": "Wed, 19 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Security",
@@ -655,7 +697,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
     "publishedAt": "Tue, 18 Aug 2026 18:33:11 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -677,7 +719,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/",
     "publishedAt": "Tue, 18 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -697,7 +739,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
     "publishedAt": "Sat, 15 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Gear",
@@ -717,7 +759,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/unitree-influencer-4-foot-robot-from-china/",
     "publishedAt": "Fri, 14 Aug 2026 20:59:03 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
+    "fetchedAt": "2026-08-22T03:00:36.448Z",
     "category": "科技媒体",
     "tags": [
       "Business"
@@ -728,55 +770,95 @@
     "language": "en"
   },
   {
-    "id": "news-c86363bbe53ea07f",
-    "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
-    "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
-    "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
-    "publishedAt": "Fri, 14 Aug 2026 15:00:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
-    "category": "科技媒体",
-    "tags": [
-      "Business",
-      "Business / Tech Culture"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-2d7a3b770af1cd5b",
-    "title": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
-    "summary": "Joi AI hired 10 people to masturbate using AI companions as part of a monthlong “wellness” study. The company claims the practice could help “solve male loneliness.”",
-    "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/these-masturbation-consultants-were-hired-to-pleasure-themselves-using-ai/",
-    "publishedAt": "Fri, 14 Aug 2026 10:45:00 +0000",
-    "fetchedAt": "2026-08-21T03:10:04.638Z",
-    "category": "科技媒体",
-    "tags": [
-      "Culture",
-      "Culture / Digital Culture"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-b75a52e92d2c37dd",
-    "title": "这届“WRC必看”：全栈AI、20+超难家务，8.99万带回家",
-    "summary": "",
+    "id": "news-240340dfb8def198",
+    "title": "最大运力自动驾驶轻卡落地，来自无人车巨头",
+    "summary": "载重4.2吨、容积19.32m³",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476280.html",
-    "publishedAt": "Thu, 20 Aug 2026 10:17:47 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476778.html",
+    "publishedAt": "Fri, 21 Aug 2026 11:47:27 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
+    "category": "中文媒体",
+    "tags": [
+      "智能车参考",
+      "九识智能"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-e16fe75d83332faf",
+    "title": "明略科技携手海康机器人亮相世界机器人大会，以“Agent+具身”联合进入商业机器人场景",
+    "summary": "明略科技（2718.HK）与海康机器人联合参展2026WRC，聚焦商业服务领域展示具身智能落地进展。",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/476733.html",
+    "publishedAt": "Fri, 21 Aug 2026 09:44:33 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "明略科技"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-d0dce15192ec44f8",
+    "title": "雷鸟iO发布：两天续航、全天候主动式AI，轻至34g",
+    "summary": "8月21日，全球领先的消费级AR品牌雷鸟创新（RayNeo）举办2026雷鸟AI眼镜新品发布会",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/476628.html",
+    "publishedAt": "Fri, 21 Aug 2026 09:00:06 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "雷鸟创新"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-14fcb4e6a5fc0d8d",
+    "title": "机器人的GPT-3时刻真·来了！卡卡西上身，看3秒就学会新动作",
+    "summary": "机器人看3秒演示就能学会",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/476596.html",
+    "publishedAt": "Fri, 21 Aug 2026 07:17:58 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "具身智能"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-83d2a7749565176d",
+    "title": "科学家只管提问题，AI负责跑实验：深势科技把科研全流程搬进桌面",
+    "summary": "让科学家的时间回到科学创造",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/476591.html",
+    "publishedAt": "Fri, 21 Aug 2026 06:40:34 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯"
@@ -787,63 +869,21 @@
     "language": "zh"
   },
   {
-    "id": "news-3f0bb780332f0b3e",
-    "title": "光帆AI技术正式落地韶音OpenFit 2 AI耳机，携手突破AI边界",
-    "summary": "韶音宣布与光帆科技达成AI技术合作，将上线基于光帆自研AI OS的效率功能合集——\"AI 实验室\"",
+    "id": "news-4ad2d474c93b30eb",
+    "title": "WRC展会拿旧Demo炒冷饭？扒一扒千寻藏在水下的全栈底牌",
+    "summary": "一点新鲜变化都没有吗？",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476281.html",
-    "publishedAt": "Thu, 20 Aug 2026 10:13:45 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "光帆科技"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-0fc375fa4f58aa8f",
-    "title": "闭源RSI的严父：18个Agent自主科研，Kimi K3靠Harness逼近Opus 5",
-    "summary": "经典RSI剧本开始动摇",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476199.html",
-    "publishedAt": "Thu, 20 Aug 2026 09:46:23 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "Harness",
-      "RSI",
-      "自动研究"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-6c97d11b34a728c6",
-    "title": "今年WRC最大展台，预告具身智能未来",
-    "summary": "从自主泛化到真生产力",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476141.html",
-    "publishedAt": "Thu, 20 Aug 2026 09:42:44 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476532.html",
+    "publishedAt": "Fri, 21 Aug 2026 05:38:12 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
       "WRC",
       "具身智能",
-      "星海图"
+      "千寻科技"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -851,21 +891,19 @@
     "language": "zh"
   },
   {
-    "id": "news-c2977af1a823541f",
-    "title": "攻克行业级柔性操作难题！招商局狮子山人工智能实验室首次亮相WRC 2026",
-    "summary": "全栈自研，真机叠衣ICRA夺冠",
+    "id": "news-67e5ff9061ae5ba6",
+    "title": "设计无边界！中坚科技旗下子公司桦之坚携巨型概念机器人ZERO惊艳2026世界机器人大会",
+    "summary": "中坚科技（002779.SZ）旗下桦之坚携概念人形机器人ZERO亮相2026世界机器人大会。",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476129.html",
-    "publishedAt": "Thu, 20 Aug 2026 09:22:05 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476525.html",
+    "publishedAt": "Fri, 21 Aug 2026 05:09:33 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "具身智能",
-      "招商局",
-      "狮子山人工智能实验室"
+      "中坚科技"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -873,21 +911,19 @@
     "language": "zh"
   },
   {
-    "id": "news-372f91bc8e40c8b6",
-    "title": "宇树科技上市首日大涨629%，世界机器人大会里谁是“下一个宇树”？",
-    "summary": "这几个玩家或可被“押注”",
+    "id": "news-42144f9f574c241a",
+    "title": "Jeff Dean离职后首次公开访谈火力有点猛。。。",
+    "summary": "离开谷歌的原因之一：小团队可以极致聚焦！",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476120.html",
-    "publishedAt": "Thu, 20 Aug 2026 06:17:10 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476468.html",
+    "publishedAt": "Fri, 21 Aug 2026 04:05:11 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "世界机器人大会",
-      "具身智能",
-      "睿尔曼"
+      "jeff dean"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -895,19 +931,19 @@
     "language": "zh"
   },
   {
-    "id": "news-efc386961f5a7d41",
-    "title": "墨奇亮相WRC：一台机器人长程任务实战背后的“具身大脑”革命",
-    "summary": "墨奇智能（MORPHI）首次在国内系统亮相，公开展示其新近发布的具身智能模型架构MoRA",
+    "id": "news-bec9d7f2fed95b34",
+    "title": "WRC最忙机器人：猛干15分钟家务，收纳、补货、叠衣服…",
+    "summary": "墨奇，开始加速了",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476078.html",
-    "publishedAt": "Thu, 20 Aug 2026 01:37:34 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476413.html",
+    "publishedAt": "Fri, 21 Aug 2026 03:14:40 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "墨奇智能"
+      "墨奇"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -915,60 +951,19 @@
     "language": "zh"
   },
   {
-    "id": "news-c439a1d2642dcbfb",
-    "title": "完美世界2026半年报：《异环》全球流水破20亿 Q3起释放业绩",
-    "summary": "完美世界今年4月底推出的重磅新游《异环》截至8月18日已取得全球累计流水超20亿元，业绩贡献将在Q3起逐步释放",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476075.html",
-    "publishedAt": "Thu, 20 Aug 2026 01:21:07 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "完美世界"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-481d07c6c723bae5",
-    "title": "华尔街实测8款全球主流Agent：千问办公综合排名第一",
-    "summary": "成本也正成为Agent商业化需要考虑的重要因素",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/476070.html",
-    "publishedAt": "Thu, 20 Aug 2026 01:06:45 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "Agent",
-      "千问办公"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-6f43a86c9b75804e",
-    "title": "章鱼动力亮相WRC 2026，携“脑-手-数据”技术体系探索具身智能未来范式",
+    "id": "news-35e830b0042e58b4",
+    "title": "国产“预制算力”来了：工厂预制率超90% 24小时内投运 交付效率提升70%",
     "summary": "",
     "content": "",
     "source": "量子位",
     "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/475931.html",
-    "publishedAt": "Wed, 19 Aug 2026 10:54:07 +0000",
-    "fetchedAt": "2026-08-21T03:10:07.353Z",
+    "originalUrl": "https://www.qbitai.com/2026/08/476409.html",
+    "publishedAt": "Fri, 21 Aug 2026 02:31:10 +0000",
+    "fetchedAt": "2026-08-22T03:00:40.410Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
-      "章鱼动力"
+      "太初元碁"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
