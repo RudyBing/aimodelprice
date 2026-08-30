@@ -1,5 +1,70 @@
 [
   {
+    "id": "news-4c41468c6e90cbd2",
+    "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+    "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+    "publishedAt": "Sat, 29 Aug 2026 18:41:59 +0000",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Anthropic"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-9f9c5d62c11ce44a",
+    "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+    "summary": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared datasets (not walled-off ones) are what will actually let AI transform medicine.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
+    "publishedAt": "Sat, 29 Aug 2026 17:36:47 +0000",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
+    "category": "科技媒体",
+    "tags": [
+      "AI",
+      "Biotech & Health",
+      "TC",
+      "Andreessen Horowitz",
+      "Vijay Pande"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-b7606a2f7071cb0e",
+    "title": "Nvidia’s AI advantage is moving beyond the GPU",
+    "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+    "content": "",
+    "source": "TechCrunch AI",
+    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "originalUrl": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+    "publishedAt": "Sat, 29 Aug 2026 13:00:00 +0000",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
+    "category": "科技媒体",
+    "tags": [
+      "TC",
+      "AI",
+      "nvidia",
+      "GPU"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
     "id": "news-90f86f956ff7d0f0",
     "title": "Neocloud Lambda secures $1B in debt to buy more chips",
     "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom. ",
@@ -8,7 +73,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
     "publishedAt": "Fri, 28 Aug 2026 20:24:11 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.762Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -34,7 +99,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
     "publishedAt": "Fri, 28 Aug 2026 19:30:38 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.762Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -54,7 +119,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
     "publishedAt": "Fri, 28 Aug 2026 18:19:40 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.762Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -76,7 +141,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
     "publishedAt": "Fri, 28 Aug 2026 12:46:12 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -100,7 +165,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
     "publishedAt": "Fri, 28 Aug 2026 12:21:06 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -123,7 +188,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
     "publishedAt": "Thu, 27 Aug 2026 23:16:45 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -144,7 +209,7 @@
     "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "originalUrl": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
     "publishedAt": "Thu, 27 Aug 2026 19:52:52 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
+    "fetchedAt": "2026-08-30T08:11:35.419Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -160,73 +225,6 @@
     "language": "en"
   },
   {
-    "id": "news-b86f55161e6961b0",
-    "title": "OpenAI, Anthropic, Google, and 100 other companies call for action to defend against rogue AI",
-    "summary": "Some of the world's largest tech companies and AI startups have come together to decry the current state of cybersecurity and to advertise a new solution that they say can ward off a new generation of cyber threats. ",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
-    "publishedAt": "Thu, 27 Aug 2026 17:43:24 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Anthropic",
-      "cybersecurity",
-      "Google",
-      "Microsoft",
-      "OpenAI"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-1e197e6e96fa7048",
-    "title": "Google’s AI Mode can now track flight prices, help book hotels, and more",
-    "summary": "The updates indicate that Google is looking to position AI Mode as an AI travel agent of sorts, as it's moving beyond simply helping users find information to actually handling parts of the trip-planning and booking process. ",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/",
-    "publishedAt": "Thu, 27 Aug 2026 16:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Apps",
-      "Google"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
-    "id": "news-ae437544868792d2",
-    "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
-    "summary": "Clem Delangue, CEO of Hugging Face, said the Microduck is an “open-source robot you can teach new tricks with reinforcement learning.” ",
-    "content": "",
-    "source": "TechCrunch AI",
-    "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "originalUrl": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
-    "publishedAt": "Thu, 27 Aug 2026 14:56:52 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.763Z",
-    "category": "科技媒体",
-    "tags": [
-      "AI",
-      "Robotics",
-      "Hugging Face",
-      "pollen robotics"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "en"
-  },
-  {
     "id": "news-5f44ff2ccb322c1a",
     "title": "The Download: a secretive antiaging drug and joining virtual power plants",
     "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A startup claims it’s found a drug to make your blood young —Antonio Regalado I knew I’d officially become a “longevity influencer” when a company called Generation Lab offered me the&#8230;",
@@ -235,7 +233,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/28/1143113/the-download-antiaging-drug-joining-virtual-power-plants/",
     "publishedAt": "Fri, 28 Aug 2026 12:35:27 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
@@ -254,7 +252,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should/",
     "publishedAt": "Fri, 28 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Climate change and energy",
@@ -275,7 +273,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/",
     "publishedAt": "Thu, 27 Aug 2026 19:48:13 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Biotechnology and health",
@@ -295,7 +293,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev/",
     "publishedAt": "Thu, 27 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
@@ -314,7 +312,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/27/1142953/electric-truck-slate-auto/",
     "publishedAt": "Thu, 27 Aug 2026 10:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Climate change and energy",
@@ -336,7 +334,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
     "publishedAt": "Wed, 26 Aug 2026 19:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -358,7 +356,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/26/1143000/the-download-kids-issue-launch-bill-gates-ai-fears/",
     "publishedAt": "Wed, 26 Aug 2026 12:10:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "The Download"
@@ -377,7 +375,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
     "publishedAt": "Wed, 26 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -397,7 +395,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
     "publishedAt": "Wed, 26 Aug 2026 09:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -418,7 +416,7 @@
     "sourceUrl": "https://www.technologyreview.com/feed/",
     "originalUrl": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
     "publishedAt": "Wed, 26 Aug 2026 07:01:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:02.980Z",
+    "fetchedAt": "2026-08-30T08:11:35.667Z",
     "category": "学术媒体",
     "tags": [
       "Artificial intelligence",
@@ -440,7 +438,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them",
     "publishedAt": "Thu, 27 Aug 2026 14:01:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "AI"
@@ -459,7 +457,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer",
     "publishedAt": "Thu, 27 Aug 2026 12:01:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -479,7 +477,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents",
     "publishedAt": "Wed, 26 Aug 2026 14:30:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "AI",
@@ -499,7 +497,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/ai/venturebeat-names-rob-strechay-as-its-first-lead-analyst-expanding-its-enterprise-ai-research-push",
     "publishedAt": "Wed, 19 Aug 2026 14:18:12 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "AI"
@@ -518,7 +516,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
     "publishedAt": "Tue, 19 May 2026 17:45:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "Technology",
@@ -540,7 +538,7 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
     "publishedAt": "Thu, 22 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "Infrastructure",
@@ -560,11 +558,52 @@
     "sourceUrl": "https://venturebeat.com/category/ai/feed/",
     "originalUrl": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
     "publishedAt": "Mon, 19 Jan 2026 14:00:00 GMT",
-    "fetchedAt": "2026-08-29T08:54:04.895Z",
+    "fetchedAt": "2026-08-30T08:11:37.648Z",
     "category": "科技媒体",
     "tags": [
       "AI",
       "Infrastructure"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-d2b92ea42d2d1252",
+    "title": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
+    "summary": "Plus: Hackers target over 100 US water systems, ICE puts in an order for robot dogs, and you’ll never guess what “MrChildPorn” was arrested for.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
+    "publishedAt": "Sat, 29 Aug 2026 10:30:00 +0000",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
+    "category": "科技媒体",
+    "tags": [
+      "Security",
+      "Security / Security News",
+      "Security / Cyberattacks and Hacks"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "en"
+  },
+  {
+    "id": "news-a36b92f04f77358f",
+    "title": "How to Run a Chatbot on Your Own Computer",
+    "summary": "Installing a large language model on your personal computer gives you a handy digital assistant that won’t compromise your data privacy.",
+    "content": "",
+    "source": "Wired AI",
+    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "originalUrl": "https://www.wired.com/story/how-to-run-your-own-local-llm/",
+    "publishedAt": "Sat, 29 Aug 2026 10:00:00 +0000",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
+    "category": "科技媒体",
+    "tags": [
+      "Gear",
+      "Gear / How To and Advice"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
@@ -580,7 +619,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/ai-has-human-doctors-asking-whats-left-for-us/",
     "publishedAt": "Fri, 28 Aug 2026 15:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -600,7 +639,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/he-scraped-art-from-cara-for-ai-now-he-is-collaborating-on-a-tool-to-help-them/",
     "publishedAt": "Fri, 28 Aug 2026 11:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Culture",
@@ -620,7 +659,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/",
     "publishedAt": "Fri, 28 Aug 2026 10:56:22 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -641,7 +680,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/",
     "publishedAt": "Fri, 28 Aug 2026 03:04:14 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Politics",
@@ -661,7 +700,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
     "publishedAt": "Thu, 27 Aug 2026 21:08:34 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -681,7 +720,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/a-georgia-cop-used-flock-to-track-2-other-cops-his-ex-and-her-friend/",
     "publishedAt": "Thu, 27 Aug 2026 18:12:17 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Security",
@@ -701,7 +740,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
     "publishedAt": "Thu, 27 Aug 2026 18:06:52 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -721,7 +760,7 @@
     "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
     "originalUrl": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
     "publishedAt": "Thu, 27 Aug 2026 16:52:42 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
+    "fetchedAt": "2026-08-30T08:11:37.706Z",
     "category": "科技媒体",
     "tags": [
       "Business",
@@ -733,47 +772,146 @@
     "language": "en"
   },
   {
-    "id": "news-a14cd0872924b3ee",
-    "title": "Submit Your Questions: The Great Data Center Backlash",
-    "summary": "You have questions about data centers, and WIRED has answers. Join our livestream on September 10 and our panel of experts will tell you everything you need to know.",
+    "id": "news-b4c40674080b6963",
+    "title": "AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
+    "summary": "推理软件栈的微小差异，就能改变输出token",
     "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/livestream-the-great-data-center-backlash/",
-    "publishedAt": "Thu, 27 Aug 2026 11:00:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
-    "category": "科技媒体",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/481372.html",
+    "publishedAt": "Sat, 29 Aug 2026 13:11:08 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
     "tags": [
-      "Science",
-      "Science / Environment",
-      "Business",
-      "Business / Artificial Intelligence",
-      "Politics"
+      "资讯",
+      "AI"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
     "hotness": 50,
-    "language": "en"
+    "language": "zh"
   },
   {
-    "id": "news-91c6b16f5626efcf",
-    "title": "Stop Touching Your Keyboard. Use This AI-Powered Microphone Instead",
-    "summary": "The Relay Q, due next year, is the latest attempt to reposition voice as the most seamless method for human-computer interaction.",
+    "id": "news-dd9ea75e8f3fb9a7",
+    "title": "去年归国的徐梦迪，成了清华姚班班主任",
+    "summary": "本科读车辆工程，如今教AI第一班",
     "content": "",
-    "source": "Wired AI",
-    "sourceUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "originalUrl": "https://www.wired.com/story/relay-q-voice-to-text-ai-app/",
-    "publishedAt": "Thu, 27 Aug 2026 10:30:00 +0000",
-    "fetchedAt": "2026-08-29T08:54:04.959Z",
-    "category": "科技媒体",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/481318.html",
+    "publishedAt": "Sat, 29 Aug 2026 13:01:34 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
     "tags": [
-      "Gear",
-      "Gear / Gear News and Events"
+      "资讯",
+      "首页轮播",
+      "具身智能"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
     "hotness": 50,
-    "language": "en"
+    "language": "zh"
+  },
+  {
+    "id": "news-b93263b50d7ea784",
+    "title": "Claude开始训练Claude！4美元一小时，跑赢150美元人类研究员",
+    "summary": "AI「自进化」，越来越近了",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/481223.html",
+    "publishedAt": "Sat, 29 Aug 2026 12:50:31 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "首页轮播"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-35d75451d4cc4eb7",
+    "title": "20ms把PDF变成Markdown！开源OCR神器快了近300倍",
+    "summary": "3秒可处理200份PDF",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/481075.html",
+    "publishedAt": "Sat, 29 Aug 2026 12:26:49 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "开源"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-18af553645da75ca",
+    "title": "Coding不再是程序员专属！阿里Qoder这波有点绝",
+    "summary": "Coding正在变成Al世界的数字执行力",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/480940.html",
+    "publishedAt": "Sat, 29 Aug 2026 12:11:37 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-609989b37d31b8e1",
+    "title": "OpenClaw：红过，爱过，散了",
+    "summary": "龙虾退潮，Harness上位",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/480855.html",
+    "publishedAt": "Sat, 29 Aug 2026 12:00:51 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "OpenClaw"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
+  },
+  {
+    "id": "news-d999ea4bc4998d8e",
+    "title": "32GB大显存加持，英特尔锐炫Pro B70搞定AI漫剧创作",
+    "summary": "从剧本到成片",
+    "content": "",
+    "source": "量子位",
+    "sourceUrl": "https://www.qbitai.com/feed",
+    "originalUrl": "https://www.qbitai.com/2026/08/480787.html",
+    "publishedAt": "Sat, 29 Aug 2026 11:35:57 +0000",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
+    "category": "中文媒体",
+    "tags": [
+      "资讯",
+      "GPU",
+      "英特尔",
+      "锐炫Pro B70"
+    ],
+    "relatedModels": [],
+    "sentiment": "neutral",
+    "hotness": 50,
+    "language": "zh"
   },
   {
     "id": "news-05748725b145d11f",
@@ -784,7 +922,7 @@
     "sourceUrl": "https://www.qbitai.com/feed",
     "originalUrl": "https://www.qbitai.com/2026/08/480700.html",
     "publishedAt": "Fri, 28 Aug 2026 15:36:12 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
@@ -805,7 +943,7 @@
     "sourceUrl": "https://www.qbitai.com/feed",
     "originalUrl": "https://www.qbitai.com/2026/08/480666.html",
     "publishedAt": "Fri, 28 Aug 2026 11:13:35 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
@@ -828,159 +966,12 @@
     "sourceUrl": "https://www.qbitai.com/feed",
     "originalUrl": "https://www.qbitai.com/2026/08/480600.html",
     "publishedAt": "Fri, 28 Aug 2026 09:45:19 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
+    "fetchedAt": "2026-08-30T08:11:41.526Z",
     "category": "中文媒体",
     "tags": [
       "资讯",
       "首页轮播",
       "云知声"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-d7f33e4c3ce7565f",
-    "title": "e生涯斩获浙江一等奖，同蚂蚁、浙大一道晋级数据要素国赛",
-    "summary": "8月26日，2026年“数据要素×”大赛浙江赛区决赛落下帷幕。",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480591.html",
-    "publishedAt": "Fri, 28 Aug 2026 07:20:14 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "海亮科服"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-8bd4a1eee239affd",
-    "title": "首款癌症疫苗，一针300万？？？",
-    "summary": "别让顶级治疗方法称为富人专属",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480557.html",
-    "publishedAt": "Fri, 28 Aug 2026 06:22:59 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "AI",
-      "AI医药"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-0d0db4c223d90d48",
-    "title": "Łukasz Kaiser领衔，2026 奇点智能技术大会北京站正式官宣",
-    "summary": "11 月 20 -21 日，由奇点智能研究院与 CSDN 联合主办的「奇点智能大会北京站」正式举行",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480482.html",
-    "publishedAt": "Fri, 28 Aug 2026 06:22:20 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "csdn"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-de2604c0025040ed",
-    "title": "Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了",
-    "summary": "Claude觉醒超体",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480487.html",
-    "publishedAt": "Fri, 28 Aug 2026 06:13:59 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "Claude"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-52eceaad68239ef1",
-    "title": "被高估的视触觉：容易复制的生意，有多大投资价值？",
-    "summary": "重新审视触视觉",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480236.html",
-    "publishedAt": "Fri, 28 Aug 2026 05:49:05 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "传感器",
-      "视觉",
-      "触觉"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-d86baf9256ebd024",
-    "title": "商汤大装置助力智象未来实现视频生成业务向国产算力无感迁移",
-    "summary": "国产算力跑通视频生成规模化应用",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480227.html",
-    "publishedAt": "Fri, 28 Aug 2026 04:09:39 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.094Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "商汤",
-      "大装置",
-      "算力"
-    ],
-    "relatedModels": [],
-    "sentiment": "neutral",
-    "hotness": 50,
-    "language": "zh"
-  },
-  {
-    "id": "news-34e3a858b58692a8",
-    "title": "智谱 GLM-5.3-Flash上线，商汤大装置提供国产算力支持",
-    "summary": "国产异构助力前沿智能进入普惠时代",
-    "content": "",
-    "source": "量子位",
-    "sourceUrl": "https://www.qbitai.com/feed",
-    "originalUrl": "https://www.qbitai.com/2026/08/480223.html",
-    "publishedAt": "Fri, 28 Aug 2026 04:06:16 +0000",
-    "fetchedAt": "2026-08-29T08:54:09.095Z",
-    "category": "中文媒体",
-    "tags": [
-      "资讯",
-      "GLM-5.3 Flash",
-      "商汤",
-      "智谱"
     ],
     "relatedModels": [],
     "sentiment": "neutral",
