@@ -63,7 +63,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "o4-mini",
@@ -89,7 +89,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gpt-4.1",
@@ -115,7 +115,7 @@ export const models: AIModel[] = [
     "released": "2025-04",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "claude-sonnet-4-20250514",
@@ -141,7 +141,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.anthropic.com",
     "freeTier": "免费层：4K 消息/天",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "claude-opus-4-20250514",
@@ -167,7 +167,7 @@ export const models: AIModel[] = [
     "released": "2025-05",
     "url": "https://www.anthropic.com",
     "freeTier": "无",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "claude-haiku-4-20250514",
@@ -219,7 +219,7 @@ export const models: AIModel[] = [
     "released": "2025-06",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 15 RPM 免费",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-2.5-flash",
@@ -245,7 +245,7 @@ export const models: AIModel[] = [
     "released": "2025-06",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 15 RPM 免费",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-2.0-flash-lite",
@@ -270,7 +270,7 @@ export const models: AIModel[] = [
     "released": "2025-01",
     "url": "https://ai.google.dev",
     "freeTier": "Gemini API: 免费",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gpt-image-1",
@@ -556,7 +556,7 @@ export const models: AIModel[] = [
     "released": "2025-03",
     "url": "https://platform.openai.com",
     "freeTier": "无",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "codestral",
@@ -707,7 +707,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://anthropic.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-opus-20240229-v1:0",
@@ -727,7 +727,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://anthropic.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-sonnet-20240229-v1:0",
@@ -747,7 +747,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://anthropic.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash",
@@ -767,7 +767,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-001",
@@ -787,7 +787,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-lite",
@@ -807,7 +807,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash",
@@ -827,7 +827,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash-image",
@@ -847,7 +847,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-pro-image",
@@ -867,7 +867,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-1-flash-image",
@@ -887,7 +887,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash-lite",
@@ -907,7 +907,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-pro",
@@ -927,7 +927,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-1-flash-lite",
@@ -947,7 +947,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-5-flash-lite",
@@ -967,7 +967,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-5-flash",
@@ -987,7 +987,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-6-flash",
@@ -1007,7 +1007,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-exp-1114",
@@ -1027,7 +1027,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-exp-1206",
@@ -1047,7 +1047,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-gemma-2-27b-it",
@@ -1067,7 +1067,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-gemma-2-9b-it",
@@ -1087,7 +1087,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemma-3-27b-it",
@@ -1107,7 +1107,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-3-0-fast-generate-001",
@@ -1127,7 +1127,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-3-0-generate-001",
@@ -1147,7 +1147,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-fast-generate-001",
@@ -1167,7 +1167,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-generate-001",
@@ -1187,7 +1187,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-ultra-generate-001",
@@ -1207,7 +1207,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-2-0-generate-001",
@@ -1227,7 +1227,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-3-1-fast-generate-001",
@@ -1247,7 +1247,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-3-1-generate-001",
@@ -1267,7 +1267,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-exp-image-generation",
@@ -1287,7 +1287,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-lite-001",
@@ -1307,7 +1307,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://gemini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2",
@@ -1327,7 +1327,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2402",
@@ -1347,7 +1347,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0",
@@ -1367,7 +1367,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2407",
@@ -1387,7 +1387,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-small-2402-v1:0",
@@ -1407,7 +1407,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-codestral-2405",
@@ -1427,7 +1427,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-codestral-2508",
@@ -1447,7 +1447,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-medium-2507",
@@ -1467,7 +1467,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-small-2505",
@@ -1487,7 +1487,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-small-2507",
@@ -1507,7 +1507,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-labs-devstral-small-2512",
@@ -1527,7 +1527,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-2512",
@@ -1547,7 +1547,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-magistral-medium-2506",
@@ -1567,7 +1567,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-magistral-medium-2509",
@@ -1587,7 +1587,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-magistral-medium-1-2-2509",
@@ -1607,7 +1607,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-magistral-small-2506",
@@ -1627,7 +1627,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-magistral-small-1-2-2509",
@@ -1647,7 +1647,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2411",
@@ -1667,7 +1667,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-3",
@@ -1687,7 +1687,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2512",
@@ -1707,7 +1707,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium",
@@ -1717,17 +1717,17 @@ export const models: AIModel[] = [
     "description": "高性能 Mistral 模型，适用于各种 AI 任务。",
     "category": "text",
     "pricing": {
-      "input": "$2.70 / 1M tokens",
-      "output": "$8.10 / 1M tokens"
+      "input": "$1.50 / 1M tokens",
+      "output": "$7.50 / 1M tokens"
     },
-    "contextWindow": "32K tokens",
-    "multimodal": false,
+    "contextWindow": "262.1K tokens",
+    "multimodal": true,
     "strengths": [
       "高性价比",
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium-2312",
@@ -1747,7 +1747,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium-2505",
@@ -1767,7 +1767,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium-2508",
@@ -1787,7 +1787,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium-2604",
@@ -1807,7 +1807,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-medium-3-1-2508",
@@ -1827,7 +1827,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-small",
@@ -1847,7 +1847,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-small-3-2-2506",
@@ -1867,7 +1867,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-ministral-3-3b-2512",
@@ -1887,7 +1887,7 @@ export const models: AIModel[] = [
       "快速响应"
     ],
     "url": "https://mistral.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-5-haiku-20241022-v1:0-dup1",
@@ -1912,7 +1912,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-gov-east-1-anthropic-claude-3-5-sonnet-",
@@ -1937,7 +1937,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-gov-west-1-anthropic-claude-3-7-sonnet-",
@@ -1962,7 +1962,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-gov-east-1-anthropic-claude-3-haiku-202",
@@ -1987,7 +1987,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-opus-20240229-v1:0-dup1",
@@ -2012,7 +2012,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-sonnet-20240229-v1:0-dup1",
@@ -2037,7 +2037,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-ap-northeast-1-anthropic-claude-instant-v1",
@@ -2062,7 +2062,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-ap-northeast-1-anthropic-claude-v1",
@@ -2087,7 +2087,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-gov-east-1-anthropic-claude-sonnet-4-5-",
@@ -2112,7 +2112,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-gov-east-1-anthropic-claude-haiku-4-5-2",
@@ -2137,7 +2137,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "vertex_ai-google-gemma-4-26b-a4b-it-maas",
@@ -2161,7 +2161,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-dup1",
@@ -2185,7 +2185,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-001-dup1",
@@ -2210,7 +2210,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-lite-dup1",
@@ -2235,7 +2235,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash-dup1",
@@ -2260,7 +2260,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash-image-dup1",
@@ -2285,7 +2285,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-pro-image-dup1",
@@ -2310,7 +2310,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-1-flash-image-dup1",
@@ -2335,7 +2335,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-flash-lite-dup1",
@@ -2360,7 +2360,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-5-pro-dup1",
@@ -2385,7 +2385,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-1-flash-lite-dup1",
@@ -2410,7 +2410,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-5-flash-lite-dup1",
@@ -2435,7 +2435,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-5-flash-dup1",
@@ -2460,7 +2460,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-3-6-flash-dup1",
@@ -2485,7 +2485,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-exp-1114-dup1",
@@ -2509,7 +2509,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-exp-1206-dup1",
@@ -2533,7 +2533,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-gemma-2-27b-it-dup1",
@@ -2558,7 +2558,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-gemma-2-9b-it-dup1",
@@ -2583,7 +2583,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemma-3-27b-it-dup1",
@@ -2608,7 +2608,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-3-0-fast-generate-001-dup1",
@@ -2633,7 +2633,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-3-0-generate-001-dup1",
@@ -2658,7 +2658,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-fast-generate-001-dup1",
@@ -2683,7 +2683,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-generate-001-dup1",
@@ -2709,7 +2709,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-imagen-4-0-ultra-generate-001-dup1",
@@ -2735,7 +2735,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-2-0-generate-001-dup1",
@@ -2760,7 +2760,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-3-1-fast-generate-001-dup1",
@@ -2786,7 +2786,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-veo-3-1-generate-001-dup1",
@@ -2811,7 +2811,7 @@ export const models: AIModel[] = [
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-exp-image-generation-dup1",
@@ -2836,7 +2836,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "gemini-gemini-2-0-flash-lite-001-dup1",
@@ -2861,7 +2861,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://ai.google.dev/gemini-api/docs/models/gemini",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-east-1-mistral-mistral-7b-instruct-v0:2-dup1",
@@ -2886,7 +2886,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2402-dup1",
@@ -2910,7 +2910,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "bedrock-us-east-1-mistral-mixtral-8x7b-instruct-v0-dup1",
@@ -2935,7 +2935,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2407-dup1",
@@ -2960,7 +2960,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-small-2402-v1:0-dup1",
@@ -2981,7 +2981,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-codestral-2405-dup1",
@@ -3005,7 +3005,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-codestral-2508-dup1",
@@ -3029,7 +3029,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-medium-2507-dup1",
@@ -3054,7 +3054,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-small-2505-dup1",
@@ -3079,7 +3079,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-devstral-small-2507-dup1",
@@ -3103,7 +3103,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-labs-devstral-small-2512-dup1",
@@ -3127,7 +3127,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-05",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-5-sonnet-20240620-v1:0",
@@ -3152,7 +3152,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-5-sonnet-20241022-v2:0",
@@ -3177,7 +3177,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-7-sonnet-20240620-v1:0",
@@ -3202,7 +3202,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-3-haiku-20240307-v1:0",
@@ -3227,7 +3227,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-instant-v1",
@@ -3252,7 +3252,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-v1",
@@ -3276,7 +3276,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anthropic-claude-v2:1",
@@ -3301,7 +3301,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.anthropic.com/claude/docs/models-overview",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-7b-instruct-v0:2",
@@ -3326,7 +3326,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2402-v1:0",
@@ -3350,7 +3350,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mistral-large-2407-v1:0",
@@ -3375,7 +3375,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "mistral-mixtral-8x7b-instruct-v0:1",
@@ -3399,7 +3399,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "cohere-command-light-text-v14",
@@ -3422,7 +3422,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.cohere.com/docs/models",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "cohere-command-r-plus-v1:0",
@@ -3447,7 +3447,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.cohere.com/docs/models",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "cohere-command-r-v1:0",
@@ -3471,7 +3471,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.cohere.com/docs/models",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "cohere-command-text-v14",
@@ -3496,7 +3496,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-06",
     "url": "https://docs.cohere.com/docs/models",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-sd3-5-large-v1:0",
@@ -3522,7 +3522,7 @@ export const models: AIModel[] = [
     "released": "2026-08-06",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-sd3-large-v1:0",
@@ -3548,7 +3548,7 @@ export const models: AIModel[] = [
     "released": "2026-08-06",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-stable-image-core-v1:0",
@@ -3573,7 +3573,7 @@ export const models: AIModel[] = [
     "released": "2026-08-06",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-stable-image-core-v1:1",
@@ -3598,7 +3598,7 @@ export const models: AIModel[] = [
     "released": "2026-08-06",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-stable-image-ultra-v1:0",
@@ -3623,7 +3623,7 @@ export const models: AIModel[] = [
     "released": "2026-08-06",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "stability-stable-image-ultra-v1:1",
@@ -3649,7 +3649,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://platform.stability.ai/docs/api-reference",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-50-steps-bedrock-amazon-nova-canvas-v1",
@@ -3675,7 +3675,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://1024-x-1024/50-steps/bedrock/amazon.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-50-steps-stability-stable-diffusion-xl",
@@ -3701,7 +3701,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://1024-x-1024/50-steps/stability.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-dall-e-2",
@@ -3726,7 +3726,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://1024-x-1024/dall-e-2.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-gpt-image-1-5",
@@ -3751,7 +3751,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1024-x-1024/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-gpt-image-1-5-2025-12-16",
@@ -3776,7 +3776,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1024-x-1024/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1024-max-steps-stability-stable-diffusion-x",
@@ -3801,7 +3801,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://1024-x-1024/max-steps/stability.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1536-gpt-image-1-5",
@@ -3824,7 +3824,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1024-x-1536/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1024-x-1536-gpt-image-1-5-2025-12-16",
@@ -3847,7 +3847,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1024-x-1536/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1536-x-1024-gpt-image-1-5",
@@ -3871,7 +3871,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1536-x-1024/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "1536-x-1024-gpt-image-1-5-2025-12-16",
@@ -3895,7 +3895,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://1536-x-1024/gpt-image-1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "256-x-256-dall-e-2",
@@ -3921,7 +3921,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://256-x-256/dall-e-2.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "512-x-512-50-steps-stability-stable-diffusion-xl-v",
@@ -3947,7 +3947,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://512-x-512/50-steps/stability.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "512-x-512-dall-e-2",
@@ -3972,7 +3972,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://512-x-512/dall-e-2.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "512-x-512-max-steps-stability-stable-diffusion-xl-",
@@ -3997,7 +3997,7 @@ export const models: AIModel[] = [
     "released": "2026-08-13",
     "url": "https://512-x-512/max-steps/stability.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "ai21-j2-ultra-v1",
@@ -4020,7 +4020,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://ai21.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "ai21-jamba-1-5-large-v1:0",
@@ -4044,7 +4044,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://ai21.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "ai21-jamba-1-5-mini-v1:0",
@@ -4068,7 +4068,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://ai21.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "ai21-jamba-instruct-v1:0",
@@ -4092,7 +4092,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-13",
     "url": "https://ai21.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "ai21-j2-mid-v1",
@@ -4117,7 +4117,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://ai21.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-dall-e-2",
@@ -4143,7 +4143,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/dall-e-2.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-dall-e-3",
@@ -4168,7 +4168,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/dall-e-3.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-pro",
@@ -4194,7 +4194,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux-pro.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-pro-v1-1",
@@ -4220,7 +4220,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux-pro/v1.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-pro-v1-1-ultra",
@@ -4246,7 +4246,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux-pro/v1.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-realism",
@@ -4272,7 +4272,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux-realism.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-dev",
@@ -4297,7 +4297,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux/dev.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-kontext-max-text-to-image",
@@ -4323,7 +4323,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux/kontext-max/text-to-image.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-kontext-pro-text-to-image",
@@ -4349,7 +4349,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux/kontext-pro/text-to-image.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-flux-schnell",
@@ -4375,7 +4375,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/flux/schnell.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-google-imagen-4-0-ultra-generate-001",
@@ -4400,7 +4400,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/google/imagen-4.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-google-nano-banana-pro",
@@ -4426,7 +4426,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/google/nano-banana-pro.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "aiml-openai-gpt-image-2",
@@ -4451,7 +4451,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://aiml/openai/gpt-image-2.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-nova-canvas-v1:0",
@@ -4476,7 +4476,7 @@ export const models: AIModel[] = [
     "released": "2026-08-14",
     "url": "https://amazon.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-image-generator-v1",
@@ -4500,7 +4500,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-image-generator-v2",
@@ -4524,7 +4524,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-image-generator-v2:0",
@@ -4548,7 +4548,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-text-lite-v1",
@@ -4573,7 +4573,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-14",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-text-express-v1",
@@ -4597,7 +4597,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-titan-text-premier-v1:0",
@@ -4620,7 +4620,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-nova-nova-lite-v1",
@@ -4644,7 +4644,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon-nova/nova-lite-v1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-nova-nova-micro-v1",
@@ -4669,7 +4669,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon-nova/nova-micro-v1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-nova-nova-premier-v1",
@@ -4694,7 +4694,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon-nova/nova-premier-v1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "amazon-nova-nova-pro-v1",
@@ -4719,7 +4719,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://amazon-nova/nova-pro-v1.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-codellama-codellama-34b-instruct-hf",
@@ -4744,7 +4744,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/codellama/codellama-34b-instruct-hf.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-codellama-codellama-70b-instruct-hf",
@@ -4768,7 +4768,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/codellama/codellama-70b-instruct-hf.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-google-gemma-7b-it",
@@ -4793,7 +4793,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/google/gemma-7b-it.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-huggingfaceh4-zephyr-7b-beta",
@@ -4817,7 +4817,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/huggingfaceh4/zephyr-7b-beta.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-meta-llama-llama-2-13b-chat-hf",
@@ -4842,7 +4842,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/meta-llama/llama-2-13b-chat-hf.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-meta-llama-llama-2-70b-chat-hf",
@@ -4867,7 +4867,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/meta-llama/llama-2-70b-chat-hf.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-meta-llama-llama-2-7b-chat-hf",
@@ -4892,7 +4892,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/meta-llama/llama-2-7b-chat-hf.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-meta-llama-meta-llama-3-70b-instruct",
@@ -4917,7 +4917,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/meta-llama/meta-llama-3-70b-instruct.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-meta-llama-meta-llama-3-8b-instruct",
@@ -4942,7 +4942,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/meta-llama/meta-llama-3-8b-instruct.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-mistralai-mistral-7b-instruct-v0-1",
@@ -4966,7 +4966,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/mistralai/mistral-7b-instruct-v0.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-mistralai-mixtral-8x22b-instruct-v0-1",
@@ -4990,7 +4990,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/mistralai/mixtral-8x22b-instruct-v0.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "anyscale-mistralai-mixtral-8x7b-instruct-v0-1",
@@ -5014,7 +5014,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://anyscale/mistralai/mixtral-8x7b-instruct-v0.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "apac-anthropic-claude-3-5-sonnet-20240620-v1:0",
@@ -5039,7 +5039,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://apac.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "apac-anthropic-claude-3-5-sonnet-20241022-v2:0",
@@ -5064,7 +5064,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-15",
     "url": "https://apac.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "apac-anthropic-claude-3-haiku-20240307-v1:0",
@@ -5089,7 +5089,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://apac.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "apac-anthropic-claude-3-sonnet-20240229-v1:0",
@@ -5114,7 +5114,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://apac.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-command-r-plus",
@@ -5139,7 +5139,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/command-r-plus.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-container",
@@ -5163,7 +5163,7 @@ export const models: AIModel[] = [
     "released": "2026-08-16",
     "url": "https://azure/container.com",
     "freeTier": "有",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-4o-2024-08-06",
@@ -5188,7 +5188,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-4o-2024-08-06.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-4o-2024-11-20",
@@ -5213,7 +5213,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-4o-2024-11-20.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-4o-mini-2024-07-18",
@@ -5238,7 +5238,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-4o-mini-2024-07-18.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-1",
@@ -5263,7 +5263,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-1-chat",
@@ -5288,7 +5288,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-4",
@@ -5312,7 +5312,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-4-2026-03-05",
@@ -5336,7 +5336,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-6",
@@ -5361,7 +5361,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-6-sol",
@@ -5386,7 +5386,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-6-terra",
@@ -5411,7 +5411,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-6-luna",
@@ -5436,7 +5436,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-5",
@@ -5460,7 +5460,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-5-2026-04-23",
@@ -5484,7 +5484,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-2025-08-07",
@@ -5507,7 +5507,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5-2025-08-07.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-mini-2025-08-07",
@@ -5531,7 +5531,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5-mini-2025-08-07.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-gpt-5-nano-2025-08-07",
@@ -5556,7 +5556,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-16",
     "url": "https://azure/eu/gpt-5-nano-2025-08-07.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-o1-2024-12-17",
@@ -5581,7 +5581,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/eu/o1-2024-12-17.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-o1-mini-2024-09-12",
@@ -5605,7 +5605,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/eu/o1-mini-2024-09-12.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-eu-o3-mini-2025-01-31",
@@ -5630,7 +5630,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/eu/o3-mini-2025-01-31.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-standard-gpt-4o-2024-08-06",
@@ -5654,7 +5654,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global-standard/gpt-4o-2024-08-06.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-standard-gpt-4o-2024-11-20",
@@ -5678,7 +5678,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global-standard/gpt-4o-2024-11-20.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-standard-gpt-4o-mini",
@@ -5703,7 +5703,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global-standard/gpt-4o-mini.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-gpt-4o-2024-08-06",
@@ -5728,7 +5728,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global/gpt-4o-2024-08-06.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-gpt-4o-2024-11-20",
@@ -5753,7 +5753,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global/gpt-4o-2024-11-20.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-gpt-5-1",
@@ -5776,7 +5776,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-global-gpt-5-1-chat",
@@ -5801,7 +5801,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/global/gpt-5.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-3-5-turbo",
@@ -5826,7 +5826,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-3.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-3-5-turbo-0125",
@@ -5851,7 +5851,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-3.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-35-turbo",
@@ -5876,7 +5876,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-35-turbo.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-35-turbo-0125",
@@ -5901,7 +5901,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-35-turbo-0125.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-35-turbo-1106",
@@ -5926,7 +5926,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-35-turbo-1106.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-35-turbo-16k",
@@ -5950,7 +5950,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-35-turbo-16k.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-35-turbo-16k-0613",
@@ -5974,7 +5974,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-35-turbo-16k-0613.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-4",
@@ -5998,7 +5998,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-4.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-4-1",
@@ -6023,7 +6023,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-4.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   },
   {
     "id": "azure-gpt-4-1-2025-04-14",
@@ -6048,7 +6048,7 @@ export const models: AIModel[] = [
     ],
     "released": "2026-08-17",
     "url": "https://azure/gpt-4.com",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-09-04"
   }
 ];
 

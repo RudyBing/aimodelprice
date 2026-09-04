@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T03:09:12.788Z",
+  "syncedAt": "2026-09-04T03:07:30.850Z",
   "source": "LiteLLM GitHub (model_prices_and_context_window.json)",
   "models": [
     {
@@ -704,10 +704,11 @@
       "id": "mistral-mistral-medium",
       "prices": {
         "source": "litellm",
-        "inputCostPerToken": 0.0000027,
-        "outputCostPerToken": 0.0000081,
-        "maxInputTokens": 32000,
-        "maxOutputTokens": 8191
+        "inputCostPerToken": 0.0000015,
+        "outputCostPerToken": 0.0000075,
+        "maxInputTokens": 262144,
+        "maxOutputTokens": 262144,
+        "supportsVision": true
       }
     },
     {
