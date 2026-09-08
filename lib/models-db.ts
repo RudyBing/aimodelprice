@@ -68,19 +68,7 @@ export async function getModelsFromDb(): Promise<AIModel[]> {
         benchmark_score, released, url, free_tier, updated_at
       FROM spider_ai_models
       WHERE is_published = TRUE
-      ORDER BY 
-        CASE category
-          WHEN 'text' THEN 1
-          WHEN 'multimodal' THEN 2
-          WHEN 'image' THEN 3
-          WHEN 'video' THEN 4
-          WHEN 'audio' THEN 5
-          WHEN 'code' THEN 6
-          WHEN 'open-source' THEN 7
-          ELSE 8
-        END,
-        provider,
-        name
+      ORDER BY benchmark_score DESC NULLS LAST, provider, name
     `;
     
     return models.map(mapDbToModel);
@@ -88,15 +76,6 @@ export async function getModelsFromDb(): Promise<AIModel[]> {
     console.error('从数据库读取模型数据失败:', error);
     // 如果数据库读取失败，返回空数组
     return [];
-  }
-}
-
-// 安全解码路由参数中的 slug（如 %3A 还原为冒号），解码失败时原样返回
-function safeDecodeSlug(value: string): string {
-  try {
-    return decodeURIComponent(value);
-  } catch {
-    return value;
   }
 }
 
@@ -110,7 +89,7 @@ export async function getModelBySlug(slug: string): Promise<AIModel | null> {
         context_window, multimodal, strengths,
         benchmark_score, released, url, free_tier, updated_at
       FROM spider_ai_models
-      WHERE is_published = TRUE AND slug = ${safeDecodeSlug(slug)}
+      WHERE is_published = TRUE AND slug = ${slug}
       LIMIT 1
     `;
     
