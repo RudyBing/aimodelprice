@@ -4,6 +4,8 @@
 import { getModelsFromDb, getProviders } from '@/lib/models-db';
 import ModelsPage from './models-client';
 
+export const revalidate = 1800;
+
 export default async function ModelsPageWrapper() {
   // 从数据库加载模型数据
   const models = await getModelsFromDb();
