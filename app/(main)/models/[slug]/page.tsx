@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import { models, getModelBySlug } from '@/data/models';
+import { getModelsFromDb, getModelBySlug } from '@/lib/models-db';
+import { modelCategories } from '@/data/models';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { getPricingInput, getPricingOutput, getPricingUnit } from '@/lib/pricing'
-import { providerAccentClass, providerDotClass } from '@/lib/providers'
+import { getModelAccentColor, providerDotClass } from '@/lib/providers'
 import {
   ArrowLeft, ExternalLink, Sparkles, Zap, Clock,
   Layers, CheckCircle2, AlertCircle, BarChart3, Globe,
@@ -15,7 +16,7 @@ import type { Metadata } from 'next';
 // Next.js 15 中 params 是 Promise 类型
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const model = getModelBySlug(slug);
+  const model = await getModelBySlug(slug);
   
   if (!model) {
     return {
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ModelDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const model = getModelBySlug(slug);
+  const model = await getModelBySlug(slug);
 
   if (!model) {
     return (
@@ -75,11 +76,13 @@ export default async function ModelDetailPage({ params }: { params: Promise<{ sl
     );
   }
 
-  const relatedModels = models
+  // 获取相关模型（同分类的其他模型）
+  const allModels = await getModelsFromDb();
+  const relatedModels = allModels
     .filter((m) => m.category === model.category && m.id !== model.id)
     .slice(0, 4);
 
-  const accentClass = providerAccentClass[model.provider] || '';
+  const accentColor = getModelAccentColor(model.id);
   const dotClass = providerDotClass[model.provider] || 'bg-gray-500';
 
   return (
@@ -130,7 +133,7 @@ export default async function ModelDetailPage({ params }: { params: Promise<{ sl
           {/* Left column */}
           <div className="lg:col-span-2 space-y-5">
             {/* Pricing */}
-            <Card className={cn('border-border/40 bg-card/60', accentClass, '[border-inline-start-width:3px]')}>
+            <Card className="border-border/40 bg-card/60" style={{ borderLeft: `4px solid ${accentColor}` }}>
               <CardContent className="p-5">
                 <h2 className="text-base font-semibold mb-4 flex items-center gap-2">
                   <Zap className="h-4 w-4 text-yellow-400" />
@@ -211,7 +214,7 @@ export default async function ModelDetailPage({ params }: { params: Promise<{ sl
 
           {/* Right sidebar */}
           <div className="space-y-5">
-            <Card className={cn('border-border/40 bg-card/60 sticky top-20', accentClass, '[border-inline-start-width:3px]')}>
+            <Card className="border-border/40 bg-card/60 sticky top-20" style={{ borderLeft: `4px solid ${accentColor}` }}>
               <CardContent className="p-5 space-y-4">
                 <div>
                   <div className="text-xs text-muted-foreground mb-1">提供商</div>

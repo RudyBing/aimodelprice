@@ -1,0 +1,164 @@
+// 模型数据访问层 - 从 PostgreSQL 数据库读取 AI 模型数据
+
+import sql from './db';
+import type { AIModel, ModelPrice, ModelCategory } from '@/data/models-generated';
+
+// 数据库模型接口
+interface DbAIModel {
+  id: string;
+  name: string;
+  slug: string;
+  provider: string;
+  logo: string;
+  description: string;
+  category: string;
+  pricing_input: string | null;
+  pricing_output: string | null;
+  pricing_unit: string | null;
+  context_window: string;
+  multimodal: boolean;
+  strengths: string[];
+  benchmark_score: number | null;
+  released: string | null;
+  url: string;
+  free_tier: string | null;
+  updated_at: string;
+}
+
+// 将数据库记录转换为 AIModel 对象
+function mapDbToModel(dbModel: DbAIModel): AIModel {
+  // 构建 pricing 对象
+  const pricing: ModelPrice = {
+    input: dbModel.pricing_input || '',
+    output: dbModel.pricing_output || '',
+  };
+  
+  if (dbModel.pricing_unit) {
+    pricing.unit = dbModel.pricing_unit;
+  }
+
+  return {
+    id: dbModel.id,
+    name: dbModel.name,
+    slug: dbModel.slug,
+    provider: dbModel.provider,
+    logo: dbModel.logo || '',
+    description: dbModel.description,
+    category: dbModel.category as ModelCategory,
+    pricing,
+    contextWindow: dbModel.context_window,
+    multimodal: dbModel.multimodal,
+    strengths: dbModel.strengths || [],
+    benchmarkScore: dbModel.benchmark_score || undefined,
+    released: dbModel.released || undefined,
+    url: dbModel.url,
+    freeTier: dbModel.free_tier || undefined,
+    updatedAt: dbModel.updated_at,
+  };
+}
+
+// 从数据库获取所有模型数据
+export async function getModelsFromDb(): Promise<AIModel[]> {
+  try {
+    const models = await sql<DbAIModel[]>`
+      SELECT 
+        id, name, slug, provider, logo, description, category,
+        pricing_input, pricing_output, pricing_unit,
+        context_window, multimodal, strengths,
+        benchmark_score, released, url, free_tier, updated_at
+      FROM spider_ai_models
+      WHERE is_published = TRUE
+      ORDER BY 
+        CASE category
+          WHEN 'text' THEN 1
+          WHEN 'multimodal' THEN 2
+          WHEN 'image' THEN 3
+          WHEN 'video' THEN 4
+          WHEN 'audio' THEN 5
+          WHEN 'code' THEN 6
+          WHEN 'open-source' THEN 7
+          ELSE 8
+        END,
+        provider,
+        name
+    `;
+    
+    return models.map(mapDbToModel);
+  } catch (error) {
+    console.error('从数据库读取模型数据失败:', error);
+    // 如果数据库读取失败，返回空数组
+    return [];
+  }
+}
+
+// 安全解码路由参数中的 slug（如 %3A 还原为冒号），解码失败时原样返回
+function safeDecodeSlug(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
+// 根据 slug 获取单个模型
+export async function getModelBySlug(slug: string): Promise<AIModel | null> {
+  try {
+    const models = await sql<DbAIModel[]>`
+      SELECT 
+        id, name, slug, provider, logo, description, category,
+        pricing_input, pricing_output, pricing_unit,
+        context_window, multimodal, strengths,
+        benchmark_score, released, url, free_tier, updated_at
+      FROM spider_ai_models
+      WHERE is_published = TRUE AND slug = ${safeDecodeSlug(slug)}
+      LIMIT 1
+    `;
+    
+    if (models.length === 0) {
+      return null;
+    }
+    
+    return mapDbToModel(models[0]);
+  } catch (error) {
+    console.error(`从数据库读取模型 ${slug} 失败:`, error);
+    return null;
+  }
+}
+
+// 根据分类筛选模型
+export async function getModelsByCategory(category: string): Promise<AIModel[]> {
+  try {
+    const models = await sql<DbAIModel[]>`
+      SELECT 
+        id, name, slug, provider, logo, description, category,
+        pricing_input, pricing_output, pricing_unit,
+        context_window, multimodal, strengths,
+        benchmark_score, released, url, free_tier, updated_at
+      FROM spider_ai_models
+      WHERE is_published = TRUE AND category = ${category}
+      ORDER BY provider, name
+    `;
+    
+    return models.map(mapDbToModel);
+  } catch (error) {
+    console.error(`从数据库读取分类 ${category} 的模型失败:`, error);
+    return [];
+  }
+}
+
+// 获取所有厂商
+export async function getProviders(): Promise<string[]> {
+  try {
+    const result = await sql<{ provider: string }[]>`
+      SELECT DISTINCT provider 
+      FROM spider_ai_models 
+      WHERE is_published = TRUE
+      ORDER BY provider
+    `;
+    
+    return result.map(r => r.provider);
+  } catch (error) {
+    console.error('从数据库读取厂商列表失败:', error);
+    return [];
+  }
+}

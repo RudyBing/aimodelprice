@@ -1,13 +1,13 @@
-﻿'use client';
+'use client';
 
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { getPricingInput, getPricingOutput } from '@/lib/pricing'
-import { providerAccentClass, providerDotClass } from '@/lib/providers'
+import { getModelAccentColor, providerDotClass } from '@/lib/providers'
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ChevronRight } from 'lucide-react';
-import type { AIModel } from '@/data/models';
+import type { AIModel } from '@/data/models-generated';
 import { useRouter } from 'next/navigation';
 
 
@@ -26,7 +26,7 @@ export function PriceComparisonCard({
   compact = false,
 }: PriceComparisonCardProps) {
   const router = useRouter();
-  const accentClass = providerAccentClass[model.provider] || '';
+  const accentColor = getModelAccentColor(model.id);
   const dotClass = providerDotClass[model.provider] || 'bg-gray-500';
   const inputPrice = getPricingInput(model.pricing);
   const outputPrice = getPricingOutput(model.pricing);
@@ -43,11 +43,10 @@ export function PriceComparisonCard({
         <div
           className={cn(
             'relative rounded-lg border border-border/50 bg-card p-4 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background transition-normal hover:shadow-glow-xs',
-            accentClass,
-            '[border-inline-start-width:3px]',
             'hover:border-border/80 hover:bg-secondary/30 transition-normal',
             'focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 focus-within:ring-offset-background',
           )}
+          style={{ borderLeft: `4px solid ${accentColor}` }}
         >
           {/* Hover gradient overlay */}
           <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary/[0.02] to-accent/[0.02] opacity-0 group-hover:opacity-100 transition-normal pointer-events-none" />
@@ -131,7 +130,7 @@ export function PriceComparisonCard({
                 href={model.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={model.name + " 瀹樼綉"}
+                aria-label={model.name + " 官网"}
               >
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>

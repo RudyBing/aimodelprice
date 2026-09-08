@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
-import { models } from '@/data/models';
+import { getModelsFromDb } from '@/data/models';
 
 const baseUrl = 'https://aimodelprice.com';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 静态页面
   const staticPages = [
     {
@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // 模型详情页面
+  const models = await getModelsFromDb();
   const modelPages = models.map((model) => ({
     url: `${baseUrl}/models/${model.slug}`,
     lastModified: new Date(),

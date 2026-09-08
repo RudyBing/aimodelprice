@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -116,17 +116,17 @@
 .bg-provider-zhipu { background-color: hsl(var(--provider-zhipu) / 0.6); }
 .bg-provider-default { background-color: hsl(var(--provider-openai) / 0.6); }
 
-.provider-accent-openai { border-inline-start-color: hsl(var(--provider-openai)); }
-.provider-accent-anthropic { border-inline-start-color: hsl(var(--provider-anthropic)); }
-.provider-accent-google { border-inline-start-color: hsl(var(--provider-google)); }
-.provider-accent-meta { border-inline-start-color: hsl(var(--provider-meta)); }
-.provider-accent-alibaba { border-inline-start-color: hsl(var(--provider-alibaba)); }
-.provider-accent-deepseek { border-inline-start-color: hsl(var(--provider-deepseek)); }
-.provider-accent-blackforest { border-inline-start-color: hsl(var(--provider-blackforest)); }
-.provider-accent-stability { border-inline-start-color: hsl(var(--provider-stability)); }
-.provider-accent-mistral { border-inline-start-color: hsl(var(--provider-mistral)); }
-.provider-accent-kuaishou { border-inline-start-color: hsl(var(--provider-kuaishou)); }
-.provider-accent-zhipu { border-inline-start-color: hsl(var(--provider-zhipu)); }
+.provider-accent-openai { border-left: 3px solid hsl(var(--provider-openai)) !important; }
+.provider-accent-anthropic { border-left: 3px solid hsl(var(--provider-anthropic)) !important; }
+.provider-accent-google { border-left: 3px solid hsl(var(--provider-google)) !important; }
+.provider-accent-meta { border-left: 3px solid hsl(var(--provider-meta)) !important; }
+.provider-accent-alibaba { border-left: 3px solid hsl(var(--provider-alibaba)) !important; }
+.provider-accent-deepseek { border-left: 3px solid hsl(var(--provider-deepseek)) !important; }
+.provider-accent-blackforest { border-left: 3px solid hsl(var(--provider-blackforest)) !important; }
+.provider-accent-stability { border-left: 3px solid hsl(var(--provider-stability)) !important; }
+.provider-accent-mistral { border-left: 3px solid hsl(var(--provider-mistral)) !important; }
+.provider-accent-kuaishou { border-left: 3px solid hsl(var(--provider-kuaishou)) !important; }
+.provider-accent-zhipu { border-left: 3px solid hsl(var(--provider-zhipu)) !important; }
 
 .price-low { color: hsl(var(--price-low)); }
 .price-mid { color: hsl(var(--price-mid)); }

@@ -3,23 +3,10 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { Clock, TrendingUp, ExternalLink } from 'lucide-react';
-
-interface News {
-  id: string;
-  slug: string;
-  title: string;
-  summary: string;
-  source: string;
-  publishedAt: string;
-  category: string;
-  tags: string[];
-  relatedModels: string[];
-  hotness: number;
-  sentiment: string;
-}
+import type { NewsItem } from '@/lib/news-db';
 
 interface NewsCardProps {
-  news: News;
+  news: NewsItem;
   variant?: 'default' | 'compact' | 'featured';
 }
 
@@ -60,6 +47,10 @@ function getSentimentIcon(sentiment: string): string {
 }
 
 export function NewsCard({ news, variant = 'default' }: NewsCardProps) {
+  // 使用中文标题和内容（如果有）
+  const displayTitle = news.titleCn || news.title;
+  const displayContent = news.contentCn || news.content;
+  
   if (variant === 'featured') {
     return (
       <Link href={`/news/${news.slug}`} className="block group">
@@ -78,11 +69,11 @@ export function NewsCard({ news, variant = 'default' }: NewsCardProps) {
             </div>
             
             <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
-              {news.title}
+              {displayTitle}
             </h3>
             
             <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-              {news.summary}
+              {displayContent.slice(0, 150)}
             </p>
             
             <div className="flex items-center justify-between">
@@ -123,7 +114,7 @@ export function NewsCard({ news, variant = 'default' }: NewsCardProps) {
           <div className="flex items-start justify-between gap-3">
             <div className="flex-1 min-w-0">
               <h4 className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2 mb-1">
-                {news.title}
+                {displayTitle}
               </h4>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
                 <span>{news.source}</span>
@@ -157,11 +148,11 @@ export function NewsCard({ news, variant = 'default' }: NewsCardProps) {
           </div>
           
           <h3 className="text-base font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
-            {news.title}
+            {displayTitle}
           </h3>
           
           <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-            {news.summary}
+            {displayContent.slice(0, 100)}
           </p>
           
           <div className="flex items-center justify-between">

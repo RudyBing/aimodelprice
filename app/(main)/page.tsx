@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { models, modelCategories, type AIModel } from '@/data/models';
+import { getModelsFromDb, modelCategories, type AIModel } from '@/data/models';
 import { categoryIcons, categoryLabels } from '@/lib/categories';
 import { getPricingInput, getPriceInputNum } from '@/lib/pricing';
 import { PriceComparisonCard } from '@/components/aceternity/price-comparison-card';
@@ -31,25 +31,30 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  // 从数据库加载模型数据
+  const models = await getModelsFromDb();
+  
   const featuredModels = models.slice(0, 6);
 
-
-  const cheapestModel = models.reduce((prev, curr) =>
+  // 安全计算：最便宜模型
+  const cheapestModel = models.length > 0 ? models.reduce((prev, curr) =>
     getPriceInputNum(curr.pricing) < getPriceInputNum(prev.pricing) ? curr : prev
-  );
+  ) : null;
 
-  const strongestModel = models.reduce((prev, curr) =>
+  // 安全计算：最高性能模型
+  const strongestModel = models.length > 0 ? models.reduce((prev, curr) =>
     (curr.benchmarkScore || 0) > (prev.benchmarkScore || 0) ? curr : prev
-  );
+  ) : null;
 
-  const longestContext = models.reduce((prev, curr) => {
+  // 安全计算：最长上下文模型
+  const longestContext = models.length > 0 ? models.reduce((prev, curr) => {
     const parseCtx = (m: AIModel) => {
       const match = m.contextWindow.match(/(\d+)/);
       return match ? parseInt(match[0]) : 0;
     };
     return parseCtx(curr) > parseCtx(prev) ? curr : prev;
-  });
+  }) : null;
 
   const providerCount = new Set(models.map((m) => m.provider)).size;
 
@@ -165,52 +170,38 @@ export default function Home() {
       <section className="py-12 px-4" aria-labelledby="insights-heading">
         <div className="mx-auto max-w-7xl">
           <h2 id="insights-heading" className="text-lg font-semibold mb-6 text-center">价格洞察</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto">
-            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
-              <TrendingDown className="h-5 w-5 text-green-400 mx-auto mb-2" />
-              <div className="text-xs text-muted-foreground mb-1">最便宜输入价格</div>
-              <div className="text-lg font-bold">{cheapestModel.name}</div>
-              <div className="text-xs font-mono text-green-400 mt-1">
-                {getPricingInput(cheapestModel.pricing)}
+          {cheapestModel && strongestModel && longestContext ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto">
+              <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+                <TrendingDown className="h-5 w-5 text-green-400 mx-auto mb-2" />
+                <div className="text-xs text-muted-foreground mb-1">最便宜输入价格</div>
+                <div className="text-lg font-bold">{cheapestModel.name}</div>
+                <div className="text-xs font-mono text-green-400 mt-1">
+                  {getPricingInput(cheapestModel.pricing)}
+                </div>
+              </div>
+              <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+                <Shield className="h-5 w-5 text-blue-400 mx-auto mb-2" />
+                <div className="text-xs text-muted-foreground mb-1">最高性能评分</div>
+                <div className="text-lg font-bold">{strongestModel.name}</div>
+                <div className="text-xs font-mono text-blue-400 mt-1">
+                  评分 {strongestModel.benchmarkScore}/100
+                </div>
+              </div>
+              <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
+                <Sparkles className="h-5 w-5 text-purple-400 mx-auto mb-2" />
+                <div className="text-xs text-muted-foreground mb-1">最长上下文</div>
+                <div className="text-lg font-bold">{longestContext.name}</div>
+                <div className="text-xs font-mono text-purple-400 mt-1">
+                  {longestContext.contextWindow}
+                </div>
               </div>
             </div>
-            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
-              <Shield className="h-5 w-5 text-blue-400 mx-auto mb-2" />
-              <div className="text-xs text-muted-foreground mb-1">最高性能评分</div>
-              <div className="text-lg font-bold">{strongestModel.name}</div>
-              <div className="text-xs font-mono text-blue-400 mt-1">
-                评分 {strongestModel.benchmarkScore}/100
-              </div>
+          ) : (
+            <div className="text-center text-muted-foreground text-sm">
+              暂无价格洞察数据
             </div>
-            <div className="rounded-lg border border-border/40 bg-card/50 p-5 text-center">
-              <Sparkles className="h-5 w-5 text-purple-400 mx-auto mb-2" />
-              <div className="text-xs text-muted-foreground mb-1">最长上下文</div>
-              <div className="text-lg font-bold">{longestContext.name}</div>
-              <div className="text-xs font-mono text-purple-400 mt-1">
-                {longestContext.contextWindow}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why us */}
-      <section className="py-16 px-4" aria-labelledby="why-heading">
-        <div className="mx-auto max-w-7xl">
-          <h2 id="why-heading" className="text-lg font-semibold mb-8 text-center">为什么选择我们</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              { icon: Shield, title: '数据准确', desc: '每日更新价格数据，确保信息准确可靠' },
-              { icon: TrendingDown, title: '全面对比', desc: '多维度对比价格、性能、上下文窗口' },
-              { icon: Sparkles, title: '发现好模型', desc: '帮助你找到最合适且最具性价比的模型' },
-            ].map((feature) => (
-              <div key={feature.title} className="rounded-lg border border-border/30 bg-card/30 p-6 text-center">
-                <feature.icon className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-                <h3 className="text-sm font-semibold mb-1.5">{feature.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{feature.desc}</p>
-              </div>
-            ))}
-          </div>
+          )}
         </div>
       </section>
     </div>

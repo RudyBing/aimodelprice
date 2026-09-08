@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { NewsCard } from '@/components/news/NewsCard';
+import { getNewsFromDb, getNewsBySlug as getNewsBySlugFromDb, getRelatedNews as getRelatedNewsFromDb } from '@/lib/news-db';
 import {
   ArrowLeft,
   ExternalLink,
@@ -16,36 +17,6 @@ import {
   Link2,
 } from 'lucide-react';
 import type { Metadata } from 'next';
-
-// 加载新闻数据
-function loadNews(): any[] {
-  try {
-    const newsData = require('@/data/news-metadata.json');
-    return newsData.news || [];
-  } catch (error) {
-    console.error('Failed to load news data:', error);
-    return [];
-  }
-}
-
-// 根据 slug 查找新闻
-function getNewsBySlug(slug: string): any | null {
-  const allNews = loadNews();
-  // Next.js 会自动编码 URL 中的中文字符，需要解码并规范化后匹配
-  const decodedSlug = decodeURIComponent(slug)
-    .replace(/\s+/g, '-')  // 将空格替换为连字符
-    .replace(/-+/g, '-');  // 合并多个连字符
-  return allNews.find(n => n.slug === decodedSlug) || null;
-}
-
-// 获取相关新闻
-function getRelatedNews(currentNews: any, limit: number = 3): any[] {
-  const allNews = loadNews();
-  return allNews
-    .filter(n => n.id !== currentNews.id && n.category === currentNews.category)
-    .sort((a, b) => b.hotness - a.hotness)
-    .slice(0, limit);
-}
 
 // 格式化日期
 function formatDate(dateString: string): string {
@@ -89,7 +60,7 @@ function getCategoryColor(category: string): string {
 // 生成 Metadata
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const newsItem = getNewsBySlug(slug);
+  const newsItem = await getNewsBySlugFromDb(slug);
   
   if (!newsItem) {
     return {
@@ -100,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   const siteName = 'AI Model Prices';
   const title = `${newsItem.title} - ${siteName}`;
-  const description = newsItem.summary;
+  const description = newsItem.contentCn?.slice(0, 100) || newsItem.content.slice(0, 100);
   
   return {
     title: {
@@ -134,7 +105,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // 新闻详情页组件
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const newsItem = getNewsBySlug(slug);
+  const newsItem = await getNewsBySlugFromDb(slug);
   
   if (!newsItem) {
     return (
@@ -150,7 +121,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
     );
   }
   
-  const relatedNews = getRelatedNews(newsItem);
+  const relatedNews = await getRelatedNewsFromDb(newsItem.id, newsItem.category, 3);
   
   return (
     <div className="relative min-h-screen py-12 px-4">
@@ -188,7 +159,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             </div>
             
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 leading-tight">
-              {newsItem.title}
+              {newsItem.titleCn || newsItem.title}
             </h1>
             
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -229,29 +200,24 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             </Button>
           </div>
           
-          {/* Summary */}
-          <Card className="border-border/40 bg-secondary/30 mb-8">
-            <CardContent className="p-6">
-              <h2 className="text-sm font-semibold mb-3 flex items-center gap-2">
-                <Tag className="h-4 w-4" />
-                摘要
-              </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                {newsItem.summary}
-              </p>
-            </CardContent>
-          </Card>
-          
           {/* Content */}
-          {newsItem.content && (
+          {newsItem.contentCn || newsItem.content ? (
             <div className="prose prose-sm max-w-none mb-8">
               <div className="text-muted-foreground leading-relaxed space-y-4">
-                <p>{newsItem.content}</p>
+                <p>{newsItem.contentCn || newsItem.content}</p>
                 <p className="text-sm text-muted-foreground italic">
                   注：以上内容摘选自原始新闻，点击「访问原文」查看完整内容。
                 </p>
               </div>
             </div>
+          ) : (
+            <Card className="border-border/40 bg-secondary/30 mb-8">
+              <CardContent className="p-6">
+                <p className="text-muted-foreground text-center">
+                  暂无详细内容
+                </p>
+              </CardContent>
+            </Card>
           )}
           
           {/* Tags */}
@@ -262,7 +228,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                 标签
               </h3>
               <div className="flex flex-wrap gap-2">
-                {newsItem.tags.map((tag: string) => (
+                {newsItem.tags.map((tag) => (
                   <Badge key={tag} variant="secondary" className="text-xs">
                     {tag}
                   </Badge>
@@ -276,7 +242,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             <div className="mb-8 pb-8 border-b border-border/30">
               <h3 className="text-sm font-semibold mb-3">相关 AI 模型</h3>
               <div className="flex flex-wrap gap-2">
-                {newsItem.relatedModels.map((modelSlug: string) => (
+                {newsItem.relatedModels.map((modelSlug) => (
                   <Link key={modelSlug} href={`/models/${modelSlug}`}>
                     <Badge variant="outline" className="text-xs px-3 py-1.5 hover:bg-secondary transition-colors cursor-pointer">
                       {modelSlug}
