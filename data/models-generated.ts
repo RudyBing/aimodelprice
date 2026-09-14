@@ -20,6 +20,7 @@ export interface AIModel {
   multimodal: boolean;
   strengths: string[];
   benchmarkScore?: number;
+  compositeScore?: number;
   released?: string;
   url: string;
   freeTier?: string;

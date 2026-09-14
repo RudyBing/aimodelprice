@@ -19,6 +19,7 @@ interface DbAIModel {
   multimodal: boolean;
   strengths: string[];
   benchmark_score: number | null;
+  composite_score: number | null;
   released: string | null;
   url: string;
   free_tier: string | null;
@@ -50,6 +51,7 @@ function mapDbToModel(dbModel: DbAIModel): AIModel {
     multimodal: dbModel.multimodal,
     strengths: dbModel.strengths || [],
     benchmarkScore: dbModel.benchmark_score || undefined,
+    compositeScore: dbModel.composite_score || undefined,
     released: dbModel.released || undefined,
     url: dbModel.url,
     freeTier: dbModel.free_tier || undefined,
@@ -65,10 +67,10 @@ export async function getModelsFromDb(): Promise<AIModel[]> {
         id, name, slug, provider, logo, description, category,
         pricing_input, pricing_output, pricing_unit,
         context_window, multimodal, strengths,
-        benchmark_score, released, url, free_tier, updated_at
+        benchmark_score, composite_score, released, url, free_tier, updated_at
       FROM spider_ai_models
       WHERE is_published = TRUE
-      ORDER BY benchmark_score DESC NULLS LAST, provider, name
+      ORDER BY composite_score DESC NULLS LAST, benchmark_score DESC NULLS LAST, provider, name
     `;
     
     return models.map(mapDbToModel);
@@ -87,7 +89,7 @@ export async function getModelBySlug(slug: string): Promise<AIModel | null> {
         id, name, slug, provider, logo, description, category,
         pricing_input, pricing_output, pricing_unit,
         context_window, multimodal, strengths,
-        benchmark_score, released, url, free_tier, updated_at
+        benchmark_score, composite_score, released, url, free_tier, updated_at
       FROM spider_ai_models
       WHERE is_published = TRUE AND slug = ${slug}
       LIMIT 1
@@ -112,10 +114,10 @@ export async function getModelsByCategory(category: string): Promise<AIModel[]> 
         id, name, slug, provider, logo, description, category,
         pricing_input, pricing_output, pricing_unit,
         context_window, multimodal, strengths,
-        benchmark_score, released, url, free_tier, updated_at
+        benchmark_score, composite_score, released, url, free_tier, updated_at
       FROM spider_ai_models
       WHERE is_published = TRUE AND category = ${category}
-      ORDER BY provider, name
+      ORDER BY composite_score DESC NULLS LAST, provider, name
     `;
     
     return models.map(mapDbToModel);
@@ -139,5 +141,24 @@ export async function getProviders(): Promise<string[]> {
   } catch (error) {
     console.error('从数据库读取厂商列表失败:', error);
     return [];
+  }
+}
+
+// 获取模型和厂商统计（供 Footer 使用）
+export async function getModelStats(): Promise<{ modelCount: number; providerCount: number }> {
+  try {
+    const result = await sql<{ model_count: number; provider_count: number }[]>`
+      SELECT 
+        COUNT(*) as model_count,
+        COUNT(DISTINCT provider) as provider_count
+      FROM spider_ai_models
+      WHERE is_published = TRUE
+    `;
+    
+    if (result.length === 0) return { modelCount: 0, providerCount: 0 };
+    return { modelCount: result[0].model_count, providerCount: result[0].provider_count };
+  } catch (error) {
+    console.error('从数据库读取模型统计失败:', error);
+    return { modelCount: 0, providerCount: 0 };
   }
 }

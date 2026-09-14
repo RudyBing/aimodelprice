@@ -12,7 +12,7 @@ export { modelCategories } from './models-generated';
 
 // 从数据库获取模型数据的函数
 // 注意：这是异步函数，只能在 Server Components 或 Server Actions 中使用
-export { getModelsFromDb, getModelBySlug, getModelsByCategory, getProviders } from '@/lib/models-db';
+export { getModelsFromDb, getModelBySlug, getModelsByCategory, getProviders, getModelStats } from '@/lib/models-db';
 
 // 缓存的模型数据（在 Server Components 中使用）
 // 为了保持向后兼容，我们提供一个同步的 models 数组

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { modelCategories, type ModelCategory, type AIModel } from '@/data/models-generated';
 import { PriceComparisonCard } from '@/components/aceternity/price-comparison-card';
 import { Badge } from '@/components/ui/badge';
@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
-import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X, Filter, ChevronDown, ChevronUp } from 'lucide-react';
+import { Search, Cpu, Zap, Palette, Video, Mic, Code2, Sparkles, Globe, X, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const categoryIcons: Record<ModelCategory, React.ReactNode> = {
   text: <Zap className="h-3.5 w-3.5" />,
@@ -47,7 +47,6 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
   // 分页状态
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
-  const [hasLoadedMore, setHasLoadedMore] = useState(false);
 
   const filteredModels = useMemo(() => {
     return models.filter((m) => {
@@ -65,22 +64,11 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
   // 筛选条件变化时重置分页
   useEffect(() => {
     setCurrentPage(1);
-    setHasLoadedMore(false);
   }, [search, filterCategory, filterProvider]);
 
-  // 计算当前页应该显示的模型
   const totalPages = Math.ceil(filteredModels.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = Math.min(startIndex + itemsPerPage, filteredModels.length);
-  const currentModels = filteredModels.slice(startIndex, endIndex);
-
-  // 加载更多
-  const loadMore = useCallback(() => {
-    if (currentPage < totalPages) {
-      setCurrentPage(prev => prev + 1);
-      setHasLoadedMore(true);
-    }
-  }, [currentPage, totalPages]);
+  const currentModels = filteredModels.slice(startIndex, startIndex + itemsPerPage);
 
   const hasFilters = search || filterCategory !== 'all' || filterProvider !== 'all';
 
@@ -90,8 +78,31 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
     setFilterProvider('all');
   };
 
-  const displayedCount = hasLoadedMore ? endIndex : Math.min(itemsPerPage, filteredModels.length);
-  const showLoadMore = currentPage < totalPages;
+  // 生成页码按钮
+  const getPageNumbers = () => {
+    const pages: (number | '...')[] = [];
+    const maxVisible = 5;
+    if (totalPages <= maxVisible) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 4; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1);
+        pages.push('...');
+        for (let i = totalPages - 3; i <= totalPages; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        pages.push('...');
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      }
+    }
+    return pages;
+  };
 
   return (
     <div className="relative min-h-screen py-12 px-4">
@@ -175,9 +186,6 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-muted-foreground">
                   找到 <span className="text-foreground font-medium" aria-live="polite">{filteredModels.length}</span> 个模型
-                  {filteredModels.length > itemsPerPage && (
-                    <span className="ml-1">（显示 {displayedCount} 个）</span>
-                  )}
                 </span>
                 {hasFilters && (
                   <Button variant="ghost" size="sm" onClick={clearFilters} className="h-6 px-2 text-xs gap-1">
@@ -230,31 +238,54 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
               ))}
             </div>
 
-            {/* 加载更多按钮 */}
-            {showLoadMore && (
-              <div className="flex justify-center mt-8">
+            {/* 分页按钮 */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2 mt-8">
                 <Button
-                  onClick={loadMore}
                   variant="outline"
-                  size="lg"
-                  className="gap-2 px-8 h-11"
+                  size="sm"
+                  onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
                 >
-                  加载更多
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronLeft className="h-4 w-4 mr-1" />
+                  上一页
+                </Button>
+
+                <div className="flex items-center gap-1">
+                  {getPageNumbers().map((page, i) => (
+                    page === '...' ? (
+                      <span key={i} className="px-3 py-2 text-muted-foreground">...</span>
+                    ) : (
+                      <Button
+                        key={i}
+                        variant={currentPage === page ? 'default' : 'outline'}
+                        size="sm"
+                        onClick={() => setCurrentPage(page as number)}
+                        className="w-10"
+                      >
+                        {page}
+                      </Button>
+                    )
+                  ))}
+                </div>
+
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                >
+                  下一页
+                  <ChevronRight className="h-4 w-4 ml-1" />
                 </Button>
               </div>
             )}
 
             {/* 分页信息 */}
             {totalPages > 1 && (
-              <div className="text-center mt-4 text-xs text-muted-foreground">
-                第 {currentPage} 页 / 共 {totalPages} 页
-                {hasLoadedMore && (
-                  <span className="ml-2">
-                    （已加载 {Math.round((endIndex / filteredModels.length) * 100)}%）
-                  </span>
-                )}
-              </div>
+              <p className="text-center text-sm text-muted-foreground mt-4">
+                第 {currentPage} 页，共 {totalPages} 页（每页 {itemsPerPage} 条）
+              </p>
             )}
           </>
         )}

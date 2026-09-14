@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import { Zap } from 'lucide-react';
 
-export function Footer() {
+interface FooterProps {
+  modelCount?: number;
+  providerCount?: number;
+}
+
+export function Footer({ modelCount, providerCount }: FooterProps) {
   const currentYear = new Date().getFullYear();
+  const displayModelCount = modelCount ?? 0;
+  const displayProviderCount = providerCount ?? 0;
 
   return (
     <footer className="border-t border-border/30 bg-background/40 backdrop-blur-sm" role="contentinfo">
@@ -50,8 +57,8 @@ export function Footer() {
             <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">关于</h4>
             <ul className="space-y-2 text-sm text-muted-foreground" role="list">
               <li>数据每日更新</li>
-              <li>覆盖 30+ AI 模型</li>
-              <li>11 家主要厂商</li>
+              <li>覆盖 {displayModelCount}+ AI 模型</li>
+              <li>{displayProviderCount} 家主要厂商</li>
             </ul>
           </div>
         </div>

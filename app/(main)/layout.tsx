@@ -1,4 +1,5 @@
 import { MainLayout } from "@/components/layout/MainLayout";
+import { getModelStats } from "@/data/models";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,6 @@ export const metadata: Metadata = {
     "AI 模型对比",
     "Token 价格",
     "API 定价",
-    "大模型价格",
   ],
   openGraph: {
     type: "website",
@@ -25,10 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MainLayoutWrapper({
+export default async function MainLayoutWrapper({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <MainLayout>{children}</MainLayout>;
+  const stats = await getModelStats();
+  return (
+    <MainLayout modelCount={stats.modelCount} providerCount={stats.providerCount}>
+      {children}
+    </MainLayout>
+  );
 }

@@ -31,6 +31,10 @@ export function PriceComparisonCard({
   const inputPrice = getPricingInput(model.pricing);
   const outputPrice = getPricingOutput(model.pricing);
 
+  // 排名：index=0 → #1，且 compositeScore 存在时展示
+  const rank = index + 1;
+  const hasRank = index >= 0;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -51,17 +55,29 @@ export function PriceComparisonCard({
           {/* Hover gradient overlay */}
           <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary/[0.02] to-accent/[0.02] opacity-0 group-hover:opacity-100 transition-normal pointer-events-none" />
 
-          {/* Provider badge */}
+          {/* Provider badge + Rank */}
           <div className="flex items-center justify-between mb-2 relative">
             <div className="flex items-center gap-1.5">
               <span className={cn('inline-block w-2 h-2 rounded-full', dotClass)} />
               <span className="text-xs text-muted-foreground font-medium">{model.provider}</span>
             </div>
-            {model.benchmarkScore && (
-              <Badge variant="secondary" className="text-xs h-5 px-1.5 font-mono">
-                {model.benchmarkScore}
-              </Badge>
-            )}
+            <div className="flex items-center gap-1.5">
+              {hasRank && (
+                <span className={cn(
+                  'text-xs font-bold font-mono w-6 h-6 rounded flex items-center justify-center',
+                  rank <= 3
+                    ? 'bg-yellow-500/20 text-yellow-400'
+                    : 'bg-secondary text-muted-foreground'
+                )}>
+                  #{rank}
+                </span>
+              )}
+              {model.benchmarkScore && (
+                <Badge variant="secondary" className="text-xs h-5 px-1.5 font-mono">
+                  {model.benchmarkScore}
+                </Badge>
+              )}
+            </div>
           </div>
 
           {/* Title */}
