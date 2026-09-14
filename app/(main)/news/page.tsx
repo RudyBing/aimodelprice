@@ -4,6 +4,8 @@
 import { getNewsFromDb } from '@/lib/news-db';
 import NewsListPage from './news-client';
 
+export const revalidate = 1800;
+
 export default async function NewsPage() {
   // 从数据库加载新闻数据
   const news = await getNewsFromDb();

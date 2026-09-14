@@ -4,6 +4,8 @@
 import { getModelsFromDb, getProviders } from '@/data/models';
 import SearchPageClient from './search-client';
 
+export const revalidate = 1800;
+
 export default async function SearchPage() {
   // 从数据库加载模型数据
   const models = await getModelsFromDb();
