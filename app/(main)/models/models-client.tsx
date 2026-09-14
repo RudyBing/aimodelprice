@@ -203,7 +203,6 @@ export default function ModelsPage({ models, providers }: ModelsPageProps) {
                     onChange={(e) => {
                       setItemsPerPage(Number(e.target.value));
                       setCurrentPage(1);
-                      setHasLoadedMore(false);
                     }}
                     className="h-6 rounded border border-border/40 bg-secondary/50 px-2 text-xs text-muted-foreground appearance-none cursor-pointer"
                     aria-label="每页显示数量"
