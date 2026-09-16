@@ -9,6 +9,7 @@ import {
   Search,
   TrendingUp,
   Clock,
+  Filter,
   Newspaper,
   Zap,
   DollarSign,
