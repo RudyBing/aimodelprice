@@ -9,7 +9,6 @@ import {
   Search,
   TrendingUp,
   Clock,
-  Filter,
   Newspaper,
   Zap,
   DollarSign,
@@ -18,9 +17,10 @@ import {
   Package,
   ChevronLeft,
   ChevronRight,
+  ArrowUp,
 } from 'lucide-react';
 import Link from 'next/link';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import type { NewsItem } from '@/lib/news-db';
 
@@ -47,6 +47,15 @@ export default function NewsListPage({ news: allNews }: NewsListPageProps) {
   const [filterCategory, setFilterCategory] = useState<string>('all');
   const [sortMode, setSortMode] = useState<SortMode>('latest');
   const [currentPage, setCurrentPage] = useState(1);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowScrollTop(window.scrollY > 400);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   // 计算各分类数量（基于原始数据）
   const categoryCounts = useMemo(() => {
@@ -350,8 +359,8 @@ export default function NewsListPage({ news: allNews }: NewsListPageProps) {
 
                 <div className="space-y-1">
                   {(sortMode === 'hot'
-                    ? [...allNews].sort((a, b) => b.hotness - a.hotness).slice(0, 8)
-                    : [...allNews].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+                    ? [...allNews].sort((a, b) => b.hotness - a.hotness).slice(0, 20)
+                    : [...allNews].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0, 20)
                   ).map((item, index) => (
                     <Link
                       key={item.id}
@@ -378,42 +387,18 @@ export default function NewsListPage({ news: allNews }: NewsListPageProps) {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Category stats */}
-            <Card className="border-border/40 bg-card/60">
-              <CardContent className="p-5">
-                <h3 className="text-base font-semibold mb-4 flex items-center gap-2">
-                  <Filter className="h-4 w-4 text-primary" />
-                  新闻分类
-                </h3>
-                <div className="space-y-2">
-                  {categoryDefs.filter(c => c.id !== 'all').map((cat) => {
-                    const Icon = cat.icon;
-                    const count = categoryCounts[cat.id] ?? 0;
-                    return (
-                      <button
-                        key={cat.id}
-                        onClick={() => handleCategoryChange(cat.id)}
-                        className={cn(
-                          'flex items-center justify-between w-full px-2 py-1.5 rounded-md text-sm transition-fast cursor-pointer',
-                          filterCategory === cat.id
-                            ? 'bg-primary/10 text-primary font-medium'
-                            : 'hover:bg-secondary/60 text-muted-foreground hover:text-foreground'
-                        )}
-                      >
-                        <span className="flex items-center gap-2">
-                          <Icon className="h-3.5 w-3.5" />
-                          {cat.name}
-                        </span>
-                        <Badge variant="outline" className="h-5 px-1.5 text-[10px]">{count}</Badge>
-                      </button>
-                    );
-                  })}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
+        {/* Scroll to top button */}
+        {showScrollTop && (
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-6 right-6 z-50 h-10 w-10 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:bg-primary/90 transition-fast"
+            aria-label="回到顶部"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </button>
+        )}
       </div>
     </div>
   );

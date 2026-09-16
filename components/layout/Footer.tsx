@@ -55,10 +55,11 @@ export function Footer({ modelCount, providerCount }: FooterProps) {
           {/* About */}
           <div>
             <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">关于</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground" role="list">
-              <li>数据每日更新</li>
-              <li>覆盖 {displayModelCount}+ AI 模型</li>
-              <li>{displayProviderCount} 家主要厂商</li>
+            <ul className="space-y-2 text-sm" role="list">
+              <li><Link href="/about" className="text-muted-foreground hover:text-foreground transition-fast">关于我们</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground hover:text-foreground transition-fast">联系我们</Link></li>
+              <li><Link href="/disclaimer" className="text-muted-foreground hover:text-foreground transition-fast">免责声明</Link></li>
+              <li><Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-fast">隐私政策</Link></li>
             </ul>
           </div>
         </div>

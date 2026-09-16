@@ -10,7 +10,6 @@ interface DbNews {
   content: string;
   content_cn?: string;
   source: string;
-  source_url?: string;
   original_url?: string;
   published_at: string;
   category: string;
@@ -34,7 +33,6 @@ export interface NewsItem {
   content: string;
   contentCn?: string;
   source: string;
-  sourceUrl: string;
   originalUrl: string;
   publishedAt: string;
   category: string;
@@ -59,7 +57,6 @@ function mapDbToNews(dbNews: DbNews): NewsItem {
     content: dbNews.content,
     contentCn: dbNews.content_cn || dbNews.content,
     source: dbNews.source,
-    sourceUrl: dbNews.source_url || '',
     originalUrl: dbNews.original_url || '',
     publishedAt: dbNews.published_at,
     category: dbNews.category,
@@ -90,8 +87,8 @@ function mapDbToNews(dbNews: DbNews): NewsItem {
 export async function getNewsFromDb(): Promise<NewsItem[]> {
   try {
     const news = await sql<DbNews[]>`
-      SELECT 
-        id, title, title_cn, content, content_cn, source,
+      SELECT
+        id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
         sentiment, hotness, language, slug, is_published
       FROM spider_news
@@ -115,8 +112,8 @@ export async function getNewsBySlug(slug: string): Promise<NewsItem | null> {
     } catch {}
 
     const news = await sql<DbNews[]>`
-      SELECT 
-        id, title, title_cn, content, content_cn, source,
+      SELECT
+        id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
         sentiment, hotness, language, slug, is_published
       FROM spider_news
@@ -139,8 +136,8 @@ export async function getNewsBySlug(slug: string): Promise<NewsItem | null> {
 export async function getHotNews(limit: number = 10): Promise<NewsItem[]> {
   try {
     const news = await sql<DbNews[]>`
-      SELECT 
-        id, title, title_cn, content, content_cn, source,
+      SELECT
+        id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
         sentiment, hotness, language, slug, is_published
       FROM spider_news
@@ -160,8 +157,8 @@ export async function getHotNews(limit: number = 10): Promise<NewsItem[]> {
 export async function getNewsByCategory(category: string): Promise<NewsItem[]> {
   try {
     const news = await sql<DbNews[]>`
-      SELECT 
-        id, title, title_cn, content, content_cn, source,
+      SELECT
+        id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
         sentiment, hotness, language, slug, is_published
       FROM spider_news
@@ -202,8 +199,8 @@ export async function getRelatedNews(
 ): Promise<NewsItem[]> {
   try {
     const news = await sql<DbNews[]>`
-      SELECT 
-        id, title, title_cn, content, content_cn, source,
+      SELECT
+        id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
         sentiment, hotness, language, slug, is_published
       FROM spider_news
