@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const revalidate = 1800;
+export const revalidate = 14400;
 
 export const metadata: Metadata = {
   title: '首页 - AI 模型价格对比平台 | GPT-5/Claude 4/Gemini 2.5 最新定价',

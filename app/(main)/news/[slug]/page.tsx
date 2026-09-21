@@ -103,6 +103,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // 新闻详情页组件
+export const revalidate = 86400;
+export const revalidateTag = 'news-detail';
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const newsItem = await getNewsBySlugFromDb(slug);

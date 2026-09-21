@@ -13,7 +13,8 @@ import {
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const revalidate = 1800;
+export const revalidate = 86400;
+export const revalidateTag = 'models-detail';
 
 // Next.js 15 中 params 是 Promise 类型
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
