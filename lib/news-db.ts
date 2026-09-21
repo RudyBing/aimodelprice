@@ -23,6 +23,7 @@ interface DbNews {
   translate_service: string | null;
   slug: string;
   is_published: boolean;
+  site: string;
 }
 
 // 应用层新闻接口
@@ -46,6 +47,7 @@ export interface NewsItem {
   translateService?: string;
   slug: string;
   isPublished: boolean;
+  site: string;
 }
 
 // 将数据库记录转换为 NewsItem 对象
@@ -67,6 +69,7 @@ function mapDbToNews(dbNews: DbNews): NewsItem {
     language: dbNews.language,
     slug: dbNews.slug,
     isPublished: dbNews.is_published,
+    site: dbNews.site,
   };
   
   // 可选字段
@@ -90,9 +93,9 @@ export async function getNewsFromDb(): Promise<NewsItem[]> {
       SELECT
         id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
-        sentiment, hotness, language, slug, is_published
+        sentiment, hotness, language, slug, is_published, site
       FROM spider_news
-      WHERE is_published = true
+      WHERE is_published = true AND site = 'aimodelprice'
       ORDER BY published_at DESC
     `;
     
@@ -115,9 +118,9 @@ export async function getNewsBySlug(slug: string): Promise<NewsItem | null> {
       SELECT
         id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
-        sentiment, hotness, language, slug, is_published
+        sentiment, hotness, language, slug, is_published, site
       FROM spider_news
-      WHERE slug = ${decodedSlug} AND is_published = true
+      WHERE slug = ${decodedSlug} AND is_published = true AND site = 'aimodelprice'
       LIMIT 1
     `;
     
@@ -139,9 +142,9 @@ export async function getHotNews(limit: number = 10): Promise<NewsItem[]> {
       SELECT
         id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
-        sentiment, hotness, language, slug, is_published
+        sentiment, hotness, language, slug, is_published, site
       FROM spider_news
-      WHERE is_published = true
+      WHERE is_published = true AND site = 'aimodelprice'
       ORDER BY hotness DESC, published_at DESC
       LIMIT ${limit}
     `;
@@ -160,9 +163,9 @@ export async function getNewsByCategory(category: string): Promise<NewsItem[]> {
       SELECT
         id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
-        sentiment, hotness, language, slug, is_published
+        sentiment, hotness, language, slug, is_published, site
       FROM spider_news
-      WHERE category = ${category} AND is_published = true
+      WHERE category = ${category} AND is_published = true AND site = 'aimodelprice'
       ORDER BY published_at DESC
     `;
     
@@ -179,7 +182,7 @@ export async function getNewsCategoryCounts(): Promise<{ category: string; count
     const counts = await sql<{ category: string; count: number }[]>`
       SELECT category, COUNT(*) as count
       FROM spider_news
-      WHERE is_published = true
+      WHERE is_published = true AND site = 'aimodelprice'
       GROUP BY category
       ORDER BY count DESC
     `;
@@ -202,9 +205,9 @@ export async function getRelatedNews(
       SELECT
         id, title, title_cn, content, content_cn, source, original_url,
         published_at, category, tags, related_models,
-        sentiment, hotness, language, slug, is_published
+        sentiment, hotness, language, slug, is_published, site
       FROM spider_news
-      WHERE id != ${currentNewsId} AND category = ${category} AND is_published = true
+      WHERE id != ${currentNewsId} AND category = ${category} AND is_published = true AND site = 'aimodelprice'
       ORDER BY hotness DESC, published_at DESC
       LIMIT ${limit}
     `;
