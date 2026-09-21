@@ -5,7 +5,6 @@ import { getModelsFromDb } from '@/data/models';
 import ComparePageClient from './compare-client';
 
 export const revalidate = 10800;
-export const revalidateTag = 'compare';
 
 export default async function ComparePage() {
   // 从数据库加载模型数据

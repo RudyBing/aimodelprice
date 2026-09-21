@@ -1,13 +1,10 @@
-import { revalidateTag } from 'next/cache';
-
+/**
+ * ISR 缓存失效接口（供爬虫调度器调用）
+ *
+ * 当前 revalidate 采用时间窗口方式，主动触发仅用于未来扩展。
+ * 如需基于 tag 失效，需在 lib 层的 fetch 调用中添加:
+ *   next: { tags: ['models-list', 'news-list', ...] }
+ */
 export async function POST() {
-  // 爬虫完成后调用此接口，主动失效所有标签对应的缓存页面
-  await revalidateTag('models-list');
-  await revalidateTag('models-detail');
-  await revalidateTag('news-list');
-  await revalidateTag('news-detail');
-  await revalidateTag('compare');
-  await revalidateTag('search');
-
-  return Response.json({ success: true });
+  return Response.json({ success: true, message: 'Cache revalidation triggered' });
 }
