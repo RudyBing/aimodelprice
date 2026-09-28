@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const revalidate = 86400;
+export const dynamic = 'force-dynamic';
 
 // Next.js 15 中 params 是 Promise 类型
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
