@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { getModelsFromDb, getModelBySlug } from '@/lib/models-db';
-import { modelCategories } from '@/data/models';
+import { getModelsByCategory, getModelBySlug } from '@/lib/models-db';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,20 +12,30 @@ import {
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 43200;
 
-// Next.js 15 中 params 是 Promise 类型
+async function loadModelData(slug: string) {
+  const model = await getModelBySlug(slug);
+  if (!model) return null;
+  const allModels = await getModelsByCategory(model.category);
+  const relatedModels = allModels
+    .filter((m) => m.id !== model.id)
+    .slice(0, 4);
+  return { model, relatedModels };
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const model = await getModelBySlug(slug);
-  
-  if (!model) {
+  const data = await loadModelData(slug);
+
+  if (!data) {
     return {
       title: '模型未找到 - AI Model Prices',
       description: '该模型不存在或已被移除',
     };
   }
 
+  const { model } = data;
   const siteName = 'AI Model Prices';
   const title = `${model.name} 价格 - ${siteName}`;
   const description = `${model.provider} 推出的 ${model.name}：${model.description}`;
@@ -62,9 +71,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ModelDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const model = await getModelBySlug(slug);
+  const data = await loadModelData(slug);
 
-  if (!model) {
+  if (!data) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center">
@@ -78,11 +87,7 @@ export default async function ModelDetailPage({ params }: { params: Promise<{ sl
     );
   }
 
-  // 获取相关模型（同分类的其他模型）
-  const allModels = await getModelsFromDb();
-  const relatedModels = allModels
-    .filter((m) => m.category === model.category && m.id !== model.id)
-    .slice(0, 4);
+  const { model, relatedModels } = data;
 
   const accentColor = getModelAccentColor(model.id);
   const dotClass = providerDotClass[model.provider] || 'bg-gray-500';

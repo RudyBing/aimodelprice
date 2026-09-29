@@ -61,18 +61,18 @@ function getCategoryColor(category: string): string {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const newsItem = await getNewsBySlugFromDb(slug);
-  
+
   if (!newsItem) {
     return {
       title: '新闻未找到 - AI Model Prices',
       description: '该新闻不存在或已被移除',
     };
   }
-  
+
   const siteName = 'AI Model Prices';
   const title = `${newsItem.title} - ${siteName}`;
   const description = newsItem.contentCn?.slice(0, 100) || newsItem.content.slice(0, 100);
-  
+
   return {
     title: {
       default: title,
@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // 新闻详情页组件
-export const dynamic = 'force-dynamic';
+export const revalidate = 43200;
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const newsItem = await getNewsBySlugFromDb(slug);
